@@ -9,7 +9,7 @@
     </parent>
 
     <groupId>com.github.podd</groupId>
-    <artifactId>podd-parent</artifactId>
+    <artifactId>podd-ontologies</artifactId>
     <packaging>jar</packaging>
     <version>1-SNAPSHOT</version>
     <name>PODD :: Ontologies</name>
