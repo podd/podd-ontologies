@@ -1,0 +1,8 @@
+target/
+.classpath
+.project
+.settings
+*~
+pom.xml.versionsBackup
+catalog-v001.xml
+stats.csv
