@@ -104,11 +104,11 @@ public class SparqlQuerySpikeTest extends AbstractOntologyTest
               System.out.println("   " + entry.getKey() + " = (" + entry.getValue() + ")");
             }      
             
-//            this.printContents(conn, 
-//                    ValueFactoryImpl.getInstance().createURI("http://purl.org/podd/basic-2-20130206/artifact:1:version:1"));
-//            this.printContents(conn, 
-//                    ValueFactoryImpl.getInstance().createURI("urn:podd:inferred:ontologyiriprefix:http://purl.org/podd/basic-2-20130206/artifact:1:version:1"));
-//            this.printContexts(conn);
+            this.printContents(conn, 
+                    ValueFactoryImpl.getInstance().createURI("http://purl.org/podd/basic-2-20130206/artifact:1:version:1"));
+            this.printContents(conn, 
+                    ValueFactoryImpl.getInstance().createURI("urn:podd:inferred:ontologyiriprefix:http://purl.org/podd/basic-2-20130206/artifact:1:version:1"));
+            this.printContexts(conn);
             
         }
         finally

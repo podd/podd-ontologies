@@ -81,7 +81,7 @@ public class SparqlQuerySpike
         dataset.addDefaultGraph(context);
         for (URI uri : namedContexts)
         {
-            dataset.addNamedGraph(uri);
+            dataset.addDefaultGraph(uri);
         }
         query.setDataset(dataset);
         
