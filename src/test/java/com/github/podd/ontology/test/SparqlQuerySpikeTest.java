@@ -3,12 +3,14 @@
  */
 package com.github.podd.ontology.test;
 
+import java.util.Map;
 import java.util.Set;
 
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.openrdf.model.URI;
+import org.openrdf.model.impl.ValueFactoryImpl;
 import org.openrdf.repository.RepositoryConnection;
 import org.openrdf.rio.RDFFormat;
 import org.semanticweb.owlapi.model.IRI;
@@ -37,13 +39,13 @@ public class SparqlQuerySpikeTest extends AbstractOntologyTest
     }
     
     /**
-     * Test retrieving objects
+     * Test retrieve information about Top Object
      */
     @Test
-    public void testRetrieveObjectsUnSorted() throws Exception
+    public void testRetrieveTopObjectDetails() throws Exception
     {
-        final String testResourcePath = "/test/artifacts/basic-1.rdf";
-        final InferredOWLOntologyID nextOntologyID = this.loadArtifact(testResourcePath, RDFFormat.RDFXML);
+        final String testResourcePath = "/test/artifacts/basic-1.ttl";
+        final InferredOWLOntologyID nextOntologyID = this.loadArtifact(testResourcePath, RDFFormat.TURTLE);
         final URI contextUri = nextOntologyID.getVersionIRI().toOpenRDFURI();
         
         RepositoryConnection conn = null;
@@ -52,7 +54,61 @@ public class SparqlQuerySpikeTest extends AbstractOntologyTest
             conn = this.getConnection();
             this.testSpike = new SparqlQuerySpike();
             
-            // TODO -
+            Map<String, Object> map = this.testSpike.getTopObjectDetails(conn, contextUri, nextOntologyID.getInferredOntologyIRI().toOpenRDFURI());
+            
+            Assert.assertEquals("Incorrect number of statements about Top Object", 13, map.size());
+            Assert.assertNotNull("Top Object's URI was null", map.get("objecturi"));
+            Assert.assertTrue("URI start not expected format", map.get("objecturi").toString().startsWith("http://purl.org/podd/"));
+            Assert.assertTrue("Missing NotPublished status",map.containsValue("http://purl.org/podd/ns/poddBase#NotPublished"));
+            
+            // print results
+//            for (Map.Entry<String, Object> entry : map.entrySet()) {
+//              System.out.println("   " + entry.getKey() + " = (" + entry.getValue() + ")");
+//            }            
+        }
+        finally
+        {
+            if(conn != null)
+            {
+                conn.rollback();
+                conn.close();
+            }
+        }
+    }
+    
+    /**
+     * Test retrieve list of level 1 objects in a project
+     */
+    @Test
+    public void testRetrieveTopObjectChildren() throws Exception
+    {
+        final String testResourcePath = "/test/artifacts/basic-2.ttl";
+        final InferredOWLOntologyID nextOntologyID = this.loadArtifact(testResourcePath, RDFFormat.TURTLE);
+        final URI contextUri = nextOntologyID.getVersionIRI().toOpenRDFURI();
+        
+        RepositoryConnection conn = null;
+        try
+        {
+            conn = this.getConnection();
+            this.testSpike = new SparqlQuerySpike();
+            
+            Map<String, Object> map = this.testSpike.getObjectList(conn, contextUri, nextOntologyID.getInferredOntologyIRI().toOpenRDFURI());
+            
+//            Assert.assertEquals("Incorrect number of statements about Top Object", 13, map.size());
+//            Assert.assertNotNull("Top Object's URI was null", map.get("objecturi"));
+//            Assert.assertTrue("URI start not expected format", map.get("objecturi").toString().startsWith("http://purl.org/podd/"));
+//            Assert.assertTrue("Missing NotPublished status",map.containsValue("http://purl.org/podd/ns/poddBase#NotPublished"));
+            
+            // print results
+            for (Map.Entry<String, Object> entry : map.entrySet()) {
+              System.out.println("   " + entry.getKey() + " = (" + entry.getValue() + ")");
+            }      
+            
+//            this.printContents(conn, 
+//                    ValueFactoryImpl.getInstance().createURI("http://purl.org/podd/basic-2-20130206/artifact:1:version:1"));
+//            this.printContents(conn, 
+//                    ValueFactoryImpl.getInstance().createURI("urn:podd:inferred:ontologyiriprefix:http://purl.org/podd/basic-2-20130206/artifact:1:version:1"));
+//            this.printContexts(conn);
             
         }
         finally
@@ -64,6 +120,7 @@ public class SparqlQuerySpikeTest extends AbstractOntologyTest
             }
         }
     }
+
     
     /**
      * Test retrieving objects sorted by "weight" allocated in the schema ontologies.
@@ -88,6 +145,7 @@ public class SparqlQuerySpikeTest extends AbstractOntologyTest
     /**
      * Copied from PoddSesameManagerImpl.java as a reference only.
      */
+    @Ignore
     @Test
     public void testOntologyImports() throws Exception
     {
