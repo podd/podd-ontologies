@@ -57,6 +57,7 @@
     <owl:ObjectProperty rdf:about="#hasSubstrate">
         <rdfs:label>Substrate</rdfs:label>
         <rdfs:range rdf:resource="#Substrate"/>
+        <poddBase:weight>7</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -83,6 +84,7 @@
     <owl:DatatypeProperty rdf:about="#hasEcotype">
         <rdfs:label>Ecotype</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>10</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -93,6 +95,7 @@
         <rdfs:label
             >Field Description</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>10</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -102,6 +105,7 @@
     <owl:DatatypeProperty rdf:about="#hasFieldSoilType">
         <rdfs:label>Field Soil Type</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>7</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -149,18 +153,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;Axiom"/>
-        <poddBase:weight>10</poddBase:weight>
-        <owl:subject rdf:resource="&poddScience;Genotype"/>
-        <owl:predicate rdf:resource="&rdfs;subClassOf"/>
-        <owl:object>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="#hasEcotype"/>
-                <owl:allValuesFrom rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:object>
-    </rdf:Description>
     
 
 
@@ -183,30 +175,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;Axiom"/>
-        <poddBase:weight>8</poddBase:weight>
-        <owl:subject rdf:resource="#FieldConditions"/>
-        <owl:predicate rdf:resource="&rdfs;subClassOf"/>
-        <owl:object>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="#hasFieldDescription"/>
-                <owl:allValuesFrom rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:object>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;Axiom"/>
-        <poddBase:weight>7</poddBase:weight>
-        <owl:subject rdf:resource="#FieldConditions"/>
-        <owl:predicate rdf:resource="&rdfs;subClassOf"/>
-        <owl:object>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="#hasFieldSoilType"/>
-                <owl:allValuesFrom rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:object>
-    </rdf:Description>
     
 
 
@@ -223,18 +191,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;Axiom"/>
-        <poddBase:weight>7</poddBase:weight>
-        <owl:subject rdf:resource="#GrowthConditions"/>
-        <owl:predicate rdf:resource="&rdfs;subClassOf"/>
-        <owl:object>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="#hasSubstrate"/>
-                <owl:allValuesFrom rdf:resource="#Substrate"/>
-            </owl:Restriction>
-        </owl:object>
-    </rdf:Description>
     
 
 
@@ -257,32 +213,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;Axiom"/>
-        <poddBase:weight>5</poddBase:weight>
-        <owl:subject rdf:resource="#Substrate"/>
-        <owl:predicate rdf:resource="&rdfs;subClassOf"/>
-        <owl:object>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddBase;hasDescription"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:object>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;Axiom"/>
-        <poddBase:weight>3</poddBase:weight>
-        <owl:subject rdf:resource="#Substrate"/>
-        <owl:predicate rdf:resource="&rdfs;subClassOf"/>
-        <owl:object>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasName"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:object>
-    </rdf:Description>
     
 
 

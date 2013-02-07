@@ -77,6 +77,7 @@
     <owl:ObjectProperty rdf:about="&poddScience;hasAccession">
         <rdfs:label>Accession</rdfs:label>
         <rdfs:range rdf:resource="&poddScience;Accession"/>
+        <poddBase:weight>7</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -86,6 +87,7 @@
     <owl:ObjectProperty rdf:about="&poddScience;hasAllele">
         <rdfs:label>Allele</rdfs:label>
         <rdfs:range rdf:resource="&poddScience;Allele"/>
+        <poddBase:weight>8</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -116,6 +118,7 @@
         <rdfs:label>Control</rdfs:label>
         <rdfs:range rdf:resource="&poddScience;Assertion"/>
         <rdfs:domain rdf:resource="&poddScience;Material"/>
+        <poddBase:weight>6</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -155,6 +158,7 @@
     <owl:ObjectProperty rdf:about="&poddScience;hasEvent">
         <rdfs:label>has Event</rdfs:label>
         <rdfs:range rdf:resource="&poddScience;Event"/>
+	<poddBase:weight>13</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -194,6 +198,7 @@
     <owl:ObjectProperty rdf:about="&poddScience;hasMarker">
         <rdfs:label>Marker</rdfs:label>
         <rdfs:range rdf:resource="&poddScience;Marker"/>
+        <poddBase:weight>12</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -213,6 +218,7 @@
     <owl:ObjectProperty rdf:about="&poddScience;hasMeasurement">
         <rdfs:label>has Measurement</rdfs:label>
         <rdfs:range rdf:resource="&poddScience;Measurement"/>
+        <poddBase:weight>15</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -222,6 +228,7 @@
     <owl:ObjectProperty rdf:about="&poddScience;hasMeasurementParameter">
         <rdfs:label>Measurement Parameter</rdfs:label>
         <rdfs:range rdf:resource="&poddScience;MeasurementParameter"/>
+        <poddBase:weight>10</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -262,6 +269,7 @@
         <rdfs:label>Platform Type</rdfs:label>
         <rdfs:domain rdf:resource="&poddScience;Platform"/>
         <rdfs:range rdf:resource="&poddScience;PlatformType"/>
+        <poddBase:weight>3</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -321,6 +329,7 @@
     <owl:ObjectProperty rdf:about="&poddScience;hasSex">
         <rdfs:label>Sex</rdfs:label>
         <rdfs:range rdf:resource="&poddScience;Sex"/>
+        <poddBase:weight>9</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -330,6 +339,7 @@
     <owl:ObjectProperty rdf:about="&poddScience;hasSoftware">
         <rdfs:label>Software</rdfs:label>
         <rdfs:range rdf:resource="&poddScience;Software"/>
+        <poddBase:weight>5</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -360,6 +370,7 @@
         <rdfs:label>Wild Type</rdfs:label>
         <rdfs:range rdf:resource="&poddScience;Assertion"/>
         <rdfs:domain rdf:resource="&poddScience;Genotype"/>
+        <poddBase:weight>3</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -480,6 +491,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;hasAbstract">
         <rdfs:label>Abstract</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>3</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -489,6 +501,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;hasAccessionSource">
         <rdfs:label>Source</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>5</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -498,6 +511,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;hasAge">
         <rdfs:label>Age</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>11</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -507,6 +521,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;hasAlias">
         <rdfs:label>Alias</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>6</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -516,6 +531,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;hasAlleleSymbol">
         <rdfs:label>Symbol</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>5</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -525,6 +541,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;hasAnatomicalPart">
         <rdfs:label>Anatomical Part</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>5</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -534,6 +551,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;hasAuthors">
         <rdfs:label>Authors</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>5</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -543,6 +561,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;hasBarcode">
         <rdfs:label>Barcode</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>4</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -552,6 +571,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;hasChromosome">
         <rdfs:label>Chromosome</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>4</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -561,6 +581,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;hasChromosomeLocation">
         <rdfs:label>Chromosome Location</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>5</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -570,6 +591,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;hasDOB">
         <rdfs:label>DOB</rdfs:label>
         <rdfs:range rdf:resource="&xsd;date"/>
+        <poddBase:weight>10</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -579,6 +601,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;hasDesignType">
         <rdfs:label>Design Type</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>3</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -588,6 +611,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;hasEventDescription">
         <rdfs:label>Description of the Event</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>4</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -597,6 +621,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;hasGenusSpecies">
         <rdfs:label>Genus and Species</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>7</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -606,6 +631,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;hasIssue">
         <rdfs:label>Issue</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>8</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -615,6 +641,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;hasLine">
         <rdfs:label>Line</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>11</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -624,6 +651,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;hasMarkerDirection">
         <rdfs:label>Direction</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>9</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -634,6 +662,7 @@
         <rdfs:label>Marker Type</rdfs:label>
         <rdfs:comment>Type of the Marker (e.g. QTL, phenotypic marker)</rdfs:comment>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>5</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -643,6 +672,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;hasMaterialStatus">
         <rdfs:label>Status</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>8</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -652,6 +682,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;hasMutation">
         <rdfs:label>Mutation</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>12</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -661,6 +692,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;hasName">
         <rdfs:label>Name</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>3</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -670,6 +702,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;hasNickname">
         <rdfs:label>Nickname</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>5</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -688,6 +721,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;hasPages">
         <rdfs:label>Pages</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>9</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -697,6 +731,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;hasProcessVariation">
         <rdfs:label>Process Variation</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>9</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -706,6 +741,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;hasProtocolVariation">
         <rdfs:label>Protocol Variation</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>11</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -715,6 +751,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;hasReferenceID">
         <rdfs:label>Reference ID</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>7</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -724,6 +761,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;hasReplicate">
         <rdfs:label>Replicate Number</rdfs:label>
         <rdfs:range rdf:resource="&xsd;int"/>
+        <poddBase:weight>4</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -733,6 +771,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;hasSequenceString">
         <rdfs:label>Sequence</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>7</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -742,6 +781,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;hasSoftwareVersion">
         <rdfs:label>Version</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>5</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -751,6 +791,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;hasSpeciesCommonName">
         <rdfs:label>Species Common Name</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>8</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -760,6 +801,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;hasSubspecies">
         <rdfs:label>Subspecies</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>9</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -769,6 +811,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;hasSystem">
         <rdfs:label>System</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>7</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -778,6 +821,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;hasUnit">
         <rdfs:label>Unit</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>8</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -787,6 +831,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;hasValue">
         <rdfs:label>Value</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>5</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -796,6 +841,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;hasVariationType">
         <rdfs:label>Variation Type</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>10</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -805,6 +851,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;hasVolume">
         <rdfs:label>Volume</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>7</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -814,6 +861,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;hasYear">
         <rdfs:label>Year</rdfs:label>
         <rdfs:range rdf:resource="&xsd;int"/>
+        <poddBase:weight>6</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -823,6 +871,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;publishedIn">
         <rdfs:label>Publication Title</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>5</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -849,18 +898,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
-    <owl:Axiom>
-        <poddBase:weight>3</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddBase;PoddTopObject"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddBase;hasLeadInstitution"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
     
 
 
@@ -890,30 +927,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    <owl:Axiom>
-        <poddBase:weight>7</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Accession"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddBase;hasURL"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;anyURI"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>5</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Accession"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasAccessionSource"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
     
 
 
@@ -940,40 +953,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    <owl:Axiom>
-        <poddBase:weight>5</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Allele"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasAlleleSymbol"/>
-                <owl:allValuesFrom rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>3</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Allele"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasName"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>7</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Allele"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasAccession"/>
-                <owl:allValuesFrom rdf:resource="&poddScience;Accession"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
     
 
 
@@ -1007,18 +986,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    <owl:Axiom>
-        <poddBase:weight>11</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Analysis"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasProtocolVariation"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
     
 
 
@@ -1088,52 +1055,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    <owl:Axiom>
-        <poddBase:weight>13</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Container"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasEvent"/>
-                <owl:allValuesFrom rdf:resource="&poddScience;Event"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>15</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Container"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasMeasurement"/>
-                <owl:allValuesFrom rdf:resource="&poddScience;Measurement"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>3</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Container"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddBase;hasType"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>5</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Container"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasBarcode"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
     
 
 
@@ -1192,41 +1113,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    <owl:Axiom>
-        <poddBase:weight>13</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Data"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasEvent"/>
-                <owl:allValuesFrom rdf:resource="&poddScience;Event"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>3</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Data"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddBase;hasType"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>11</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Data"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasProtocolVariation"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
     
 
 
@@ -1248,29 +1134,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    <owl:Axiom>
-        <poddBase:weight>3</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Design"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasDesignType"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>13</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Design"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasEvent"/>
-                <owl:allValuesFrom rdf:resource="&poddScience;Event"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
     
 
 
@@ -1311,52 +1174,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    <owl:Axiom>
-        <poddBase:weight>15</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Environment"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasMeasurement"/>
-                <owl:allValuesFrom rdf:resource="&poddScience;Measurement"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>5</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Environment"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddBase;hasEndDateTime"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;dateTime"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>3</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Environment"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddBase;hasStartDateTime"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;dateTime"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>13</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Environment"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasEvent"/>
-                <owl:allValuesFrom rdf:resource="&poddScience;Event"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
     
 
 
@@ -1400,66 +1217,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    <owl:Axiom>
-        <poddBase:weight>9</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Event"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddBase;hasDuration"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>3</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Event"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasName"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>4</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Event"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasEventDescription"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>7</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Event"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddBase;hasTimePoint"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>5</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Event"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddBase;hasTimestamp"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;dateTime"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
     
 
 
@@ -1519,86 +1276,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    <owl:Axiom>
-        <poddBase:weight>4</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Gene"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasChromosome"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>6</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Gene"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasAlias"/>
-                <owl:allValuesFrom rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>5</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Gene"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasChromosomeLocation"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>12</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Gene"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasMarker"/>
-                <owl:allValuesFrom rdf:resource="&poddScience;Marker"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>8</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Gene"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasAllele"/>
-                <owl:allValuesFrom rdf:resource="&poddScience;Allele"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>3</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Gene"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasAccession"/>
-                <owl:allValuesFrom rdf:resource="&poddScience;Accession"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>10</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Gene"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasVariationType"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
     
 
 
@@ -1667,100 +1344,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    <owl:Axiom>
-        <poddBase:weight>3</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Genotype"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasWildType"/>
-                <owl:onClass rdf:resource="&poddScience;Assertion"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>9</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Genotype"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasSubspecies"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>7</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Genotype"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasGenusSpecies"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>5</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Genotype"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasNickname"/>
-                <owl:allValuesFrom rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>11</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Genotype"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasLine"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>8</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Genotype"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasSpeciesCommonName"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>14</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Genotype"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasAccession"/>
-                <owl:allValuesFrom rdf:resource="&poddScience;Accession"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>12</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Genotype"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasMutation"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
     
 
 
@@ -1848,51 +1431,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    <owl:Axiom>
-        <poddBase:weight>3</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Investigation"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddBase;hasStartDateTime"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;dateTime"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>9</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Investigation"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasProcessVariation"/>
-                <owl:allValuesFrom rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>13</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Investigation"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasEvent"/>
-                <owl:allValuesFrom rdf:resource="&poddScience;Event"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>7</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Investigation"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasReferenceID"/>
-                <owl:allValuesFrom rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
     
 
 
@@ -1929,54 +1467,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    <owl:Axiom>
-        <poddBase:weight>3</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Marker"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasName"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>7</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Marker"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasSequenceString"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>9</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Marker"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasMarkerDirection"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>5</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Marker"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasMarkerType"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
     
 
 
@@ -2109,147 +1599,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    <owl:Axiom>
-        <poddBase:weight>11</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Material"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasAge"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>15</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Material"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasMeasurement"/>
-                <owl:allValuesFrom rdf:resource="&poddScience;Measurement"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>13</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Material"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasEvent"/>
-                <owl:allValuesFrom rdf:resource="&poddScience;Event"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>9</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Material"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasSex"/>
-                <owl:onClass rdf:resource="&poddScience;Sex"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>8</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Material"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasMaterialStatus"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>7</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Material"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasSystem"/>
-                <owl:allValuesFrom rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>5</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Material"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasAnatomicalPart"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>4</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Material"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasReplicate"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;int"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>12</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Material"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasProtocolVariation"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>3</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Material"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasBarcode"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>10</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Material"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasDOB"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;date"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>6</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Material"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasControl"/>
-                <owl:onClass rdf:resource="&poddScience;Assertion"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
     
 
 
@@ -2306,89 +1655,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    <owl:Axiom>
-        <poddBase:weight>7</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Measurement"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddBase;hasTimePoint"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>10</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Measurement"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasMeasurementParameter"/>
-                <owl:allValuesFrom rdf:resource="&poddScience;MeasurementParameter"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>5</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Measurement"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddBase;hasDescription"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>9</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Measurement"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasValue"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>6</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Measurement"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddBase;hasTimestamp"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;dateTime"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>8</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Measurement"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasUnit"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>3</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Measurement"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasName"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
     
 
 
@@ -2411,30 +1677,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    <owl:Axiom>
-        <poddBase:weight>5</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;MeasurementParameter"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasValue"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>3</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;MeasurementParameter"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasName"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
     
 
 
@@ -2462,29 +1704,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    <owl:Axiom>
-        <poddBase:weight>3</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Observation"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddBase;hasTimestamp"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;dateTime"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>5</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Observation"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasMeasurement"/>
-                <owl:allValuesFrom rdf:resource="&poddScience;Measurement"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
     
 
 
@@ -2520,29 +1739,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    <owl:Axiom>
-        <poddBase:weight>5</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Platform"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasSoftware"/>
-                <owl:allValuesFrom rdf:resource="&poddScience;Software"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>3</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Platform"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasPlatformType"/>
-                <owl:onClass rdf:resource="&poddScience;PlatformType"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
     
 
 
@@ -2705,78 +1901,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    <owl:Axiom>
-        <poddBase:weight>13</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Project"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddBase;hasPublicationDate"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;date"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>7</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Project"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddBase;hasDuration"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>12</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Project"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddBase;hasPublicationStatus"/>
-                <owl:onClass rdf:resource="&poddBase;PublicationStatus"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>9</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Project"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddBase;hasTopObjectStatus"/>
-                <owl:onClass rdf:resource="&poddBase;TopObjectStatus"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>10</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Project"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddBase;hasCompletionDate"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;date"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>5</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Project"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddBase;hasStartDate"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;date"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
     
 
 
@@ -2851,90 +1975,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    <owl:Axiom>
-        <poddBase:weight>6</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Publication"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasYear"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;int"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>5</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Publication"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;publishedIn"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>8</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Publication"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasIssue"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>5</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Publication"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasAuthors"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>9</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Publication"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasPages"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>7</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Publication"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasVolume"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>3</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Publication"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasAbstract"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
     
 
 
@@ -2956,29 +1996,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    <owl:Axiom>
-        <poddBase:weight>5</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Sequence"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasSequenceString"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>3</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Sequence"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasAccession"/>
-                <owl:allValuesFrom rdf:resource="&poddScience;Accession"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
     
 
 
@@ -3020,30 +2037,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    <owl:Axiom>
-        <poddBase:weight>5</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Software"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasSoftwareVersion"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>3</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Software"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasName"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
     
 
 
@@ -3089,51 +2082,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    <owl:Axiom>
-        <poddBase:weight>13</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Treatment"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasEvent"/>
-                <owl:allValuesFrom rdf:resource="&poddScience;Event"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>3</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Treatment"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddBase;hasType"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>15</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Treatment"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasMeasurement"/>
-                <owl:allValuesFrom rdf:resource="&poddScience;Measurement"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>11</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;Treatment"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasProtocolVariation"/>
-                <owl:allValuesFrom rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
     
 
 
@@ -3182,64 +2130,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    <owl:Axiom>
-        <poddBase:weight>15</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;TreatmentMaterial"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasMeasurement"/>
-                <owl:allValuesFrom rdf:resource="&poddScience;Measurement"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>4</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;TreatmentMaterial"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasBarcode"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>3</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;TreatmentMaterial"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddBase;hasType"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>13</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;TreatmentMaterial"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasEvent"/>
-                <owl:allValuesFrom rdf:resource="&poddScience;Event"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <poddBase:weight>11</poddBase:weight>
-        <owl:annotatedSource rdf:resource="&poddScience;TreatmentMaterial"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasProtocolVariation"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
     
 
 

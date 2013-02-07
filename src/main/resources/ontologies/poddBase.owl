@@ -107,6 +107,7 @@
         <rdfs:domain rdf:resource="&poddBase;PoddTopObject"/>
         <rdfs:range rdf:resource="&poddBase;PublicationStatus"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;poddTopObjectProperty"/>
+	<weight>12</weight>
     </owl:ObjectProperty>
     
 
@@ -142,6 +143,7 @@
         <rdfs:domain rdf:resource="&poddBase;PoddTopObject"/>
         <rdfs:range rdf:resource="&poddBase;TopObjectStatus"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;poddTopObjectProperty"/>
+	<weight>9</weight>
     </owl:ObjectProperty>
     
 
@@ -220,6 +222,7 @@
         <rdfs:label>has Completion Date (DD/MM/YYYY)</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&poddBase;hasTime"/>
         <rdfs:range rdf:resource="&xsd;date"/>
+	<weight>10</weight>
     </owl:DatatypeProperty>
     
 
@@ -229,6 +232,7 @@
     <owl:DatatypeProperty rdf:about="&poddBase;hasDescription">
         <rdfs:label>has Description</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+	<weight>5</weight>
     </owl:DatatypeProperty>
     
 
@@ -238,6 +242,7 @@
     <owl:DatatypeProperty rdf:about="&poddBase;hasDuration">
         <rdfs:label>has Duration</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+	<weight>7</weight>
     </owl:DatatypeProperty>
     
 
@@ -248,6 +253,7 @@
         <rdfs:label>has End Date and Time (DD/MM/YYYY hh:mm:ss)</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&poddBase;hasTime"/>
         <rdfs:range rdf:resource="&xsd;dateTime"/>
+	<weight>5</weight>
     </owl:DatatypeProperty>
     
 
@@ -266,6 +272,7 @@
     <owl:DatatypeProperty rdf:about="&poddBase;hasLeadInstitution">
         <rdfs:label>has Lead Institution</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+	<weight>3</weight>
     </owl:DatatypeProperty>
     
 
@@ -293,6 +300,7 @@
         <rdfs:label>has Publication Date (DD/MM/YYYY)</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&poddBase;hasTime"/>
         <rdfs:range rdf:resource="&xsd;date"/>
+	<weight>13</weight>
     </owl:DatatypeProperty>
     
 
@@ -303,6 +311,7 @@
         <rdfs:label>has Start Date (DD/MM/YYYY)</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&poddBase;hasTime"/>
         <rdfs:range rdf:resource="&xsd;date"/>
+	<weight>5</weight>
     </owl:DatatypeProperty>
     
 
@@ -313,6 +322,7 @@
         <rdfs:label>has Start Date and Time (DD/MM/YYYY hh:mm:ss)</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&poddBase;hasTime"/>
         <rdfs:range rdf:resource="&xsd;dateTime"/>
+	<weight>3</weight>
     </owl:DatatypeProperty>
     
 
@@ -331,6 +341,7 @@
         <rdfs:label>has Relative Time Point</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&poddBase;hasTime"/>
         <rdfs:range rdf:resource="&xsd;string"/>
+	<weight>7</weight>
     </owl:DatatypeProperty>
     
 
@@ -341,6 +352,7 @@
         <rdfs:label>has Real Time (DD/MM/YYYY hh:mm:ss)</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&poddBase;hasTime"/>
         <rdfs:range rdf:resource="&xsd;dateTime"/>
+	<weight>5</weight>
     </owl:DatatypeProperty>
     
 
@@ -351,6 +363,7 @@
         <rdfs:label>has Type</rdfs:label>
         <rdfs:comment>FIXME: Confirm the semantics of this datatype property</rdfs:comment>
         <rdfs:range rdf:resource="&xsd;string"/>
+	<weight>3</weight>
     </owl:DatatypeProperty>
     
 
@@ -360,6 +373,7 @@
     <owl:DatatypeProperty rdf:about="&poddBase;hasURL">
         <rdfs:label>has URL</rdfs:label>
         <rdfs:range rdf:resource="&xsd;anyURI"/>
+	<weight>17</weight>
     </owl:DatatypeProperty>
     
 
@@ -495,17 +509,6 @@
                 <owl:onProperty rdf:resource="&poddBase;hasPURL"/>
                 <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="&xsd;anyURI"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <weight>17</weight>
-        <owl:annotatedSource rdf:resource="&poddBase;PoddTopObject"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddBase;hasURL"/>
-                <owl:allValuesFrom rdf:resource="&xsd;anyURI"/>
             </owl:Restriction>
         </owl:annotatedTarget>
     </owl:Axiom>
