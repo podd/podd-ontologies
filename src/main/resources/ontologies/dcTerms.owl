@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://purl.org/podd/ns/dcTerms#"
+     xml:base="http://purl.org/podd/ns/dcTerms"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://purl.org/podd/ns/dcTerms">
+        <rdfs:label>The PODD Ontology for Dublin Core Terms</rdfs:label>
+        <owl:versionIRI rdf:resource="http://purl.org/podd/ns/version/dcTerms/1"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/podd/ns/dcTerms#definition">
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:ObjectProperty rdf:about="&dcterms;contributor">
+        <rdfs:label>Contributor</rdfs:label>
+        <rdfs:comment>Examples of a Contributor include a person, an organization, or a service.</rdfs:comment>
+        <definition>An entity responsible for making contributions to the resource.</definition>
+        <rdfs:range rdf:resource="&dcterms;Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:ObjectProperty rdf:about="&dcterms;creator">
+        <rdfs:label>Creator</rdfs:label>
+        <definition>An entity primarily responsible for making the resource.</definition>
+        <rdfs:comment>Examples of a Creator include a person, an organization, or a service.</rdfs:comment>
+        <rdfs:range rdf:resource="&dcterms;Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:ObjectProperty rdf:about="&dcterms;publisher">
+        <rdfs:label>Publisher</rdfs:label>
+        <rdfs:comment>Examples of a Publisher include a person, an organization, or a service.</rdfs:comment>
+        <definition>An entity responsible for making the resource available.</definition>
+        <rdfs:range rdf:resource="&dcterms;Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:DatatypeProperty rdf:about="&dcterms;created">
+        <rdfs:label>Date Created</rdfs:label>
+        <definition>Date of creation of the resource.</definition>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/date -->
+
+    <owl:DatatypeProperty rdf:about="&dcterms;date">
+        <rdfs:label>Date</rdfs:label>
+        <definition>A point or period of time associated with an event in the lifecycle of the resource.</definition>
+        <rdfs:comment>Date may be used to express temporal information at any level of granularity. Recommended best practice is to use an encoding scheme, such as the W3CDTF profile of ISO 8601 [W3CDTF].</rdfs:comment>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:DatatypeProperty rdf:about="&dcterms;modified">
+        <rdfs:label>Date Modified</rdfs:label>
+        <definition>Date on which the resource was changed.</definition>
+        <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/Agent -->
+
+    <owl:Class rdf:about="&dcterms;Agent">
+        <rdfs:label>Agent</rdfs:label>
+        <definition>A resource that acts or has the power to act.</definition>
+        <rdfs:comment>Examples of Agent include person, organization, and software agent.</rdfs:comment>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+
