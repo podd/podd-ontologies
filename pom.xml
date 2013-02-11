@@ -114,26 +114,31 @@
                 <groupId>com.github.ansell.owlapi</groupId>
                 <artifactId>owlapi-api</artifactId>
                 <version>${owlapi.version}</version>
+                <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>com.github.ansell.owlapi</groupId>
                 <artifactId>owlapi-impl</artifactId>
                 <version>${owlapi.version}</version>
+                <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>com.github.ansell.owlapi</groupId>
                 <artifactId>owlapi-rio</artifactId>
                 <version>${owlapi.version}</version>
+                <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>com.github.ansell.pellet</groupId>
                 <artifactId>pellet-owlapiv3</artifactId>
                 <version>${pellet.version}</version>
+                <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>com.github.ansell.pellet</groupId>
                 <artifactId>pellet-explanation</artifactId>
                 <version>${pellet.version}</version>
+                <scope>test</scope>
             </dependency>
     </dependencies>
     <build>
