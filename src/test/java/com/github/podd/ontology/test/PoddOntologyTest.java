@@ -19,7 +19,7 @@ import org.openrdf.rio.Rio;
 import org.openrdf.rio.helpers.StatementCollector;
 
 /**
- * Parameterized test to validate that PODD ontologies.
+ * Parameterized test to validate PODD ontologies.
  * 
  * @author kutila
  * 
@@ -51,7 +51,7 @@ public class PoddOntologyTest
     {
         final Object[][] data =
                 new Object[][] { 
-                        { "/ontologies/dcTerms.owl", "application/rdf+xml", 29 },
+                        { "/ontologies/dcTerms.owl", "application/rdf+xml", 39 },
                         { "/ontologies/poddBase.owl", "application/rdf+xml", 284 },
                         { "/ontologies/poddUser.owl", "application/rdf+xml", 225 }, 
                         { "/ontologies/poddScience.owl", "application/rdf+xml", 1124 },
