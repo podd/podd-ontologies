@@ -126,6 +126,7 @@
     <owl:DatatypeProperty rdf:about="&foaf;title">
         <rdfs:label>has Title</rdfs:label>
         <rdfs:comment>Title (Mr, Mrs, Ms, Dr. etc)</rdfs:comment>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
     </owl:DatatypeProperty>
     
 
