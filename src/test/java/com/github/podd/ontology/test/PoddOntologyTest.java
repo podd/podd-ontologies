@@ -25,6 +25,7 @@ import org.semanticweb.owlapi.model.OWLOntologyManagerFactoryRegistry;
 import org.semanticweb.owlapi.profiles.OWLProfile;
 import org.semanticweb.owlapi.profiles.OWLProfileRegistry;
 import org.semanticweb.owlapi.profiles.OWLProfileReport;
+import org.semanticweb.owlapi.profiles.OWLProfileViolation;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
 import org.semanticweb.owlapi.reasoner.OWLReasonerFactory;
 import org.semanticweb.owlapi.reasoner.OWLReasonerFactoryRegistry;
@@ -76,11 +77,13 @@ public class PoddOntologyTest
         final Object[][] data =
                 new Object[][] {
                         { "/ontologies/dcTerms.owl", "application/rdf+xml", 39 },
-                        { "/ontologies/poddBase.owl", "application/rdf+xml", 284 },
-                        // { "/ontologies/poddUser.owl", "application/rdf+xml", 225 }, //FIXME: poddUser.owl
+                        { "/ontologies/foaf.owl", "application/rdf+xml", 35 },
+                        { "/ontologies/poddBase.owl", "application/rdf+xml", 283 },
+                        { "/ontologies/poddUser.owl", "application/rdf+xml", 181 },
                         { "/ontologies/poddScience.owl", "application/rdf+xml", 1124 },
                         { "/ontologies/poddPlant.owl", "application/rdf+xml", 77 },
-                        { "/ontologies/poddAnimal.owl", "application/rdf+xml", 171 }, };
+                        { "/ontologies/poddAnimal.owl", "application/rdf+xml", 171 }, 
+                        };
         return Arrays.asList(data);
     }
     
@@ -143,8 +146,15 @@ public class PoddOntologyTest
         
         // verify: check ontology in profile
         final OWLProfileReport profileReport = nextProfile.checkOntology(nextOntology);
-        Assert.assertTrue("Ontology not in profile", profileReport.isInProfile());
-        
+        if (!profileReport.isInProfile())
+        {
+            for (OWLProfileViolation v : profileReport.getViolations())
+            {
+                System.out.println(" Profile violation = " + v.toString());
+            }
+            Assert.fail("Ontology not in profile");
+        }
+
         // verify: check consistency
         final OWLReasonerFactory reasonerFactory =
                 OWLReasonerFactoryRegistry.getInstance().getReasonerFactory("Pellet");

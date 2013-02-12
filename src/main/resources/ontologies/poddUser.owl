@@ -3,7 +3,6 @@
 
 <!DOCTYPE rdf:RDF [
     <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
-    <!ENTITY poddModel "http://purl.org/podd/ns/poddBase#" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY user "http://purl.org/podd/ns/poddUser#" >
@@ -23,11 +22,11 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:user="http://purl.org/podd/ns/poddUser#"
-     xmlns:poddModel="http://purl.org/podd/ns/poddBase#">
+     xmlns:user="http://purl.org/podd/ns/poddUser#">
     <owl:Ontology rdf:about="http://purl.org/podd/ns/poddUser">
         <rdfs:label>The PODD User Ontology</rdfs:label>
-        <owl:imports rdf:resource="http://purl.org/podd/ns/version/poddBase/1"/>
+        <owl:imports rdf:resource="http://purl.org/podd/ns/version/dcTerms/1"/>
+        <owl:imports rdf:resource="http://purl.org/podd/ns/version/foaf/1"/>
         <owl:versionIRI rdf:resource="http://purl.org/podd/ns/version/poddUser/1"/>
     </owl:Ontology>
     
@@ -41,7 +40,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
 
 
     <!-- 
@@ -65,22 +63,12 @@
 
     
 
+
     <!-- http://purl.org/podd/ns/poddUser#hasAffiliation -->
 
     <owl:ObjectProperty rdf:about="&user;hasAffiliation">
         <rdfs:label>has Affiliation</rdfs:label>
         <rdfs:range rdf:resource="&foaf;Organization"/>
-    </owl:ObjectProperty>
-    
-
-
-
-    <!-- http://purl.org/podd/ns/poddUser#hasPastTopObject -->
-
-    <owl:ObjectProperty rdf:about="&user;hasPastTopObject">
-        <rdfs:label>has Past Top Object</rdfs:label>
-        <rdfs:range rdf:resource="&poddModel;TopObject"/>
-        <rdfs:domain rdf:resource="&user;User"/>
     </owl:ObjectProperty>
     
 
@@ -93,30 +81,11 @@
     
 
 
-    <!-- http://purl.org/podd/ns/poddUser#onTopObject -->
-
-    <owl:ObjectProperty rdf:about="&user;onTopObject">
-        <rdfs:label>on Top Object</rdfs:label>
-        <rdfs:range rdf:resource="&poddModel;TopObject"/>
-        <rdfs:domain rdf:resource="&user;TopObjectRoleBundle"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.org/podd/ns/poddUser#withRole -->
 
     <owl:ObjectProperty rdf:about="&user;withRole">
         <rdfs:label>with Role</rdfs:label>
         <rdfs:range rdf:resource="&user;RoleRepositoryRole"/>
-        <rdfs:domain rdf:resource="&user;TopObjectRoleBundle"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://xmlns.com/foaf/0.1/mbox -->
-
-    <owl:ObjectProperty rdf:about="&foaf;mbox">
-        <rdfs:label>has Email Address</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -135,7 +104,7 @@
     <!-- http://purl.org/podd/ns/poddUser#lastLoginTime -->
 
     <owl:DatatypeProperty rdf:about="&user;lastLoginTime">
-        <rdfs:label>has Last Login TIme</rdfs:label>
+        <rdfs:label>has Last Login Time</rdfs:label>
         <rdfs:range rdf:resource="&xsd;dateTime"/>
     </owl:DatatypeProperty>
     
@@ -154,24 +123,8 @@
 
     <owl:DatatypeProperty rdf:about="&user;postalAddress">
         <rdfs:label>has Postal Address</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.org/dc/terms/Agent"/>
         <rdfs:range rdf:resource="&rdfs;Literal"/>
-        <rdfs:domain rdf:resource="&foaf;Agent"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://xmlns.com/foaf/0.1/name -->
-
-    <owl:DatatypeProperty rdf:about="&foaf;name">
-        <rdfs:label>has Name</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://xmlns.com/foaf/0.1/title -->
-
-    <owl:DatatypeProperty rdf:about="&foaf;title">
-        <rdfs:label>has Title</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -185,15 +138,6 @@
      -->
 
     
-
-
-    <!-- http://purl.org/podd/ns/poddBase#TopObject -->
-
-    <owl:Class rdf:about="&poddModel;TopObject">
-        <rdfs:label>Top Object</rdfs:label>
-    </owl:Class>
-    
-
 
     <!-- http://purl.org/podd/ns/poddUser#RepositoryRole -->
 
@@ -239,30 +183,6 @@
     
 
 
-    <!-- http://purl.org/podd/ns/poddUser#TopObjectRoleBundle -->
-
-    <owl:Class rdf:about="&user;TopObjectRoleBundle">
-        <rdfs:label>Top Object Role Bundle</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&user;onTopObject"/>
-                <owl:onClass rdf:resource="&poddModel;TopObject"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&user;withRole"/>
-                <owl:onClass rdf:resource="&user;TopObjectRole"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>A placeholder class to relate a user to his role in a particular top object. Through this class, a user has exactly one role on a particular top object.</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/podd/ns/poddUser#User -->
 
     <owl:Class rdf:about="&user;User">
@@ -270,32 +190,8 @@
         <rdfs:subClassOf rdf:resource="&foaf;Person"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&foaf;mbox"/>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&user;hasAffiliation"/>
-                <owl:someValuesFrom rdf:resource="&foaf;Organization"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&user;hasRepositoryRole"/>
                 <owl:allValuesFrom rdf:resource="&user;RepositoryRole"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&user;phoneNumber"/>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&foaf;title"/>
-                <owl:allValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -306,8 +202,26 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&user;phoneNumber"/>
+                <owl:allValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&user;lastLoginTime"/>
                 <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&user;phoneNumber"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&user;lastLoginTime"/>
+                <owl:allValuesFrom rdf:resource="&xsd;dateTime"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -319,20 +233,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&user;phoneNumber"/>
+                <owl:onProperty rdf:resource="&foaf;title"/>
                 <owl:allValuesFrom rdf:resource="&rdfs;Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&user;lastLoginTime"/>
-                <owl:allValuesFrom rdf:resource="&xsd;dateTime"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&foaf;name"/>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+                <owl:onProperty rdf:resource="&user;hasAffiliation"/>
+                <owl:someValuesFrom rdf:resource="&foaf;Organization"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>A (human) user in the PODD system.
@@ -352,7 +260,7 @@ A user has exactly one name (username).</rdfs:comment>
             <owl:Class>
                 <owl:oneOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&user;StatusActive"/>
-                    <rdf:Description rdf:about="&user;StatusBlocked"/>
+                    <rdf:Description rdf:about="&user;StatusInactive"/>
                 </owl:oneOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -364,30 +272,6 @@ A user has exactly one name (username).</rdfs:comment>
     <!-- http://www.w3.org/2002/07/owl#Thing -->
 
     <owl:Class rdf:about="&owl;Thing"/>
-    
-
-
-    <!-- http://xmlns.com/foaf/0.1/Agent -->
-
-    <owl:Class rdf:about="&foaf;Agent">
-        <rdfs:label>Agent</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://xmlns.com/foaf/0.1/Organization -->
-
-    <owl:Class rdf:about="&foaf;Organization">
-        <rdfs:label>Organisation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://xmlns.com/foaf/0.1/Person -->
-
-    <owl:Class rdf:about="&foaf;Person">
-        <rdfs:label>Person</rdfs:label>
-    </owl:Class>
     
 
 
@@ -496,23 +380,13 @@ A user has exactly one name (username).</rdfs:comment>
     
 
 
-    <!-- http://purl.org/podd/ns/poddUser#StatusBlocked -->
+    <!-- http://purl.org/podd/ns/poddUser#StatusInactive -->
 
-    <owl:NamedIndividual rdf:about="&user;StatusBlocked">
+    <owl:NamedIndividual rdf:about="&user;StatusInactive">
         <rdf:type rdf:resource="&user;UserStatus"/>
-        <rdfs:label>Blocked Status</rdfs:label>
+        <rdfs:label>Inactive Status</rdfs:label>
     </owl:NamedIndividual>
     
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
 
 
     <!-- 
@@ -526,8 +400,8 @@ A user has exactly one name (username).</rdfs:comment>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="&user;RoleMember"/>
-            <rdf:Description rdf:about="&user;RoleTopObjectAdministrator"/>
+            <rdf:Description rdf:about="&user;RolePublic"/>
+            <rdf:Description rdf:about="&user;RoleStaffMember"/>
         </owl:distinctMembers>
     </rdf:Description>
     <rdf:Description>
@@ -535,13 +409,34 @@ A user has exactly one name (username).</rdfs:comment>
         <owl:distinctMembers rdf:parseType="Collection">
             <rdf:Description rdf:about="&user;RolePublic"/>
             <rdf:Description rdf:about="&user;RoleRepositoryAdministrator"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&user;RoleRepositoryAdministrator"/>
+            <rdf:Description rdf:about="&user;RoleStaffMember"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&user;RoleMember"/>
+            <rdf:Description rdf:about="&user;RoleObserver"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&user;RoleMember"/>
+            <rdf:Description rdf:about="&user;RoleTopObjectAdministrator"/>
         </owl:distinctMembers>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
             <rdf:Description rdf:about="&user;StatusActive"/>
-            <rdf:Description rdf:about="&user;StatusBlocked"/>
+            <rdf:Description rdf:about="&user;StatusInactive"/>
         </owl:distinctMembers>
     </rdf:Description>
     <rdf:Description>
@@ -549,27 +444,6 @@ A user has exactly one name (username).</rdfs:comment>
         <owl:distinctMembers rdf:parseType="Collection">
             <rdf:Description rdf:about="&user;RoleObserver"/>
             <rdf:Description rdf:about="&user;RoleTopObjectAdministrator"/>
-        </owl:distinctMembers>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDifferent"/>
-        <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="&user;RolePublic"/>
-            <rdf:Description rdf:about="&user;RoleStaffMember"/>
-        </owl:distinctMembers>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDifferent"/>
-        <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="&user;RoleRepositoryAdministrator"/>
-            <rdf:Description rdf:about="&user;RoleStaffMember"/>
-        </owl:distinctMembers>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDifferent"/>
-        <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="&user;RoleMember"/>
-            <rdf:Description rdf:about="&user;RoleObserver"/>
         </owl:distinctMembers>
     </rdf:Description>
 </rdf:RDF>
