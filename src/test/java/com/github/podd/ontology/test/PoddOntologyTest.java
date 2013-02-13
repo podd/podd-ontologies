@@ -78,7 +78,7 @@ public class PoddOntologyTest
                 new Object[][] {
                         { "/ontologies/dcTerms.owl", "application/rdf+xml", 39 },
                         { "/ontologies/foaf.owl", "application/rdf+xml", 38 },
-                        { "/ontologies/poddUser.owl", "application/rdf+xml", 170 },
+                        { "/ontologies/poddUser.owl", "application/rdf+xml", 186 },
                         { "/ontologies/poddBase.owl", "application/rdf+xml", 282 },
                         { "/ontologies/poddScience.owl", "application/rdf+xml", 1125 },
                         { "/ontologies/poddPlant.owl", "application/rdf+xml", 77 },

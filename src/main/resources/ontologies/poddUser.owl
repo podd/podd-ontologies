@@ -73,21 +73,14 @@
     
 
 
-    <!-- http://purl.org/podd/ns/poddUser#hasRepositoryRole -->
+    <!-- http://purl.org/podd/ns/poddUser#hasPoddRole -->
 
-    <owl:ObjectProperty rdf:about="&user;hasRepositoryRole">
-        <rdfs:label>has Repository Role</rdfs:label>
+    <owl:ObjectProperty rdf:about="&user;hasPoddRole">
+        <rdfs:label>has Podd Role</rdfs:label>
+        <rdfs:range rdf:resource="&user;PoddRole"/>
     </owl:ObjectProperty>
     
 
-
-    <!-- http://purl.org/podd/ns/poddUser#withRole -->
-
-    <owl:ObjectProperty rdf:about="&user;withRole">
-        <rdfs:label>with Role</rdfs:label>
-        <rdfs:range rdf:resource="&user;RoleRepositoryRole"/>
-    </owl:ObjectProperty>
-    
 
 
     <!-- 
@@ -140,6 +133,28 @@
 
     
 
+    <!-- http://purl.org/podd/ns/poddUser#PoddRole -->
+
+    <owl:Class rdf:about="&user;PoddRole">
+        <rdfs:label>Podd Role</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&user;RoleAuthenticated"/>
+                    <rdf:Description rdf:about="&user;RoleAdministrator"/>
+                    <rdf:Description rdf:about="&user;RolePublic"/>
+                    <rdf:Description rdf:about="&user;RoleProjectObserver"/>
+                    <rdf:Description rdf:about="&user;RoleProjectMember"/>
+                    <rdf:Description rdf:about="&user;RoleProjectAdmin"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:comment>All Podd Roles that a user may have.</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/podd/ns/poddUser#RepositoryRole -->
 
     <owl:Class rdf:about="&user;RepositoryRole">
@@ -148,23 +163,14 @@
             <owl:Class>
                 <owl:oneOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&user;RoleAuthenticated"/>
-                    <rdf:Description rdf:about="&user;RoleProjectObserver"/>
-                    <rdf:Description rdf:about="&user;RoleProjectMember"/>
-                    <rdf:Description rdf:about="&user;RoleProjectAdmin"/>
                     <rdf:Description rdf:about="&user;RoleAdministrator"/>
                     <rdf:Description rdf:about="&user;RolePublic"/>
                 </owl:oneOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
-        <rdfs:comment>Roles a user may have, such as administrator, curator, top object owner, etc.</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="&user;PoddRole"/>
+        <rdfs:comment>Roles related to the Repository a user may have, such as administrator, authenticated user, etc.</rdfs:comment>
     </owl:Class>
-    
-
-
-    <!-- http://purl.org/podd/ns/poddUser#RoleRepositoryRole -->
-
-    <owl:Class rdf:about="&user;RoleRepositoryRole"/>
     
 
 
@@ -175,13 +181,13 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:oneOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&user;RoleAdministrator"/>
-                    <rdf:Description rdf:about="&user;RoleObserver"/>
-                    <rdf:Description rdf:about="&user;RoleMember"/>
+                    <rdf:Description rdf:about="&user;RoleProjectObserver"/>
+                    <rdf:Description rdf:about="&user;RoleProjectMember"/>
+                    <rdf:Description rdf:about="&user;RoleProjectAdmin"/>
                 </owl:oneOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:subClassOf rdf:resource="&user;PoddRole"/>
         <rdfs:comment>Roles related to a Top Object that a user may have.</rdfs:comment>
     </owl:Class>
     
@@ -194,14 +200,14 @@
         <rdfs:subClassOf rdf:resource="&foaf;Person"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&user;hasRepositoryRole"/>
-                <owl:allValuesFrom rdf:resource="&user;RepositoryRole"/>
+                <owl:onProperty rdf:resource="&user;hasPoddRole"/>
+                <owl:allValuesFrom rdf:resource="&user;PoddRole"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&user;hasRepositoryRole"/>
-                <owl:onClass rdf:resource="&user;RepositoryRole"/>
+                <owl:onProperty rdf:resource="&user;hasPoddRole"/>
+                <owl:onClass rdf:resource="&user;PoddRole"/>
                 <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -281,6 +287,7 @@ A user has exactly one name (username).</rdfs:comment>
     <!-- http://purl.org/podd/ns/poddUser#RoleAdministrator -->
 
     <rdf:Description rdf:about="&user;RoleAdministrator">
+        <rdf:type rdf:resource="&user;PoddRole"/>
         <rdf:type rdf:resource="&user;RepositoryRole"/>
         <rdfs:label>Administrator Role</rdfs:label>
         <rdfs:comment>Reresents a user with administrator privilidges.</rdfs:comment>
@@ -291,6 +298,7 @@ A user has exactly one name (username).</rdfs:comment>
     <!-- http://purl.org/podd/ns/poddUser#RoleAuthenticated -->
 
     <owl:NamedIndividual rdf:about="&user;RoleAuthenticated">
+        <rdf:type rdf:resource="&user;PoddRole"/>
         <rdf:type rdf:resource="&user;RepositoryRole"/>
         <rdfs:label>Authenticated Role</rdfs:label>
         <rdfs:comment>Represents a regular registered user</rdfs:comment>
@@ -300,6 +308,7 @@ A user has exactly one name (username).</rdfs:comment>
     <!-- http://purl.org/podd/ns/poddUser#RoleProjectObserver -->
 
     <owl:NamedIndividual rdf:about="&user;RoleProjectObserver">
+        <rdf:type rdf:resource="&user;PoddRole"/>
         <rdf:type rdf:resource="&user;TopObjectRole"/>
         <rdfs:label>Project Observer Role</rdfs:label>
     </owl:NamedIndividual>
@@ -308,6 +317,7 @@ A user has exactly one name (username).</rdfs:comment>
     <!-- http://purl.org/podd/ns/poddUser#RoleProjectMember -->
 
     <owl:NamedIndividual rdf:about="&user;RoleProjectMember">
+        <rdf:type rdf:resource="&user;PoddRole"/>
         <rdf:type rdf:resource="&user;TopObjectRole"/>
         <rdfs:label>Project Member Role</rdfs:label>
     </owl:NamedIndividual>
@@ -316,6 +326,7 @@ A user has exactly one name (username).</rdfs:comment>
     <!-- http://purl.org/podd/ns/poddUser#RoleProjectAdmin -->
 
     <owl:NamedIndividual rdf:about="&user;RoleProjectAdmin">
+        <rdf:type rdf:resource="&user;PoddRole"/>
         <rdf:type rdf:resource="&user;TopObjectRole"/>
         <rdfs:label>Project Admin Role</rdfs:label>
         <rdfs:comment>Represents a leader of a top object.</rdfs:comment>
@@ -325,6 +336,7 @@ A user has exactly one name (username).</rdfs:comment>
     <!-- http://purl.org/podd/ns/poddUser#RolePublic -->
 
     <owl:NamedIndividual rdf:about="&user;RolePublic">
+        <rdf:type rdf:resource="&user;PoddRole"/>
         <rdf:type rdf:resource="&user;RepositoryRole"/>
         <rdfs:label>Public Role</rdfs:label>
         <rdfs:comment>Represents a public/anonymous user.</rdfs:comment>
