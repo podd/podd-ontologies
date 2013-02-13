@@ -143,9 +143,9 @@
                     <rdf:Description rdf:about="&user;RoleAuthenticated"/>
                     <rdf:Description rdf:about="&user;RoleAdministrator"/>
                     <rdf:Description rdf:about="&user;RolePublic"/>
-                    <rdf:Description rdf:about="&user;RoleProjectObserver"/>
-                    <rdf:Description rdf:about="&user;RoleProjectMember"/>
-                    <rdf:Description rdf:about="&user;RoleProjectAdmin"/>
+                    <rdf:Description rdf:about="&user;RoleTopObjectObserver"/>
+                    <rdf:Description rdf:about="&user;RoleTopObjectMember"/>
+                    <rdf:Description rdf:about="&user;RoleTopObjectAdministrator"/>
                 </owl:oneOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -181,9 +181,9 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:oneOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&user;RoleProjectObserver"/>
-                    <rdf:Description rdf:about="&user;RoleProjectMember"/>
-                    <rdf:Description rdf:about="&user;RoleProjectAdmin"/>
+                    <rdf:Description rdf:about="&user;RoleTopObjectObserver"/>
+                    <rdf:Description rdf:about="&user;RoleTopObjectMember"/>
+                    <rdf:Description rdf:about="&user;RoleTopObjectAdministrator"/>
                 </owl:oneOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -305,31 +305,33 @@ A user has exactly one name (username).</rdfs:comment>
     </owl:NamedIndividual>
 
 
-    <!-- http://purl.org/podd/ns/poddUser#RoleProjectObserver -->
+    <!-- http://purl.org/podd/ns/poddUser#RoleTopObjectObserver -->
 
-    <owl:NamedIndividual rdf:about="&user;RoleProjectObserver">
+    <owl:NamedIndividual rdf:about="&user;RoleTopObjectObserver">
         <rdf:type rdf:resource="&user;PoddRole"/>
         <rdf:type rdf:resource="&user;TopObjectRole"/>
-        <rdfs:label>Project Observer Role</rdfs:label>
+        <rdfs:label>Top Object Observer Role</rdfs:label>
+        <rdfs:comment>Represents an observer of a top object. (e.g. a Project observer)</rdfs:comment>
     </owl:NamedIndividual>
 
 
-    <!-- http://purl.org/podd/ns/poddUser#RoleProjectMember -->
+    <!-- http://purl.org/podd/ns/poddUser#RoleTopObjectMember -->
 
-    <owl:NamedIndividual rdf:about="&user;RoleProjectMember">
+    <owl:NamedIndividual rdf:about="&user;RoleTopObjectMember">
         <rdf:type rdf:resource="&user;PoddRole"/>
         <rdf:type rdf:resource="&user;TopObjectRole"/>
-        <rdfs:label>Project Member Role</rdfs:label>
+        <rdfs:label>Top Object Member Role</rdfs:label>
+        <rdfs:comment>Represents a member of a top object team (e.g. a Project member).</rdfs:comment>
     </owl:NamedIndividual>
 
 
-    <!-- http://purl.org/podd/ns/poddUser#RoleProjectAdmin -->
+    <!-- http://purl.org/podd/ns/poddUser#RoleTopObjectAdministrator -->
 
-    <owl:NamedIndividual rdf:about="&user;RoleProjectAdmin">
+    <owl:NamedIndividual rdf:about="&user;RoleTopObjectAdministrator">
         <rdf:type rdf:resource="&user;PoddRole"/>
         <rdf:type rdf:resource="&user;TopObjectRole"/>
-        <rdfs:label>Project Admin Role</rdfs:label>
-        <rdfs:comment>Represents a leader of a top object.</rdfs:comment>
+        <rdfs:label>Top Object Admin Role</rdfs:label>
+        <rdfs:comment>Represents an administrator of a top object. (e.g. a Project administrator)</rdfs:comment>
     </owl:NamedIndividual>
 
 
@@ -378,34 +380,34 @@ A user has exactly one name (username).</rdfs:comment>
         <rdf:type rdf:resource="&owl;AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
             <rdf:Description rdf:about="&user;RolePublic"/>
-            <rdf:Description rdf:about="&user;RoleStaffMember"/>
+            <rdf:Description rdf:about="&user;RoleAuthenticated"/>
         </owl:distinctMembers>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
             <rdf:Description rdf:about="&user;RolePublic"/>
-            <rdf:Description rdf:about="&user;RoleRepositoryAdministrator"/>
+            <rdf:Description rdf:about="&user;RoleAdministrator"/>
         </owl:distinctMembers>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="&user;RoleRepositoryAdministrator"/>
-            <rdf:Description rdf:about="&user;RoleStaffMember"/>
+            <rdf:Description rdf:about="&user;RoleAdministrator"/>
+            <rdf:Description rdf:about="&user;RoleAuthenticated"/>
         </owl:distinctMembers>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="&user;RoleMember"/>
-            <rdf:Description rdf:about="&user;RoleObserver"/>
+            <rdf:Description rdf:about="&user;RoleTopObjectMember"/>
+            <rdf:Description rdf:about="&user;RoleTopObjectObserver"/>
         </owl:distinctMembers>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="&user;RoleMember"/>
+            <rdf:Description rdf:about="&user;RoleTopObjectMember"/>
             <rdf:Description rdf:about="&user;RoleTopObjectAdministrator"/>
         </owl:distinctMembers>
     </rdf:Description>
@@ -419,7 +421,7 @@ A user has exactly one name (username).</rdfs:comment>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="&user;RoleObserver"/>
+            <rdf:Description rdf:about="&user;RoleTopObjectObserver"/>
             <rdf:Description rdf:about="&user;RoleTopObjectAdministrator"/>
         </owl:distinctMembers>
     </rdf:Description>
