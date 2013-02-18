@@ -112,7 +112,7 @@
     <!-- http://purl.org/podd/ns/poddBase#hasPublicationStatus -->
 
     <owl:ObjectProperty rdf:about="&poddBase;hasPublicationStatus">
-        <rdfs:label>has Publication Status</rdfs:label>
+        <rdfs:label>Publication Status</rdfs:label>
         <rdfs:domain rdf:resource="&poddBase;PoddTopObject"/>
         <rdfs:range rdf:resource="&poddBase;PublicationStatus"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;poddTopObjectProperty"/>
@@ -148,7 +148,7 @@
     <!-- http://purl.org/podd/ns/poddBase#hasTopObjectStatus -->
 
     <owl:ObjectProperty rdf:about="&poddBase;hasTopObjectStatus">
-        <rdfs:label>has Top Object Status</rdfs:label>
+        <rdfs:label>Top Object Status</rdfs:label>
         <rdfs:domain rdf:resource="&poddBase;PoddTopObject"/>
         <rdfs:range rdf:resource="&poddBase;TopObjectStatus"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;poddTopObjectProperty"/>
@@ -185,7 +185,7 @@
     <!-- http://purl.org/podd/ns/poddBase#refersTo -->
 
     <owl:ObjectProperty rdf:about="&poddBase;refersTo">
-        <rdfs:label>refers to</rdfs:label>
+        <rdfs:label>Refers to</rdfs:label>
         <rdfs:range rdf:resource="&poddBase;PoddObject"/>
         <rdfs:domain rdf:resource="&poddBase;PoddObject"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;poddObjectProperty"/>
@@ -196,7 +196,7 @@
     <!-- http://purl.org/podd/ns/poddBase#hasFileReference -->
 
     <owl:ObjectProperty rdf:about="&poddBase;hasFileReference">
-        <rdfs:label>has File Reference</rdfs:label>
+        <rdfs:label>File Reference</rdfs:label>
         <rdfs:range rdf:resource="&poddBase;FileReference"/>
         <rdfs:domain rdf:resource="&poddBase;PoddObject"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;poddObjectProperty"/>
@@ -218,7 +218,7 @@
     <!-- http://purl.org/podd/ns/poddBase#createdAt -->
 
     <owl:DatatypeProperty rdf:about="&poddBase;createdAt">
-        <rdfs:label>has Created at</rdfs:label>
+        <rdfs:label>Created at</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&dcterms;created"/>
         <rdfs:range rdf:resource="&xsd;dateTime"/>
     </owl:DatatypeProperty>
@@ -228,7 +228,7 @@
     <!-- http://purl.org/podd/ns/poddBase#hasCompletionDate -->
 
     <owl:DatatypeProperty rdf:about="&poddBase;hasCompletionDate">
-        <rdfs:label>has Completion Date (DD/MM/YYYY)</rdfs:label>
+        <rdfs:label>Completion Date (DD/MM/YYYY)</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
         <rdfs:range rdf:resource="&xsd;date"/>
 		<weight>10</weight>
@@ -239,7 +239,7 @@
     <!-- http://purl.org/podd/ns/poddBase#hasDescription -->
 
     <owl:DatatypeProperty rdf:about="&poddBase;hasDescription">
-        <rdfs:label>has Description</rdfs:label>
+        <rdfs:label>Description</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
 		<weight>5</weight>
     </owl:DatatypeProperty>
@@ -249,7 +249,7 @@
     <!-- http://purl.org/podd/ns/poddBase#hasDuration -->
 
     <owl:DatatypeProperty rdf:about="&poddBase;hasDuration">
-        <rdfs:label>has Duration</rdfs:label>
+        <rdfs:label>Duration</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
 		<weight>7</weight>
     </owl:DatatypeProperty>
@@ -259,7 +259,7 @@
     <!-- http://purl.org/podd/ns/poddBase#hasEndDateTime -->
 
     <owl:DatatypeProperty rdf:about="&poddBase;hasEndDateTime">
-        <rdfs:label>has End Date and Time (DD/MM/YYYY hh:mm:ss)</rdfs:label>
+        <rdfs:label>End Date and Time (DD/MM/YYYY hh:mm:ss)</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
         <rdfs:range rdf:resource="&xsd;dateTime"/>
 		<weight>5</weight>
@@ -270,7 +270,7 @@
     <!-- http://purl.org/podd/ns/poddBase#hasIssue -->
 
     <owl:DatatypeProperty rdf:about="&poddBase;hasIssue">
-        <rdfs:label>has Issue</rdfs:label>
+        <rdfs:label>Issue</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     
@@ -279,7 +279,7 @@
     <!-- http://purl.org/podd/ns/poddBase#hasLeadInstitution -->
 
     <owl:DatatypeProperty rdf:about="&poddBase;hasLeadInstitution">
-        <rdfs:label>has Lead Institution</rdfs:label>
+        <rdfs:label>Lead Institution</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
 	<weight>3</weight>
     </owl:DatatypeProperty>
@@ -289,7 +289,7 @@
     <!-- http://purl.org/podd/ns/poddBase#hasNotes -->
 
     <owl:DatatypeProperty rdf:about="&poddBase;hasNotes">
-        <rdfs:label>has Notes</rdfs:label>
+        <rdfs:label>Notes</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -306,7 +306,7 @@
     <!-- http://purl.org/podd/ns/poddBase#hasPublicationDate -->
 
     <owl:DatatypeProperty rdf:about="&poddBase;hasPublicationDate">
-        <rdfs:label>has Publication Date (DD/MM/YYYY)</rdfs:label>
+        <rdfs:label>Publication Date (DD/MM/YYYY)</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
         <rdfs:range rdf:resource="&xsd;date"/>
 	<weight>13</weight>
@@ -317,7 +317,7 @@
     <!-- http://purl.org/podd/ns/poddBase#hasStartDate -->
 
     <owl:DatatypeProperty rdf:about="&poddBase;hasStartDate">
-        <rdfs:label>has Start Date (DD/MM/YYYY)</rdfs:label>
+        <rdfs:label>Start Date (DD/MM/YYYY)</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
         <rdfs:range rdf:resource="&xsd;date"/>
 	<weight>5</weight>
@@ -328,7 +328,7 @@
     <!-- http://purl.org/podd/ns/poddBase#hasStartDateTime -->
 
     <owl:DatatypeProperty rdf:about="&poddBase;hasStartDateTime">
-        <rdfs:label>has Start Date and Time (DD/MM/YYYY hh:mm:ss)</rdfs:label>
+        <rdfs:label>Start Date and Time (DD/MM/YYYY hh:mm:ss)</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
         <rdfs:range rdf:resource="&xsd;dateTime"/>
 	<weight>3</weight>
@@ -339,7 +339,7 @@
     <!-- http://purl.org/podd/ns/poddBase#hasTimePoint -->
 
     <owl:DatatypeProperty rdf:about="&poddBase;hasTimePoint">
-        <rdfs:label>has Relative Time Point</rdfs:label>
+        <rdfs:label>Relative Time Point</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
         <rdfs:range rdf:resource="&xsd;string"/>
 	<weight>7</weight>
@@ -350,7 +350,7 @@
     <!-- http://purl.org/podd/ns/poddBase#hasTimestamp -->
 
     <owl:DatatypeProperty rdf:about="&poddBase;hasTimestamp">
-        <rdfs:label>has Real Time (DD/MM/YYYY hh:mm:ss)</rdfs:label>
+        <rdfs:label>Real Time (DD/MM/YYYY hh:mm:ss)</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
         <rdfs:range rdf:resource="&xsd;dateTime"/>
 	<weight>5</weight>
