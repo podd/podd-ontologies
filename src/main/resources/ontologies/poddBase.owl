@@ -104,6 +104,7 @@
     <!-- http://purl.org/podd/ns/poddBase#hasPrincipalInvestigator -->
 
     <owl:ObjectProperty rdf:about="&poddBase;hasPrincipalInvestigator">
+        <rdfs:label>Principal Investigator</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&poddBase;hasUser"/>
     </owl:ObjectProperty>
     
