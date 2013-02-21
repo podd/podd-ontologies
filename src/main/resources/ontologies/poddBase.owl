@@ -81,7 +81,7 @@
     <!-- http://purl.org/podd/ns/poddBase#containedBy -->
 
     <owl:ObjectProperty rdf:about="&poddBase;containedBy">
-        <rdfs:label>contained by</rdfs:label>
+        <rdfs:label>Contained by</rdfs:label>
         <rdfs:domain rdf:resource="&poddBase;PoddObject"/>
         <rdfs:range rdf:resource="&poddBase;PoddObject"/>
         <owl:inverseOf rdf:resource="&poddBase;contains"/>
@@ -93,7 +93,7 @@
     <!-- http://purl.org/podd/ns/poddBase#contains -->
 
     <owl:ObjectProperty rdf:about="&poddBase;contains">
-        <rdfs:label>contains</rdfs:label>
+        <rdfs:label>Contains</rdfs:label>
         <rdfs:domain rdf:resource="&poddBase;PoddObject"/>
         <rdfs:range rdf:resource="&poddBase;PoddObject"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;poddObjectProperty"/>
@@ -436,14 +436,6 @@
     
 
 
-    <!-- http://purl.org/podd/ns/poddBase#Assertion -->
-
-    <owl:Class rdf:about="&poddBase;Assertion">
-        <rdfs:label>Assertion</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/podd/ns/poddBase#PoddInternalObject -->
 
     <owl:Class rdf:about="&poddBase;PoddInternalObject">
@@ -619,25 +611,6 @@
     
 
 
-    <!-- http://purl.org/podd/ns/poddBase#No -->
-
-    <owl:Thing rdf:about="&poddBase;No">
-        <rdf:type rdf:resource="&poddBase;Assertion"/>
-        <rdf:type rdf:resource="&owl;NamedIndividual"/>
-        <rdfs:label>No</rdfs:label>
-    </owl:Thing>
-    
-
-
-    <!-- http://purl.org/podd/ns/poddBase#NotApplicable -->
-
-    <owl:Thing rdf:about="&poddBase;NotApplicable">
-        <rdf:type rdf:resource="&owl;NamedIndividual"/>
-        <rdfs:label>Not Applicable</rdfs:label>
-    </owl:Thing>
-    
-
-
     <!-- http://purl.org/podd/ns/poddBase#NotPublished -->
 
     <owl:Thing rdf:about="&poddBase;NotPublished">
@@ -658,24 +631,6 @@
     
 
 
-    <!-- http://purl.org/podd/ns/poddBase#Unknown -->
-
-    <owl:Thing rdf:about="&poddBase;Unknown">
-        <rdf:type rdf:resource="&owl;NamedIndividual"/>
-        <rdfs:label>Unknown</rdfs:label>
-    </owl:Thing>
-    
-
-
-    <!-- http://purl.org/podd/ns/poddBase#Yes -->
-
-    <owl:Thing rdf:about="&poddBase;Yes">
-        <rdf:type rdf:resource="&poddBase;Assertion"/>
-        <rdf:type rdf:resource="&owl;NamedIndividual"/>
-        <rdfs:label>Yes</rdfs:label>
-    </owl:Thing>
-    
-
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -691,15 +646,6 @@
             <rdf:Description rdf:about="&poddBase;Active"/>
             <rdf:Description rdf:about="&poddBase;Completed"/>
             <rdf:Description rdf:about="&poddBase;Inactive"/>
-        </owl:distinctMembers>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDifferent"/>
-        <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="&poddBase;No"/>
-            <rdf:Description rdf:about="&poddBase;NotApplicable"/>
-            <rdf:Description rdf:about="&poddBase;Unknown"/>
-            <rdf:Description rdf:about="&poddBase;Yes"/>
         </owl:distinctMembers>
     </rdf:Description>
     <rdf:Description>

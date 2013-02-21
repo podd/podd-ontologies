@@ -76,13 +76,24 @@ public class PoddOntologyTest
     {
         final Object[][] data =
                 new Object[][] {
+                        // schema ontologies
                         { "/ontologies/dcTerms.owl", "application/rdf+xml", 39 },
                         { "/ontologies/foaf.owl", "application/rdf+xml", 38 },
                         { "/ontologies/poddUser.owl", "application/rdf+xml", 188 },
-                        { "/ontologies/poddBase.owl", "application/rdf+xml", 283 },
-                        { "/ontologies/poddScience.owl", "application/rdf+xml", 1125 },
+                        { "/ontologies/poddBase.owl", "application/rdf+xml", 257 },
+                        { "/ontologies/poddScience.owl", "application/rdf+xml", 1226 },
                         { "/ontologies/poddPlant.owl", "application/rdf+xml", 77 },
-                        { "/ontologies/poddAnimal.owl", "application/rdf+xml", 171 }, 
+                        { "/ontologies/poddAnimal.owl", "application/rdf+xml", 173 },
+                        
+                        // artifacts to test
+                        // { "/test/artifacts/basic-1.rdf", "application/rdf+xml", 26 }, 
+                        // { "/test/artifacts/basic-2.rdf", "application/rdf+xml", 97 }, 
+                        // { "/test/artifacts/basic-2-internal-objects.rdf", "application/rdf+xml", 29 }, 
+                        // { "/test/artifacts/basicProject-1-internal-object.rdf", "application/rdf+xml", 26 }, 
+                        
+                        // { "/test/artifacts/basic-1.ttl", "text/turtle", 32 }, 
+                        // { "/test/artifacts/basic-2.ttl", "text/turtle", 97 }, 
+                        // { "/test/artifacts/3-topobjects.ttl", "text/turtle", 34 }, 
                         };
         return Arrays.asList(data);
     }
@@ -146,15 +157,15 @@ public class PoddOntologyTest
         
         // verify: check ontology in profile
         final OWLProfileReport profileReport = nextProfile.checkOntology(nextOntology);
-        if (!profileReport.isInProfile())
+        if(!profileReport.isInProfile())
         {
-            for (OWLProfileViolation v : profileReport.getViolations())
+            for(final OWLProfileViolation v : profileReport.getViolations())
             {
                 System.out.println(" Profile violation = " + v.toString());
             }
             Assert.fail("Ontology not in profile");
         }
-
+        
         // verify: check consistency
         final OWLReasonerFactory reasonerFactory =
                 OWLReasonerFactoryRegistry.getInstance().getReasonerFactory("Pellet");

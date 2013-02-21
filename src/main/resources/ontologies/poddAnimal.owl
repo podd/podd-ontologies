@@ -148,7 +148,7 @@
                 <owl:oneOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="#ANZSRC11-Medical-and-Health-Sciences"/>
                     <rdf:Description rdf:about="#ANZSRC06-Biological-Sciences"/>
-                    <rdf:Description rdf:about="&poddScience;NotApplicable"/>
+                    <rdf:Description rdf:about="#ANZSRC-NotApplicable"/>
                     <rdf:Description rdf:about="#ANZSRC07-Agriculture-and-Veterinary-Sciences"/>
                 </owl:oneOf>
             </owl:Class>
@@ -361,9 +361,9 @@
     
 
 
-    <!-- http://purl.org/podd/ns/poddScience#NotApplicable -->
+    <!-- http://purl.org/podd/ns/poddModelAnimal#ANZSRC-NotApplicable -->
 
-    <owl:Thing rdf:about="&poddScience;NotApplicable">
+    <owl:Thing rdf:about="#ANZSRC-NotApplicable">
         <rdf:type rdf:resource="&poddScience;ANZSRC"/>
         <poddBase:weight>1</poddBase:weight>
     </owl:Thing>
@@ -408,6 +408,7 @@
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="#ANZSRC-NotApplicable"/>
             <rdf:Description rdf:about="#ANZSRC11-Medical-and-Health-Sciences"/>
             <rdf:Description rdf:about="#ANZSRC06-Biological-Sciences"/>
             <rdf:Description rdf:about="#ANZSRC07-Agriculture-and-Veterinary-Sciences"/>

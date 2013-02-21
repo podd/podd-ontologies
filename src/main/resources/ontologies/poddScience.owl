@@ -119,7 +119,7 @@
 
     <owl:ObjectProperty rdf:about="&poddScience;hasControl">
         <rdfs:label>Control</rdfs:label>
-        <rdfs:range rdf:resource="&poddScience;Assertion"/>
+        <rdfs:range rdf:resource="&poddScience;HasControlAssertion"/>
         <rdfs:domain rdf:resource="&poddScience;Material"/>
         <poddBase:weight>6</poddBase:weight>
     </owl:ObjectProperty>
@@ -371,7 +371,7 @@
 
     <owl:ObjectProperty rdf:about="&poddScience;hasWildType">
         <rdfs:label>Wild Type</rdfs:label>
-        <rdfs:range rdf:resource="&poddScience;Assertion"/>
+        <rdfs:range rdf:resource="&poddScience;WildTypeAssertion"/>
         <rdfs:domain rdf:resource="&poddScience;Genotype"/>
         <poddBase:weight>3</poddBase:weight>
     </owl:ObjectProperty>
@@ -990,23 +990,50 @@
         </rdfs:subClassOf>
     </owl:Class>
     
+    <!-- http://purl.org/podd/ns/poddScience#ANZSRCAssertion -->
 
-
-    <!-- http://purl.org/podd/ns/poddScience#Assertion -->
-
-    <owl:Class rdf:about="&poddScience;Assertion">
+    <owl:Class rdf:about="&poddScience;ANZSRCAssertion">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:oneOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&poddBase;NotApplicable"/>
-                    <rdf:Description rdf:about="&poddBase;Yes"/>
-                    <rdf:Description rdf:about="&poddBase;Unknown"/>
-                    <rdf:Description rdf:about="&poddBase;No"/>
+                    <rdf:Description rdf:about="&poddScience;ANZSRC_NotApplicable"/>
+                    <rdf:Description rdf:about="&poddScience;ANZSRC_Yes"/>
+                    <rdf:Description rdf:about="&poddScience;ANZSRC_Unknown"/>
+                    <rdf:Description rdf:about="&poddScience;ANZSRC_No"/>
                 </owl:oneOf>
             </owl:Class>
         </owl:equivalentClass>
     </owl:Class>
-    
+
+    <!-- http://purl.org/podd/ns/poddScience#HasControlAssertion -->
+
+    <owl:Class rdf:about="&poddScience;HasControlAssertion">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&poddScience;HasControl_NotApplicable"/>
+                    <rdf:Description rdf:about="&poddScience;HasControl_Yes"/>
+                    <rdf:Description rdf:about="&poddScience;HasControl_Unknown"/>
+                    <rdf:Description rdf:about="&poddScience;HasControl_No"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+
+    <!-- http://purl.org/podd/ns/poddScience#WildTypeAssertion -->
+
+    <owl:Class rdf:about="&poddScience;WildTypeAssertion">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&poddScience;WildType_NotApplicable"/>
+                    <rdf:Description rdf:about="&poddScience;WildType_Yes"/>
+                    <rdf:Description rdf:about="&poddScience;WildType_Unknown"/>
+                    <rdf:Description rdf:about="&poddScience;WildType_No"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
 
 
     <!-- http://purl.org/podd/ns/poddScience#Container -->
@@ -1317,7 +1344,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&poddScience;hasWildType"/>
-                <owl:onClass rdf:resource="&poddScience;Assertion"/>
+                <owl:onClass rdf:resource="&poddScience;WildTypeAssertion"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1565,7 +1592,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&poddScience;hasControl"/>
-                <owl:onClass rdf:resource="&poddScience;Assertion"/>
+                <owl:onClass rdf:resource="&poddScience;HasControlAssertion"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2008,11 +2035,11 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:oneOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&poddBase;NotApplicable"/>
-                    <rdf:Description rdf:about="&poddScience;Male"/>
-                    <rdf:Description rdf:about="&poddBase;Unknown"/>
-                    <rdf:Description rdf:about="&poddScience;Hermaphrodite"/>
-                    <rdf:Description rdf:about="&poddScience;Female"/>
+                    <rdf:Description rdf:about="&poddScience;Sex_NotApplicable"/>
+                    <rdf:Description rdf:about="&poddScience;Sex_Male"/>
+                    <rdf:Description rdf:about="&poddScience;Sex_Unknown"/>
+                    <rdf:Description rdf:about="&poddScience;Sex_Hermaphrodite"/>
+                    <rdf:Description rdf:about="&poddScience;Sex_Female"/>
                 </owl:oneOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -2153,14 +2180,6 @@
     
 
 
-    <!-- http://purl.org/podd/ns/poddScience#Female -->
-
-    <owl:NamedIndividual rdf:about="&poddScience;Female">
-        <rdf:type rdf:resource="&poddScience;Sex"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://purl.org/podd/ns/poddScience#Hardware -->
 
     <owl:Thing rdf:about="&poddScience;Hardware">
@@ -2179,24 +2198,6 @@
     
 
 
-    <!-- http://purl.org/podd/ns/poddScience#Hermaphrodite -->
-
-    <owl:Thing rdf:about="&poddScience;Hermaphrodite">
-        <rdf:type rdf:resource="&poddScience;Sex"/>
-        <rdf:type rdf:resource="&owl;NamedIndividual"/>
-    </owl:Thing>
-    
-
-
-    <!-- http://purl.org/podd/ns/poddScience#Male -->
-
-    <owl:Thing rdf:about="&poddScience;Male">
-        <rdf:type rdf:resource="&poddScience;Sex"/>
-        <rdf:type rdf:resource="&owl;NamedIndividual"/>
-    </owl:Thing>
-    
-
-
     <!-- http://purl.org/podd/ns/poddScience#Software -->
 
     <owl:Thing rdf:about="&poddScience;Software">
@@ -2204,7 +2205,149 @@
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
         <rdfs:label>Software</rdfs:label>
     </owl:Thing>
+
+
+
+    <!-- http://purl.org/podd/ns/poddScience#ANZSRC_NotApplicable -->
+
+    <owl:NamedIndividual rdf:about="&poddScience;ANZSRC_NotApplicable">
+        <rdf:type rdf:resource="&poddScience;ANZSRCAssertion"/>
+        <rdfs:label>Not Applicable</rdfs:label>
+    </owl:NamedIndividual>
+
+
+    <!-- http://purl.org/podd/ns/poddScience#ANZSRC_No -->
+
+    <owl:NamedIndividual rdf:about="&poddScience;ANZSRC_No">
+        <rdf:type rdf:resource="&poddScience;ANZSRCAssertion"/>
+        <rdfs:label>No</rdfs:label>
+    </owl:NamedIndividual>
+
+
+    <!-- http://purl.org/podd/ns/poddScience#ANZSRC_Unknown -->
+
+    <owl:NamedIndividual rdf:about="&poddScience;ANZSRC_Unknown">
+        <rdf:type rdf:resource="&poddScience;ANZSRCAssertion"/>
+        <rdfs:label>Unknown</rdfs:label>
+    </owl:NamedIndividual>
+
+
+    <!-- http://purl.org/podd/ns/poddScience#ANZSRC_Yes -->
+
+    <owl:NamedIndividual rdf:about="&poddScience;ANZSRC_Yes">
+        <rdf:type rdf:resource="&poddScience;ANZSRCAssertion"/>
+        <rdfs:label>Yes</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://purl.org/podd/ns/poddScience#HasControl_NotApplicable -->
+
+    <owl:NamedIndividual rdf:about="&poddScience;HasControl_NotApplicable">
+        <rdf:type rdf:resource="&poddScience;HasControlAssertion"/>
+        <rdfs:label>Not Applicable</rdfs:label>
+    </owl:NamedIndividual>
+
+
+    <!-- http://purl.org/podd/ns/poddScience#HasControl_No -->
+
+    <owl:NamedIndividual rdf:about="&poddScience;HasControl_No">
+        <rdf:type rdf:resource="&poddScience;HasControlAssertion"/>
+        <rdfs:label>No</rdfs:label>
+    </owl:NamedIndividual>
+
+
+    <!-- http://purl.org/podd/ns/poddScience#HasControl_Unknown -->
+
+    <owl:NamedIndividual rdf:about="&poddScience;HasControl_Unknown">
+        <rdf:type rdf:resource="&poddScience;HasControlAssertion"/>
+        <rdfs:label>Unknown</rdfs:label>
+    </owl:NamedIndividual>
+
+
+    <!-- http://purl.org/podd/ns/poddScience#HasControl_Yes -->
+
+    <owl:NamedIndividual rdf:about="&poddScience;HasControl_Yes">
+        <rdf:type rdf:resource="&poddScience;HasControlAssertion"/>
+        <rdfs:label>Yes</rdfs:label>
+    </owl:NamedIndividual>
+
+
     
+    <!-- http://purl.org/podd/ns/poddScience#Sex_Female -->
+
+    <owl:NamedIndividual rdf:about="&poddScience;Sex_Female">
+        <rdf:type rdf:resource="&poddScience;Sex"/>
+        <rdfs:label>Female</rdfs:label>
+    </owl:NamedIndividual>
+
+    
+    <!-- http://purl.org/podd/ns/poddScience#Sex_Male -->
+
+    <owl:Thing rdf:about="&poddScience;Sex_Male">
+        <rdf:type rdf:resource="&poddScience;Sex"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label>Male</rdfs:label>
+    </owl:Thing>
+
+    
+    <!-- http://purl.org/podd/ns/poddScience#Sex_NotApplicable -->
+
+    <owl:NamedIndividual rdf:about="&poddScience;Sex_NotApplicable">
+        <rdf:type rdf:resource="&poddScience;Sex"/>
+        <rdfs:label>Not Applicable</rdfs:label>
+    </owl:NamedIndividual>
+
+
+    <!-- http://purl.org/podd/ns/poddScience#Sex_Hermaphrodite -->
+
+    <owl:Thing rdf:about="&poddScience;Sex_Hermaphrodite">
+        <rdf:type rdf:resource="&poddScience;Sex"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label>Hermaphrodite</rdfs:label>
+    </owl:Thing>
+
+
+    <!-- http://purl.org/podd/ns/poddScience#Sex_Unknown -->
+
+    <owl:NamedIndividual rdf:about="&poddScience;Sex_Unknown">
+        <rdf:type rdf:resource="&poddScience;Sex"/>
+        <rdfs:label>Unknown</rdfs:label>
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://purl.org/podd/ns/poddScience#WildType_NotApplicable -->
+
+    <owl:NamedIndividual rdf:about="&poddScience;WildType_NotApplicable">
+        <rdf:type rdf:resource="&poddScience;WildTypeAssertion"/>
+        <rdfs:label>Not Applicable</rdfs:label>
+    </owl:NamedIndividual>
+
+
+    <!-- http://purl.org/podd/ns/poddScience#WildType_No -->
+
+    <owl:NamedIndividual rdf:about="&poddScience;WildType_No">
+        <rdf:type rdf:resource="&poddScience;WildTypeAssertion"/>
+        <rdfs:label>No</rdfs:label>
+    </owl:NamedIndividual>
+
+
+    <!-- http://purl.org/podd/ns/poddScience#WildType_Unknown -->
+
+    <owl:NamedIndividual rdf:about="&poddScience;WildType_Unknown">
+        <rdf:type rdf:resource="&poddScience;WildTypeAssertion"/>
+        <rdfs:label>Unknown</rdfs:label>
+    </owl:NamedIndividual>
+
+
+    <!-- http://purl.org/podd/ns/poddScience#WildType_Yes -->
+
+    <owl:NamedIndividual rdf:about="&poddScience;WildType_Yes">
+        <rdf:type rdf:resource="&poddScience;WildTypeAssertion"/>
+        <rdfs:label>Yes</rdfs:label>
+    </owl:NamedIndividual>
+
 
 
     <!-- 
@@ -2226,10 +2369,38 @@
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="&poddBase;Unknown"/>
-            <rdf:Description rdf:about="&poddScience;Female"/>
-            <rdf:Description rdf:about="&poddScience;Hermaphrodite"/>
-            <rdf:Description rdf:about="&poddScience;Male"/>
+            <rdf:Description rdf:about="&poddScience;Sex_NotApplicable"/>
+            <rdf:Description rdf:about="&poddScience;Sex_Unknown"/>
+            <rdf:Description rdf:about="&poddScience;Sex_Female"/>
+            <rdf:Description rdf:about="&poddScience;Sex_Hermaphrodite"/>
+            <rdf:Description rdf:about="&poddScience;Sex_Male"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&poddScience;ANZSRC_NotApplicable"/>
+            <rdf:Description rdf:about="&poddScience;ANZSRC_Unknown"/>
+            <rdf:Description rdf:about="&poddScience;ANZSRC_Yes"/>
+            <rdf:Description rdf:about="&poddScience;ANZSRC_No"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&poddScience;HasControl_NotApplicable"/>
+            <rdf:Description rdf:about="&poddScience;HasControl_Unknown"/>
+            <rdf:Description rdf:about="&poddScience;HasControl_Yes"/>
+            <rdf:Description rdf:about="&poddScience;HasControl_No"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&poddScience;WildType_NotApplicable"/>
+            <rdf:Description rdf:about="&poddScience;WildType_Unknown"/>
+            <rdf:Description rdf:about="&poddScience;WildType_Yes"/>
+            <rdf:Description rdf:about="&poddScience;WildType_No"/>
         </owl:distinctMembers>
     </rdf:Description>
 </rdf:RDF>
