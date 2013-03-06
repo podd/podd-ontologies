@@ -80,7 +80,7 @@ public class PoddOntologyTest
                         { "/ontologies/dcTerms.owl", "application/rdf+xml", 39 },
                         { "/ontologies/foaf.owl", "application/rdf+xml", 38 },
                         { "/ontologies/poddUser.owl", "application/rdf+xml", 188 },
-                        { "/ontologies/poddBase.owl", "application/rdf+xml", 257 },
+                        { "/ontologies/poddBase.owl", "application/rdf+xml", 266 },
                         { "/ontologies/poddScience.owl", "application/rdf+xml", 1226 },
                         { "/ontologies/poddPlant.owl", "application/rdf+xml", 77 },
                         { "/ontologies/poddAnimal.owl", "application/rdf+xml", 173 },
@@ -94,6 +94,14 @@ public class PoddOntologyTest
                         // { "/test/artifacts/basic-1.ttl", "text/turtle", 32 }, 
                         // { "/test/artifacts/basic-2.ttl", "text/turtle", 97 }, 
                         // { "/test/artifacts/3-topobjects.ttl", "text/turtle", 34 }, 
+                        
+                        // { "/ontologies/dcTermsInferred.rdf", "application/rdf+xml", 16 },
+                        // { "/ontologies/foafInferred.rdf", "application/rdf+xml", 37 },
+                        // { "/ontologies/poddUserInferred.rdf", "application/rdf+xml", 87 },
+                        // { "/ontologies/poddBaseInferred.rdf", "application/rdf+xml", 183 },
+                        // { "/ontologies/poddScienceInferred.rdf", "application/rdf+xml", 472 },
+                        // { "/ontologies/poddPlantInferred.rdf", "application/rdf+xml", 495 },
+                        
                         };
         return Arrays.asList(data);
     }

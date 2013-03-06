@@ -43,6 +43,9 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <owl:AnnotationProperty rdf:about="&poddBase;doNotDisplay">
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&poddBase;weight">
         <rdfs:label>has Weight</rdfs:label>
     </owl:AnnotationProperty>
@@ -82,6 +85,7 @@
 
     <owl:ObjectProperty rdf:about="&poddBase;containedBy">
         <rdfs:label>Contained by</rdfs:label>
+        <doNotDisplay rdf:datatype="&xsd;boolean">true</doNotDisplay>
         <rdfs:domain rdf:resource="&poddBase;PoddObject"/>
         <rdfs:range rdf:resource="&poddBase;PoddObject"/>
         <owl:inverseOf rdf:resource="&poddBase;contains"/>
@@ -94,6 +98,7 @@
 
     <owl:ObjectProperty rdf:about="&poddBase;contains">
         <rdfs:label>Contains</rdfs:label>
+        <doNotDisplay rdf:datatype="&xsd;boolean">true</doNotDisplay>
         <rdfs:domain rdf:resource="&poddBase;PoddObject"/>
         <rdfs:range rdf:resource="&poddBase;PoddObject"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;poddObjectProperty"/>
@@ -162,6 +167,7 @@
 
     <owl:ObjectProperty rdf:about="&poddBase;hasUser">
         <rdfs:label>has User</rdfs:label>
+        <doNotDisplay rdf:datatype="&xsd;boolean">true</doNotDisplay>
         <rdfs:domain rdf:resource="&poddBase;PoddTopObject"/>
         <rdfs:range rdf:resource="&user;User"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;poddTopObjectProperty"/>
@@ -171,13 +177,16 @@
 
     <!-- http://purl.org/podd/ns/poddBase#poddObjectProperty -->
 
-    <owl:ObjectProperty rdf:about="&poddBase;poddObjectProperty"/>
+    <owl:ObjectProperty rdf:about="&poddBase;poddObjectProperty">
+        <doNotDisplay rdf:datatype="&xsd;boolean">true</doNotDisplay>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://purl.org/podd/ns/poddBase#poddTopObjectProperty -->
 
     <owl:ObjectProperty rdf:about="&poddBase;poddTopObjectProperty">
+        <doNotDisplay rdf:datatype="&xsd;boolean">true</doNotDisplay>
         <rdfs:subPropertyOf rdf:resource="&poddBase;poddObjectProperty"/>
     </owl:ObjectProperty>
     
@@ -187,6 +196,7 @@
 
     <owl:ObjectProperty rdf:about="&poddBase;refersTo">
         <rdfs:label>Refers to</rdfs:label>
+        <doNotDisplay rdf:datatype="&xsd;boolean">true</doNotDisplay>
         <rdfs:range rdf:resource="&poddBase;PoddObject"/>
         <rdfs:domain rdf:resource="&poddBase;PoddObject"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;poddObjectProperty"/>
@@ -374,6 +384,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddBase;hasURL">
         <rdfs:label>has URL</rdfs:label>
+        <doNotDisplay rdf:datatype="&xsd;boolean">true</doNotDisplay>
         <rdfs:range rdf:resource="&xsd;anyURI"/>
 	<weight>17</weight>
     </owl:DatatypeProperty>
