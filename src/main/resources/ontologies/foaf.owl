@@ -64,7 +64,7 @@
 
     <owl:ObjectProperty rdf:about="&foaf;mbox">
         <rdfs:label>has Email Address</rdfs:label>
-        <rdfs:domain rdf:resource="http://purl.org/podd/ns/foaf#Agent"/>
+        <rdfs:domain rdf:resource="&foaf;Agent"/>
     </owl:ObjectProperty>
 
 
@@ -142,9 +142,9 @@
     
 
 
-    <!-- http://purl.org/podd/ns/foaf#Agent -->
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
 
-    <owl:Class rdf:about="http://purl.org/podd/ns/foaf#Agent">
+    <owl:Class rdf:about="&foaf;Agent">
         <rdfs:label>Agent</rdfs:label>
 		<owl:equivalentClass rdf:resource="&dcterms;Agent"/>
     </owl:Class>
@@ -155,7 +155,7 @@
 
     <owl:Class rdf:about="&foaf;Organization">
         <rdfs:label>Organisation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/podd/ns/foaf#Agent"/>
+        <rdfs:subClassOf rdf:resource="&foaf;Agent"/>
         <owl:disjointWith rdf:resource="&foaf;Person"/>
     </owl:Class>
     
@@ -165,7 +165,7 @@
 
     <owl:Class rdf:about="&foaf;Person">
         <rdfs:label>Person</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/podd/ns/foaf#Agent"/>
+        <rdfs:subClassOf rdf:resource="&foaf;Agent"/>
     </owl:Class>
 </rdf:RDF>
 
