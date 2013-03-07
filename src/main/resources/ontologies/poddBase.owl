@@ -642,8 +642,32 @@
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
         <rdfs:label>Published</rdfs:label>
     </owl:Thing>
-    
 
+
+    
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="&dcterms;Agent">
+        <doNotDisplay rdf:datatype="&xsd;boolean">true</doNotDisplay>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="&foaf;Agent">
+        <doNotDisplay rdf:datatype="&xsd;boolean">true</doNotDisplay>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="&foaf;Person">
+        <doNotDisplay rdf:datatype="&xsd;boolean">true</doNotDisplay>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="&foaf;Organization">
+        <doNotDisplay rdf:datatype="&xsd;boolean">true</doNotDisplay>
+    </rdf:Description>
 
 
     <!-- 
