@@ -453,6 +453,7 @@
         <rdfs:subClassOf rdf:resource="&poddBase;PoddObject"/>
         <rdfs:label>Podd Internal Object</rdfs:label>
         <rdfs:comment>A PODD object which is not designed to be a top object.</rdfs:comment>
+        <doNotDisplay rdf:datatype="&xsd;boolean">true</doNotDisplay>
         <owl:disjointWith rdf:resource="&poddBase;PoddTopObject"/>
     </owl:Class>
     
@@ -462,6 +463,7 @@
 
     <owl:Class rdf:about="&poddBase;PoddObject">
         <rdfs:label>Podd Object</rdfs:label>
+        <doNotDisplay rdf:datatype="&xsd;boolean">true</doNotDisplay>
     </owl:Class>
     
 
@@ -470,6 +472,7 @@
 
     <owl:Class rdf:about="&poddBase;PoddTopObject">
         <rdfs:label>Podd Top Object</rdfs:label>
+        <doNotDisplay rdf:datatype="&xsd;boolean">true</doNotDisplay>
         <rdfs:subClassOf rdf:resource="&poddBase;PoddObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
