@@ -4,8 +4,10 @@
 package com.github.podd.ontology.test;
 
 import java.io.InputStream;
+import java.io.PrintWriter;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Set;
 
 import org.junit.Assert;
 import org.junit.BeforeClass;
@@ -19,6 +21,8 @@ import org.openrdf.rio.Rio;
 import org.openrdf.rio.helpers.StatementCollector;
 import org.semanticweb.owlapi.formats.OWLOntologyFormatFactoryRegistry;
 import org.semanticweb.owlapi.formats.RioRDFOntologyFormatFactory;
+import org.semanticweb.owlapi.model.OWLAxiom;
+import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
 import org.semanticweb.owlapi.model.OWLOntologyManagerFactoryRegistry;
@@ -26,11 +30,20 @@ import org.semanticweb.owlapi.profiles.OWLProfile;
 import org.semanticweb.owlapi.profiles.OWLProfileRegistry;
 import org.semanticweb.owlapi.profiles.OWLProfileReport;
 import org.semanticweb.owlapi.profiles.OWLProfileViolation;
+import org.semanticweb.owlapi.reasoner.Node;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
 import org.semanticweb.owlapi.reasoner.OWLReasonerFactory;
 import org.semanticweb.owlapi.reasoner.OWLReasonerFactoryRegistry;
 import org.semanticweb.owlapi.rio.RioMemoryTripleSource;
 import org.semanticweb.owlapi.rio.RioParserImpl;
+import org.semanticweb.owlapi.util.ProgressMonitor;
+
+import com.clarkparsia.owlapi.explanation.BlackBoxExplanation;
+import com.clarkparsia.owlapi.explanation.DefaultExplanationGenerator;
+import com.clarkparsia.owlapi.explanation.ExplanationGenerator;
+import com.clarkparsia.owlapi.explanation.io.ExplanationRenderer;
+import com.clarkparsia.owlapi.explanation.io.manchester.ManchesterSyntaxExplanationRenderer;
+import com.clarkparsia.owlapi.explanation.util.ExplanationProgressMonitor;
 
 /**
  * Parameterized test to validate PODD ontologies.
@@ -84,25 +97,26 @@ public class PoddOntologyTest
                         { "/ontologies/poddScience.owl", "application/rdf+xml", 1226 },
                         { "/ontologies/poddPlant.owl", "application/rdf+xml", 77 },
                         { "/ontologies/poddAnimal.owl", "application/rdf+xml", 173 },
-                        
-                        // artifacts to test
-                        // { "/test/artifacts/basic-1.rdf", "application/rdf+xml", 26 }, 
-                        // { "/test/artifacts/basic-2.rdf", "application/rdf+xml", 97 }, 
-                        // { "/test/artifacts/basic-2-internal-objects.rdf", "application/rdf+xml", 29 }, 
-                        // { "/test/artifacts/basicProject-1-internal-object.rdf", "application/rdf+xml", 26 }, 
-                        
-                        // { "/test/artifacts/basic-1.ttl", "text/turtle", 32 }, 
-                        // { "/test/artifacts/basic-2.ttl", "text/turtle", 97 }, 
-                        // { "/test/artifacts/3-topobjects.ttl", "text/turtle", 34 }, 
-                        
-                        // { "/ontologies/dcTermsInferred.rdf", "application/rdf+xml", 16 },
-                        // { "/ontologies/foafInferred.rdf", "application/rdf+xml", 37 },
-                        // { "/ontologies/poddUserInferred.rdf", "application/rdf+xml", 87 },
-                        // { "/ontologies/poddBaseInferred.rdf", "application/rdf+xml", 183 },
-                        // { "/ontologies/poddScienceInferred.rdf", "application/rdf+xml", 472 },
-                        // { "/ontologies/poddPlantInferred.rdf", "application/rdf+xml", 495 },
-                        
-                        };
+                
+                // artifacts to test
+                // { "/test/artifacts/basic-1.rdf", "application/rdf+xml", 26 },
+                // { "/test/artifacts/basic-2.rdf", "application/rdf+xml", 97 },
+                // { "/test/artifacts/basic-2-internal-objects.rdf", "application/rdf+xml", 29 },
+                // { "/test/artifacts/basicProject-1-internal-object.rdf", "application/rdf+xml", 26
+                // },
+                
+                // { "/test/artifacts/basic-1.ttl", "text/turtle", 32 },
+                // { "/test/artifacts/basic-2.ttl", "text/turtle", 97 },
+                // { "/test/artifacts/3-topobjects.ttl", "text/turtle", 34 },
+                
+                // { "/ontologies/dcTermsInferred.rdf", "application/rdf+xml", 16 },
+                // { "/ontologies/foafInferred.rdf", "application/rdf+xml", 37 },
+                // { "/ontologies/poddUserInferred.rdf", "application/rdf+xml", 87 },
+                // { "/ontologies/poddBaseInferred.rdf", "application/rdf+xml", 183 },
+                // { "/ontologies/poddScienceInferred.rdf", "application/rdf+xml", 472 },
+                // { "/ontologies/poddPlantInferred.rdf", "application/rdf+xml", 495 },
+                
+                };
         return Arrays.asList(data);
     }
     
@@ -179,7 +193,27 @@ public class PoddOntologyTest
                 OWLReasonerFactoryRegistry.getInstance().getReasonerFactory("Pellet");
         final OWLReasoner reasoner = reasonerFactory.createReasoner(nextOntology);
         
+        // Check for any inconsistent classes and if so render them out as explanations
+        Node<OWLClass> unsatisfiableClasses = reasoner.getUnsatisfiableClasses();
+        Set<OWLClass> entitiesMinusBottom = unsatisfiableClasses.getEntitiesMinusBottom();
+        if(!entitiesMinusBottom.isEmpty())
+        {
+            ExplanationRenderer renderer = new ManchesterSyntaxExplanationRenderer();
+            PrintWriter out = new PrintWriter(System.out);
+            
+            renderer.startRendering(out);
+            for(OWLClass nextUnsatisfiableClass : entitiesMinusBottom)
+            {
+                final ExplanationGenerator explanator =
+                        new DefaultExplanationGenerator(owlOntologyManager, reasonerFactory, nextOntology,
+                                (ExplanationProgressMonitor)null);
+                Set<Set<OWLAxiom>> explanations = explanator.getExplanations(nextUnsatisfiableClass);
+                out.println("next unsatisfiable class: " + nextUnsatisfiableClass.getIRI());
+                renderer.render((OWLAxiom)null, explanations);
+            }
+            renderer.endRendering();
+        }
+        
         Assert.assertTrue("Ontology is not consistent", reasoner.isConsistent());
     }
-    
 }
