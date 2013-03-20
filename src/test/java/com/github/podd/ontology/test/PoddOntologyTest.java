@@ -36,9 +36,7 @@ import org.semanticweb.owlapi.reasoner.OWLReasonerFactory;
 import org.semanticweb.owlapi.reasoner.OWLReasonerFactoryRegistry;
 import org.semanticweb.owlapi.rio.RioMemoryTripleSource;
 import org.semanticweb.owlapi.rio.RioParserImpl;
-import org.semanticweb.owlapi.util.ProgressMonitor;
 
-import com.clarkparsia.owlapi.explanation.BlackBoxExplanation;
 import com.clarkparsia.owlapi.explanation.DefaultExplanationGenerator;
 import com.clarkparsia.owlapi.explanation.ExplanationGenerator;
 import com.clarkparsia.owlapi.explanation.io.ExplanationRenderer;
@@ -93,8 +91,8 @@ public class PoddOntologyTest
                         { "/ontologies/dcTerms.owl", "application/rdf+xml", 39 },
                         { "/ontologies/foaf.owl", "application/rdf+xml", 38 },
                         { "/ontologies/poddUser.owl", "application/rdf+xml", 188 },
-                        { "/ontologies/poddBase.owl", "application/rdf+xml", 273 },
-                        { "/ontologies/poddScience.owl", "application/rdf+xml", 1226 },
+                        { "/ontologies/poddBase.owl", "application/rdf+xml", 314 },
+                        { "/ontologies/poddScience.owl", "application/rdf+xml", 1227 },
                         { "/ontologies/poddPlant.owl", "application/rdf+xml", 77 },
                         { "/ontologies/poddAnimal.owl", "application/rdf+xml", 173 },
                 

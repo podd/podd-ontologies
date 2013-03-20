@@ -46,6 +46,8 @@
     <owl:AnnotationProperty rdf:about="&poddBase;doNotDisplay">
         <rdfs:range rdf:resource="&xsd;boolean"/>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&poddBase;hasDisplayType">
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&poddBase;weight">
         <rdfs:label>has Weight</rdfs:label>
     </owl:AnnotationProperty>
@@ -110,6 +112,7 @@
 
     <owl:ObjectProperty rdf:about="&poddBase;hasPrincipalInvestigator">
         <rdfs:label>Principal Investigator</rdfs:label>
+        <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;hasUser"/>
     </owl:ObjectProperty>
     
@@ -119,6 +122,7 @@
 
     <owl:ObjectProperty rdf:about="&poddBase;hasPublicationStatus">
         <rdfs:label>Publication Status</rdfs:label>
+        <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:domain rdf:resource="&poddBase;PoddTopObject"/>
         <rdfs:range rdf:resource="&poddBase;PublicationStatus"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;poddTopObjectProperty"/>
@@ -130,6 +134,7 @@
     <!-- http://purl.org/podd/ns/poddBase#hasTopObjectAdministrator -->
 
     <owl:ObjectProperty rdf:about="&poddBase;hasTopObjectAdministrator">
+        <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;hasUser"/>
     </owl:ObjectProperty>
     
@@ -138,6 +143,7 @@
     <!-- http://purl.org/podd/ns/poddBase#hasTopObjectMember -->
 
     <owl:ObjectProperty rdf:about="&poddBase;hasTopObjectMember">
+        <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;hasUser"/>
     </owl:ObjectProperty>
     
@@ -146,6 +152,7 @@
     <!-- http://purl.org/podd/ns/poddBase#hasTopObjectObserver -->
 
     <owl:ObjectProperty rdf:about="&poddBase;hasTopObjectObserver">
+        <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;hasUser"/>
     </owl:ObjectProperty>
     
@@ -155,6 +162,7 @@
 
     <owl:ObjectProperty rdf:about="&poddBase;hasTopObjectStatus">
         <rdfs:label>Top Object Status</rdfs:label>
+        <hasDisplayType rdf:resource="&poddBase;DisplayType_DropDownList"/>
         <rdfs:domain rdf:resource="&poddBase;PoddTopObject"/>
         <rdfs:range rdf:resource="&poddBase;TopObjectStatus"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;poddTopObjectProperty"/>
@@ -230,6 +238,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddBase;createdAt">
         <rdfs:label>Created at</rdfs:label>
+        <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:subPropertyOf rdf:resource="&dcterms;created"/>
         <rdfs:range rdf:resource="&xsd;dateTime"/>
     </owl:DatatypeProperty>
@@ -240,6 +249,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddBase;hasCompletionDate">
         <rdfs:label>Completion Date (DD/MM/YYYY)</rdfs:label>
+        <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
         <rdfs:range rdf:resource="&xsd;date"/>
 		<weight>10</weight>
@@ -251,6 +261,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddBase;hasDescription">
         <rdfs:label>Description</rdfs:label>
+        <hasDisplayType rdf:resource="&poddBase;DisplayType_LongText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
 		<weight>5</weight>
     </owl:DatatypeProperty>
@@ -261,6 +272,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddBase;hasDuration">
         <rdfs:label>Duration</rdfs:label>
+        <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
 		<weight>7</weight>
     </owl:DatatypeProperty>
@@ -271,6 +283,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddBase;hasEndDateTime">
         <rdfs:label>End Date and Time (DD/MM/YYYY hh:mm:ss)</rdfs:label>
+        <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
         <rdfs:range rdf:resource="&xsd;dateTime"/>
 		<weight>5</weight>
@@ -282,6 +295,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddBase;hasIssue">
         <rdfs:label>Issue</rdfs:label>
+        <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     
@@ -291,6 +305,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddBase;hasLeadInstitution">
         <rdfs:label>Lead Institution</rdfs:label>
+        <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
 	<weight>3</weight>
     </owl:DatatypeProperty>
@@ -301,6 +316,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddBase;hasNotes">
         <rdfs:label>Notes</rdfs:label>
+        <hasDisplayType rdf:resource="&poddBase;DisplayType_LongText"/>
     </owl:DatatypeProperty>
     
 
@@ -309,6 +325,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddBase;hasPURL">
         <rdfs:label>has Persistent URL</rdfs:label>
+        <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;hasURL"/>
     </owl:DatatypeProperty>
     
@@ -318,6 +335,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddBase;hasPublicationDate">
         <rdfs:label>Publication Date (DD/MM/YYYY)</rdfs:label>
+        <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
         <rdfs:range rdf:resource="&xsd;date"/>
 	<weight>13</weight>
@@ -329,6 +347,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddBase;hasStartDate">
         <rdfs:label>Start Date (DD/MM/YYYY)</rdfs:label>
+        <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
         <rdfs:range rdf:resource="&xsd;date"/>
 	<weight>5</weight>
@@ -340,6 +359,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddBase;hasStartDateTime">
         <rdfs:label>Start Date and Time (DD/MM/YYYY hh:mm:ss)</rdfs:label>
+        <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
         <rdfs:range rdf:resource="&xsd;dateTime"/>
 	<weight>3</weight>
@@ -351,6 +371,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddBase;hasTimePoint">
         <rdfs:label>Relative Time Point</rdfs:label>
+        <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
         <rdfs:range rdf:resource="&xsd;string"/>
 	<weight>7</weight>
@@ -362,6 +383,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddBase;hasTimestamp">
         <rdfs:label>Real Time (DD/MM/YYYY hh:mm:ss)</rdfs:label>
+        <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
         <rdfs:range rdf:resource="&xsd;dateTime"/>
 	<weight>5</weight>
@@ -384,6 +406,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddBase;hasURL">
         <rdfs:label>has URL</rdfs:label>
+        <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <doNotDisplay rdf:datatype="&xsd;boolean">true</doNotDisplay>
         <rdfs:range rdf:resource="&xsd;anyURI"/>
 	<weight>17</weight>
@@ -395,6 +418,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddBase;lastModified">
         <rdfs:label>Last modified at</rdfs:label>
+        <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:subPropertyOf rdf:resource="&dcterms;modified"/>
         <rdfs:range rdf:resource="&xsd;dateTime"/>
     </owl:DatatypeProperty>
@@ -576,6 +600,10 @@
     </owl:Class>
     
 
+    <!-- http://purl.org/podd/ns/poddBase#DisplayType -->
+
+    <owl:Class rdf:about="&poddBase;DisplayType"/>
+
 
 
     <!-- http://www.w3.org/2002/07/owl#Thing -->
@@ -644,7 +672,42 @@
     </owl:Thing>
 
 
+
+    <!-- http://purl.org/podd/ns/poddBase#DisplayType_ShortText -->
+
+    <owl:Thing rdf:about="&poddBase;DisplayType_ShortText">
+        <rdf:type rdf:resource="&poddBase;DisplayType"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+
+    <!-- http://purl.org/podd/ns/poddBase#DisplayType_LongText -->
+
+    <owl:Thing rdf:about="&poddBase;DisplayType_LongText">
+        <rdf:type rdf:resource="&poddBase;DisplayType"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
     
+    <!-- http://purl.org/podd/ns/poddBase#DisplayType_DropDownList -->
+
+    <owl:Thing rdf:about="&poddBase;DisplayType_DropDownList">
+        <rdf:type rdf:resource="&poddBase;DisplayType"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+
+    <!-- http://purl.org/podd/ns/poddBase#DisplayType_CheckBox -->
+
+    <owl:Thing rdf:about="&poddBase;DisplayType_CheckBox">
+        <rdf:type rdf:resource="&poddBase;DisplayType"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+
+    <!-- http://purl.org/podd/ns/poddBase#DisplayType_Table -->
+
+    <owl:Thing rdf:about="&poddBase;DisplayType_Table">
+        <rdf:type rdf:resource="&poddBase;DisplayType"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -669,6 +732,13 @@
         <doNotDisplay rdf:datatype="&xsd;boolean">true</doNotDisplay>
     </rdf:Description>
 
+    <rdf:Description rdf:about="&rdfs;label">
+        <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="&rdfs;comment">
+        <hasDisplayType rdf:resource="&poddBase;DisplayType_LongText"/>
+    </rdf:Description>
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////

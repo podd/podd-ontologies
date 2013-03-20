@@ -493,6 +493,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddScience;hasAbstract">
         <rdfs:label>Abstract</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_LongText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
         <poddBase:weight>3</poddBase:weight>
     </owl:DatatypeProperty>
