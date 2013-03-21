@@ -122,7 +122,7 @@
 
     <owl:ObjectProperty rdf:about="&poddBase;hasPublicationStatus">
         <rdfs:label>Publication Status</rdfs:label>
-        <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
+        <hasDisplayType rdf:resource="&poddBase;DisplayType_DropDownList"/>
         <rdfs:domain rdf:resource="&poddBase;PoddTopObject"/>
         <rdfs:range rdf:resource="&poddBase;PublicationStatus"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;poddTopObjectProperty"/>

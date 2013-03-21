@@ -992,7 +992,7 @@
     </owl:Class>
     
     <!-- http://purl.org/podd/ns/poddScience#ANZSRCAssertion -->
-
+	<!-- FIXME: These are not being used anywhere. Should instead be members of poddScience;ANZSRC -->
     <owl:Class rdf:about="&poddScience;ANZSRCAssertion">
         <owl:equivalentClass>
             <owl:Class>
