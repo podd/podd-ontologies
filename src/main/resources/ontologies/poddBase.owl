@@ -600,6 +600,20 @@
     </owl:Class>
     
 
+    <!-- http://purl.org/podd/ns/poddBase#SSHFileReference -->
+
+    <owl:Class rdf:about="&poddBase;SSHFileReference">
+        <rdfs:label>SSH File Reference</rdfs:label>
+    </owl:Class>
+
+
+    <!-- http://purl.org/podd/ns/poddBase#DOIFileReference -->
+
+    <owl:Class rdf:about="&poddBase;DOIFileReference">
+        <rdfs:label>DOI File Reference</rdfs:label>
+    </owl:Class>
+
+
     <!-- http://purl.org/podd/ns/poddBase#DisplayType -->
 
     <owl:Class rdf:about="&poddBase;DisplayType"/>
