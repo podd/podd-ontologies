@@ -15,6 +15,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
+import org.openrdf.model.impl.LinkedHashModel;
 import org.openrdf.rio.RDFFormat;
 import org.openrdf.rio.RDFParser;
 import org.openrdf.rio.Rio;
@@ -92,7 +93,7 @@ public class PoddOntologyTest
                         { "/ontologies/foaf.owl", "application/rdf+xml", 38 },
                         { "/ontologies/poddUser.owl", "application/rdf+xml", 188 },
                         { "/ontologies/poddBase.owl", "application/rdf+xml", 318 },
-                        { "/ontologies/poddScience.owl", "application/rdf+xml", 1227 },
+                        { "/ontologies/poddScience.owl", "application/rdf+xml", 1226 },
                         { "/ontologies/poddPlant.owl", "application/rdf+xml", 77 },
                         { "/ontologies/poddAnimal.owl", "application/rdf+xml", 173 },
                         { "/ontologies/crop-ontology-715.owl", "application/rdf+xml", 2173 },
@@ -130,7 +131,7 @@ public class PoddOntologyTest
         
         final RDFFormat format = RDFFormat.forMIMEType(this.mimeType);
         final RDFParser rdfParser = Rio.createParser(format);
-        final StatementCollector collector = new StatementCollector();
+        final StatementCollector collector = new StatementCollector(new LinkedHashModel());
         rdfParser.setRDFHandler(collector);
         
         rdfParser.parse(inputStream, "http://purl.org/podd/ns/XYZ");
@@ -150,7 +151,7 @@ public class PoddOntologyTest
         
         final RDFFormat format = RDFFormat.forMIMEType(this.mimeType);
         final RDFParser rdfParser = Rio.createParser(format);
-        final StatementCollector collector = new StatementCollector();
+        final StatementCollector collector = new StatementCollector(new LinkedHashModel());
         rdfParser.setRDFHandler(collector);
         
         rdfParser.parse(inputStream, "http://purl.org/podd/ns/XYZ");
