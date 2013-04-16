@@ -97,6 +97,7 @@ public class PoddOntologyTest
                         { "/ontologies/poddPlant.owl", "application/rdf+xml", 77 },
                         { "/ontologies/poddAnimal.owl", "application/rdf+xml", 173 },
                         { "/ontologies/crop-ontology-715.owl", "application/rdf+xml", 2173 },
+                        { "/ontologies/poddFileRepository.owl", "application/rdf+xml", 39 },
                 
                 // artifacts to test
                 // { "/test/artifacts/basic-1.rdf", "application/rdf+xml", 26 },
