@@ -66,7 +66,7 @@
 		<slf4j.version>1.7.5</slf4j.version>
 		<sesame.version>2.7.1-SNAPSHOT</sesame.version>
 		<owlapi.version>3.4.4.3-ansell-SNAPSHOT</owlapi.version>
-		<pellet.version>2.3.3-SNAPSHOT</pellet.version>
+		<pellet.version>2.3.4-SNAPSHOT</pellet.version>
 	</properties>
 
 	<prerequisites>
