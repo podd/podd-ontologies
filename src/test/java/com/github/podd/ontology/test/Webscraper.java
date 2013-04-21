@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.UUID;
 
 import org.openrdf.model.Model;
+import org.openrdf.model.Namespace;
 import org.openrdf.model.Statement;
 import org.openrdf.model.URI;
 import org.openrdf.model.impl.LinkedHashModel;
@@ -24,23 +25,22 @@ import com.gargoylesoftware.htmlunit.html.HtmlTableCell;
 import com.gargoylesoftware.htmlunit.html.HtmlTableRow;
 
 /**
- * This simple program extracts data from an HTML page, transforms it into RDF and writes to a file.
- * <br>
- *  Limitations:
- *  <ul>
- *   <li>Works only to create poddScience:Platform instances</li>
- *   <li>Does not take parameters. Everything is defined inside the main() method</li>
- *   <li>Expected table structure, platform type are fixed</li>
- *   <li>May fail if the source page contains javascript</li>
+ * This simple program extracts data from an HTML page, transforms it into RDF and writes to a file. <br>
+ * Limitations:
+ * <ul>
+ * <li>Works only to create poddScience:Platform instances</li>
+ * <li>Does not take parameters. Everything is defined inside the main() method</li>
+ * <li>Expected table structure, platform type are fixed</li>
+ * <li>May fail if the source page contains javascript</li>
  * </ul>
  * 
  * <br>
  * Input parameters:
  * <ul>
- *  <li>Full path to source HTML file</li>
- *  <li>id of HTML table to scrape</li>
- *  <li>Full path to destination RDF file</li>
- *  <li>RDF format to write output in</li>
+ * <li>Full path to source HTML file</li>
+ * <li>id of HTML table to scrape</li>
+ * <li>Full path to destination RDF file</li>
+ * <li>RDF format to write output in</li>
  * </ul>
  * 
  * @author kutila
@@ -69,7 +69,7 @@ public class Webscraper
     
     public final static URI PODD_SCIENCE_PLATFORM = ValueFactoryImpl.getInstance().createURI(Webscraper.PODD_SCIENCE,
             "Platform");
-
+    
     /**
      * Main method
      */
@@ -203,18 +203,17 @@ public class Webscraper
             writer.startRDF();
             
             // add namespaces to RDFWriter
-            for(final String nextPrefix : model.getNamespaces().keySet())
+            for(final Namespace nextPrefix : model.getNamespaces())
             {
-                writer.handleNamespace(nextPrefix, model.getNamespace(nextPrefix));
+                writer.handleNamespace(nextPrefix.getPrefix(), nextPrefix.getName());
             }
-     
+            
             // write RDF statements
             for(final Statement st : model)
             {
                 writer.handleStatement(st);
             }
             writer.endRDF();
-            
             
             System.out.println("Wrote '" + filename + "' in " + format.getName() + " format.");
         }
