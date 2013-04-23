@@ -2186,6 +2186,7 @@
     <owl:Thing rdf:about="&poddScience;Hardware">
         <rdf:type rdf:resource="&poddScience;PlatformType"/>
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label>Hardware</rdfs:label>
     </owl:Thing>
     
 
@@ -2195,6 +2196,7 @@
     <owl:Thing rdf:about="&poddScience;HardwareSoftware">
         <rdf:type rdf:resource="&poddScience;PlatformType"/>
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label>Hardware and Software</rdfs:label>
     </owl:Thing>
     
 
