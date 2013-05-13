@@ -473,6 +473,13 @@
         <rdfs:comment>A PODD object which is not designed to be a top object.</rdfs:comment>
         <doNotDisplay rdf:datatype="&xsd;boolean">true</doNotDisplay>
         <owl:disjointWith rdf:resource="&poddBase;PoddTopObject"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&poddBase;containedBy"/>
+                <owl:onClass rdf:resource="&poddBase;PoddObject"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -495,7 +502,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&poddBase;containedBy"/>
-                <owl:onClass rdf:resource="&poddBase;PoddTopObject"/>
+                <owl:onClass rdf:resource="&poddBase;PoddObject"/>
                 <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
