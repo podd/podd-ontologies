@@ -172,6 +172,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="#hasFieldSoilType"/>
                 <owl:allValuesFrom rdf:resource="&xsd;string"/>
+				<!-- after linking Crop Ontology, these should be CropOntology-Soil-Types and not String -->
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
