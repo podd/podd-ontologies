@@ -74,24 +74,6 @@ public class Webscraper
             "Platform");
     
     /**
-     * Main method
-     */
-    public static void main(final String[] args) throws Exception
-    {
-        final String source = "/home/user/Documents/PODD/platform-list.csv";
-        // "file:///home/user/path/ktemp/page2.html";
-        final String tableId = "table1";
-        
-        final String destinationFile = "/home/user/Documents/PODD/out.rdf";
-        final RDFFormat format = RDFFormat.RDFXML;
-        
-        final List<List<String>> tableData = Webscraper.getTableDataFromCsv(source);
-        // Webscraper.getTableDataFromPage(sourceHtmlPage, tableId);
-        final Model model = Webscraper.constructRdfFromData(tableData);
-        Webscraper.writeToFile(model, destinationFile, format);
-    }
-    
-    /**
      * 
      * Construct the statements for a poddScience:Platform individual from the given data.
      * 
@@ -138,6 +120,43 @@ public class Webscraper
     }
     
     /**
+     * Reads through a given CSV file and extracts content into a List.
+     * 
+     * This method cannot handle values which have escaped commas or line breaks within values.
+     * 
+     * @param fileName
+     * @return
+     */
+    public static List<List<String>> getTableDataFromCsv(final String fileName)
+    {
+        final List<List<String>> tableList = new ArrayList<List<String>>();
+        
+        try (final BufferedReader reader = new BufferedReader(new FileReader(fileName)))
+        {
+            String line = reader.readLine();
+            while(line != null)
+            {
+                System.out.println(line);
+                final List<String> row = new ArrayList<String>();
+                
+                final String[] values = line.split(",");
+                row.add(values[0]); // label
+                row.add(values[1]); // platform, ignored
+                row.add(""); // ignored
+                row.add(values[2]); // description
+                
+                tableList.add(row);
+                line = reader.readLine();
+            }
+        }
+        catch(final IOException e)
+        {
+            e.printStackTrace();
+        }
+        return tableList;
+    }
+    
+    /**
      * Reads through a given HTML page and extracts the contents of a specified HTML table into a
      * List.
      * 
@@ -178,40 +197,21 @@ public class Webscraper
     }
     
     /**
-     * Reads through a given CSV file and extracts content into a List.
-     * 
-     * This method cannot handle values which have escaped commas or line breaks within values.
-     * 
-     * @param fileName
-     * @return
+     * Main method
      */
-    public static List<List<String>> getTableDataFromCsv(final String fileName)
+    public static void main(final String[] args) throws Exception
     {
-        final List<List<String>> tableList = new ArrayList<List<String>>();
+        final String source = "/home/user/Documents/PODD/platform-list.csv";
+        // "file:///home/user/path/ktemp/page2.html";
+        final String tableId = "table1";
         
-        try (final BufferedReader reader = new BufferedReader(new FileReader(fileName)))
-        {
-            String line = reader.readLine();
-            while(line != null)
-            {
-                System.out.println(line);
-                final List<String> row = new ArrayList<String>();
-                
-                final String[] values = line.split(",");
-                row.add(values[0]); // label
-                row.add(values[1]); // platform, ignored
-                row.add(""); // ignored
-                row.add(values[2]); // description
-                
-                tableList.add(row);
-                line = reader.readLine();
-            }
-        }
-        catch(final IOException e)
-        {
-            e.printStackTrace();
-        }
-        return tableList;
+        final String destinationFile = "/home/user/Documents/PODD/out.rdf";
+        final RDFFormat format = RDFFormat.RDFXML;
+        
+        final List<List<String>> tableData = Webscraper.getTableDataFromCsv(source);
+        // Webscraper.getTableDataFromPage(sourceHtmlPage, tableId);
+        final Model model = Webscraper.constructRdfFromData(tableData);
+        Webscraper.writeToFile(model, destinationFile, format);
     }
     
     public static void printToConsole(final List<List<String>> data)

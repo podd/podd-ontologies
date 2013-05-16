@@ -60,27 +60,10 @@ public class PoddOntologyTest
      */
     private static OWLOntologyManager owlOntologyManager;
     
-    // ----------- parameters for junit test----------------
-    private String filename;
-    private String mimeType;
-    private int statementCount;
-    
     @BeforeClass
     public static void beforeClass() throws Exception
     {
         PoddOntologyTest.owlOntologyManager = OWLOntologyManagerFactoryRegistry.createOWLOntologyManager();
-    }
-    
-    /**
-     * Parameterized constructor
-     * 
-     * @param number
-     */
-    public PoddOntologyTest(final String filename, final String mimeType, final int statementCount)
-    {
-        this.filename = filename;
-        this.mimeType = mimeType;
-        this.statementCount = statementCount;
     }
     
     @Parameters
@@ -121,24 +104,23 @@ public class PoddOntologyTest
         return Arrays.asList(data);
     }
     
+    // ----------- parameters for junit test----------------
+    private String filename;
+    
+    private String mimeType;
+    
+    private int statementCount;
+    
     /**
-     * Test the ontology can be parsed into RDF and contains the expected number of statements.
+     * Parameterized constructor
+     * 
+     * @param number
      */
-    @Test
-    public void testForValidRDF() throws Exception
+    public PoddOntologyTest(final String filename, final String mimeType, final int statementCount)
     {
-        final InputStream inputStream = this.getClass().getResourceAsStream(this.filename);
-        Assert.assertNotNull("Null resource " + this.filename, inputStream);
-        
-        final RDFFormat format = RDFFormat.forMIMEType(this.mimeType);
-        final RDFParser rdfParser = Rio.createParser(format);
-        final StatementCollector collector = new StatementCollector(new LinkedHashModel());
-        rdfParser.setRDFHandler(collector);
-        
-        rdfParser.parse(inputStream, "http://purl.org/podd/ns/XYZ");
-        
-        Assert.assertEquals("Incorrect number of statements for " + this.filename, this.statementCount, collector
-                .getStatements().size());
+        this.filename = filename;
+        this.mimeType = mimeType;
+        this.statementCount = statementCount;
     }
     
     /**
@@ -195,20 +177,20 @@ public class PoddOntologyTest
         final OWLReasoner reasoner = reasonerFactory.createReasoner(nextOntology);
         
         // Check for any inconsistent classes and if so render them out as explanations
-        Node<OWLClass> unsatisfiableClasses = reasoner.getUnsatisfiableClasses();
-        Set<OWLClass> entitiesMinusBottom = unsatisfiableClasses.getEntitiesMinusBottom();
+        final Node<OWLClass> unsatisfiableClasses = reasoner.getUnsatisfiableClasses();
+        final Set<OWLClass> entitiesMinusBottom = unsatisfiableClasses.getEntitiesMinusBottom();
         if(!entitiesMinusBottom.isEmpty())
         {
-            ExplanationRenderer renderer = new ManchesterSyntaxExplanationRenderer();
-            PrintWriter out = new PrintWriter(System.out);
+            final ExplanationRenderer renderer = new ManchesterSyntaxExplanationRenderer();
+            final PrintWriter out = new PrintWriter(System.out);
             
             renderer.startRendering(out);
-            for(OWLClass nextUnsatisfiableClass : entitiesMinusBottom)
+            for(final OWLClass nextUnsatisfiableClass : entitiesMinusBottom)
             {
                 final ExplanationGenerator explanator =
-                        new DefaultExplanationGenerator(owlOntologyManager, reasonerFactory, nextOntology,
-                                (ExplanationProgressMonitor)null);
-                Set<Set<OWLAxiom>> explanations = explanator.getExplanations(nextUnsatisfiableClass);
+                        new DefaultExplanationGenerator(PoddOntologyTest.owlOntologyManager, reasonerFactory,
+                                nextOntology, (ExplanationProgressMonitor)null);
+                final Set<Set<OWLAxiom>> explanations = explanator.getExplanations(nextUnsatisfiableClass);
                 out.println("next unsatisfiable class: " + nextUnsatisfiableClass.getIRI());
                 renderer.render((OWLAxiom)null, explanations);
             }
@@ -216,5 +198,25 @@ public class PoddOntologyTest
         }
         
         Assert.assertTrue("Ontology is not consistent", reasoner.isConsistent());
+    }
+    
+    /**
+     * Test the ontology can be parsed into RDF and contains the expected number of statements.
+     */
+    @Test
+    public void testForValidRDF() throws Exception
+    {
+        final InputStream inputStream = this.getClass().getResourceAsStream(this.filename);
+        Assert.assertNotNull("Null resource " + this.filename, inputStream);
+        
+        final RDFFormat format = RDFFormat.forMIMEType(this.mimeType);
+        final RDFParser rdfParser = Rio.createParser(format);
+        final StatementCollector collector = new StatementCollector(new LinkedHashModel());
+        rdfParser.setRDFHandler(collector);
+        
+        rdfParser.parse(inputStream, "http://purl.org/podd/ns/XYZ");
+        
+        Assert.assertEquals("Incorrect number of statements for " + this.filename, this.statementCount, collector
+                .getStatements().size());
     }
 }
