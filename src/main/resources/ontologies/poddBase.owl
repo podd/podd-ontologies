@@ -134,8 +134,10 @@
     <!-- http://purl.org/podd/ns/poddBase#hasTopObjectAdministrator -->
 
     <owl:ObjectProperty rdf:about="&poddBase;hasTopObjectAdministrator">
+        <doNotDisplay rdf:datatype="&xsd;boolean">true</doNotDisplay>
         <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;hasUser"/>
+        <rdfs:label>has Project Administrator</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -143,8 +145,10 @@
     <!-- http://purl.org/podd/ns/poddBase#hasTopObjectMember -->
 
     <owl:ObjectProperty rdf:about="&poddBase;hasTopObjectMember">
+        <doNotDisplay rdf:datatype="&xsd;boolean">true</doNotDisplay>
         <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;hasUser"/>
+        <rdfs:label>has Project Member</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -152,8 +156,10 @@
     <!-- http://purl.org/podd/ns/poddBase#hasTopObjectObserver -->
 
     <owl:ObjectProperty rdf:about="&poddBase;hasTopObjectObserver">
+        <doNotDisplay rdf:datatype="&xsd;boolean">true</doNotDisplay>
         <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;hasUser"/>
+        <rdfs:label>has Project Observer</rdfs:label>
     </owl:ObjectProperty>
     
 
