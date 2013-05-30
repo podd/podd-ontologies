@@ -1807,6 +1807,7 @@
     <!-- http://purl.org/podd/ns/poddScience#Project -->
 
     <owl:Class rdf:about="&poddScience;Project">
+        <rdfs:label>Project</rdfs:label>
         <rdfs:subClassOf rdf:resource="&poddBase;PoddTopObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
