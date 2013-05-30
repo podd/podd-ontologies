@@ -168,6 +168,7 @@
 
     <owl:ObjectProperty rdf:about="&poddBase;hasTopObjectStatus">
         <rdfs:label>Top Object Status</rdfs:label>
+        <doNotDisplay rdf:datatype="&xsd;boolean">true</doNotDisplay>
         <hasDisplayType rdf:resource="&poddBase;DisplayType_DropDownList"/>
         <rdfs:domain rdf:resource="&poddBase;PoddTopObject"/>
         <rdfs:range rdf:resource="&poddBase;TopObjectStatus"/>
