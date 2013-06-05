@@ -260,6 +260,7 @@
 
     <owl:ObjectProperty rdf:about="&poddScience;hasPlatform">
         <rdfs:label>has Platform</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_AutoComplete"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;contains"/>
         <rdfs:range rdf:resource="&poddScience;Platform"/>
     </owl:ObjectProperty>

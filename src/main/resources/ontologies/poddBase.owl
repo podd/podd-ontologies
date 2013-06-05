@@ -716,6 +716,13 @@
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
     </owl:Thing>
 
+    <!-- http://purl.org/podd/ns/poddBase#DisplayType_AutoComplete -->
+
+    <owl:Thing rdf:about="&poddBase;DisplayType_AutoComplete">
+        <rdf:type rdf:resource="&poddBase;DisplayType"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+
     <!-- http://purl.org/podd/ns/poddBase#DisplayType_CheckBox -->
 
     <owl:Thing rdf:about="&poddBase;DisplayType_CheckBox">
