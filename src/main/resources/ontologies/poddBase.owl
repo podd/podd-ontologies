@@ -56,7 +56,20 @@
         <rdfs:range rdf:resource="&poddBase;PoddTopObject"/>
         <rdfs:domain rdf:resource="&owl;Ontology"/>
     </owl:AnnotationProperty>
+	
+    <owl:AnnotationProperty rdf:about="&rdfs;label">
+        <rdfs:label>Title</rdfs:label>
+        <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+		<weight>0</weight>
+    </owl:AnnotationProperty>
 
+    <owl:AnnotationProperty rdf:about="&rdfs;comment">
+        <rdfs:label>Description</rdfs:label>
+        <hasDisplayType rdf:resource="&poddBase;DisplayType_LongText"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+		<weight>1</weight>
+    </owl:AnnotationProperty>
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -761,13 +774,7 @@
         <doNotDisplay rdf:datatype="&xsd;boolean">true</doNotDisplay>
     </rdf:Description>
 
-    <rdf:Description rdf:about="&rdfs;label">
-        <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
-    </rdf:Description>
 
-    <rdf:Description rdf:about="&rdfs;comment">
-        <hasDisplayType rdf:resource="&poddBase;DisplayType_LongText"/>
-    </rdf:Description>
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
