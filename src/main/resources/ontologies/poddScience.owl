@@ -71,6 +71,8 @@
         <rdfs:label>ANZSRC FOR Code</rdfs:label>
         <rdfs:range rdf:resource="&poddScience;ANZSRC"/>
         <rdfs:domain rdf:resource="&poddScience;Project"/>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_DropDownList"/>
+		<poddBase:weight>14</poddBase:weight>
     </owl:ObjectProperty>
     
 
