@@ -125,7 +125,7 @@
 
     <owl:ObjectProperty rdf:about="&poddBase;hasPrincipalInvestigator">
         <rdfs:label>Principal Investigator</rdfs:label>
-        <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
+        <hasDisplayType rdf:resource="&poddBase;DisplayType_AutoComplete"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;hasUser"/>
     </owl:ObjectProperty>
     
