@@ -253,7 +253,6 @@
 
     
 
-
     <!-- http://purl.org/podd/ns/poddBase#createdAt -->
 
     <owl:DatatypeProperty rdf:about="&poddBase;createdAt">
@@ -470,7 +469,11 @@
     </owl:DatatypeProperty>
     
 
+    <!-- http://purl.org/dc/terms/date -->
 
+	<owl:DatatypeProperty rdf:about="&dcterms;date">
+        <doNotDisplay rdf:datatype="&xsd;boolean">true</doNotDisplay>
+    </owl:DatatypeProperty>
 
 
 
