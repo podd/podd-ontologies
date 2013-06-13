@@ -439,6 +439,7 @@
     <owl:DatatypeProperty rdf:about="&poddBase;lastModified">
         <rdfs:label>Last modified at</rdfs:label>
         <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
+        <doNotDisplay rdf:datatype="&xsd;boolean">true</doNotDisplay>
         <rdfs:subPropertyOf rdf:resource="&dcterms;modified"/>
         <rdfs:range rdf:resource="&xsd;dateTime"/>
     </owl:DatatypeProperty>
@@ -782,6 +783,9 @@
         <doNotDisplay rdf:datatype="&xsd;boolean">true</doNotDisplay>
     </rdf:Description>
 
+    <rdf:Description rdf:about="&dcterms;created">
+        <doNotDisplay rdf:datatype="&xsd;boolean">true</doNotDisplay>
+    </rdf:Description>
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
