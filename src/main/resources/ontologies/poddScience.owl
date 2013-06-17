@@ -557,6 +557,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddScience;hasAuthors">
         <rdfs:label>Authors</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_LongText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
         <poddBase:weight>5</poddBase:weight>
     </owl:DatatypeProperty>
@@ -637,6 +638,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddScience;hasIssue">
         <rdfs:label>Issue</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_LongText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
         <poddBase:weight>8</poddBase:weight>
     </owl:DatatypeProperty>
@@ -727,6 +729,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddScience;hasPages">
         <rdfs:label>Pages</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
         <poddBase:weight>9</poddBase:weight>
     </owl:DatatypeProperty>
@@ -857,6 +860,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddScience;hasVolume">
         <rdfs:label>Volume</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_LongText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
         <poddBase:weight>7</poddBase:weight>
     </owl:DatatypeProperty>
@@ -867,6 +871,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddScience;hasYear">
         <rdfs:label>Year</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;int"/>
         <poddBase:weight>6</poddBase:weight>
     </owl:DatatypeProperty>
@@ -877,6 +882,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddScience;publishedIn">
         <rdfs:label>Publication Title</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_LongText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
         <poddBase:weight>5</poddBase:weight>
     </owl:DatatypeProperty>
@@ -1959,6 +1965,7 @@
     <!-- http://purl.org/podd/ns/poddScience#Publication -->
 
     <owl:Class rdf:about="&poddScience;Publication">
+        <rdfs:label>Publication</rdfs:label>
         <rdfs:subClassOf rdf:resource="&poddBase;PoddInternalObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
