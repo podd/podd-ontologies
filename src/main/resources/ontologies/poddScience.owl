@@ -917,6 +917,7 @@
     <!-- http://purl.org/podd/ns/poddScience#ANZSRC -->
 
     <owl:Class rdf:about="&poddScience;ANZSRC">
+        <rdfs:label>ANZSRC</rdfs:label>
         <rdfs:comment>&quot;ANZSRC FOR Code&quot;</rdfs:comment>
     </owl:Class>
     
@@ -925,6 +926,7 @@
     <!-- http://purl.org/podd/ns/poddScience#Accession -->
 
     <owl:Class rdf:about="&poddScience;Accession">
+        <rdfs:label>Accession</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&poddScience;hasAccessionSource"/>
@@ -946,6 +948,7 @@
     <!-- http://purl.org/podd/ns/poddScience#Allele -->
 
     <owl:Class rdf:about="&poddScience;Allele">
+        <rdfs:label>Allele</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&poddScience;hasName"/>
@@ -972,6 +975,7 @@
     <!-- http://purl.org/podd/ns/poddScience#Analysis -->
 
     <owl:Class rdf:about="&poddScience;Analysis">
+        <rdfs:label>Analysis</rdfs:label>
         <rdfs:subClassOf rdf:resource="&poddBase;PoddInternalObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1000,21 +1004,6 @@
         </rdfs:subClassOf>
     </owl:Class>
     
-    <!-- http://purl.org/podd/ns/poddScience#ANZSRCAssertion -->
-	<!-- FIXME: These are not being used anywhere. Should instead be members of poddScience;ANZSRC -->
-    <owl:Class rdf:about="&poddScience;ANZSRCAssertion">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:oneOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&poddScience;ANZSRC_NotApplicable"/>
-                    <rdf:Description rdf:about="&poddScience;ANZSRC_Yes"/>
-                    <rdf:Description rdf:about="&poddScience;ANZSRC_Unknown"/>
-                    <rdf:Description rdf:about="&poddScience;ANZSRC_No"/>
-                </owl:oneOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-
     <!-- http://purl.org/podd/ns/poddScience#HasControlAssertion -->
 
     <owl:Class rdf:about="&poddScience;HasControlAssertion">
@@ -1101,6 +1090,7 @@
     <!-- http://purl.org/podd/ns/poddScience#Data -->
 
     <owl:Class rdf:about="&poddScience;Data">
+        <rdfs:label>Data</rdfs:label>
         <rdfs:subClassOf rdf:resource="&poddBase;PoddTopObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1159,6 +1149,7 @@
     <!-- http://purl.org/podd/ns/poddScience#Design -->
 
     <owl:Class rdf:about="&poddScience;Design">
+        <rdfs:label>Design</rdfs:label>
         <rdfs:subClassOf rdf:resource="&poddBase;PoddInternalObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1180,6 +1171,7 @@
     <!-- http://purl.org/podd/ns/poddScience#Environment -->
 
     <owl:Class rdf:about="&poddScience;Environment">
+        <rdfs:label>Environment</rdfs:label>
         <rdfs:subClassOf rdf:resource="&poddBase;PoddInternalObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1220,6 +1212,7 @@
     <!-- http://purl.org/podd/ns/poddScience#Event -->
 
     <owl:Class rdf:about="&poddScience;Event">
+        <rdfs:label>Event</rdfs:label>
         <rdfs:subClassOf rdf:resource="&owl;Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1263,6 +1256,7 @@
     <!-- http://purl.org/podd/ns/poddScience#Gene -->
 
     <owl:Class rdf:about="&poddScience;Gene">
+        <rdfs:label>Gene</rdfs:label>
         <rdfs:subClassOf rdf:resource="&poddBase;PoddInternalObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1322,6 +1316,7 @@
     <!-- http://purl.org/podd/ns/poddScience#Genotype -->
 
     <owl:Class rdf:about="&poddScience;Genotype">
+        <rdfs:label>Genotype</rdfs:label>
         <rdfs:subClassOf rdf:resource="&poddBase;PoddInternalObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1390,6 +1385,7 @@
     <!-- http://purl.org/podd/ns/poddScience#Investigation -->
 
     <owl:Class rdf:about="&poddScience;Investigation">
+        <rdfs:label>Investigation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&poddBase;PoddInternalObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1477,6 +1473,7 @@
     <!-- http://purl.org/podd/ns/poddScience#Marker -->
 
     <owl:Class rdf:about="&poddScience;Marker">
+        <rdfs:label>Marker</rdfs:label>
         <rdfs:subClassOf rdf:resource="&owl;Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1513,6 +1510,7 @@
     <!-- http://purl.org/podd/ns/poddScience#Material -->
 
     <owl:Class rdf:about="&poddScience;Material">
+        <rdfs:label>Material</rdfs:label>
         <rdfs:subClassOf rdf:resource="&poddBase;PoddInternalObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1645,6 +1643,7 @@
     <!-- http://purl.org/podd/ns/poddScience#Measurement -->
 
     <owl:Class rdf:about="&poddScience;Measurement">
+        <rdfs:label>Measurement</rdfs:label>
         <rdfs:subClassOf rdf:resource="&owl;Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1723,6 +1722,7 @@
     <!-- http://purl.org/podd/ns/poddScience#Observation -->
 
     <owl:Class rdf:about="&poddScience;Observation">
+        <rdfs:label>Observation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&poddBase;PoddInternalObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1750,6 +1750,7 @@
     <!-- http://purl.org/podd/ns/poddScience#Phenotype -->
 
     <owl:Class rdf:about="&poddScience;Phenotype">
+        <rdfs:label>Phenotype</rdfs:label>
         <rdfs:subClassOf rdf:resource="&poddScience;Observation"/>
     </owl:Class>
     
@@ -1758,6 +1759,7 @@
     <!-- http://purl.org/podd/ns/poddScience#Platform -->
 
     <owl:Class rdf:about="&poddScience;Platform">
+        <rdfs:label>Platform</rdfs:label>
         <rdfs:subClassOf rdf:resource="&poddBase;PoddInternalObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1802,6 +1804,7 @@
     <!-- http://purl.org/podd/ns/poddScience#Process -->
 
     <owl:Class rdf:about="&poddScience;Process">
+        <rdfs:label>Process</rdfs:label>
         <rdfs:subClassOf rdf:resource="&poddBase;PoddInternalObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1957,6 +1960,7 @@
     <!-- http://purl.org/podd/ns/poddScience#Protocol -->
 
     <owl:Class rdf:about="&poddScience;Protocol">
+        <rdfs:label>Protocol</rdfs:label>
         <rdfs:subClassOf rdf:resource="&poddBase;PoddInternalObject"/>
     </owl:Class>
     
@@ -2023,6 +2027,7 @@
     <!-- http://purl.org/podd/ns/poddScience#Sequence -->
 
     <owl:Class rdf:about="&poddScience;Sequence">
+        <rdfs:label>Sequence</rdfs:label>
         <rdfs:subClassOf rdf:resource="&poddBase;PoddInternalObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2044,6 +2049,7 @@
     <!-- http://purl.org/podd/ns/poddScience#Sex -->
 
     <owl:Class rdf:about="&poddScience;Sex">
+        <rdfs:label>Sex</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:oneOf rdf:parseType="Collection">
@@ -2085,6 +2091,7 @@
     <!-- http://purl.org/podd/ns/poddScience#Treatment -->
 
     <owl:Class rdf:about="&poddScience;Treatment">
+        <rdfs:label>Treatment</rdfs:label>
         <rdfs:subClassOf rdf:resource="&poddBase;PoddInternalObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2222,39 +2229,6 @@
 
 
 
-    <!-- http://purl.org/podd/ns/poddScience#ANZSRC_NotApplicable -->
-
-    <owl:NamedIndividual rdf:about="&poddScience;ANZSRC_NotApplicable">
-        <rdf:type rdf:resource="&poddScience;ANZSRCAssertion"/>
-        <rdfs:label>Not Applicable</rdfs:label>
-    </owl:NamedIndividual>
-
-
-    <!-- http://purl.org/podd/ns/poddScience#ANZSRC_No -->
-
-    <owl:NamedIndividual rdf:about="&poddScience;ANZSRC_No">
-        <rdf:type rdf:resource="&poddScience;ANZSRCAssertion"/>
-        <rdfs:label>No</rdfs:label>
-    </owl:NamedIndividual>
-
-
-    <!-- http://purl.org/podd/ns/poddScience#ANZSRC_Unknown -->
-
-    <owl:NamedIndividual rdf:about="&poddScience;ANZSRC_Unknown">
-        <rdf:type rdf:resource="&poddScience;ANZSRCAssertion"/>
-        <rdfs:label>Unknown</rdfs:label>
-    </owl:NamedIndividual>
-
-
-    <!-- http://purl.org/podd/ns/poddScience#ANZSRC_Yes -->
-
-    <owl:NamedIndividual rdf:about="&poddScience;ANZSRC_Yes">
-        <rdf:type rdf:resource="&poddScience;ANZSRCAssertion"/>
-        <rdfs:label>Yes</rdfs:label>
-    </owl:NamedIndividual>
-
-
-
     <!-- http://purl.org/podd/ns/poddScience#HasControl_NotApplicable -->
 
     <owl:NamedIndividual rdf:about="&poddScience;HasControl_NotApplicable">
@@ -2388,15 +2362,6 @@
             <rdf:Description rdf:about="&poddScience;Sex_Female"/>
             <rdf:Description rdf:about="&poddScience;Sex_Hermaphrodite"/>
             <rdf:Description rdf:about="&poddScience;Sex_Male"/>
-        </owl:distinctMembers>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDifferent"/>
-        <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="&poddScience;ANZSRC_NotApplicable"/>
-            <rdf:Description rdf:about="&poddScience;ANZSRC_Unknown"/>
-            <rdf:Description rdf:about="&poddScience;ANZSRC_Yes"/>
-            <rdf:Description rdf:about="&poddScience;ANZSRC_No"/>
         </owl:distinctMembers>
     </rdf:Description>
     <rdf:Description>
