@@ -262,7 +262,7 @@
         <poddBase:weight>3</poddBase:weight>
     </owl:Thing>
 
-	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#Closedfluorescencesystem-7c028bbb-1823-4700-9e52-458903f4f1ad">
+	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#Closedfluorescencesystem-7c">
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
@@ -271,7 +271,7 @@
 		<rdfs:comment>Closed imaging fluorescence system - Pulse Amplitude Modulated</rdfs:comment>
 	</rdf:Description>
 	
-	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#DeltaTporometer-6343b605-0202-40a1-8a2f-647dd4becb9d">
+	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#DeltaTporometer-63">
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
@@ -280,7 +280,7 @@
 		<rdfs:comment>Hand held device performs non-destructive measurements of stomatal conductance in plant leaf tissue</rdfs:comment>
 	</rdf:Description>
 	
-	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#FieldScoutCM1000-5297742d-7f84-4802-84f3-e725d3c6705c">
+	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#FieldScoutCM1000-5c">
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
@@ -289,7 +289,7 @@
 		<rdfs:comment>Hand held device performs non-destructive measurements of the chlorophyll content of leaves and canopies using reflectance </rdfs:comment>
 	</rdf:Description>
 	
-	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#FLIRI7InfraredthermographyCamera-1dbbb904-bb5a-4e13-90c1-fe9bb878977c">
+	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#FLIRI7InfraredthermographyCamera-1d">
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
@@ -298,7 +298,7 @@
 		<rdfs:comment>Hand held infrared video camera. Used for assessing temperature at the leaf, plant or field level</rdfs:comment>
 	</rdf:Description>
 	
-	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#FLIRSC660InfraredThermographyCameraandDellPrecisionLaptop-b6bbaf01-7604-429e-a85f-43208bef735a">
+	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#FLIRSC660InfraredThermographyCameraandDellPrecisionLaptop-b6">
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
@@ -307,7 +307,7 @@
 		<rdfs:comment>Hand held infrared video camera. Used for assessing temperature at the leaf, plant or field level</rdfs:comment>
 	</rdf:Description>
 	
-	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#FTIRMicroscope-7dfa7927-58f8-4820-958c-7cc4fe562dcb">
+	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#FTIRMicroscope-7d">
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
@@ -316,7 +316,7 @@
 		<rdfs:comment>Fourier Transformation InfraRed microscope for analysing chemical composition of plant tissues </rdfs:comment>
 	</rdf:Description>
 	
-	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#HyperspectralReflectanceRadiometer-1a4465df-af7c-4f4d-a4a9-365d2b548855">
+	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#HyperspectralReflectanceRadiometer-1a">
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
@@ -325,7 +325,7 @@
 		<rdfs:comment>Spectroradiometer 350 to 2500nm</rdfs:comment>
 	</rdf:Description>
 	
-	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#IntegratingSphereASDforeoptics-1dc4945c-25e7-495f-89b2-899ee926664d">
+	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#IntegratingSphereASDforeoptics-1d">
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
@@ -334,7 +334,7 @@
 		<rdfs:comment> Integrating sphere for ASD hyperspectral radiometer </rdfs:comment>
 	</rdf:Description>
 	
-	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#LeafAreaMeter-3cc8a574-044b-46a2-a23b-b81682280e36">
+	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#LeafAreaMeter-3c">
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
@@ -343,7 +343,7 @@
 		<rdfs:comment>Portable system for measurement of leaf dimensions</rdfs:comment>
 	</rdf:Description>
 	
-	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#LemnaTecScanalyser-fdf21476-cc64-4ebd-8d8e-1eaa7f478ca6">
+	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#LemnaTecScanalyser-fd">
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
@@ -352,7 +352,7 @@
 		<rdfs:comment>Optical imaging system (visible spectra) for imaging plant</rdfs:comment>
 	</rdf:Description>
 	
-	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#LemnatecScanalyserNIR-e285c20c-3621-477e-a6cb-9eeb268540bd">
+	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#LemnatecScanalyserNIR-e2">
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
@@ -361,7 +361,7 @@
 		<rdfs:comment>Optical imaging system (visible spectra) for imaging plant</rdfs:comment>
 	</rdf:Description>
 	
-	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#LICOR6400-b2813161-24bc-4bf5-b19e-5dd582b1bc3b">
+	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#LICOR6400-b2">
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
@@ -370,7 +370,7 @@
 		<rdfs:comment>Portable gas exchange system for photosynthesis measurement</rdfs:comment>
 	</rdf:Description>
 	
-	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#Linequantumsensor-40cee4da-f5fa-459a-9da9-b8aa85ce47eb">
+	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#Linequantumsensor-40">
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
@@ -379,7 +379,7 @@
 		<rdfs:comment>Photosynthetically Active Radiation (400 to 700nm) measurement</rdfs:comment>
 	</rdf:Description>
 	
-	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#MonitoringPAM-f948b7c9-fde2-4b42-a467-e411661df27f">
+	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#MonitoringPAM-f9">
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
@@ -388,7 +388,7 @@
 		<rdfs:comment>Portable Pulse amplitude modulated fluorescence system</rdfs:comment>
 	</rdf:Description>
 	
-	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#Openfluorescencesystem-9cd2b393-a041-4bf2-8315-be3094ace5e9">
+	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#Openfluorescencesystem-9c">
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
@@ -397,7 +397,7 @@
 		<rdfs:comment>Imaging pulse amplitude modulated fluorescence system</rdfs:comment>
 	</rdf:Description>
 	
-	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#PAM2500-dd954590-eb42-4e52-b939-ec63541300c7">
+	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#PAM2500-d7">
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
@@ -406,7 +406,7 @@
 		<rdfs:comment>Portable Pulse amplitude modulated fluorescence system</rdfs:comment>
 	</rdf:Description>
 	
-	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#PSIFP100-be4b9cc5-bb23-47b7-8b19-6edc3e2b3e92">
+	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#PSIFP100-b2">
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
@@ -415,7 +415,7 @@
 		<rdfs:comment>Hand-held system for measuring pulse amplitude modulated fluorescence</rdfs:comment>
 	</rdf:Description>
 	
-	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#PSINDVI-14d03e0f-26fc-4ae9-b730-01a9925c7633">
+	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#PSINDVI-1h">
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
@@ -424,7 +424,7 @@
 		<rdfs:comment>Hand-held system for Normalised Difference Vegetation  Index (NDVI) measurement</rdfs:comment>
 	</rdf:Description>
 	
-	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#PSIPRI-2f42cf72-972e-4cbc-b808-db904d2a9c6d">
+	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#PSIPRI-2f">
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
@@ -433,7 +433,7 @@
 		<rdfs:comment>Hand-held system for Photochemical Reflectance Index (PRI) measurement</rdfs:comment>
 	</rdf:Description>
 	
-	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#Pyrometer-5b461ca0-3e3b-4d98-8719-976027a773b7">
+	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#Pyrometer-5b">
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
@@ -442,7 +442,7 @@
 		<rdfs:comment>Hand held device for temperature measurement</rdfs:comment>
 	</rdf:Description>
 	
-	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#PyrometerAgriThermIII-1182280b-cd9f-4d5b-a334-a0eff29402b3">
+	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#PyrometerAgriThermIII-b3">
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
@@ -451,7 +451,7 @@
 		<rdfs:comment>Hand held device for temperature measurement</rdfs:comment>
 	</rdf:Description>
 	
-	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#SC1Porometer-567f3a69-0efc-45d4-a646-45284009adfa">
+	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#SC1Porometer-5a">
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
@@ -460,7 +460,7 @@
 		<rdfs:comment>Hand held device for stomatal conductance measurement</rdfs:comment>
 	</rdf:Description>
 	
-	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#SPADMeter-f0ea5023-d132-4053-8b23-2bec0ac233ca">
+	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#SPADMeter-8f">
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
@@ -469,7 +469,7 @@
 		<rdfs:comment>Hand held device for chlorophyll content measurement</rdfs:comment>
 	</rdf:Description>
 	
-	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#Trayscan-52c18c2c-e1b0-44b9-9420-b6639a116bd5">
+	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#Trayscan-d5">
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
@@ -478,7 +478,7 @@
 		<rdfs:comment>Integrated system for screening model plants in high throughput </rdfs:comment>
 	</rdf:Description>
 	
-	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#PlantScan-c073fd52-fb17-4d4c-98fb-ecb47f6b6d6e">
+	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#PlantScan-6e">
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
@@ -487,7 +487,7 @@
 		<rdfs:comment>Integrated system to quantify plant architecture in 3D and mapped plant function</rdfs:comment>
 	</rdf:Description>
 	
-	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#CabScan-fda61ff6-a40c-4236-a048-fec336d35723">
+	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#CabScan-f3">
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
