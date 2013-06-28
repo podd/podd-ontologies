@@ -121,6 +121,7 @@
 
     <owl:ObjectProperty rdf:about="&poddScience;hasControl">
         <rdfs:label>Control</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_DropDownList"/>
         <rdfs:range rdf:resource="&poddScience;HasControlAssertion"/>
         <rdfs:domain rdf:resource="&poddScience;Material"/>
         <poddBase:weight>6</poddBase:weight>
@@ -262,7 +263,6 @@
 
     <owl:ObjectProperty rdf:about="&poddScience;hasPlatform">
         <rdfs:label>has Platform</rdfs:label>
-        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_AutoComplete"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;contains"/>
         <rdfs:range rdf:resource="&poddScience;Platform"/>
     </owl:ObjectProperty>
@@ -273,6 +273,7 @@
 
     <owl:ObjectProperty rdf:about="&poddScience;hasPlatformType">
         <rdfs:label>Platform Type</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_DropDownList"/>
         <rdfs:domain rdf:resource="&poddScience;Platform"/>
         <rdfs:range rdf:resource="&poddScience;PlatformType"/>
         <poddBase:weight>3</poddBase:weight>
@@ -334,6 +335,7 @@
 
     <owl:ObjectProperty rdf:about="&poddScience;hasSex">
         <rdfs:label>Sex</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_DropDownList"/>
         <rdfs:range rdf:resource="&poddScience;Sex"/>
         <poddBase:weight>9</poddBase:weight>
     </owl:ObjectProperty>
@@ -374,6 +376,7 @@
 
     <owl:ObjectProperty rdf:about="&poddScience;hasWildType">
         <rdfs:label>Wild Type</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_DropDownList"/>
         <rdfs:range rdf:resource="&poddScience;WildTypeAssertion"/>
         <rdfs:domain rdf:resource="&poddScience;Genotype"/>
         <poddBase:weight>3</poddBase:weight>
@@ -385,6 +388,7 @@
 
     <owl:ObjectProperty rdf:about="&poddScience;refersToAnalysis">
         <rdfs:label>Refers To Analysis</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_AutoComplete"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;refersTo"/>
         <rdfs:range rdf:resource="&poddScience;Analysis"/>
     </owl:ObjectProperty>
@@ -395,6 +399,7 @@
 
     <owl:ObjectProperty rdf:about="&poddScience;refersToContainer">
         <rdfs:label>Refers To Container</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_AutoComplete"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;refersTo"/>
         <rdfs:range rdf:resource="&poddScience;Container"/>
     </owl:ObjectProperty>
@@ -405,6 +410,7 @@
 
     <owl:ObjectProperty rdf:about="&poddScience;refersToData">
         <rdfs:comment>Refers To Data</rdfs:comment>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_AutoComplete"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;refersTo"/>
         <rdfs:range rdf:resource="&poddScience;Data"/>
     </owl:ObjectProperty>
@@ -415,6 +421,7 @@
 
     <owl:ObjectProperty rdf:about="&poddScience;refersToEnvironment">
         <rdfs:label>Refers To Environment</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_AutoComplete"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;refersTo"/>
         <rdfs:range rdf:resource="&poddScience;Environment"/>
     </owl:ObjectProperty>
@@ -425,6 +432,7 @@
 
     <owl:ObjectProperty rdf:about="&poddScience;refersToGenotype">
         <rdfs:label>Refers To Genotype</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_AutoComplete"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;refersTo"/>
         <rdfs:range rdf:resource="&poddScience;Genotype"/>
     </owl:ObjectProperty>
@@ -435,6 +443,7 @@
 
     <owl:ObjectProperty rdf:about="&poddScience;refersToMaterial">
         <rdfs:label>Refers To Material</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_AutoComplete"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;refersTo"/>
         <rdfs:range rdf:resource="&poddScience;Material"/>
     </owl:ObjectProperty>
@@ -445,6 +454,7 @@
 
     <owl:ObjectProperty rdf:about="&poddScience;refersToPlatform">
         <rdfs:label>Refers To Platform</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_AutoComplete"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;refersTo"/>
         <rdfs:range rdf:resource="&poddScience;Platform"/>
     </owl:ObjectProperty>
@@ -455,6 +465,7 @@
 
     <owl:ObjectProperty rdf:about="&poddScience;refersToProcess">
         <rdfs:label>RefersTo Process</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_AutoComplete"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;refersTo"/>
         <rdfs:range rdf:resource="&poddScience;Process"/>
     </owl:ObjectProperty>
@@ -465,6 +476,7 @@
 
     <owl:ObjectProperty rdf:about="&poddScience;refersToProtocol">
         <rdfs:label>Refers To Protocol</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_AutoComplete"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;refersTo"/>
         <rdfs:range rdf:resource="&poddScience;Protocol"/>
     </owl:ObjectProperty>
@@ -475,6 +487,7 @@
 
     <owl:ObjectProperty rdf:about="&poddScience;refersToTreatmentMaterial">
         <rdfs:label>Refers To Treatment Material</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_AutoComplete"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;refersTo"/>
         <rdfs:range rdf:resource="&poddScience;TreatmentMaterial"/>
     </owl:ObjectProperty>
@@ -507,6 +520,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddScience;hasAccessionSource">
         <rdfs:label>Source</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
         <poddBase:weight>5</poddBase:weight>
     </owl:DatatypeProperty>
@@ -517,6 +531,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddScience;hasAge">
         <rdfs:label>Age</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
         <poddBase:weight>11</poddBase:weight>
     </owl:DatatypeProperty>
@@ -527,6 +542,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddScience;hasAlias">
         <rdfs:label>Alias</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
         <poddBase:weight>6</poddBase:weight>
     </owl:DatatypeProperty>
@@ -537,6 +553,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddScience;hasAlleleSymbol">
         <rdfs:label>Symbol</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
         <poddBase:weight>5</poddBase:weight>
     </owl:DatatypeProperty>
@@ -547,6 +564,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddScience;hasAnatomicalPart">
         <rdfs:label>Anatomical Part</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
         <poddBase:weight>5</poddBase:weight>
     </owl:DatatypeProperty>
@@ -568,6 +586,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddScience;hasBarcode">
         <rdfs:label>Barcode</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
         <poddBase:weight>4</poddBase:weight>
     </owl:DatatypeProperty>
@@ -578,6 +597,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddScience;hasChromosome">
         <rdfs:label>Chromosome</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
         <poddBase:weight>4</poddBase:weight>
     </owl:DatatypeProperty>
@@ -588,6 +608,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddScience;hasChromosomeLocation">
         <rdfs:label>Chromosome Location</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
         <poddBase:weight>5</poddBase:weight>
     </owl:DatatypeProperty>
@@ -598,6 +619,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddScience;hasDOB">
         <rdfs:label>DOB</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;date"/>
         <poddBase:weight>10</poddBase:weight>
     </owl:DatatypeProperty>
@@ -608,6 +630,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddScience;hasDesignType">
         <rdfs:label>Design Type</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
         <poddBase:weight>3</poddBase:weight>
     </owl:DatatypeProperty>
@@ -618,6 +641,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddScience;hasEventDescription">
         <rdfs:label>Description of the Event</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_LongText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
         <poddBase:weight>4</poddBase:weight>
     </owl:DatatypeProperty>
@@ -628,6 +652,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddScience;hasGenusSpecies">
         <rdfs:label>Genus and Species</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
         <poddBase:weight>7</poddBase:weight>
     </owl:DatatypeProperty>
@@ -649,6 +674,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddScience;hasLine">
         <rdfs:label>Line</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
         <poddBase:weight>11</poddBase:weight>
     </owl:DatatypeProperty>
@@ -659,6 +685,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddScience;hasMarkerDirection">
         <rdfs:label>Direction</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
         <poddBase:weight>9</poddBase:weight>
     </owl:DatatypeProperty>
@@ -670,6 +697,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;hasMarkerType">
         <rdfs:label>Marker Type</rdfs:label>
         <rdfs:comment>Type of the Marker (e.g. QTL, phenotypic marker)</rdfs:comment>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
         <poddBase:weight>5</poddBase:weight>
     </owl:DatatypeProperty>
@@ -680,6 +708,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddScience;hasMaterialStatus">
         <rdfs:label>Status</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
         <poddBase:weight>8</poddBase:weight>
     </owl:DatatypeProperty>
@@ -690,6 +719,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddScience;hasMutation">
         <rdfs:label>Mutation</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
         <poddBase:weight>12</poddBase:weight>
     </owl:DatatypeProperty>
@@ -700,6 +730,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddScience;hasName">
         <rdfs:label>Name</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
         <poddBase:weight>3</poddBase:weight>
     </owl:DatatypeProperty>
@@ -710,14 +741,15 @@
 
     <owl:DatatypeProperty rdf:about="&poddScience;hasNickname">
         <rdfs:label>Nickname</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
         <poddBase:weight>5</poddBase:weight>
     </owl:DatatypeProperty>
     
 
-
+	<!-- FIXME: this seems to be a duplicate of poddBase:hasNotes -->
     <!-- http://purl.org/podd/ns/poddScience#hasNotes -->
-
+	
     <owl:DatatypeProperty rdf:about="&poddScience;hasNotes">
         <rdfs:label>Notes</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
@@ -740,6 +772,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddScience;hasProcessVariation">
         <rdfs:label>Process Variation</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
         <poddBase:weight>9</poddBase:weight>
     </owl:DatatypeProperty>
@@ -750,6 +783,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddScience;hasProtocolVariation">
         <rdfs:label>Protocol Variation</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
         <poddBase:weight>11</poddBase:weight>
     </owl:DatatypeProperty>
@@ -760,6 +794,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddScience;hasReferenceID">
         <rdfs:label>Reference ID</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
         <poddBase:weight>7</poddBase:weight>
     </owl:DatatypeProperty>
@@ -770,6 +805,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddScience;hasReplicate">
         <rdfs:label>Replicate Number</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;int"/>
         <poddBase:weight>4</poddBase:weight>
     </owl:DatatypeProperty>
@@ -780,6 +816,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddScience;hasSequenceString">
         <rdfs:label>Sequence</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
         <poddBase:weight>7</poddBase:weight>
     </owl:DatatypeProperty>
@@ -790,6 +827,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddScience;hasSoftwareVersion">
         <rdfs:label>Version</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
         <poddBase:weight>5</poddBase:weight>
     </owl:DatatypeProperty>
@@ -800,6 +838,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddScience;hasSpeciesCommonName">
         <rdfs:label>Species Common Name</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
         <poddBase:weight>8</poddBase:weight>
     </owl:DatatypeProperty>
@@ -810,6 +849,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddScience;hasSubspecies">
         <rdfs:label>Subspecies</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
         <poddBase:weight>9</poddBase:weight>
     </owl:DatatypeProperty>
@@ -820,6 +860,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddScience;hasSystem">
         <rdfs:label>System</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
         <poddBase:weight>7</poddBase:weight>
     </owl:DatatypeProperty>
@@ -830,6 +871,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddScience;hasUnit">
         <rdfs:label>Unit</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
         <poddBase:weight>8</poddBase:weight>
     </owl:DatatypeProperty>
@@ -840,6 +882,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddScience;hasValue">
         <rdfs:label>Value</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
         <poddBase:weight>5</poddBase:weight>
     </owl:DatatypeProperty>
@@ -850,6 +893,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddScience;hasVariationType">
         <rdfs:label>Variation Type</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
         <poddBase:weight>10</poddBase:weight>
     </owl:DatatypeProperty>
@@ -1791,9 +1835,9 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:oneOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&poddScience;Software"/>
-                    <rdf:Description rdf:about="&poddScience;HardwareSoftware"/>
-                    <rdf:Description rdf:about="&poddScience;Hardware"/>
+                    <rdf:Description rdf:about="&poddScience;PlatformType_Software"/>
+                    <rdf:Description rdf:about="&poddScience;PlatformType_HardwareSoftware"/>
+                    <rdf:Description rdf:about="&poddScience;PlatformType_Hardware"/>
                 </owl:oneOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -2199,9 +2243,9 @@
     
 
 
-    <!-- http://purl.org/podd/ns/poddScience#Hardware -->
+    <!-- http://purl.org/podd/ns/poddScience#PlatformType_Hardware -->
 
-    <owl:Thing rdf:about="&poddScience;Hardware">
+    <owl:Thing rdf:about="&poddScience;PlatformType_Hardware">
         <rdf:type rdf:resource="&poddScience;PlatformType"/>
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
         <rdfs:label>Hardware</rdfs:label>
@@ -2209,19 +2253,18 @@
     
 
 
-    <!-- http://purl.org/podd/ns/poddScience#HardwareSoftware -->
+    <!-- http://purl.org/podd/ns/poddSciencePlatformType_#HardwareSoftware -->
 
-    <owl:Thing rdf:about="&poddScience;HardwareSoftware">
+    <owl:Thing rdf:about="&poddScience;PlatformType_HardwareSoftware">
         <rdf:type rdf:resource="&poddScience;PlatformType"/>
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
         <rdfs:label>Hardware and Software</rdfs:label>
     </owl:Thing>
     
 
+    <!-- http://purl.org/podd/ns/poddScience#PlatformType_Software -->
 
-    <!-- http://purl.org/podd/ns/poddScience#Software -->
-
-    <owl:Thing rdf:about="&poddScience;Software">
+    <owl:Thing rdf:about="&poddScience;PlatformType_Software">
         <rdf:type rdf:resource="&poddScience;PlatformType"/>
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
         <rdfs:label>Software</rdfs:label>
@@ -2349,9 +2392,9 @@
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="&poddScience;Hardware"/>
-            <rdf:Description rdf:about="&poddScience;HardwareSoftware"/>
-            <rdf:Description rdf:about="&poddScience;Software"/>
+            <rdf:Description rdf:about="&poddScience;PlatformType_Hardware"/>
+            <rdf:Description rdf:about="&poddScience;PlatformType_HardwareSoftware"/>
+            <rdf:Description rdf:about="&poddScience;PlatformType_Software"/>
         </owl:distinctMembers>
     </rdf:Description>
     <rdf:Description>
