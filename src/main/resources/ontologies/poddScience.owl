@@ -409,7 +409,7 @@
     <!-- http://purl.org/podd/ns/poddScience#refersToData -->
 
     <owl:ObjectProperty rdf:about="&poddScience;refersToData">
-        <rdfs:comment>Refers To Data</rdfs:comment>
+        <rdfs:label>Refers To Data</rdfs:label>
         <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_AutoComplete"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;refersTo"/>
         <rdfs:range rdf:resource="&poddScience;Data"/>
