@@ -2253,7 +2253,7 @@
     
 
 
-    <!-- http://purl.org/podd/ns/poddSciencePlatformType_#HardwareSoftware -->
+    <!-- http://purl.org/podd/ns/poddScience#PlatformType_HardwareSoftware -->
 
     <owl:Thing rdf:about="&poddScience;PlatformType_HardwareSoftware">
         <rdf:type rdf:resource="&poddScience;PlatformType"/>
