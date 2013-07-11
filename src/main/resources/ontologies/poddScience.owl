@@ -1082,6 +1082,7 @@
     <!-- http://purl.org/podd/ns/poddScience#Container -->
 
     <owl:Class rdf:about="&poddScience;Container">
+        <rdfs:label>Container</rdfs:label>
         <rdfs:subClassOf rdf:resource="&poddBase;PoddInternalObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
