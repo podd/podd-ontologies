@@ -103,6 +103,7 @@
         <rdfs:label>has Analysis</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&poddBase;contains"/>
         <rdfs:range rdf:resource="&poddScience;Analysis"/>
+		<poddBase:weight>10</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -113,6 +114,7 @@
         <rdfs:label>has Container</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&poddBase;contains"/>
         <rdfs:range rdf:resource="&poddScience;Container"/>
+		<poddBase:weight>10</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -135,6 +137,7 @@
         <rdfs:label>has Data</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&poddBase;contains"/>
         <rdfs:range rdf:resource="&poddScience;Data"/>
+		<poddBase:weight>10</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -145,6 +148,7 @@
         <rdfs:label>has Design</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&poddBase;contains"/>
         <rdfs:range rdf:resource="&poddScience;Design"/>
+		<poddBase:weight>10</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -155,6 +159,7 @@
         <rdfs:label>has Environment</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&poddBase;contains"/>
         <rdfs:range rdf:resource="&poddScience;Environment"/>
+		<poddBase:weight>10</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -164,7 +169,7 @@
     <owl:ObjectProperty rdf:about="&poddScience;hasEvent">
         <rdfs:label>has Event</rdfs:label>
         <rdfs:range rdf:resource="&poddScience;Event"/>
-	<poddBase:weight>13</poddBase:weight>
+		<poddBase:weight>13</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -175,6 +180,7 @@
         <rdfs:label>has Gene</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&poddBase;contains"/>
         <rdfs:range rdf:resource="&poddScience;Gene"/>
+		<poddBase:weight>10</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -185,6 +191,7 @@
         <rdfs:label>has Genotype</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&poddBase;contains"/>
         <rdfs:range rdf:resource="&poddScience;Genotype"/>
+		<poddBase:weight>10</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -195,6 +202,7 @@
         <rdfs:label>has Investigation</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&poddBase;contains"/>
         <rdfs:range rdf:resource="&poddScience;Investigation"/>
+		<poddBase:weight>10</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -215,6 +223,7 @@
         <rdfs:label>has Material</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&poddBase;contains"/>
         <rdfs:range rdf:resource="&poddScience;Material"/>
+		<poddBase:weight>10</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -245,6 +254,7 @@
         <rdfs:label>has Observation</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&poddBase;contains"/>
         <rdfs:range rdf:resource="&poddScience;Observation"/>
+		<poddBase:weight>10</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -255,6 +265,7 @@
         <rdfs:label>has Phenotype</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&poddBase;contains"/>
         <rdfs:range rdf:resource="&poddScience;Phenotype"/>
+		<poddBase:weight>10</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -265,6 +276,7 @@
         <rdfs:label>has Platform</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&poddBase;contains"/>
         <rdfs:range rdf:resource="&poddScience;Platform"/>
+		<poddBase:weight>10</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -287,6 +299,7 @@
         <rdfs:label>has Process</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&poddBase;contains"/>
         <rdfs:range rdf:resource="&poddScience;Process"/>
+		<poddBase:weight>10</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -297,6 +310,7 @@
         <rdfs:label>has Project Plan</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&poddBase;contains"/>
         <rdfs:range rdf:resource="&poddScience;ProjectPlan"/>
+		<poddBase:weight>10</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -307,6 +321,7 @@
         <rdfs:label>has Protocol</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&poddBase;contains"/>
         <rdfs:range rdf:resource="&poddScience;Protocol"/>
+		<poddBase:weight>10</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -317,6 +332,7 @@
         <rdfs:label>has Publication</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&poddBase;contains"/>
         <rdfs:range rdf:resource="&poddScience;Publication"/>
+		<poddBase:weight>10</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -327,6 +343,7 @@
         <rdfs:label>has Sequence</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&poddBase;contains"/>
         <rdfs:range rdf:resource="&poddScience;Sequence"/>
+		<poddBase:weight>10</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -358,6 +375,7 @@
         <rdfs:label>has Treatment</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&poddBase;contains"/>
         <rdfs:range rdf:resource="&poddScience;Treatment"/>
+		<poddBase:weight>10</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -368,6 +386,7 @@
         <rdfs:label>has Treatment Material</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&poddBase;contains"/>
         <rdfs:range rdf:resource="&poddScience;TreatmentMaterial"/>
+		<poddBase:weight>10</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -391,6 +410,7 @@
         <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_AutoComplete"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;refersTo"/>
         <rdfs:range rdf:resource="&poddScience;Analysis"/>
+		<poddBase:weight>50</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -402,6 +422,7 @@
         <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_AutoComplete"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;refersTo"/>
         <rdfs:range rdf:resource="&poddScience;Container"/>
+		<poddBase:weight>50</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -413,6 +434,7 @@
         <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_AutoComplete"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;refersTo"/>
         <rdfs:range rdf:resource="&poddScience;Data"/>
+		<poddBase:weight>50</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -424,6 +446,7 @@
         <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_AutoComplete"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;refersTo"/>
         <rdfs:range rdf:resource="&poddScience;Environment"/>
+		<poddBase:weight>50</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -435,6 +458,7 @@
         <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_AutoComplete"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;refersTo"/>
         <rdfs:range rdf:resource="&poddScience;Genotype"/>
+		<poddBase:weight>50</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -446,6 +470,7 @@
         <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_AutoComplete"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;refersTo"/>
         <rdfs:range rdf:resource="&poddScience;Material"/>
+		<poddBase:weight>50</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -457,6 +482,7 @@
         <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_AutoComplete"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;refersTo"/>
         <rdfs:range rdf:resource="&poddScience;Platform"/>
+		<poddBase:weight>50</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -468,6 +494,7 @@
         <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_AutoComplete"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;refersTo"/>
         <rdfs:range rdf:resource="&poddScience;Process"/>
+		<poddBase:weight>50</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -479,6 +506,7 @@
         <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_AutoComplete"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;refersTo"/>
         <rdfs:range rdf:resource="&poddScience;Protocol"/>
+		<poddBase:weight>50</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -490,6 +518,7 @@
         <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_AutoComplete"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;refersTo"/>
         <rdfs:range rdf:resource="&poddScience;TreatmentMaterial"/>
+		<poddBase:weight>50</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -747,16 +776,6 @@
     </owl:DatatypeProperty>
     
 
-	<!-- FIXME: this seems to be a duplicate of poddBase:hasNotes -->
-    <!-- http://purl.org/podd/ns/poddScience#hasNotes -->
-	
-    <owl:DatatypeProperty rdf:about="&poddScience;hasNotes">
-        <rdfs:label>Notes</rdfs:label>
-        <rdfs:range rdf:resource="&xsd;string"/>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://purl.org/podd/ns/poddScience#hasPages -->
 
     <owl:DatatypeProperty rdf:about="&poddScience;hasPages">
@@ -764,6 +783,7 @@
         <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
         <poddBase:weight>9</poddBase:weight>
+		<poddBase:weight>10</poddBase:weight>
     </owl:DatatypeProperty>
     
 

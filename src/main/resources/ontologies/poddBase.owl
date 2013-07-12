@@ -241,6 +241,8 @@
         <rdfs:range rdf:resource="&poddBase;FileReference"/>
         <rdfs:domain rdf:resource="&poddBase;PoddObject"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;poddObjectProperty"/>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_LongText"/>
+        <poddBase:weight>55</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -338,6 +340,7 @@
     <owl:DatatypeProperty rdf:about="&poddBase;hasNotes">
         <rdfs:label>Notes</rdfs:label>
         <hasDisplayType rdf:resource="&poddBase;DisplayType_LongText"/>
+		<weight>10</weight>
     </owl:DatatypeProperty>
     
 
@@ -348,6 +351,7 @@
         <rdfs:label>has Persistent URL</rdfs:label>
         <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;hasURL"/>
+		<weight>10</weight>
     </owl:DatatypeProperty>
     
 
@@ -360,7 +364,7 @@
         <doNotDisplay rdf:datatype="&xsd;boolean">true</doNotDisplay>
         <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
         <rdfs:range rdf:resource="&xsd;date"/>
-	<weight>13</weight>
+		<weight>13</weight>
     </owl:DatatypeProperty>
     
 
@@ -372,7 +376,7 @@
         <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
         <rdfs:range rdf:resource="&xsd;date"/>
-	<weight>5</weight>
+		<weight>5</weight>
     </owl:DatatypeProperty>
     
 
@@ -384,7 +388,7 @@
         <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
         <rdfs:range rdf:resource="&xsd;dateTime"/>
-	<weight>3</weight>
+		<weight>3</weight>
     </owl:DatatypeProperty>
     
 
@@ -396,7 +400,7 @@
         <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
         <rdfs:range rdf:resource="&xsd;string"/>
-	<weight>7</weight>
+		<weight>7</weight>
     </owl:DatatypeProperty>
     
 
@@ -408,7 +412,7 @@
         <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
         <rdfs:range rdf:resource="&xsd;dateTime"/>
-	<weight>5</weight>
+		<weight>5</weight>
     </owl:DatatypeProperty>
     
 
@@ -420,7 +424,7 @@
         <rdfs:comment>FIXME: Confirm the semantics of this datatype property</rdfs:comment>
         <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
-	<weight>3</weight>
+		<weight>3</weight>
     </owl:DatatypeProperty>
     
 
@@ -432,7 +436,7 @@
         <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <doNotDisplay rdf:datatype="&xsd;boolean">true</doNotDisplay>
         <rdfs:range rdf:resource="&xsd;anyURI"/>
-	<weight>17</weight>
+		<weight>17</weight>
     </owl:DatatypeProperty>
     
 
@@ -445,6 +449,7 @@
         <doNotDisplay rdf:datatype="&xsd;boolean">true</doNotDisplay>
         <rdfs:subPropertyOf rdf:resource="&dcterms;modified"/>
         <rdfs:range rdf:resource="&xsd;dateTime"/>
+		<weight>100</weight>
     </owl:DatatypeProperty>
     
 
@@ -454,6 +459,7 @@
         <rdfs:label>has Alias</rdfs:label>
         <rdfs:domain rdf:resource="&poddBase;FileReference"/>
         <rdfs:range rdf:resource="&xsd;string"/>
+		<weight>10</weight>
     </owl:DatatypeProperty>
     
 
@@ -462,6 +468,7 @@
     <owl:DatatypeProperty rdf:about="&poddBase;hasFileName">
         <rdfs:label>has File Name</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+		<weight>10</weight>
     </owl:DatatypeProperty>
 
 
@@ -471,6 +478,7 @@
         <rdfs:label>has Path</rdfs:label>
         <rdfs:domain rdf:resource="&poddBase;FileReference"/>
         <rdfs:range rdf:resource="&xsd;string"/>
+		<weight>10</weight>
     </owl:DatatypeProperty>
     
 

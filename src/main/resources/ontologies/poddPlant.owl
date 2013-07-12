@@ -72,9 +72,6 @@
 
     
 
-
-    <!-- http://purl.org/podd/ns/poddScience#hasName -->
-
     <owl:DatatypeProperty rdf:about="&poddScience;hasName"/>
     
 
@@ -159,8 +156,7 @@
     <!-- http://purl.org/podd/ns/poddPlant#FieldConditions -->
 
     <owl:Class rdf:about="#FieldConditions">
-        <rdfs:label
-            >Field Conditions</rdfs:label>
+        <rdfs:label>Field Conditions</rdfs:label>
         <rdfs:subClassOf rdf:resource="&poddScience;Environment"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -182,8 +178,7 @@
     <!-- http://purl.org/podd/ns/poddPlant#GrowthConditions -->
 
     <owl:Class rdf:about="#GrowthConditions">
-        <rdfs:label
-            >Growth Conditions</rdfs:label>
+        <rdfs:label>Growth Conditions</rdfs:label>
         <rdfs:subClassOf rdf:resource="&poddScience;Environment"/>
         <rdfs:subClassOf>
             <owl:Restriction>
