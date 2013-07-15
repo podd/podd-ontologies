@@ -81,6 +81,7 @@
     <owl:DatatypeProperty rdf:about="#hasEcotype">
         <rdfs:label>Ecotype</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_LongText"/>
         <poddBase:weight>10</poddBase:weight>
     </owl:DatatypeProperty>
     
@@ -89,8 +90,7 @@
     <!-- http://purl.org/podd/ns/poddPlant#hasFieldDescription -->
 
     <owl:DatatypeProperty rdf:about="#hasFieldDescription">
-        <rdfs:label
-            >Field Description</rdfs:label>
+        <rdfs:label>Field Description</rdfs:label>
         <rdfs:range rdf:resource="&xsd;string"/>
         <poddBase:weight>10</poddBase:weight>
     </owl:DatatypeProperty>

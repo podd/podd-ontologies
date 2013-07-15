@@ -77,7 +77,7 @@ public class PoddOntologyTest
                         { "/ontologies/poddUser.owl", "application/rdf+xml", 188 },
                         { "/ontologies/poddBase.owl", "application/rdf+xml", 355 },
                         { "/ontologies/poddScience.owl", "application/rdf+xml", 1300 },
-                        { "/ontologies/poddPlant.owl", "application/rdf+xml", 236 },
+                        { "/ontologies/poddPlant.owl", "application/rdf+xml", 237 },
                         { "/ontologies/poddAnimal.owl", "application/rdf+xml", 173 },
                         { "/ontologies/crop-ontology-715.owl", "application/rdf+xml", 2173 },
                         { "/ontologies/poddFileRepository.owl", "application/rdf+xml", 39 },
