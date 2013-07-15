@@ -82,6 +82,7 @@
     <owl:ObjectProperty rdf:about="&poddScience;hasAccession">
         <rdfs:label>Accession</rdfs:label>
         <rdfs:range rdf:resource="&poddScience;Accession"/>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_FieldSet"/>
         <poddBase:weight>7</poddBase:weight>
     </owl:ObjectProperty>
     
@@ -169,6 +170,7 @@
     <owl:ObjectProperty rdf:about="&poddScience;hasEvent">
         <rdfs:label>has Event</rdfs:label>
         <rdfs:range rdf:resource="&poddScience;Event"/>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_FieldSet"/>
 		<poddBase:weight>13</poddBase:weight>
     </owl:ObjectProperty>
     
@@ -233,6 +235,7 @@
     <owl:ObjectProperty rdf:about="&poddScience;hasMeasurement">
         <rdfs:label>has Measurement</rdfs:label>
         <rdfs:range rdf:resource="&poddScience;Measurement"/>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_FieldSet"/>
         <poddBase:weight>15</poddBase:weight>
     </owl:ObjectProperty>
     
@@ -363,6 +366,7 @@
 
     <owl:ObjectProperty rdf:about="&poddScience;hasSoftware">
         <rdfs:label>Software</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_FieldSet"/>
         <rdfs:range rdf:resource="&poddScience;Software"/>
         <poddBase:weight>5</poddBase:weight>
     </owl:ObjectProperty>
