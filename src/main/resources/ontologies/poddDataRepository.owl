@@ -10,16 +10,16 @@
 ]>
 
 
-<rdf:RDF xmlns="http://purl.org/podd/ns/fileRepository#"
-     xml:base="http://purl.org/podd/ns/fileRepository#"
-     xmlns:fileRepository="http://purl.org/podd/ns/fileRepository#"
+<rdf:RDF xmlns="http://purl.org/podd/ns/dataRepository#"
+     xml:base="http://purl.org/podd/ns/dataRepository#"
+     xmlns:fileRepository="http://purl.org/podd/ns/dataRepository#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="http://purl.org/podd/ns/fileRepository">
-        <rdfs:label>The PODD Ontology for File Repository</rdfs:label>
-        <owl:versionIRI rdf:resource="http://purl.org/podd/ns/version/fileRepository/1"/>
+    <owl:Ontology rdf:about="http://purl.org/podd/ns/dataRepository">
+        <rdfs:label>The PODD Ontology for Data Repositories</rdfs:label>
+        <owl:versionIRI rdf:resource="http://purl.org/podd/ns/version/dataRepository/1"/>
     </owl:Ontology>
     
 
