@@ -759,9 +759,9 @@
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
     </owl:Thing>
 
-    <!-- http://purl.org/podd/ns/poddBase#DisplayType_Table -->
+    <!-- http://purl.org/podd/ns/poddBase#DisplayType_FieldSet -->
 
-    <owl:Thing rdf:about="&poddBase;DisplayType_Table">
+    <owl:Thing rdf:about="&poddBase;DisplayType_FieldSet">
         <rdf:type rdf:resource="&poddBase;DisplayType"/>
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
     </owl:Thing>
