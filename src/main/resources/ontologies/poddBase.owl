@@ -356,17 +356,6 @@
     
 
 
-    <!-- http://purl.org/podd/ns/poddBase#hasPURL -->
-
-    <owl:DatatypeProperty rdf:about="&poddBase;hasPURL">
-        <rdfs:label>has Persistent URL</rdfs:label>
-        <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
-        <rdfs:subPropertyOf rdf:resource="&poddBase;hasURL"/>
-		<weight>10</weight>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://purl.org/podd/ns/poddBase#hasPublicationDate -->
 
     <owl:DatatypeProperty rdf:about="&poddBase;hasPublicationDate">
@@ -561,13 +550,6 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddBase;hasPURL"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;anyURI"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&poddBase;hasNotes"/>
                 <owl:allValuesFrom rdf:resource="&xsd;string"/>
             </owl:Restriction>
@@ -580,29 +562,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    <owl:Axiom>
-        <weight>1</weight>
-        <owl:annotatedSource rdf:resource="&poddBase;PoddTopObject"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddBase;hasPURL"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;anyURI"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
-    <owl:Axiom>
-        <weight>19</weight>
-        <owl:annotatedSource rdf:resource="&poddBase;PoddTopObject"/>
-        <owl:annotatedProperty rdf:resource="&rdfs;subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddBase;hasNotes"/>
-                <owl:allValuesFrom rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
-    </owl:Axiom>
     
 
 
