@@ -244,6 +244,7 @@
         <rdfs:range rdf:resource="&poddBase;DataReference"/>
         <rdfs:domain rdf:resource="&poddBase;PoddObject"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;contains"/>
+        <!-- FIXME: Need to support this in the interface -->
         <doNotDisplay rdf:datatype="&xsd;boolean">true</doNotDisplay>
     </owl:ObjectProperty>
     
