@@ -643,6 +643,7 @@
     <!-- http://purl.org/podd/ns/poddBase#DataReference -->
 
     <owl:Class rdf:about="&poddBase;DataReference">
+        <rdfs:subClassOf rdf:resource="&poddBase;PoddObject"/>
         <rdfs:label>Data Reference</rdfs:label>
     </owl:Class>
     
@@ -650,6 +651,7 @@
     <!-- http://purl.org/podd/ns/poddBase#SSHFileReference -->
 
     <owl:Class rdf:about="&poddBase;SSHFileReference">
+        <rdfs:subClassOf rdf:resource="&poddBase;DataReference"/>
         <rdfs:label>SSH File Reference</rdfs:label>
     </owl:Class>
 
@@ -657,6 +659,7 @@
     <!-- http://purl.org/podd/ns/poddBase#DOIFileReference -->
 
     <owl:Class rdf:about="&poddBase;DOIFileReference">
+        <rdfs:subClassOf rdf:resource="&poddBase;DataReference"/>
         <rdfs:label>DOI File Reference</rdfs:label>
     </owl:Class>
 
@@ -664,6 +667,7 @@
     <!-- http://purl.org/podd/ns/poddBase#SPARQLDataReference -->
 
     <owl:Class rdf:about="&poddBase;SPARQLDataReference">
+        <rdfs:subClassOf rdf:resource="&poddBase;DataReference"/>
         <rdfs:label>SPARQL Data Reference</rdfs:label>
     </owl:Class>
 
