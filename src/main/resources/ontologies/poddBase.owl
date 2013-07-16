@@ -234,15 +234,14 @@
     
 
 
-    <!-- http://purl.org/podd/ns/poddBase#hasFileReference -->
+    <!-- http://purl.org/podd/ns/poddBase#hasDataReference -->
 
-    <owl:ObjectProperty rdf:about="&poddBase;hasFileReference">
-        <rdfs:label>File Reference</rdfs:label>
-        <rdfs:range rdf:resource="&poddBase;FileReference"/>
+    <owl:ObjectProperty rdf:about="&poddBase;hasDataReference">
+        <rdfs:label>Data Reference</rdfs:label>
+        <rdfs:range rdf:resource="&poddBase;DataReference"/>
         <rdfs:domain rdf:resource="&poddBase;PoddObject"/>
-        <rdfs:subPropertyOf rdf:resource="&poddBase;poddObjectProperty"/>
-        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_LongText"/>
-        <poddBase:weight>55</poddBase:weight>
+        <rdfs:subPropertyOf rdf:resource="&poddBase;contains"/>
+        <doNotDisplay rdf:datatype="&xsd;boolean">true</doNotDisplay>
     </owl:ObjectProperty>
     
 
@@ -457,7 +456,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddBase;hasAlias">
         <rdfs:label>has Alias</rdfs:label>
-        <rdfs:domain rdf:resource="&poddBase;FileReference"/>
+        <rdfs:domain rdf:resource="&poddBase;DataReference"/>
         <rdfs:range rdf:resource="&xsd;string"/>
 		<weight>10</weight>
     </owl:DatatypeProperty>
@@ -476,7 +475,7 @@
 
     <owl:DatatypeProperty rdf:about="&poddBase;hasPath">
         <rdfs:label>has Path</rdfs:label>
-        <rdfs:domain rdf:resource="&poddBase;FileReference"/>
+        <rdfs:domain rdf:resource="&poddBase;DataReference"/>
         <rdfs:range rdf:resource="&xsd;string"/>
 		<weight>10</weight>
     </owl:DatatypeProperty>
@@ -630,10 +629,10 @@
 
 
 
-    <!-- http://purl.org/podd/ns/poddBase#FileReference -->
+    <!-- http://purl.org/podd/ns/poddBase#DataReference -->
 
-    <owl:Class rdf:about="&poddBase;FileReference">
-        <rdfs:label>File Reference</rdfs:label>
+    <owl:Class rdf:about="&poddBase;DataReference">
+        <rdfs:label>Data Reference</rdfs:label>
     </owl:Class>
     
 
