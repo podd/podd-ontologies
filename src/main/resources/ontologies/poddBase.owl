@@ -246,6 +246,13 @@
     
 
 
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:ObjectProperty rdf:about="&dcterms;creator">
+        <poddBase:weight>200</poddBase:weight>
+    </owl:ObjectProperty>
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -263,6 +270,7 @@
         <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:subPropertyOf rdf:resource="&dcterms;created"/>
         <rdfs:range rdf:resource="&xsd;dateTime"/>
+		<weight>200</weight>
     </owl:DatatypeProperty>
     
 
