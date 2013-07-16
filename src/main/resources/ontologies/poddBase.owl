@@ -44,9 +44,11 @@
      -->
 
     <owl:AnnotationProperty rdf:about="&poddBase;doNotDisplay">
+        <rdfs:label>do not display this property</rdfs:label>
         <rdfs:range rdf:resource="&xsd;boolean"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&poddBase;hasDisplayType">
+        <rdfs:label>has Display Type</rdfs:label>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&poddBase;weight">
         <rdfs:label>has Weight</rdfs:label>
@@ -116,6 +118,7 @@
         <doNotDisplay rdf:datatype="&xsd;boolean">true</doNotDisplay>
         <rdfs:domain rdf:resource="&poddBase;PoddObject"/>
         <rdfs:range rdf:resource="&poddBase;PoddObject"/>
+        <owl:inverseOf rdf:resource="&poddBase;containedBy"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;poddObjectProperty"/>
     </owl:ObjectProperty>
     
@@ -655,6 +658,13 @@
 
     <owl:Class rdf:about="&poddBase;DOIFileReference">
         <rdfs:label>DOI File Reference</rdfs:label>
+    </owl:Class>
+
+
+    <!-- http://purl.org/podd/ns/poddBase#SPARQLDataReference -->
+
+    <owl:Class rdf:about="&poddBase;SPARQLDataReference">
+        <rdfs:label>SPARQL Data Reference</rdfs:label>
     </owl:Class>
 
 
