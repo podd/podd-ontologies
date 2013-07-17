@@ -491,16 +491,6 @@
     </owl:DatatypeProperty>
 
 
-    <!-- http://purl.org/podd/ns/poddBase#hasSPARQLEndpoint -->
-
-    <owl:DatatypeProperty rdf:about="&poddBase;hasSPARQLEndpoint">
-        <rdfs:label>has SPARQL Endpoint</rdfs:label>
-        <rdfs:domain rdf:resource="&poddBase;SPARQLDataReference"/>
-        <rdfs:range rdf:resource="&xsd;string"/>
-		<weight>10</weight>
-    </owl:DatatypeProperty>
-    
-
     <!-- http://purl.org/dc/terms/date -->
 
 	<owl:DatatypeProperty rdf:about="&dcterms;date">
