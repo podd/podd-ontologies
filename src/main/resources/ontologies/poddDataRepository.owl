@@ -163,8 +163,16 @@
 
     <owl:Class rdf:about="&dataRepository;SSHFileRepository">
         <rdfs:subClassOf rdf:resource="&dataRepository;DataRepository"/>
-        <rdfs:label>Podd SSH File Repository</rdfs:label>
-        <rdfs:comment>A PODD SSH File Repository.</rdfs:comment>
+        <rdfs:label>SSH File Repository</rdfs:label>
+        <rdfs:comment>An SSH File Repository.</rdfs:comment>
+    </owl:Class>
+
+    <!-- http://purl.org/podd/ns/dataRepository#SPARQLDataRepository -->
+
+    <owl:Class rdf:about="&dataRepository;SPARQLDataRepository">
+        <rdfs:subClassOf rdf:resource="&dataRepository;DataRepository"/>
+        <rdfs:label>SPARQL Data Repository</rdfs:label>
+        <rdfs:comment>A SPARQL Data Repository.</rdfs:comment>
     </owl:Class>
 
 </rdf:RDF>
