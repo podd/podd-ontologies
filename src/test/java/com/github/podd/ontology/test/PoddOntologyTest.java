@@ -100,6 +100,8 @@ public class PoddOntologyTest
                 // { "/ontologies/poddScienceInferred.rdf", "application/rdf+xml", 472 },
                 // { "/ontologies/poddPlantInferred.rdf", "application/rdf+xml", 495 },
                 
+                // Inconsistent Ontology
+                // { "/test/artifacts/bad-twoLeadInstitutions.rdf", "application/rdf+xml", 22 },
                 };
         return Arrays.asList(data);
     }
