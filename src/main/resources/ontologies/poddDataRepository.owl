@@ -112,6 +112,15 @@
     </owl:DatatypeProperty>
 
 
+    <!-- http://purl.org/podd/ns/dataRepository#hasDataRepositoryPath -->
+
+    <owl:DatatypeProperty rdf:about="&dataRepository;hasDataRepositoryPath">
+        <rdfs:label>has Data Repository Path</rdfs:label>
+        <rdfs:domain rdf:resource="&dataRepository;DataRepository"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+
+
 
     <!-- http://purl.org/podd/ns/dataRepository#hasDataRepositoryFingerprint -->
 
