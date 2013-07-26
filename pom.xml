@@ -65,8 +65,8 @@
 		<junit.version>4.11</junit.version>
 		<slf4j.version>1.7.5</slf4j.version>
 		<sesame.version>2.7.3</sesame.version>
-		<owlapi.version>3.4.4.3-ansell</owlapi.version>
-		<pellet.version>2.3.4-ansell</pellet.version>
+		<owlapi.version>3.4.5.1-ansell</owlapi.version>
+		<pellet.version>2.3.5-ansell</pellet.version>
 	</properties>
 
 	<prerequisites>
