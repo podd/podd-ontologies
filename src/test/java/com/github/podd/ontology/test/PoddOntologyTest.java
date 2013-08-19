@@ -53,6 +53,7 @@ import com.clarkparsia.owlapi.explanation.util.ExplanationProgressMonitor;
 @RunWith(value = Parameterized.class)
 public class PoddOntologyTest
 {
+    public static final String VERSION_1_PATH = "/ontologies/version/1/";
     /**
      * NOTE: The static OWLOntologyManager instance is reused through all the tests so that loaded
      * ontologies are kept in memory and able to satisfy import requirements in later ontologies.
@@ -72,15 +73,15 @@ public class PoddOntologyTest
         final Object[][] data =
                 new Object[][] {
                         // schema ontologies
-                        { "/ontologies/dcTerms.owl", "application/rdf+xml", 39 },
-                        { "/ontologies/foaf.owl", "application/rdf+xml", 38 },
-                        { "/ontologies/poddUser.owl", "application/rdf+xml", 188 },
-                        { "/ontologies/poddBase.owl", "application/rdf+xml", 343 },
-                        { "/ontologies/poddScience.owl", "application/rdf+xml", 1277 },
-                        { "/ontologies/poddPlant.owl", "application/rdf+xml", 237 },
-                        { "/ontologies/poddAnimal.owl", "application/rdf+xml", 173 },
+                        { VERSION_1_PATH + "dcTerms.owl", "application/rdf+xml", 39 },
+                        { VERSION_1_PATH + "foaf.owl", "application/rdf+xml", 38 },
+                        { VERSION_1_PATH + "poddUser.owl", "application/rdf+xml", 188 },
+                        { VERSION_1_PATH + "poddBase.owl", "application/rdf+xml", 343 },
+                        { VERSION_1_PATH + "poddScience.owl", "application/rdf+xml", 1277 },
+                        { VERSION_1_PATH + "poddPlant.owl", "application/rdf+xml", 237 },
+                        { VERSION_1_PATH + "poddAnimal.owl", "application/rdf+xml", 173 },
+                        { VERSION_1_PATH + "poddDataRepository.owl", "application/rdf+xml", 47 },
                         { "/ontologies/crop-ontology-715.owl", "application/rdf+xml", 2173 },
-                        { "/ontologies/poddDataRepository.owl", "application/rdf+xml", 47 },
                 
                 // artifacts to test
                 // { "/test/artifacts/basic-1.rdf", "application/rdf+xml", 26 },
