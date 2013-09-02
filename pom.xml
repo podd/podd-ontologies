@@ -129,6 +129,12 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
+			<groupId>com.github.ansell.owlapi</groupId>
+			<artifactId>owlapi-tools</artifactId>
+			<version>${owlapi.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
 			<groupId>com.github.ansell.pellet</groupId>
 			<artifactId>pellet-owlapiv3</artifactId>
 			<version>${pellet.version}</version>
@@ -141,10 +147,10 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-		    <groupId>net.sourceforge.jwebunit</groupId>
-		    <artifactId>jwebunit-htmlunit-plugin</artifactId>
-		    <scope>test</scope>
-		    <version>3.1</version>
+			<groupId>net.sourceforge.jwebunit</groupId>
+			<artifactId>jwebunit-htmlunit-plugin</artifactId>
+			<scope>test</scope>
+			<version>3.1</version>
 		</dependency>
 	</dependencies>
 	<build>
