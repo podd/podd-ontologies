@@ -282,7 +282,7 @@
     <!-- http://purl.org/podd/ns/poddBase#hasCompletionDate -->
 
     <owl:DatatypeProperty rdf:about="&poddBase;hasCompletionDate">
-        <rdfs:label>Completion Date (DD/MM/YYYY)</rdfs:label>
+        <rdfs:label>Completion Date (YYYY-MM-DD)</rdfs:label>
         <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
         <rdfs:range rdf:resource="&xsd;date"/>
@@ -316,7 +316,7 @@
     <!-- http://purl.org/podd/ns/poddBase#hasEndDateTime -->
 
     <owl:DatatypeProperty rdf:about="&poddBase;hasEndDateTime">
-        <rdfs:label>End Date and Time (DD/MM/YYYY hh:mm:ss)</rdfs:label>
+        <rdfs:label>End Date and Time (YYYY-MM-DD hh:mm:ss)</rdfs:label>
         <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
         <rdfs:range rdf:resource="&xsd;dateTime"/>
@@ -359,7 +359,7 @@
     <!-- http://purl.org/podd/ns/poddBase#hasPublicationDate -->
 
     <owl:DatatypeProperty rdf:about="&poddBase;hasPublicationDate">
-        <rdfs:label>Publication Date (DD/MM/YYYY)</rdfs:label>
+        <rdfs:label>Publication Date (YYYY-MM-DD)</rdfs:label>
         <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <doNotDisplay rdf:datatype="&xsd;boolean">true</doNotDisplay>
         <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
@@ -372,7 +372,7 @@
     <!-- http://purl.org/podd/ns/poddBase#hasStartDate -->
 
     <owl:DatatypeProperty rdf:about="&poddBase;hasStartDate">
-        <rdfs:label>Start Date (DD/MM/YYYY)</rdfs:label>
+        <rdfs:label>Start Date (YYYY-MM-DD)</rdfs:label>
         <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
         <rdfs:range rdf:resource="&xsd;date"/>
@@ -384,7 +384,7 @@
     <!-- http://purl.org/podd/ns/poddBase#hasStartDateTime -->
 
     <owl:DatatypeProperty rdf:about="&poddBase;hasStartDateTime">
-        <rdfs:label>Start Date and Time (DD/MM/YYYY hh:mm:ss)</rdfs:label>
+        <rdfs:label>Start Date and Time (YYYY-MM-DD hh:mm:ss)</rdfs:label>
         <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
         <rdfs:range rdf:resource="&xsd;dateTime"/>
@@ -408,7 +408,7 @@
     <!-- http://purl.org/podd/ns/poddBase#hasTimestamp -->
 
     <owl:DatatypeProperty rdf:about="&poddBase;hasTimestamp">
-        <rdfs:label>Real Time (DD/MM/YYYY hh:mm:ss)</rdfs:label>
+        <rdfs:label>Real Time (YYYY-MM-DD hh:mm:ss)</rdfs:label>
         <hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
         <rdfs:range rdf:resource="&xsd;dateTime"/>
