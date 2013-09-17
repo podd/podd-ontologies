@@ -73,7 +73,7 @@ public class PoddOntologyTest
         final Object[][] data =
                 new Object[][] {
                         // schema ontologies
-                        { VERSION_1_PATH + "dcTerms.owl", "application/rdf+xml", 41 },
+                        { VERSION_1_PATH + "dcTerms.owl", "application/rdf+xml", 43 },
                         { VERSION_1_PATH + "foaf.owl", "application/rdf+xml", 38 },
                         { VERSION_1_PATH + "poddUser.owl", "application/rdf+xml", 188 },
                         { VERSION_1_PATH + "poddBase.owl", "application/rdf+xml", 343 },

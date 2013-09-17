@@ -114,7 +114,7 @@
 
     <!-- http://purl.org/dc/terms/identifier -->
 
-    <owl:DatatypeProperty rdf:about="&dcterms;created">
+    <owl:DatatypeProperty rdf:about="&dcterms;identifier">
         <rdfs:label>Identifier</rdfs:label>
         <definition>An unambiguous reference to the resource within a given context.</definition>
         <rdfs:range rdf:resource="&rdfs;Literal"/>
