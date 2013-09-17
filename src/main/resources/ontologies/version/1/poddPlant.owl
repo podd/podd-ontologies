@@ -134,12 +134,6 @@
     
 
 
-    <!-- http://purl.org/podd/ns/poddScience#Environment -->
-
-    <owl:Class rdf:about="&poddScience;Environment"/>
-    
-
-
     <!-- http://purl.org/podd/ns/poddScience#Genotype -->
 
     <owl:Class rdf:about="&poddScience;Genotype">
