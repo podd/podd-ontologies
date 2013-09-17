@@ -77,7 +77,7 @@ public class PoddOntologyTest
                         { VERSION_1_PATH + "foaf.owl", "application/rdf+xml", 38 },
                         { VERSION_1_PATH + "poddUser.owl", "application/rdf+xml", 188 },
                         { VERSION_1_PATH + "poddBase.owl", "application/rdf+xml", 343 },
-                        { VERSION_1_PATH + "poddScience.owl", "application/rdf+xml", 1303 },
+                        { VERSION_1_PATH + "poddScience.owl", "application/rdf+xml", 1298 },
                         { VERSION_1_PATH + "poddPlant.owl", "application/rdf+xml", 214 },
                         { VERSION_1_PATH + "poddAnimal.owl", "application/rdf+xml", 139 },
                         { VERSION_1_PATH + "poddDataRepository.owl", "application/rdf+xml", 47 },
