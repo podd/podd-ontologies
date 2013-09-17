@@ -102,14 +102,21 @@
      -->
 
     
-
-
     <!-- http://purl.org/dc/terms/created -->
 
     <owl:DatatypeProperty rdf:about="&dcterms;created">
         <rdfs:label>Date Created</rdfs:label>
         <definition>Date of creation of the resource.</definition>
         <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+    <owl:DatatypeProperty rdf:about="&dcterms;created">
+        <rdfs:label>Identifier</rdfs:label>
+        <definition>An unambiguous reference to the resource within a given context.</definition>
         <rdfs:range rdf:resource="&rdfs;Literal"/>
     </owl:DatatypeProperty>
     
