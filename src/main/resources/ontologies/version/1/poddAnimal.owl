@@ -140,23 +140,6 @@
     
 
 
-    <!-- http://purl.org/podd/ns/poddScience#ANZSRC -->
-
-    <owl:Class rdf:about="&poddScience;ANZSRC">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:oneOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="#ANZSRC11-Medical-and-Health-Sciences"/>
-                    <rdf:Description rdf:about="#ANZSRC06-Biological-Sciences"/>
-                    <rdf:Description rdf:about="#ANZSRC-NotApplicable"/>
-                    <rdf:Description rdf:about="#ANZSRC07-Agriculture-and-Veterinary-Sciences"/>
-                </owl:oneOf>
-            </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/podd/ns/poddScience#Genotype -->
 
     <owl:Class rdf:about="&poddScience;Genotype">
@@ -361,39 +344,6 @@
     
 
 
-    <!-- http://purl.org/podd/ns/poddModelAnimal#ANZSRC-NotApplicable -->
-
-    <owl:Thing rdf:about="#ANZSRC-NotApplicable">
-        <rdf:type rdf:resource="&poddScience;ANZSRC"/>
-        <poddBase:weight>1</poddBase:weight>
-    </owl:Thing>
-    
-
-
-    <!-- http://purl.org/podd/ns/poddModelAnimal#ANZSRC06-Biological-Sciences -->
-
-    <owl:Thing rdf:about="#ANZSRC06-Biological-Sciences">
-        <rdf:type rdf:resource="&poddScience;ANZSRC"/>
-        <poddBase:weight>2</poddBase:weight>
-    </owl:Thing>
-    
-
-
-    <!-- http://purl.org/podd/ns/poddModelAnimal#ANZSRC07-Agriculture-and-Veterinary-Sciences -->
-
-    <owl:Thing rdf:about="#ANZSRC07-Agriculture-and-Veterinary-Sciences">
-        <rdf:type rdf:resource="&poddScience;ANZSRC"/>
-        <poddBase:weight>3</poddBase:weight>
-    </owl:Thing>
-    
-
-
-    <!-- http://purl.org/podd/ns/poddModelAnimal#ANZSRC11-Medical-and-Health-Sciences -->
-
-    <owl:Thing rdf:about="#ANZSRC11-Medical-and-Health-Sciences">
-        <rdf:type rdf:resource="&poddScience;ANZSRC"/>
-        <poddBase:weight>4</poddBase:weight>
-    </owl:Thing>
     
 
 
@@ -405,15 +355,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDifferent"/>
-        <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="#ANZSRC-NotApplicable"/>
-            <rdf:Description rdf:about="#ANZSRC11-Medical-and-Health-Sciences"/>
-            <rdf:Description rdf:about="#ANZSRC06-Biological-Sciences"/>
-            <rdf:Description rdf:about="#ANZSRC07-Agriculture-and-Veterinary-Sciences"/>
-        </owl:distinctMembers>
-    </rdf:Description>
 </rdf:RDF>
 
 
