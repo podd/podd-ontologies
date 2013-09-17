@@ -1892,13 +1892,6 @@
         <rdfs:subClassOf rdf:resource="&poddBase;PoddTopObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddBase;hasLeadInstitution"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&poddBase;hasTopObjectMember"/>
                 <owl:allValuesFrom rdf:resource="&user;User"/>
             </owl:Restriction>
