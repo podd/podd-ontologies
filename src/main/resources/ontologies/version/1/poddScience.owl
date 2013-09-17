@@ -969,20 +969,6 @@
     
 
 
-    <!-- http://purl.org/podd/ns/poddBase#PoddTopObject -->
-
-    <rdf:Description rdf:about="&poddBase;PoddTopObject">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddBase;hasLeadInstitution"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </rdf:Description>
-    
-
-
     <!-- http://purl.org/podd/ns/poddScience#ANZSRC -->
 
     <owl:Class rdf:about="&poddScience;ANZSRC">
@@ -1904,6 +1890,13 @@
     <owl:Class rdf:about="&poddScience;Project">
         <rdfs:label>Project</rdfs:label>
         <rdfs:subClassOf rdf:resource="&poddBase;PoddTopObject"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&poddBase;hasLeadInstitution"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&poddBase;hasTopObjectMember"/>
