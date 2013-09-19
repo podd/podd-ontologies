@@ -135,7 +135,7 @@
 
     <!-- http://purl.org/dc/terms/title -->
 
-    <owl:DatatypeProperty rdf:about="&dcterms;date">
+    <owl:DatatypeProperty rdf:about="&dcterms;title">
         <rdfs:label>Title</rdfs:label>
         <definition>A name given to the resource.</definition>
         <rdfs:range rdf:resource="&rdfs;Literal"/>
