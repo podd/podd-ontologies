@@ -244,8 +244,7 @@
         <rdfs:range rdf:resource="&poddBase;DataReference"/>
         <rdfs:domain rdf:resource="&poddBase;PoddObject"/>
         <rdfs:subPropertyOf rdf:resource="&poddBase;contains"/>
-        <!-- FIXME: Need to support this in the interface -->
-        <doNotDisplay rdf:datatype="&xsd;boolean">true</doNotDisplay>
+        <hasDisplayType rdf:resource="&poddBase;DisplayType_DataReference"/>
     </owl:ObjectProperty>
     
 
@@ -752,6 +751,13 @@
     <!-- http://purl.org/podd/ns/poddBase#DisplayType_FieldSet -->
 
     <owl:Thing rdf:about="&poddBase;DisplayType_FieldSet">
+        <rdf:type rdf:resource="&poddBase;DisplayType"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+
+    <!-- http://purl.org/podd/ns/poddBase#DisplayType_DataReference -->
+
+    <owl:Thing rdf:about="&poddBase;DisplayType_DataReference">
         <rdf:type rdf:resource="&poddBase;DisplayType"/>
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
     </owl:Thing>
