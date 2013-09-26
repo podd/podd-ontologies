@@ -533,6 +533,12 @@
     <owl:Class rdf:about="&poddBase;PoddObject">
         <rdfs:label>Podd Object</rdfs:label>
         <doNotDisplay rdf:datatype="&xsd;boolean">true</doNotDisplay>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&poddBase;hasDataReference"/>
+                <owl:allValuesFrom rdf:resource="&poddBase;DataReference"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
