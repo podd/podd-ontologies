@@ -981,6 +981,8 @@
                     <rdf:Description rdf:about="&poddScience;ANZSRC07-Agriculture-and-Veterinary-Sciences"/>
                     <rdf:Description rdf:about="&poddScience;ANZSRC-NotApplicable"/>
                     <rdf:Description rdf:about="&poddScience;ANZSRC06-Biological-Sciences"/>
+                    <rdf:Description rdf:about="&poddScience;ANZSRC05-Environmental-Sciences"/>
+                    <rdf:Description rdf:about="&poddScience;ANZSRC10-Technology"/>
                 </owl:oneOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -1020,8 +1022,29 @@
 
     <owl:Thing rdf:about="&poddScience;ANZSRC11-Medical-and-Health-Sciences">
         <rdf:type rdf:resource="&poddScience;ANZSRC"/>
+		<rdfs:label>11-Medical and Health Sciences</rdfs:label>
         <poddBase:weight>4</poddBase:weight>
     </owl:Thing>
+
+
+    <!-- http://purl.org/podd/ns/poddScience#ANZSRC05-Environmental-Sciences -->
+
+    <owl:Thing rdf:about="&poddScience;ANZSRC05-Environmental-Sciences">
+        <rdf:type rdf:resource="&poddScience;ANZSRC"/>
+		<rdfs:label>05-Environmental Sciences</rdfs:label>
+        <poddBase:weight>5</poddBase:weight>
+    </owl:Thing>
+
+
+
+    <!-- http://purl.org/podd/ns/poddScience#ANZSRC10-Technology -->
+
+    <owl:Thing rdf:about="&poddScience;ANZSRC10-Technology">
+        <rdf:type rdf:resource="&poddScience;ANZSRC"/>
+		<rdfs:label>10-Technology</rdfs:label>
+        <poddBase:weight>10</poddBase:weight>
+    </owl:Thing>
+
 
 
     <!-- http://purl.org/podd/ns/poddScience#Accession -->
