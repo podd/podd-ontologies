@@ -67,20 +67,20 @@ public class PoddOntologyTest
         PoddOntologyTest.owlOntologyManager = OWLOntologyManagerFactoryRegistry.createOWLOntologyManager();
     }
     
-    @Parameters(name="{0}")
+    @Parameters(name = "{0}")
     public static Collection<Object[]> data()
     {
         final Object[][] data =
                 new Object[][] {
                         // schema ontologies
-                        { VERSION_1_PATH + "dcTerms.owl", "application/rdf+xml", 47 },
-                        { VERSION_1_PATH + "foaf.owl", "application/rdf+xml", 38 },
-                        { VERSION_1_PATH + "poddUser.owl", "application/rdf+xml", 188 },
-                        { VERSION_1_PATH + "poddBase.owl", "application/rdf+xml", 337 },
-                        { VERSION_1_PATH + "poddScience.owl", "application/rdf+xml", 1324 },
-                        { VERSION_1_PATH + "poddPlant.owl", "application/rdf+xml", 214 },
-                        { VERSION_1_PATH + "poddAnimal.owl", "application/rdf+xml", 139 },
-                        { VERSION_1_PATH + "poddDataRepository.owl", "application/rdf+xml", 47 },
+                        { PoddOntologyTest.VERSION_1_PATH + "dcTerms.owl", "application/rdf+xml", 47 },
+                        { PoddOntologyTest.VERSION_1_PATH + "foaf.owl", "application/rdf+xml", 38 },
+                        { PoddOntologyTest.VERSION_1_PATH + "poddUser.owl", "application/rdf+xml", 188 },
+                        { PoddOntologyTest.VERSION_1_PATH + "poddBase.owl", "application/rdf+xml", 337 },
+                        { PoddOntologyTest.VERSION_1_PATH + "poddScience.owl", "application/rdf+xml", 1324 },
+                        { PoddOntologyTest.VERSION_1_PATH + "poddPlant.owl", "application/rdf+xml", 214 },
+                        { PoddOntologyTest.VERSION_1_PATH + "poddAnimal.owl", "application/rdf+xml", 139 },
+                        { PoddOntologyTest.VERSION_1_PATH + "poddDataRepository.owl", "application/rdf+xml", 47 },
                         { "/ontologies/crop-ontology-715.owl", "application/rdf+xml", 2173 },
                 
                 // artifacts to test
