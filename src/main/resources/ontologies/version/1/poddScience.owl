@@ -648,6 +648,15 @@
     </owl:DatatypeProperty>
     
 
+    <!-- http://purl.org/podd/ns/poddScience#hasContainerType -->
+
+    <owl:DatatypeProperty rdf:about="&poddScience;hasContainerType">
+        <rdfs:label>has Container Type</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+		<poddBase:weight>3</poddBase:weight>
+    </owl:DatatypeProperty>
+    
 
     <!-- http://purl.org/podd/ns/poddScience#hasDOB -->
 
@@ -902,6 +911,16 @@
     </owl:DatatypeProperty>
     
 
+
+    <!-- http://purl.org/podd/ns/poddScience#hasTreatmentType -->
+
+    <owl:DatatypeProperty rdf:about="&poddScience;hasTreatmentType">
+        <rdfs:label>has Treatment Type</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+		<poddBase:weight>3</poddBase:weight>
+    </owl:DatatypeProperty>
+    
 
     <!-- http://purl.org/podd/ns/poddScience#hasValue -->
 
@@ -1173,7 +1192,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddBase;hasType"/>
+                <owl:onProperty rdf:resource="&poddScience;hasContainerType"/>
                 <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="&xsd;string"/>
             </owl:Restriction>
@@ -1240,13 +1259,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&poddScience;refersToPlatform"/>
                 <owl:allValuesFrom rdf:resource="&poddScience;Platform"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddBase;hasType"/>
-                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2211,7 +2223,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddBase;hasType"/>
+                <owl:onProperty rdf:resource="&poddScience;hasTreatmentType"/>
                 <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="&xsd;string"/>
             </owl:Restriction>
@@ -2245,7 +2257,7 @@
         <rdfs:subClassOf rdf:resource="&poddBase;PoddInternalObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddBase;hasType"/>
+                <owl:onProperty rdf:resource="&poddScience;hasTreatmentType"/>
                 <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="&xsd;string"/>
             </owl:Restriction>
