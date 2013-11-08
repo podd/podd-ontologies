@@ -358,7 +358,7 @@
         <rdfs:label>Sex</rdfs:label>
         <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_DropDownList"/>
         <rdfs:range rdf:resource="&poddScience;Sex"/>
-        <poddBase:weight>9</poddBase:weight>
+        <poddBase:weight>10</poddBase:weight>
     </owl:ObjectProperty>
     
 
@@ -691,13 +691,24 @@
     
 
 
-    <!-- http://purl.org/podd/ns/poddScience#hasGenusSpecies -->
+    <!-- http://purl.org/podd/ns/poddScience#hasGenus -->
 
-    <owl:DatatypeProperty rdf:about="&poddScience;hasGenusSpecies">
-        <rdfs:label>Genus and Species</rdfs:label>
+    <owl:DatatypeProperty rdf:about="&poddScience;hasGenus">
+        <rdfs:label>Genus</rdfs:label>
         <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
-        <poddBase:weight>7</poddBase:weight>
+        <poddBase:weight>8</poddBase:weight>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/podd/ns/poddScience#hasSpecies -->
+
+    <owl:DatatypeProperty rdf:about="&poddScience;hasSpecies">
+        <rdfs:label>Species</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>9</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -730,7 +741,7 @@
         <rdfs:label>Direction</rdfs:label>
         <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
-        <poddBase:weight>9</poddBase:weight>
+        <poddBase:weight>10</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -796,7 +807,6 @@
         <rdfs:label>Pages</rdfs:label>
         <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
-        <poddBase:weight>9</poddBase:weight>
 		<poddBase:weight>10</poddBase:weight>
     </owl:DatatypeProperty>
     
@@ -808,7 +818,7 @@
         <rdfs:label>Process Variation</rdfs:label>
         <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
-        <poddBase:weight>9</poddBase:weight>
+        <poddBase:weight>10</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -885,7 +895,7 @@
         <rdfs:label>Subspecies</rdfs:label>
         <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
         <rdfs:range rdf:resource="&xsd;string"/>
-        <poddBase:weight>9</poddBase:weight>
+        <poddBase:weight>10</poddBase:weight>
     </owl:DatatypeProperty>
     
 
@@ -1458,8 +1468,15 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&poddScience;hasGenusSpecies"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onProperty rdf:resource="&poddScience;hasGenus"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&poddScience;hasSpecies"/>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="&xsd;string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
