@@ -208,8 +208,6 @@
 
 
 	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#Closedfluorescencesystem-7c">
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
 		<poddScience:hasPlatformType rdf:resource="http://purl.org/podd/ns/poddScience#PlatformType_Hardware"/>
 		<rdfs:label>Closed fluorescence system </rdfs:label>
@@ -217,8 +215,6 @@
 	</rdf:Description>
 	
 	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#DeltaTporometer-63">
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
 		<poddScience:hasPlatformType rdf:resource="http://purl.org/podd/ns/poddScience#PlatformType_Hardware"/>
 		<rdfs:label>Delta-T porometer </rdfs:label>
@@ -226,8 +222,6 @@
 	</rdf:Description>
 	
 	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#FieldScoutCM1000-5c">
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
 		<poddScience:hasPlatformType rdf:resource="http://purl.org/podd/ns/poddScience#PlatformType_Hardware"/>
 		<rdfs:label>Field Scout CM-1000 </rdfs:label>
@@ -235,8 +229,6 @@
 	</rdf:Description>
 	
 	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#FLIRI7InfraredthermographyCamera-1d">
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
 		<poddScience:hasPlatformType rdf:resource="http://purl.org/podd/ns/poddScience#PlatformType_Hardware"/>
 		<rdfs:label>FLIR I7 - Infrared thermography Camera </rdfs:label>
@@ -244,8 +236,6 @@
 	</rdf:Description>
 	
 	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#FLIRSC660InfraredThermographyCameraandDellPrecisionLaptop-b6">
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
 		<poddScience:hasPlatformType rdf:resource="http://purl.org/podd/ns/poddScience#PlatformType_Hardware"/>
 		<rdfs:label>FLIR-SC660 Infrared Thermography Camera and Dell Precision Laptop </rdfs:label>
@@ -253,8 +243,6 @@
 	</rdf:Description>
 	
 	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#FTIRMicroscope-7d">
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
 		<poddScience:hasPlatformType rdf:resource="http://purl.org/podd/ns/poddScience#PlatformType_Hardware"/>
 		<rdfs:label>FTIR Microscope </rdfs:label>
@@ -262,8 +250,6 @@
 	</rdf:Description>
 	
 	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#HyperspectralReflectanceRadiometer-1a">
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
 		<poddScience:hasPlatformType rdf:resource="http://purl.org/podd/ns/poddScience#PlatformType_Hardware"/>
 		<rdfs:label>Hyperspectral Reflectance Radiometer</rdfs:label>
@@ -271,8 +257,6 @@
 	</rdf:Description>
 	
 	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#IntegratingSphereASDforeoptics-1d">
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
 		<poddScience:hasPlatformType rdf:resource="http://purl.org/podd/ns/poddScience#PlatformType_Hardware"/>
 		<rdfs:label>Integrating Sphere (ASD foreoptics) </rdfs:label>
@@ -280,8 +264,6 @@
 	</rdf:Description>
 	
 	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#LeafAreaMeter-3c">
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
 		<poddScience:hasPlatformType rdf:resource="http://purl.org/podd/ns/poddScience#PlatformType_Hardware"/>
 		<rdfs:label>Leaf Area Meter </rdfs:label>
@@ -289,8 +271,6 @@
 	</rdf:Description>
 	
 	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#LemnaTecScanalyser-fd">
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
 		<poddScience:hasPlatformType rdf:resource="http://purl.org/podd/ns/poddScience#PlatformType_Hardware"/>
 		<rdfs:label>LemnaTec Scanalyser</rdfs:label>
@@ -298,8 +278,6 @@
 	</rdf:Description>
 	
 	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#LemnatecScanalyserNIR-e2">
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
 		<poddScience:hasPlatformType rdf:resource="http://purl.org/podd/ns/poddScience#PlatformType_Hardware"/>
 		<rdfs:label>Lemnatec Scanalyser (NIR) </rdfs:label>
@@ -307,8 +285,6 @@
 	</rdf:Description>
 	
 	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#LICOR6400-b2">
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
 		<poddScience:hasPlatformType rdf:resource="http://purl.org/podd/ns/poddScience#PlatformType_Hardware"/>
 		<rdfs:label>LI-COR 6400</rdfs:label>
@@ -316,8 +292,6 @@
 	</rdf:Description>
 	
 	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#Linequantumsensor-40">
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
 		<poddScience:hasPlatformType rdf:resource="http://purl.org/podd/ns/poddScience#PlatformType_Hardware"/>
 		<rdfs:label>Line quantum sensor</rdfs:label>
@@ -325,8 +299,6 @@
 	</rdf:Description>
 	
 	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#MonitoringPAM-f9">
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
 		<poddScience:hasPlatformType rdf:resource="http://purl.org/podd/ns/poddScience#PlatformType_Hardware"/>
 		<rdfs:label>Monitoring PAM </rdfs:label>
@@ -334,8 +306,6 @@
 	</rdf:Description>
 	
 	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#Openfluorescencesystem-9c">
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
 		<poddScience:hasPlatformType rdf:resource="http://purl.org/podd/ns/poddScience#PlatformType_Hardware"/>
 		<rdfs:label>Open fluorescence system </rdfs:label>
@@ -343,8 +313,6 @@
 	</rdf:Description>
 	
 	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#PAM2500-d7">
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
 		<poddScience:hasPlatformType rdf:resource="http://purl.org/podd/ns/poddScience#PlatformType_Hardware"/>
 		<rdfs:label>PAM 2500 </rdfs:label>
@@ -352,8 +320,6 @@
 	</rdf:Description>
 	
 	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#PSIFP100-b2">
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
 		<poddScience:hasPlatformType rdf:resource="http://purl.org/podd/ns/poddScience#PlatformType_Hardware"/>
 		<rdfs:label>PSI FP100 </rdfs:label>
@@ -361,8 +327,6 @@
 	</rdf:Description>
 	
 	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#PSINDVI-1h">
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
 		<poddScience:hasPlatformType rdf:resource="http://purl.org/podd/ns/poddScience#PlatformType_Hardware"/>
 		<rdfs:label>PSI NDVI</rdfs:label>
@@ -370,8 +334,6 @@
 	</rdf:Description>
 	
 	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#PSIPRI-2f">
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
 		<poddScience:hasPlatformType rdf:resource="http://purl.org/podd/ns/poddScience#PlatformType_Hardware"/>
 		<rdfs:label>PSI PRI</rdfs:label>
@@ -379,8 +341,6 @@
 	</rdf:Description>
 	
 	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#Pyrometer-5b">
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
 		<poddScience:hasPlatformType rdf:resource="http://purl.org/podd/ns/poddScience#PlatformType_Hardware"/>
 		<rdfs:label>Pyrometer</rdfs:label>
@@ -388,8 +348,6 @@
 	</rdf:Description>
 	
 	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#PyrometerAgriThermIII-b3">
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
 		<poddScience:hasPlatformType rdf:resource="http://purl.org/podd/ns/poddScience#PlatformType_Hardware"/>
 		<rdfs:label>Pyrometer (AgriTherm III) </rdfs:label>
@@ -397,8 +355,6 @@
 	</rdf:Description>
 	
 	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#SC1Porometer-5a">
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
 		<poddScience:hasPlatformType rdf:resource="http://purl.org/podd/ns/poddScience#PlatformType_Hardware"/>
 		<rdfs:label>SC1 Porometer </rdfs:label>
@@ -406,8 +362,6 @@
 	</rdf:Description>
 	
 	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#SPADMeter-8f">
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
 		<poddScience:hasPlatformType rdf:resource="http://purl.org/podd/ns/poddScience#PlatformType_Hardware"/>
 		<rdfs:label>SPAD Meter </rdfs:label>
@@ -415,8 +369,6 @@
 	</rdf:Description>
 	
 	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#Trayscan-d5">
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
 		<poddScience:hasPlatformType rdf:resource="http://purl.org/podd/ns/poddScience#PlatformType_Hardware"/>
 		<rdfs:label>Trayscan </rdfs:label>
@@ -424,8 +376,6 @@
 	</rdf:Description>
 	
 	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#PlantScan-6e">
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
 		<poddScience:hasPlatformType rdf:resource="http://purl.org/podd/ns/poddScience#PlatformType_Hardware"/>
 		<rdfs:label>PlantScan</rdfs:label>
@@ -433,8 +383,6 @@
 	</rdf:Description>
 	
 	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#CabScan-f3">
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
 		<poddScience:hasPlatformType rdf:resource="http://purl.org/podd/ns/poddScience#PlatformType_Hardware"/>
 		<rdfs:label>CabScan</rdfs:label>
