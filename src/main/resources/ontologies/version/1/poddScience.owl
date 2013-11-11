@@ -1491,7 +1491,7 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&poddScience;hasWildType"/>
                 <owl:onClass rdf:resource="&poddScience;WildTypeAssertion"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
