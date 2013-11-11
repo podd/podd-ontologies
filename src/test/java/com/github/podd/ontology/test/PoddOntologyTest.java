@@ -78,7 +78,7 @@ public class PoddOntologyTest
                         { PoddOntologyTest.VERSION_1_PATH + "poddUser.owl", "application/rdf+xml", 188 },
                         { PoddOntologyTest.VERSION_1_PATH + "poddBase.owl", "application/rdf+xml", 331 },
                         { PoddOntologyTest.VERSION_1_PATH + "poddScience.owl", "application/rdf+xml", 1338 },
-                        { PoddOntologyTest.VERSION_1_PATH + "poddPlant.owl", "application/rdf+xml", 162 },
+                        { PoddOntologyTest.VERSION_1_PATH + "poddPlant.owl", "application/rdf+xml", 214 },
                         { PoddOntologyTest.VERSION_1_PATH + "poddAnimal.owl", "application/rdf+xml", 139 },
                         { PoddOntologyTest.VERSION_1_PATH + "poddDataRepository.owl", "application/rdf+xml", 47 },
                         { "/ontologies/crop-ontology-715.owl", "application/rdf+xml", 2173 },
