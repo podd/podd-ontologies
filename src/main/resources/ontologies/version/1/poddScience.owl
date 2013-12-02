@@ -1015,7 +1015,7 @@
     <owl:DatatypeProperty rdf:about="&poddScience;hasReplicate">
         <rdfs:label>Replicate Number</rdfs:label>
         <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
-        <rdfs:range rdf:resource="&xsd;int"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
         <poddBase:weight>4</poddBase:weight>
     </owl:DatatypeProperty>
     
