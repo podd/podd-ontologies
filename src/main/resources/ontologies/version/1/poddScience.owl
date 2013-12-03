@@ -801,6 +801,17 @@
     
 
 
+    <!-- http://purl.org/podd/ns/poddScience#hasPotType -->
+
+    <owl:DatatypeProperty rdf:about="&poddScience;hasPotType">
+        <rdfs:label>Pot Type</rdfs:label>
+        <poddBase:hasDisplayType rdf:resource="&poddBase;DisplayType_ShortText"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <poddBase:weight>11</poddBase:weight>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://purl.org/podd/ns/poddScience#hasPotColumnNumberOverall -->
 
     <owl:DatatypeProperty rdf:about="&poddScience;hasPotColumnNumberOverall">
