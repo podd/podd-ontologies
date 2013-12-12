@@ -17,7 +17,7 @@ import org.junit.runners.Parameterized.Parameters;
  * @author kutila
  * 
  */
-@Ignore
+@Ignore("This test does not work with default OWLOntologyManager at this stage")
 @RunWith(value = Parameterized.class)
 public class MultiplePoddOntologyVersionTest extends AbstractPoddOntologyVersionTest
 {
