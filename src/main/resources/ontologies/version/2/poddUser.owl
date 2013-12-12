@@ -1,0 +1,433 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY user "http://purl.org/podd/ns/poddUser#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://purl.org/podd/ns/poddUser#"
+     xml:base="http://purl.org/podd/ns/poddUser"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:user="http://purl.org/podd/ns/poddUser#">
+    <owl:Ontology rdf:about="http://purl.org/podd/ns/poddUser">
+        <rdfs:label>The PODD User Ontology</rdfs:label>
+        <owl:imports rdf:resource="http://purl.org/podd/ns/version/dcTerms/1"/>
+        <owl:imports rdf:resource="http://purl.org/podd/ns/version/foaf/1"/>
+        <owl:versionIRI rdf:resource="http://purl.org/podd/ns/version/poddUser/1"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/podd/ns/poddUser#hasAffiliation -->
+
+    <owl:ObjectProperty rdf:about="&user;hasAffiliation">
+        <rdfs:label>has Affiliation</rdfs:label>
+        <rdfs:range rdf:resource="&foaf;Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/podd/ns/poddUser#hasPoddRole -->
+
+    <owl:ObjectProperty rdf:about="&user;hasPoddRole">
+        <rdfs:label>has Podd Role</rdfs:label>
+        <rdfs:range rdf:resource="&user;PoddRole"/>
+    </owl:ObjectProperty>
+    
+
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/podd/ns/poddUser#lastLoginTime -->
+
+    <owl:DatatypeProperty rdf:about="&user;lastLoginTime">
+        <rdfs:label>has Last Login Time</rdfs:label>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/podd/ns/poddUser#phoneNumber -->
+
+    <owl:DatatypeProperty rdf:about="&user;phoneNumber">
+        <rdfs:label>has Phone Number</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.org/dc/terms/Agent"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/podd/ns/poddUser#postalAddress -->
+
+    <owl:DatatypeProperty rdf:about="&user;postalAddress">
+        <rdfs:label>has Postal Address</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.org/dc/terms/Agent"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+    <!-- http://purl.org/podd/ns/poddUser#PoddRole -->
+
+    <owl:Class rdf:about="&user;PoddRole">
+        <rdfs:label>Podd Role</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&user;RoleAuthenticated"/>
+                    <rdf:Description rdf:about="&user;RoleAdministrator"/>
+                    <rdf:Description rdf:about="&user;RolePublic"/>
+                    <rdf:Description rdf:about="&user;RoleTopObjectObserver"/>
+                    <rdf:Description rdf:about="&user;RoleTopObjectMember"/>
+                    <rdf:Description rdf:about="&user;RoleTopObjectAdministrator"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:comment>All Podd Roles that a user may have.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/podd/ns/poddUser#RepositoryRole -->
+
+    <owl:Class rdf:about="&user;RepositoryRole">
+        <rdfs:label>Repository Role</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&user;RoleAuthenticated"/>
+                    <rdf:Description rdf:about="&user;RoleAdministrator"/>
+                    <rdf:Description rdf:about="&user;RolePublic"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&user;PoddRole"/>
+        <rdfs:comment>Roles related to the Repository a user may have, such as administrator, authenticated user, etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/podd/ns/poddUser#TopObjectRole -->
+
+    <owl:Class rdf:about="&user;TopObjectRole">
+        <rdfs:label>Top Object Role</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&user;RoleTopObjectObserver"/>
+                    <rdf:Description rdf:about="&user;RoleTopObjectMember"/>
+                    <rdf:Description rdf:about="&user;RoleTopObjectAdministrator"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&user;PoddRole"/>
+        <rdfs:comment>Roles related to a Top Object that a user may have.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/podd/ns/poddUser#User -->
+
+    <owl:Class rdf:about="&user;User">
+        <rdfs:label>User</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&foaf;Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&user;hasPoddRole"/>
+                <owl:allValuesFrom rdf:resource="&user;PoddRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&user;hasPoddRole"/>
+                <owl:onClass rdf:resource="&user;PoddRole"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&user;postalAddress"/>
+                <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&user;phoneNumber"/>
+                <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&user;lastLoginTime"/>
+                <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&foaf;title"/>
+                <owl:allValuesFrom rdf:resource="&rdfs;Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&user;hasAffiliation"/>
+                <owl:someValuesFrom rdf:resource="&foaf;Organization"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A (human) user in the PODD system.
+
+A user can have status either Active or Inactive.
+
+A user has exactly one name (username).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/podd/ns/poddUser#UserStatus -->
+
+    <owl:Class rdf:about="&user;UserStatus">
+        <rdfs:label>User Status</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&user;StatusActive"/>
+                    <rdf:Description rdf:about="&user;StatusInactive"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/podd/ns/poddUser#RoleAdministrator -->
+
+    <rdf:Description rdf:about="&user;RoleAdministrator">
+        <rdf:type rdf:resource="&user;PoddRole"/>
+        <rdf:type rdf:resource="&user;RepositoryRole"/>
+        <rdfs:label>Administrator Role</rdfs:label>
+        <rdfs:comment>Reresents a user with administrator privilidges.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/podd/ns/poddUser#RoleAuthenticated -->
+
+    <owl:NamedIndividual rdf:about="&user;RoleAuthenticated">
+        <rdf:type rdf:resource="&user;PoddRole"/>
+        <rdf:type rdf:resource="&user;RepositoryRole"/>
+        <rdfs:label>Authenticated Role</rdfs:label>
+        <rdfs:comment>Represents a regular registered user</rdfs:comment>
+    </owl:NamedIndividual>
+
+
+    <!-- http://purl.org/podd/ns/poddUser#RoleTopObjectObserver -->
+
+    <owl:NamedIndividual rdf:about="&user;RoleTopObjectObserver">
+        <rdf:type rdf:resource="&user;PoddRole"/>
+        <rdf:type rdf:resource="&user;TopObjectRole"/>
+        <rdfs:label>Top Object Observer Role</rdfs:label>
+        <rdfs:comment>Represents an observer of a top object. (e.g. a Project observer)</rdfs:comment>
+    </owl:NamedIndividual>
+
+
+    <!-- http://purl.org/podd/ns/poddUser#RoleTopObjectMember -->
+
+    <owl:NamedIndividual rdf:about="&user;RoleTopObjectMember">
+        <rdf:type rdf:resource="&user;PoddRole"/>
+        <rdf:type rdf:resource="&user;TopObjectRole"/>
+        <rdfs:label>Top Object Member Role</rdfs:label>
+        <rdfs:comment>Represents a member of a top object team (e.g. a Project member).</rdfs:comment>
+    </owl:NamedIndividual>
+
+
+    <!-- http://purl.org/podd/ns/poddUser#RoleTopObjectAdministrator -->
+
+    <owl:NamedIndividual rdf:about="&user;RoleTopObjectAdministrator">
+        <rdf:type rdf:resource="&user;PoddRole"/>
+        <rdf:type rdf:resource="&user;TopObjectRole"/>
+        <rdfs:label>Top Object Admin Role</rdfs:label>
+        <rdfs:comment>Represents an administrator of a top object. (e.g. a Project administrator)</rdfs:comment>
+    </owl:NamedIndividual>
+
+
+    <!-- http://purl.org/podd/ns/poddUser#RolePublic -->
+
+    <owl:NamedIndividual rdf:about="&user;RolePublic">
+        <rdf:type rdf:resource="&user;PoddRole"/>
+        <rdf:type rdf:resource="&user;RepositoryRole"/>
+        <rdfs:label>Public Role</rdfs:label>
+        <rdfs:comment>Represents a public/anonymous user.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+
+
+
+
+    <!-- http://purl.org/podd/ns/poddUser#StatusActive -->
+
+    <owl:NamedIndividual rdf:about="&user;StatusActive">
+        <rdf:type rdf:resource="&user;UserStatus"/>
+        <rdfs:label>Active Status</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/podd/ns/poddUser#StatusInactive -->
+
+    <owl:NamedIndividual rdf:about="&user;StatusInactive">
+        <rdf:type rdf:resource="&user;UserStatus"/>
+        <rdfs:label>Inactive Status</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&user;RolePublic"/>
+            <rdf:Description rdf:about="&user;RoleAuthenticated"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&user;RolePublic"/>
+            <rdf:Description rdf:about="&user;RoleAdministrator"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&user;RoleAdministrator"/>
+            <rdf:Description rdf:about="&user;RoleAuthenticated"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&user;RoleTopObjectMember"/>
+            <rdf:Description rdf:about="&user;RoleTopObjectObserver"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&user;RoleTopObjectMember"/>
+            <rdf:Description rdf:about="&user;RoleTopObjectAdministrator"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&user;StatusActive"/>
+            <rdf:Description rdf:about="&user;StatusInactive"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&user;RoleTopObjectObserver"/>
+            <rdf:Description rdf:about="&user;RoleTopObjectAdministrator"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+

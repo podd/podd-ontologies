@@ -1,20 +1,12 @@
-/**
- * 
- */
 package com.github.podd.ontology.test;
 
 import java.io.InputStream;
 import java.io.PrintWriter;
-import java.util.Arrays;
-import java.util.Collection;
 import java.util.Set;
 
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
-import org.junit.runners.Parameterized.Parameters;
 import org.openrdf.model.impl.LinkedHashModel;
 import org.openrdf.rio.RDFFormat;
 import org.openrdf.rio.RDFParser;
@@ -44,16 +36,9 @@ import com.clarkparsia.owlapi.explanation.io.ExplanationRenderer;
 import com.clarkparsia.owlapi.explanation.io.manchester.ManchesterSyntaxExplanationRenderer;
 import com.clarkparsia.owlapi.explanation.util.ExplanationProgressMonitor;
 
-/**
- * Parameterized test to validate PODD ontologies.
- * 
- * @author kutila
- * 
- */
-@RunWith(value = Parameterized.class)
-public class PoddOntologyTest
+public abstract class AbstractPoddOntologyVersionTest
 {
-    public static final String VERSION_1_PATH = "/ontologies/version/1/";
+    
     /**
      * NOTE: The static OWLOntologyManager instance is reused through all the tests so that loaded
      * ontologies are kept in memory and able to satisfy import requirements in later ontologies.
@@ -64,62 +49,15 @@ public class PoddOntologyTest
     @BeforeClass
     public static void beforeClass() throws Exception
     {
-        PoddOntologyTest.owlOntologyManager = OWLOntologyManagerFactoryRegistry.createOWLOntologyManager();
+        AbstractPoddOntologyVersionTest.owlOntologyManager =
+                OWLOntologyManagerFactoryRegistry.createOWLOntologyManager();
     }
     
-    @Parameters(name = "{0}")
-    public static Collection<Object[]> data()
-    {
-        final Object[][] data =
-                new Object[][] {
-                        // schema ontologies
-                        { PoddOntologyTest.VERSION_1_PATH + "dcTerms.owl", "application/rdf+xml", 47 },
-                        { PoddOntologyTest.VERSION_1_PATH + "foaf.owl", "application/rdf+xml", 38 },
-                        { PoddOntologyTest.VERSION_1_PATH + "poddUser.owl", "application/rdf+xml", 188 },
-                        { PoddOntologyTest.VERSION_1_PATH + "poddBase.owl", "application/rdf+xml", 331 },
-                        { PoddOntologyTest.VERSION_1_PATH + "poddScience.owl", "application/rdf+xml", 1447 },
-                        { PoddOntologyTest.VERSION_1_PATH + "poddPlant.owl", "application/rdf+xml", 214 },
-                        { PoddOntologyTest.VERSION_1_PATH + "poddAnimal.owl", "application/rdf+xml", 139 },
-                        { PoddOntologyTest.VERSION_1_PATH + "poddDataRepository.owl", "application/rdf+xml", 47 },
-                        { "/ontologies/crop-ontology-715.owl", "application/rdf+xml", 2173 },
-                
-                // artifacts to test
-                // { "/test/artifacts/basic-1.rdf", "application/rdf+xml", 26 },
-                // { "/test/artifacts/basic-2.rdf", "application/rdf+xml", 97 },
-                // { "/test/artifacts/basic-2-internal-objects.rdf", "application/rdf+xml", 29 },
-                // { "/test/artifacts/basicProject-1-internal-object.rdf", "application/rdf+xml", 26
-                // },
-                
-                // { "/test/artifacts/basic-1.ttl", "text/turtle", 32 },
-                // { "/test/artifacts/basic-2.ttl", "text/turtle", 97 },
-                // { "/test/artifacts/3-topobjects.ttl", "text/turtle", 34 },
-                
-                // { "/ontologies/dcTermsInferred.rdf", "application/rdf+xml", 16 },
-                // { "/ontologies/foafInferred.rdf", "application/rdf+xml", 37 },
-                // { "/ontologies/poddUserInferred.rdf", "application/rdf+xml", 87 },
-                // { "/ontologies/poddBaseInferred.rdf", "application/rdf+xml", 183 },
-                // { "/ontologies/poddScienceInferred.rdf", "application/rdf+xml", 472 },
-                // { "/ontologies/poddPlantInferred.rdf", "application/rdf+xml", 495 },
-                
-                // Inconsistent Ontology
-                // { "/test/artifacts/bad-twoLeadInstitutions.rdf", "application/rdf+xml", 22 },
-                };
-        return Arrays.asList(data);
-    }
+    protected String filename;
+    protected String mimeType;
+    protected int statementCount;
     
-    // ----------- parameters for junit test----------------
-    private String filename;
-    
-    private String mimeType;
-    
-    private int statementCount;
-    
-    /**
-     * Parameterized constructor
-     * 
-     * @param number
-     */
-    public PoddOntologyTest(final String filename, final String mimeType, final int statementCount)
+    public AbstractPoddOntologyVersionTest(final String filename, final String mimeType, final int statementCount)
     {
         this.filename = filename;
         this.mimeType = mimeType;
@@ -152,7 +90,7 @@ public class PoddOntologyTest
                         .getByMIMEType(this.mimeType);
         final RioParserImpl owlParser = new RioParserImpl(ontologyFormatFactory);
         
-        final OWLOntology nextOntology = PoddOntologyTest.owlOntologyManager.createOntology();
+        final OWLOntology nextOntology = AbstractPoddOntologyVersionTest.owlOntologyManager.createOntology();
         final RioMemoryTripleSource owlSource = new RioMemoryTripleSource(collector.getStatements().iterator());
         
         owlParser.parse(owlSource, nextOntology);
@@ -191,8 +129,8 @@ public class PoddOntologyTest
             for(final OWLClass nextUnsatisfiableClass : entitiesMinusBottom)
             {
                 final ExplanationGenerator explanator =
-                        new DefaultExplanationGenerator(PoddOntologyTest.owlOntologyManager, reasonerFactory,
-                                nextOntology, (ExplanationProgressMonitor)null);
+                        new DefaultExplanationGenerator(AbstractPoddOntologyVersionTest.owlOntologyManager,
+                                reasonerFactory, nextOntology, (ExplanationProgressMonitor)null);
                 final Set<Set<OWLAxiom>> explanations = explanator.getExplanations(nextUnsatisfiableClass);
                 out.println("next unsatisfiable class: " + nextUnsatisfiableClass.getIRI());
                 renderer.render((OWLAxiom)null, explanations);
@@ -222,4 +160,5 @@ public class PoddOntologyTest
         Assert.assertEquals("Incorrect number of statements for " + this.filename, this.statementCount, collector
                 .getStatements().size());
     }
+    
 }
