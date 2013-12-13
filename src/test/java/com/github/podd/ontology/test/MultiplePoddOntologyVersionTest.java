@@ -6,7 +6,6 @@ package com.github.podd.ontology.test;
 import java.util.Arrays;
 import java.util.Collection;
 
-import org.junit.Ignore;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
@@ -17,7 +16,6 @@ import org.junit.runners.Parameterized.Parameters;
  * @author kutila
  * 
  */
-@Ignore("This test does not work with default OWLOntologyManager at this stage")
 @RunWith(value = Parameterized.class)
 public class MultiplePoddOntologyVersionTest extends AbstractPoddOntologyVersionTest
 {
