@@ -27,10 +27,10 @@
 	 xmlns:user="http://purl.org/podd/ns/poddUser#">
     <owl:Ontology rdf:about="http://purl.org/podd/ns/poddBase">
         <rdfs:label>The PODD Base Ontology</rdfs:label>
-        <owl:imports rdf:resource="http://purl.org/podd/ns/version/dcTerms/1"/>
-        <owl:imports rdf:resource="http://purl.org/podd/ns/version/foaf/1"/>
-        <owl:imports rdf:resource="http://purl.org/podd/ns/version/poddUser/1"/>
-        <owl:versionIRI rdf:resource="http://purl.org/podd/ns/version/poddBase/1"/>
+        <owl:imports rdf:resource="http://purl.org/podd/ns/version/dcTerms/2"/>
+        <owl:imports rdf:resource="http://purl.org/podd/ns/version/foaf/2"/>
+        <owl:imports rdf:resource="http://purl.org/podd/ns/version/poddUser/2"/>
+        <owl:versionIRI rdf:resource="http://purl.org/podd/ns/version/poddBase/2"/>
     </owl:Ontology>
     
 

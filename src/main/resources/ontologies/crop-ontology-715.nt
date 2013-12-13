@@ -1,0 +1,923 @@
+<http://www.cropontology.org/rdf/CO_715%3A0000256> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000256> <http://www.w3.org/2000/01/rdf-schema#label> "Selected check mark"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000256> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Entity selected and retianed by the cooperators for further testing.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000256> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000001> .
+<http://www.cropontology.org/rdf/CO_715%3A0000254> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000254> <http://www.w3.org/2000/01/rdf-schema#label> "Date end"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000254> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Date on which the experiment started in the format MM-DD-YYYY.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000254> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000001> .
+<http://www.cropontology.org/rdf/CO_715%3A0000253> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000253> <http://www.w3.org/2000/01/rdf-schema#label> "Date start"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000253> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Date on which the experiment started in the format MM-DD-YYYY.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000253> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000001> .
+<http://www.cropontology.org/rdf/CO_715%3A0000252> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000252> <http://www.w3.org/2000/01/rdf-schema#label> "Chemical trial"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000252> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000028> .
+<http://www.cropontology.org/rdf/CO_715%3A0000251> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000251> <http://www.w3.org/2000/01/rdf-schema#label> "Agronomic trial"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000251> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000028> .
+<http://www.cropontology.org/rdf/CO_715%3A0000250> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000250> <http://www.w3.org/2000/01/rdf-schema#label> "Fertilizer trial"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000250> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000028> .
+<http://www.cropontology.org/rdf/CO_715%3A0000249> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000249> <http://www.w3.org/2000/01/rdf-schema#label> "Germplasm screening trial"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000249> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000028> .
+<http://www.cropontology.org/rdf/CO_715%3A0000248> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000248> <http://www.w3.org/2000/01/rdf-schema#label> "Variety trial"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000248> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000028> .
+<http://www.cropontology.org/rdf/CO_715%3A0000247> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000247> <http://www.w3.org/2000/01/rdf-schema#label> "Sub-block"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000247> <http://www.w3.org/2000/01/rdf-schema#comment> "\"The smaller units of the main plot. One sub-block may have single row with numbers of column or single column with numbers of rows.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000247> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000142> .
+<http://www.cropontology.org/rdf/CO_715%3A0000246> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000246> <http://www.w3.org/2000/01/rdf-schema#label> "Replication number"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000246> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Number of replication performed in experiments.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000246> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000149> .
+<http://www.cropontology.org/rdf/CO_715%3A0000245> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000245> <http://www.w3.org/2000/01/rdf-schema#label> "Blocking"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000245> <http://www.w3.org/2000/01/rdf-schema#comment> "\"A block is a relatively large are containing group of several identical units receiving all or most of the treatments.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000245> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000003> .
+<http://www.cropontology.org/rdf/CO_715%3A0000244> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000244> <http://www.w3.org/2000/01/rdf-schema#label> "Partially balanced design"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000244> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000242> .
+<http://www.cropontology.org/rdf/CO_715%3A0000243> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000243> <http://www.w3.org/2000/01/rdf-schema#label> "Balanced incomplete design"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000243> <http://www.w3.org/2000/01/rdf-schema#comment> "\"The designs are conveniently written down by drawing a square lattice, with the treatment numbers at the intersections of the lines.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000243> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000242> .
+<http://www.cropontology.org/rdf/CO_715%3A0000242> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000242> <http://www.w3.org/2000/01/rdf-schema#label> "Incomplete block design"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000242> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000142> .
+<http://www.cropontology.org/rdf/CO_715%3A0000241> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000241> <http://www.w3.org/2000/01/rdf-schema#label> "Latin square"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000241> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000145> .
+<http://www.cropontology.org/rdf/CO_715%3A0000240> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000240> <http://www.w3.org/2000/01/rdf-schema#label> "Accession size"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000240> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Approximate amount of seeds of an accession in the genebank.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000240> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000223> .
+<http://www.cropontology.org/rdf/CO_715%3A0000239> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000239> <http://www.w3.org/2000/01/rdf-schema#label> "Last seed germination test date"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000239> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Date of last seed germination test in the format MM-DD-YYYY.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000239> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000223> .
+<http://www.cropontology.org/rdf/CO_715%3A0000238> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000238> <http://www.w3.org/2000/01/rdf-schema#label> "Seed germination rate at initial storage"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000238> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Seed germination rate in percentage at initial storage.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000238> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000223> .
+<http://www.cropontology.org/rdf/CO_715%3A0000237> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000237> <http://www.w3.org/2000/01/rdf-schema#label> "Seed storage date"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000237> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Date of seed storage in the format MM-DD-YYYY.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000237> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000006> .
+<http://www.cropontology.org/rdf/CO_715%3A0000237> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000223> .
+<http://www.cropontology.org/rdf/CO_715%3A0000236> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000236> <http://www.w3.org/2000/01/rdf-schema#label> "Cultural practices"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000236> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000225> .
+<http://www.cropontology.org/rdf/CO_715%3A0000235> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000235> <http://www.w3.org/2000/01/rdf-schema#label> "Acquisition date"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000235> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Date on which the accession entered the collection.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000235> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000225> .
+<http://www.cropontology.org/rdf/CO_715%3A0000234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000234> <http://www.w3.org/2000/01/rdf-schema#label> "Cultivar name"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000234> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000228> .
+<http://www.cropontology.org/rdf/CO_715%3A0000233> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000233> <http://www.w3.org/2000/01/rdf-schema#label> "Subtaxon name"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000233> <http://www.w3.org/2000/01/rdf-schema#comment> "\"The infraspecific epithet of the scientific name (i.e. the epithet following the indication of the infraspecific rank in hte name string).\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000233> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000231> .
+<http://www.cropontology.org/rdf/CO_715%3A0000232> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000232> <http://www.w3.org/2000/01/rdf-schema#label> "Rank name"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000232> <http://www.w3.org/2000/01/rdf-schema#comment> "\"The rank of the subtaxon name. The following abbreviations are allowed: ssp. (for subspecies); var. (for variety); convar. (for convariety); f. (for form).\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000232> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000231> .
+<http://www.cropontology.org/rdf/CO_715%3A0000231> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000231> <http://www.w3.org/2000/01/rdf-schema#label> "Subtaxa"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000231> <http://www.w3.org/2000/01/rdf-schema#comment> "\"subtaxa can be used to store any additional taxonomic identifier.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000231> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000228> .
+<http://www.cropontology.org/rdf/CO_715%3A0000230> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000230> <http://www.w3.org/2000/01/rdf-schema#label> "Species"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000230> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Specific epithet portion of the scientific name in lowercase letters plus authority1. Following abbreviation is allowed: sp.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000230> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000228> .
+<http://www.cropontology.org/rdf/CO_715%3A0000229> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000229> <http://www.w3.org/2000/01/rdf-schema#label> "Genus"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000229> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Genus name for taxon. Initial Uppercase letter required.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000229> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000228> .
+<http://www.cropontology.org/rdf/CO_715%3A0000228> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000228> <http://www.w3.org/2000/01/rdf-schema#label> "Scientific name"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000228> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000225> .
+<http://www.cropontology.org/rdf/CO_715%3A0000227> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000227> <http://www.w3.org/2000/01/rdf-schema#label> "Accession number"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000227> <http://www.w3.org/2000/01/rdf-schema#comment> "\"This number serves as a unique identifier for accessions and is assigned when an accession is entered into the collection. Once assigned this number should never be reassigned to another accession in the collection. Even if an accession is lost, its assigned number should never be reused. Letters should be used before the number to identify the genebank or national system (e.g. IDG indicates an accession that comes from the genebank at Bari, Italy; CGN indicates an accession from the genebank at Wageningen, The Netherlands; PI indicates an accession within the USA system).\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000227> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000225> .
+<http://www.cropontology.org/rdf/CO_715%3A0000227> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000223> .
+<http://www.cropontology.org/rdf/CO_715%3A0000226> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000226> <http://www.w3.org/2000/01/rdf-schema#label> "Institute code"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000226> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Code of the institute where the accession is maintained. The codes consist of the 3-letter ISO 3166 country code of the country where the institute is located plus number or an acronym as specified in the Institute database that will be made available by FAO. Preliminary codes (i.e. codes not yet incorporated in the FAO Institute database) start with an asterisk followed by a 3-letter ISO 3166 country code and an acronym.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000226> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000225> .
+<http://www.cropontology.org/rdf/CO_715%3A0000225> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000225> <http://www.w3.org/2000/01/rdf-schema#label> "Passport information entity"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000225> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000001> .
+<http://www.cropontology.org/rdf/CO_715%3A0000224> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000224> <http://www.w3.org/2000/01/rdf-schema#label> "Seed location"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000224> <http://www.w3.org/2000/01/rdf-schema#comment> "\"State building, room, medium- and/or long-term storage.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000224> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000223> .
+<http://www.cropontology.org/rdf/CO_715%3A0000223> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000223> <http://www.w3.org/2000/01/rdf-schema#label> "Seed management"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000223> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000045> .
+<http://www.cropontology.org/rdf/CO_715%3A0000222> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000222> <http://www.w3.org/2000/01/rdf-schema#label> "Distance from water source"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000222> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000206> .
+<http://www.cropontology.org/rdf/CO_715%3A0000221> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000221> <http://www.w3.org/2000/01/rdf-schema#label> "Water source"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000221> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000206> .
+<http://www.cropontology.org/rdf/CO_715%3A0000220> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000220> <http://www.w3.org/2000/01/rdf-schema#label> "Water level"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000220> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000206> .
+<http://www.cropontology.org/rdf/CO_715%3A0000219> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000219> <http://www.w3.org/2000/01/rdf-schema#label> "Flooding stage"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000219> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000210> .
+<http://www.cropontology.org/rdf/CO_715%3A0000218> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000218> <http://www.w3.org/2000/01/rdf-schema#label> "Flooding duration"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000218> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000210> .
+<http://www.cropontology.org/rdf/CO_715%3A0000217> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000217> <http://www.w3.org/2000/01/rdf-schema#label> "Flooding depth"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000217> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000210> .
+<http://www.cropontology.org/rdf/CO_715%3A0000216> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000216> <http://www.w3.org/2000/01/rdf-schema#label> "Pest type"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000216> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000203> .
+<http://www.cropontology.org/rdf/CO_715%3A0000215> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000215> <http://www.w3.org/2000/01/rdf-schema#label> "Pest name"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000215> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000203> .
+<http://www.cropontology.org/rdf/CO_715%3A0000214> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000214> <http://www.w3.org/2000/01/rdf-schema#label> "Wild flooding"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000214> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000206> .
+<http://www.cropontology.org/rdf/CO_715%3A0000213> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000213> <http://www.w3.org/2000/01/rdf-schema#label> "Sub-irrigation"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000213> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000206> .
+<http://www.cropontology.org/rdf/CO_715%3A0000212> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000212> <http://www.w3.org/2000/01/rdf-schema#label> "Sprinkler"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000212> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000206> .
+<http://www.cropontology.org/rdf/CO_715%3A0000211> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000211> <http://www.w3.org/2000/01/rdf-schema#label> "Furrow"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000211> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000206> .
+<http://www.cropontology.org/rdf/CO_715%3A0000210> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000210> <http://www.w3.org/2000/01/rdf-schema#label> "Flooding"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000210> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000206> .
+<http://www.cropontology.org/rdf/CO_715%3A0000209> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000209> <http://www.w3.org/2000/01/rdf-schema#label> "Corrugation"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000209> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000206> .
+<http://www.cropontology.org/rdf/CO_715%3A0000208> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000208> <http://www.w3.org/2000/01/rdf-schema#label> "Check-basin"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000208> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000206> .
+<http://www.cropontology.org/rdf/CO_715%3A0000207> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000207> <http://www.w3.org/2000/01/rdf-schema#label> "Boarder-strip"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000207> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000206> .
+<http://www.cropontology.org/rdf/CO_715%3A0000206> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000206> <http://www.w3.org/2000/01/rdf-schema#label> "Water treatment"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000206> <http://www.w3.org/2000/01/rdf-schema#comment> "\"The filed management by treating water or irrigation.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000206> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000203> .
+<http://www.cropontology.org/rdf/CO_715%3A0000205> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000205> <http://www.w3.org/2000/01/rdf-schema#label> "other fertilizer amount"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000205> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Amount of other fertilizer applied in the experimental field.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000205> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000204> .
+<http://www.cropontology.org/rdf/CO_715%3A0000204> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000204> <http://www.w3.org/2000/01/rdf-schema#label> "Fertilizer treatment"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000204> <http://www.w3.org/2000/01/rdf-schema#comment> "\"The process of managing filed environment by treating fertilizers.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000204> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000203> .
+<http://www.cropontology.org/rdf/CO_715%3A0000203> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000203> <http://www.w3.org/2000/01/rdf-schema#label> "Field management"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000203> <http://www.w3.org/2000/01/rdf-schema#comment> "\"The process of managing filed environment by various treatments.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000203> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000045> .
+<http://www.cropontology.org/rdf/CO_715%3A0000202> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000202> <http://www.w3.org/2000/01/rdf-schema#label> "Other fertilizer"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000202> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Application of other fertilizer in the experimental field.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000202> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000198> .
+<http://www.cropontology.org/rdf/CO_715%3A0000202> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000204> .
+<http://www.cropontology.org/rdf/CO_715%3A0000201> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000201> <http://www.w3.org/2000/01/rdf-schema#label> "Potassium"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000201> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Application of potassium as a fertilizer in the experimental field.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000201> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000198> .
+<http://www.cropontology.org/rdf/CO_715%3A0000201> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000204> .
+<http://www.cropontology.org/rdf/CO_715%3A0000200> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000200> <http://www.w3.org/2000/01/rdf-schema#label> "Phosphorus"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000200> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Application of phosphorus as a fertilizer in the experimental field.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000200> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000198> .
+<http://www.cropontology.org/rdf/CO_715%3A0000200> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000204> .
+<http://www.cropontology.org/rdf/CO_715%3A0000199> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000199> <http://www.w3.org/2000/01/rdf-schema#label> "Nitrogen"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000199> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Application of nitrogen as a fertilizer in the experimental field.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000199> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000198> .
+<http://www.cropontology.org/rdf/CO_715%3A0000199> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000204> .
+<http://www.cropontology.org/rdf/CO_715%3A0000198> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000198> <http://www.w3.org/2000/01/rdf-schema#label> "Fertilizer"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000198> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000193> .
+<http://www.cropontology.org/rdf/CO_715%3A0000197> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000197> <http://www.w3.org/2000/01/rdf-schema#label> "Nutrient hormone"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000197> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000193> .
+<http://www.cropontology.org/rdf/CO_715%3A0000196> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000196> <http://www.w3.org/2000/01/rdf-schema#label> "Fungicide"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000196> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000193> .
+<http://www.cropontology.org/rdf/CO_715%3A0000195> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000195> <http://www.w3.org/2000/01/rdf-schema#label> "Pesticide"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000195> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000193> .
+<http://www.cropontology.org/rdf/CO_715%3A0000194> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000194> <http://www.w3.org/2000/01/rdf-schema#label> "Herbicide"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000194> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000193> .
+<http://www.cropontology.org/rdf/CO_715%3A0000193> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000193> <http://www.w3.org/2000/01/rdf-schema#label> "Growth control agent"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000193> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000005> .
+<http://www.cropontology.org/rdf/CO_715%3A0000192> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000192> <http://www.w3.org/2000/01/rdf-schema#label> "Mega environment"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000192> <http://www.w3.org/2000/01/rdf-schema#comment> "\"A group of locations that consistently share the same best cultivar(s).\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000192> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000162> .
+<http://www.cropontology.org/rdf/CO_715%3A0000191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000191> <http://www.w3.org/2000/01/rdf-schema#label> "Indoor environment"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000191> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000186> .
+<http://www.cropontology.org/rdf/CO_715%3A0000190> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000190> <http://www.w3.org/2000/01/rdf-schema#label> "Conventional green house"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000190> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000186> .
+<http://www.cropontology.org/rdf/CO_715%3A0000189> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000189> <http://www.w3.org/2000/01/rdf-schema#label> "Growth chamber"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000189> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000005> .
+<http://www.cropontology.org/rdf/CO_715%3A0000189> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000185> .
+<http://www.cropontology.org/rdf/CO_715%3A0000188> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000188> <http://www.w3.org/2000/01/rdf-schema#label> "Green house without artificial light"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000188> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000185> .
+<http://www.cropontology.org/rdf/CO_715%3A0000187> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000187> <http://www.w3.org/2000/01/rdf-schema#label> "Green house with artificial light"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000187> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000185> .
+<http://www.cropontology.org/rdf/CO_715%3A0000186> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000186> <http://www.w3.org/2000/01/rdf-schema#label> "Uncontrolled environment"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000186> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000184> .
+<http://www.cropontology.org/rdf/CO_715%3A0000185> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000185> <http://www.w3.org/2000/01/rdf-schema#label> "Controlled environment"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000185> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000184> .
+<http://www.cropontology.org/rdf/CO_715%3A0000184> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000184> <http://www.w3.org/2000/01/rdf-schema#label> "Growth environment"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000184> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000182> .
+<http://www.cropontology.org/rdf/CO_715%3A0000183> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000183> <http://www.w3.org/2000/01/rdf-schema#label> "Growth substrate"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000183> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000182> .
+<http://www.cropontology.org/rdf/CO_715%3A0000182> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000182> <http://www.w3.org/2000/01/rdf-schema#label> "Growth condition"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000182> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000005> .
+<http://www.cropontology.org/rdf/CO_715%3A0000181> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000181> <http://www.w3.org/2000/01/rdf-schema#label> "Greenhouse then field condition"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000181> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000005> .
+<http://www.cropontology.org/rdf/CO_715%3A0000180> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000180> <http://www.w3.org/2000/01/rdf-schema#label> "Greenhouse environment condition"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000180> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000005> .
+<http://www.cropontology.org/rdf/CO_715%3A0000179> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000179> <http://www.w3.org/2000/01/rdf-schema#label> "Number of post-sowing irrigation"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000179> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000178> .
+<http://www.cropontology.org/rdf/CO_715%3A0000178> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000178> <http://www.w3.org/2000/01/rdf-schema#label> "Post-sowing irrigation"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000178> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000175> .
+<http://www.cropontology.org/rdf/CO_715%3A0000177> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000177> <http://www.w3.org/2000/01/rdf-schema#label> "Number of pre-sowing irrigation"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000177> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000176> .
+<http://www.cropontology.org/rdf/CO_715%3A0000176> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000176> <http://www.w3.org/2000/01/rdf-schema#label> "Pre-sowing irrigation"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000176> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000175> .
+<http://www.cropontology.org/rdf/CO_715%3A0000175> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000175> <http://www.w3.org/2000/01/rdf-schema#label> "Irrigated"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000175> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000166> .
+<http://www.cropontology.org/rdf/CO_715%3A0000174> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000174> <http://www.w3.org/2000/01/rdf-schema#label> "Water availability"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000174> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000166> .
+<http://www.cropontology.org/rdf/CO_715%3A0000173> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000173> <http://www.w3.org/2000/01/rdf-schema#label> "Soil depth to groundwater table"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000173> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000166> .
+<http://www.cropontology.org/rdf/CO_715%3A0000172> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000172> <http://www.w3.org/2000/01/rdf-schema#label> "Groundwater quality"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000172> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000166> .
+<http://www.cropontology.org/rdf/CO_715%3A0000171> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000171> <http://www.w3.org/2000/01/rdf-schema#label> "Rainfall timing"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000171> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000168> .
+<http://www.cropontology.org/rdf/CO_715%3A0000170> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000170> <http://www.w3.org/2000/01/rdf-schema#label> "Rainfall duration"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000170> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000168> .
+<http://www.cropontology.org/rdf/CO_715%3A0000169> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000169> <http://www.w3.org/2000/01/rdf-schema#label> "Number of rains during cycle"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000169> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000168> .
+<http://www.cropontology.org/rdf/CO_715%3A0000168> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000168> <http://www.w3.org/2000/01/rdf-schema#label> "Rainfall"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000168> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000167> .
+<http://www.cropontology.org/rdf/CO_715%3A0000167> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000167> <http://www.w3.org/2000/01/rdf-schema#label> "Rain-fed condition"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000167> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000166> .
+<http://www.cropontology.org/rdf/CO_715%3A0000166> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000166> <http://www.w3.org/2000/01/rdf-schema#label> "Water condition"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000166> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000162> .
+<http://www.cropontology.org/rdf/CO_715%3A0000165> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000165> <http://www.w3.org/2000/01/rdf-schema#label> "Season"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000165> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000163> .
+<http://www.cropontology.org/rdf/CO_715%3A0000164> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000164> <http://www.w3.org/2000/01/rdf-schema#label> "Vapor pressure deficit"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000164> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000163> .
+<http://www.cropontology.org/rdf/CO_715%3A0000163> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000163> <http://www.w3.org/2000/01/rdf-schema#label> "Climatic condition"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000163> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000162> .
+<http://www.cropontology.org/rdf/CO_715%3A0000162> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000162> <http://www.w3.org/2000/01/rdf-schema#label> "Field environment condition"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000162> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000005> .
+<http://www.cropontology.org/rdf/CO_715%3A0000161> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000161> <http://www.w3.org/2000/01/rdf-schema#label> "Row per plot"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000161> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Total numbers of rows per plot.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000161> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000156> .
+<http://www.cropontology.org/rdf/CO_715%3A0000160> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000160> <http://www.w3.org/2000/01/rdf-schema#label> "Hill spacing"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000160> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Distance of planting between hills within rows.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000160> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000159> .
+<http://www.cropontology.org/rdf/CO_715%3A0000159> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000159> <http://www.w3.org/2000/01/rdf-schema#label> "Row-to-row spacing"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000159> <http://www.w3.org/2000/01/rdf-schema#comment> "\"The space between the rows.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000159> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000156> .
+<http://www.cropontology.org/rdf/CO_715%3A0000158> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000158> <http://www.w3.org/2000/01/rdf-schema#label> "Row number"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000158> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Specific row position of plot in the Latin Square.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000158> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000156> .
+<http://www.cropontology.org/rdf/CO_715%3A0000157> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000157> <http://www.w3.org/2000/01/rdf-schema#label> "Row length"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000157> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Length of rows.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000157> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000156> .
+<http://www.cropontology.org/rdf/CO_715%3A0000156> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000156> <http://www.w3.org/2000/01/rdf-schema#label> "Row design"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000156> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000150> .
+<http://www.cropontology.org/rdf/CO_715%3A0000155> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000155> <http://www.w3.org/2000/01/rdf-schema#label> "Plot number"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000155> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Position of plot or plot number in the field.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000155> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000150> .
+<http://www.cropontology.org/rdf/CO_715%3A0000154> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000154> <http://www.w3.org/2000/01/rdf-schema#label> "Plant stand number"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000154> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Numbers of plants harvested per plot divided by plot area.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000154> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000150> .
+<http://www.cropontology.org/rdf/CO_715%3A0000153> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000153> <http://www.w3.org/2000/01/rdf-schema#label> "Plot size harvested"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000153> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Size of harvested plot.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000153> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000152> .
+<http://www.cropontology.org/rdf/CO_715%3A0000152> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000152> <http://www.w3.org/2000/01/rdf-schema#label> "Plot size"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000152> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Size or dimensions of harvested plot.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000152> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000150> .
+<http://www.cropontology.org/rdf/CO_715%3A0000151> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000151> <http://www.w3.org/2000/01/rdf-schema#label> "Column number"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000151> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Specific column position of plot in the Latin Square.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000151> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000150> .
+<http://www.cropontology.org/rdf/CO_715%3A0000150> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000150> <http://www.w3.org/2000/01/rdf-schema#label> "Plot design"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000150> <http://www.w3.org/2000/01/rdf-schema#comment> "\"The design for plot or experimental unit which is the smallest unit receiving a certain treatment.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000150> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000142> .
+<http://www.cropontology.org/rdf/CO_715%3A0000149> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000149> <http://www.w3.org/2000/01/rdf-schema#label> "Replication"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000149> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Experiments of the same nature, when presented under similar conditions, should yield similar results.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000149> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000003> .
+<http://www.cropontology.org/rdf/CO_715%3A0000148> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000148> <http://www.w3.org/2000/01/rdf-schema#label> "Number of entries"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000148> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000003> .
+<http://www.cropontology.org/rdf/CO_715%3A0000147> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000147> <http://www.w3.org/2000/01/rdf-schema#label> "Randomised complete block design"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000147> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000145> .
+<http://www.cropontology.org/rdf/CO_715%3A0000146> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000146> <http://www.w3.org/2000/01/rdf-schema#label> "Completely randomized design"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000146> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000145> .
+<http://www.cropontology.org/rdf/CO_715%3A0000145> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000145> <http://www.w3.org/2000/01/rdf-schema#label> "Complete block design"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000145> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000142> .
+<http://www.cropontology.org/rdf/CO_715%3A0000144> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000144> <http://www.w3.org/2000/01/rdf-schema#label> "Blocks per trial"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000144> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Total numbers of blocks used for study or trial or experiment.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000144> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000142> .
+<http://www.cropontology.org/rdf/CO_715%3A0000143> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000143> <http://www.w3.org/2000/01/rdf-schema#label> "Block number"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000143> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Specific block number in the experimental layout.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000143> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000142> .
+<http://www.cropontology.org/rdf/CO_715%3A0000142> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000142> <http://www.w3.org/2000/01/rdf-schema#label> "Block design"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000142> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Design of block.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000142> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000245> .
+<http://www.cropontology.org/rdf/CO_715%3A0000141> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000141> <http://www.w3.org/2000/01/rdf-schema#label> "Root disease development"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000141> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000138> .
+<http://www.cropontology.org/rdf/CO_715%3A0000140> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000140> <http://www.w3.org/2000/01/rdf-schema#label> "Spike disease development"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000140> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000138> .
+<http://www.cropontology.org/rdf/CO_715%3A0000139> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000139> <http://www.w3.org/2000/01/rdf-schema#label> "Foliar disease development"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000139> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000138> .
+<http://www.cropontology.org/rdf/CO_715%3A0000138> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000138> <http://www.w3.org/2000/01/rdf-schema#label> "Disease development"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000138> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000079> .
+<http://www.cropontology.org/rdf/CO_715%3A0000137> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000137> <http://www.w3.org/2000/01/rdf-schema#label> "Insect protection"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000137> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000203> .
+<http://www.cropontology.org/rdf/CO_715%3A0000136> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000136> <http://www.w3.org/2000/01/rdf-schema#label> "Precipitation"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000136> <http://www.w3.org/2000/01/rdf-schema#comment> "\"The falling of any form of water (rain or snow or hail or sleet or mist) to the experimental sites.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000136> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000078> .
+<http://www.cropontology.org/rdf/CO_715%3A0000135> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000135> <http://www.w3.org/2000/01/rdf-schema#label> "Atmospheric factor"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000135> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000078> .
+<http://www.cropontology.org/rdf/CO_715%3A0000134> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000134> <http://www.w3.org/2000/01/rdf-schema#label> "Nutrient standard"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000134> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000131> .
+<http://www.cropontology.org/rdf/CO_715%3A0000133> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000133> <http://www.w3.org/2000/01/rdf-schema#label> "Nutrient deficiency"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000133> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000131> .
+<http://www.cropontology.org/rdf/CO_715%3A0000132> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000132> <http://www.w3.org/2000/01/rdf-schema#label> "Nutrient surplus"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000132> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000131> .
+<http://www.cropontology.org/rdf/CO_715%3A0000131> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000131> <http://www.w3.org/2000/01/rdf-schema#label> "Plant nutrient factor"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000131> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000078> .
+<http://www.cropontology.org/rdf/CO_715%3A0000130> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000130> <http://www.w3.org/2000/01/rdf-schema#label> "Day length"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000130> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000078> .
+<http://www.cropontology.org/rdf/CO_715%3A0000129> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000129> <http://www.w3.org/2000/01/rdf-schema#label> "Ecosystem"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000129> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000078> .
+<http://www.cropontology.org/rdf/CO_715%3A0000128> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000128> <http://www.w3.org/2000/01/rdf-schema#label> "Wind"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000128> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000078> .
+<http://www.cropontology.org/rdf/CO_715%3A0000127> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000127> <http://www.w3.org/2000/01/rdf-schema#label> "Disease protection"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000127> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000203> .
+<http://www.cropontology.org/rdf/CO_715%3A0000126> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000126> <http://www.w3.org/2000/01/rdf-schema#label> "Frost"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000126> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000078> .
+<http://www.cropontology.org/rdf/CO_715%3A0000125> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000125> <http://www.w3.org/2000/01/rdf-schema#label> "Wavelength of light"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000125> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000122> .
+<http://www.cropontology.org/rdf/CO_715%3A0000124> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000124> <http://www.w3.org/2000/01/rdf-schema#label> "Light intensity"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000124> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000122> .
+<http://www.cropontology.org/rdf/CO_715%3A0000123> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000123> <http://www.w3.org/2000/01/rdf-schema#label> "Photoperiod"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000123> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000122> .
+<http://www.cropontology.org/rdf/CO_715%3A0000122> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000122> <http://www.w3.org/2000/01/rdf-schema#label> "Light"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000122> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000078> .
+<http://www.cropontology.org/rdf/CO_715%3A0000121> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000121> <http://www.w3.org/2000/01/rdf-schema#label> "Freezing temperature"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000121> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000118> .
+<http://www.cropontology.org/rdf/CO_715%3A0000120> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000120> <http://www.w3.org/2000/01/rdf-schema#label> "Cold temperature"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000120> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000118> .
+<http://www.cropontology.org/rdf/CO_715%3A0000119> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000119> <http://www.w3.org/2000/01/rdf-schema#label> "Heating temperature"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000119> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000118> .
+<http://www.cropontology.org/rdf/CO_715%3A0000118> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000118> <http://www.w3.org/2000/01/rdf-schema#label> "Temperature"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000118> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000078> .
+<http://www.cropontology.org/rdf/CO_715%3A0000118> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000163> .
+<http://www.cropontology.org/rdf/CO_715%3A0000118> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000193> .
+<http://www.cropontology.org/rdf/CO_715%3A0000117> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000117> <http://www.w3.org/2000/01/rdf-schema#label> "Other chemical(s)"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000117> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000111> .
+<http://www.cropontology.org/rdf/CO_715%3A0000116> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000116> <http://www.w3.org/2000/01/rdf-schema#label> "Hormone"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000116> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000111> .
+<http://www.cropontology.org/rdf/CO_715%3A0000115> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000115> <http://www.w3.org/2000/01/rdf-schema#label> "Growth regulator"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000115> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000111> .
+<http://www.cropontology.org/rdf/CO_715%3A0000114> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000114> <http://www.w3.org/2000/01/rdf-schema#label> "Inhibitor"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000114> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000111> .
+<http://www.cropontology.org/rdf/CO_715%3A0000113> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000113> <http://www.w3.org/2000/01/rdf-schema#label> "Toxin"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000113> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000111> .
+<http://www.cropontology.org/rdf/CO_715%3A0000112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000112> <http://www.w3.org/2000/01/rdf-schema#label> "Heavy metal"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000112> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000111> .
+<http://www.cropontology.org/rdf/CO_715%3A0000111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000111> <http://www.w3.org/2000/01/rdf-schema#label> "Chemical factor"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000111> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000078> .
+<http://www.cropontology.org/rdf/CO_715%3A0000110> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000110> <http://www.w3.org/2000/01/rdf-schema#label> "Soil nutrient content"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000110> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000080> .
+<http://www.cropontology.org/rdf/CO_715%3A0000109> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000109> <http://www.w3.org/2000/01/rdf-schema#label> "Micronutrient toxicity"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000109> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Soil toxicity due to other micronutrients.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000109> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000107> .
+<http://www.cropontology.org/rdf/CO_715%3A0000108> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000108> <http://www.w3.org/2000/01/rdf-schema#label> "Soil aluminium toxicity"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000108> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Soil toxicity due to aluminium.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000108> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000107> .
+<http://www.cropontology.org/rdf/CO_715%3A0000107> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000107> <http://www.w3.org/2000/01/rdf-schema#label> "Soil toxicity"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000107> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000080> .
+<http://www.cropontology.org/rdf/CO_715%3A0000106> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000106> <http://www.w3.org/2000/01/rdf-schema#label> "Gravelly"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000106> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000081> .
+<http://www.cropontology.org/rdf/CO_715%3A0000106> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000097> .
+<http://www.cropontology.org/rdf/CO_715%3A0000105> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000105> <http://www.w3.org/2000/01/rdf-schema#label> "Loam"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000105> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000081> .
+<http://www.cropontology.org/rdf/CO_715%3A0000105> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000097> .
+<http://www.cropontology.org/rdf/CO_715%3A0000104> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000104> <http://www.w3.org/2000/01/rdf-schema#label> "Sandy loam"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000104> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000081> .
+<http://www.cropontology.org/rdf/CO_715%3A0000104> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000097> .
+<http://www.cropontology.org/rdf/CO_715%3A0000103> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000103> <http://www.w3.org/2000/01/rdf-schema#label> "Sand"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000103> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000081> .
+<http://www.cropontology.org/rdf/CO_715%3A0000103> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000097> .
+<http://www.cropontology.org/rdf/CO_715%3A0000102> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000102> <http://www.w3.org/2000/01/rdf-schema#label> "Silt sand"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000102> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000081> .
+<http://www.cropontology.org/rdf/CO_715%3A0000102> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000097> .
+<http://www.cropontology.org/rdf/CO_715%3A0000101> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000101> <http://www.w3.org/2000/01/rdf-schema#label> "Silt"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000101> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000081> .
+<http://www.cropontology.org/rdf/CO_715%3A0000101> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000097> .
+<http://www.cropontology.org/rdf/CO_715%3A0000100> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000100> <http://www.w3.org/2000/01/rdf-schema#label> "Clay-silt"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000100> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000081> .
+<http://www.cropontology.org/rdf/CO_715%3A0000100> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000097> .
+<http://www.cropontology.org/rdf/CO_715%3A0000099> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000099> <http://www.w3.org/2000/01/rdf-schema#label> "Clay"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000099> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000081> .
+<http://www.cropontology.org/rdf/CO_715%3A0000099> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000097> .
+<http://www.cropontology.org/rdf/CO_715%3A0000098> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000098> <http://www.w3.org/2000/01/rdf-schema#label> "Highly organic"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000098> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000081> .
+<http://www.cropontology.org/rdf/CO_715%3A0000097> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000097> <http://www.w3.org/2000/01/rdf-schema#label> "Soil type"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000097> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000080> .
+<http://www.cropontology.org/rdf/CO_715%3A0000096> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000096> <http://www.w3.org/2000/01/rdf-schema#label> "Soil fertility"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000096> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000049> .
+<http://www.cropontology.org/rdf/CO_715%3A0000096> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000080> .
+<http://www.cropontology.org/rdf/CO_715%3A0000095> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000095> <http://www.w3.org/2000/01/rdf-schema#label> "Rock fragment"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000095> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000080> .
+<http://www.cropontology.org/rdf/CO_715%3A0000094> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000094> <http://www.w3.org/2000/01/rdf-schema#label> "Soil erosion"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000094> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Gradation of soil erosion.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000094> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000049> .
+<http://www.cropontology.org/rdf/CO_715%3A0000094> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000080> .
+<http://www.cropontology.org/rdf/CO_715%3A0000093> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000093> <http://www.w3.org/2000/01/rdf-schema#label> "Soil pH"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000093> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Value of soil pH, separated by a colon, the depth (cm) from where soil sample was taken. Multiple values are separated by semicolon. Example 7.7:40-60.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000093> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000049> .
+<http://www.cropontology.org/rdf/CO_715%3A0000093> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000080> .
+<http://www.cropontology.org/rdf/CO_715%3A0000092> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000092> <http://www.w3.org/2000/01/rdf-schema#label> "Soil organic matter content"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000092> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000080> .
+<http://www.cropontology.org/rdf/CO_715%3A0000091> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000091> <http://www.w3.org/2000/01/rdf-schema#label> "Soil matrix color"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000091> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000080> .
+<http://www.cropontology.org/rdf/CO_715%3A0000090> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000090> <http://www.w3.org/2000/01/rdf-schema#label> "Soil moisture"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000090> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000080> .
+<http://www.cropontology.org/rdf/CO_715%3A0000089> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000089> <http://www.w3.org/2000/01/rdf-schema#label> "Soil salinity"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000089> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Soil salinity value (ppm dissolved salts).\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000089> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000049> .
+<http://www.cropontology.org/rdf/CO_715%3A0000089> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000080> .
+<http://www.cropontology.org/rdf/CO_715%3A0000088> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000088> <http://www.w3.org/2000/01/rdf-schema#label> "Soil drainage"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000088> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Gradation of soil drainage where 1=poor, 2=moderate, 3=good and 4=excessive.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000088> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000049> .
+<http://www.cropontology.org/rdf/CO_715%3A0000088> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000080> .
+<http://www.cropontology.org/rdf/CO_715%3A0000087> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000087> <http://www.w3.org/2000/01/rdf-schema#label> "Stoniness"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000087> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000080> .
+<http://www.cropontology.org/rdf/CO_715%3A0000086> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000086> <http://www.w3.org/2000/01/rdf-schema#label> "Rock type"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000086> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000084> .
+<http://www.cropontology.org/rdf/CO_715%3A0000085> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000085> <http://www.w3.org/2000/01/rdf-schema#label> "Unconsolidated material"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000085> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000084> .
+<http://www.cropontology.org/rdf/CO_715%3A0000084> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000084> <http://www.w3.org/2000/01/rdf-schema#label> "Soil parent material"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000084> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000080> .
+<http://www.cropontology.org/rdf/CO_715%3A0000083> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000083> <http://www.w3.org/2000/01/rdf-schema#label> "Soil taxonomic classification"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000083> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000049> .
+<http://www.cropontology.org/rdf/CO_715%3A0000083> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000080> .
+<http://www.cropontology.org/rdf/CO_715%3A0000082> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000082> <http://www.w3.org/2000/01/rdf-schema#label> "Soil particle size"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000082> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000080> .
+<http://www.cropontology.org/rdf/CO_715%3A0000081> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000081> <http://www.w3.org/2000/01/rdf-schema#label> "Soil texture"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000081> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Soil texture classes.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000081> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000049> .
+<http://www.cropontology.org/rdf/CO_715%3A0000081> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000080> .
+<http://www.cropontology.org/rdf/CO_715%3A0000080> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000080> <http://www.w3.org/2000/01/rdf-schema#label> "Soil factor"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000080> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000078> .
+<http://www.cropontology.org/rdf/CO_715%3A0000079> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000079> <http://www.w3.org/2000/01/rdf-schema#label> "Biotic factor"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000079> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000004> .
+<http://www.cropontology.org/rdf/CO_715%3A0000078> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000078> <http://www.w3.org/2000/01/rdf-schema#label> "Abiotic factor"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000078> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000004> .
+<http://www.cropontology.org/rdf/CO_715%3A0000077> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000077> <http://www.w3.org/2000/01/rdf-schema#label> "Location name"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000077> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Name of experimental site.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000077> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000002> .
+<http://www.cropontology.org/rdf/CO_715%3A0000077> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000049> .
+<http://www.cropontology.org/rdf/CO_715%3A0000076> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000076> <http://www.w3.org/2000/01/rdf-schema#label> "Site ID"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000076> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Unique identifier where the experiment was executed.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000076> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000002> .
+<http://www.cropontology.org/rdf/CO_715%3A0000076> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000049> .
+<http://www.cropontology.org/rdf/CO_715%3A0000075> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000075> <http://www.w3.org/2000/01/rdf-schema#label> "Institute"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000075> <http://www.w3.org/2000/01/rdf-schema#comment> "\"The institute where the experiment was done.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000075> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000002> .
+<http://www.cropontology.org/rdf/CO_715%3A0000075> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000049> .
+<http://www.cropontology.org/rdf/CO_715%3A0000074> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000074> <http://www.w3.org/2000/01/rdf-schema#label> "Province/state"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000074> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Name of the primary administrative subdivision of the country in which the experimental site is located.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000074> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000002> .
+<http://www.cropontology.org/rdf/CO_715%3A0000073> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000073> <http://www.w3.org/2000/01/rdf-schema#label> "Country"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000073> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Name of the country where experimental site is located.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000073> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000002> .
+<http://www.cropontology.org/rdf/CO_715%3A0000073> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000049> .
+<http://www.cropontology.org/rdf/CO_715%3A0000072> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000072> <http://www.w3.org/2000/01/rdf-schema#label> "Longitude - minute"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000072> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Minutes followed by east (E) and west (W).\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000072> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000066> .
+<http://www.cropontology.org/rdf/CO_715%3A0000071> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000071> <http://www.w3.org/2000/01/rdf-schema#label> "Longitude - degree"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000071> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Degrees followed by east (E) and west (W).\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000071> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000066> .
+<http://www.cropontology.org/rdf/CO_715%3A0000070> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000070> <http://www.w3.org/2000/01/rdf-schema#label> "Latitude - minutes"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000070> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Minutes followed by north (N) and south(S).\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000070> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000065> .
+<http://www.cropontology.org/rdf/CO_715%3A0000069> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000069> <http://www.w3.org/2000/01/rdf-schema#label> "Latitude - degrees"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000069> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Degrees followed by north (N) and south (S).\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000069> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000065> .
+<http://www.cropontology.org/rdf/CO_715%3A0000068> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000068> <http://www.w3.org/2000/01/rdf-schema#label> "Site location"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000068> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Distance in kilometres and direction from nearest town or village, or map grid reference.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000068> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000002> .
+<http://www.cropontology.org/rdf/CO_715%3A0000068> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000049> .
+<http://www.cropontology.org/rdf/CO_715%3A0000067> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000067> <http://www.w3.org/2000/01/rdf-schema#label> "Altitude"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000067> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Elevation of experimental site expressed in meters (m) above sea level.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000067> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000002> .
+<http://www.cropontology.org/rdf/CO_715%3A0000067> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000049> .
+<http://www.cropontology.org/rdf/CO_715%3A0000066> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000066> <http://www.w3.org/2000/01/rdf-schema#label> "Longitude"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000066> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Degrees and minutes followed by east (E) and west (W).\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000066> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000002> .
+<http://www.cropontology.org/rdf/CO_715%3A0000066> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000049> .
+<http://www.cropontology.org/rdf/CO_715%3A0000065> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000065> <http://www.w3.org/2000/01/rdf-schema#label> "Latitude"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000065> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Degrees and minutes followed by north (N) and south (S).\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000065> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000002> .
+<http://www.cropontology.org/rdf/CO_715%3A0000065> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000049> .
+<http://www.cropontology.org/rdf/CO_715%3A0000064> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000064> <http://www.w3.org/2000/01/rdf-schema#label> "Slope aspect"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000064> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000058> .
+<http://www.cropontology.org/rdf/CO_715%3A0000063> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000063> <http://www.w3.org/2000/01/rdf-schema#label> "Slope form"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000063> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000058> .
+<http://www.cropontology.org/rdf/CO_715%3A0000062> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000062> <http://www.w3.org/2000/01/rdf-schema#label> "Slope"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000062> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Estimated slope of the site in degree.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000062> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000058> .
+<http://www.cropontology.org/rdf/CO_715%3A0000061> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000061> <http://www.w3.org/2000/01/rdf-schema#label> "Land element and position"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000061> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000058> .
+<http://www.cropontology.org/rdf/CO_715%3A0000060> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000060> <http://www.w3.org/2000/01/rdf-schema#label> "Higher-level landform"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000060> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000058> .
+<http://www.cropontology.org/rdf/CO_715%3A0000059> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000059> <http://www.w3.org/2000/01/rdf-schema#label> "Topography"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000059> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000058> .
+<http://www.cropontology.org/rdf/CO_715%3A0000058> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000058> <http://www.w3.org/2000/01/rdf-schema#label> "Topological information"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000058> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000002> .
+<http://www.cropontology.org/rdf/CO_715%3A0000058> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000049> .
+<http://www.cropontology.org/rdf/CO_715%3A0000057> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000057> <http://www.w3.org/2000/01/rdf-schema#label> "Sampling unit"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000057> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Unit from which an observation is taken.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000057> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000001> .
+<http://www.cropontology.org/rdf/CO_715%3A0000056> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000056> <http://www.w3.org/2000/01/rdf-schema#label> "Best check"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000056> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000050> .
+<http://www.cropontology.org/rdf/CO_715%3A0000055> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000055> <http://www.w3.org/2000/01/rdf-schema#label> "Container type"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000055> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000001> .
+<http://www.cropontology.org/rdf/CO_715%3A0000054> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000054> <http://www.w3.org/2000/01/rdf-schema#label> "Root derived GID"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000054> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000041> .
+<http://www.cropontology.org/rdf/CO_715%3A0000053> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000053> <http://www.w3.org/2000/01/rdf-schema#label> "Leaf derived GID"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000053> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000041> .
+<http://www.cropontology.org/rdf/CO_715%3A0000052> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000052> <http://www.w3.org/2000/01/rdf-schema#label> "Seed derived GID"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000052> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000041> .
+<http://www.cropontology.org/rdf/CO_715%3A0000051> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000051> <http://www.w3.org/2000/01/rdf-schema#label> "Local check"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000051> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000050> .
+<http://www.cropontology.org/rdf/CO_715%3A0000050> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000050> <http://www.w3.org/2000/01/rdf-schema#label> "Statistics"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000050> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000001> .
+<http://www.cropontology.org/rdf/CO_715%3A0000049> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000049> <http://www.w3.org/2000/01/rdf-schema#label> "Collecting location data"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000049> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Data related to the collecting site which are referred to in the general passport worksheet.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000049> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000046> .
+<http://www.cropontology.org/rdf/CO_715%3A0000048> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000048> <http://www.w3.org/2000/01/rdf-schema#label> "Heterotic group"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000048> <http://www.w3.org/2000/01/rdf-schema#comment> "\"It is created by plant breeders to classify inbred lines for creation of predictable hybrids and are created or improved by reciprocal recurrent selection. Crosses between inbreds from different heterotic groups result in vigorous F1 hybrids with significantly more heterosis than F1 hybrids from inbreds within the same heterotic group or pattern.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000048> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000001> .
+<http://www.cropontology.org/rdf/CO_715%3A0000047> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000047> <http://www.w3.org/2000/01/rdf-schema#label> "Pedigree name"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000047> <http://www.w3.org/2000/01/rdf-schema#comment> "\"The origin and history of breeding plant individual.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000047> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000228> .
+<http://www.cropontology.org/rdf/CO_715%3A0000046> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000046> <http://www.w3.org/2000/01/rdf-schema#label> "Observation entity"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000046> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Observations on atypical conditions for experiment.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000046> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000001> .
+<http://www.cropontology.org/rdf/CO_715%3A0000045> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000045> <http://www.w3.org/2000/01/rdf-schema#label> "Management entity"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000045> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Management of experiment.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000045> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000000> .
+<http://www.cropontology.org/rdf/CO_715%3A0000044> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000044> <http://www.w3.org/2000/01/rdf-schema#label> "Series name"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000044> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Name of trial or nursery series.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000044> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000001> .
+<http://www.cropontology.org/rdf/CO_715%3A0000043> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000043> <http://www.w3.org/2000/01/rdf-schema#label> "Series ID"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000043> <http://www.w3.org/2000/01/rdf-schema#comment> "\"ID of series.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000043> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000001> .
+<http://www.cropontology.org/rdf/CO_715%3A0000042> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000042> <http://www.w3.org/2000/01/rdf-schema#label> "Series"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000042> <http://www.w3.org/2000/01/rdf-schema#comment> "\"S if series, E if Experiment.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000042> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000001> .
+<http://www.cropontology.org/rdf/CO_715%3A0000041> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000041> <http://www.w3.org/2000/01/rdf-schema#label> "GID"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000041> <http://www.w3.org/2000/01/rdf-schema#comment> "\"The identifier for germplasm.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000041> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000223> .
+<http://www.cropontology.org/rdf/CO_715%3A0000041> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000225> .
+<http://www.cropontology.org/rdf/CO_715%3A0000040> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000040> <http://www.w3.org/2000/01/rdf-schema#label> "Standard deviation rank"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000040> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000050> .
+<http://www.cropontology.org/rdf/CO_715%3A0000039> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000039> <http://www.w3.org/2000/01/rdf-schema#label> "Stock comment"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000039> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Any comments for the stock.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000039> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000001> .
+<http://www.cropontology.org/rdf/CO_715%3A0000039> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000223> .
+<http://www.cropontology.org/rdf/CO_715%3A0000038> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000038> <http://www.w3.org/2000/01/rdf-schema#label> "Collaborator"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000038> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Information on collaborator.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000038> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000001> .
+<http://www.cropontology.org/rdf/CO_715%3A0000037> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000037> <http://www.w3.org/2000/01/rdf-schema#label> "Plant population density"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000037> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Visual assessment of plants per hectare as abundant or frequent or occasional or rare.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000037> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000046> .
+<http://www.cropontology.org/rdf/CO_715%3A0000036> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000036> <http://www.w3.org/2000/01/rdf-schema#label> "Stock ID"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000036> <http://www.w3.org/2000/01/rdf-schema#comment> "\"An alpha numeric ID that identifies each seed packet in the store room uniquely. e.g. V1-1.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000036> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000001> .
+<http://www.cropontology.org/rdf/CO_715%3A0000036> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000223> .
+<http://www.cropontology.org/rdf/CO_715%3A0000035> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000035> <http://www.w3.org/2000/01/rdf-schema#label> "Experiment code"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000035> <http://www.w3.org/2000/01/rdf-schema#comment> "\"The name of series plus year plus experiment number.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000035> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000001> .
+<http://www.cropontology.org/rdf/CO_715%3A0000034> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000034> <http://www.w3.org/2000/01/rdf-schema#label> "Breeding program"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000034> <http://www.w3.org/2000/01/rdf-schema#comment> "\"The name of breeding program.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000034> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000001> .
+<http://www.cropontology.org/rdf/CO_715%3A0000033> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000033> <http://www.w3.org/2000/01/rdf-schema#label> "Planting date"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000033> <http://www.w3.org/2000/01/rdf-schema#comment> "\"The date of planting in the format MM-DD-YYYY.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000033> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000006> .
+<http://www.cropontology.org/rdf/CO_715%3A0000032> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000032> <http://www.w3.org/2000/01/rdf-schema#label> "Experiment name"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000032> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Name or number of experiment or study.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000032> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000001> .
+<http://www.cropontology.org/rdf/CO_715%3A0000031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000031> <http://www.w3.org/2000/01/rdf-schema#label> "Entry number"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000031> <http://www.w3.org/2000/01/rdf-schema#comment> "\"The number of the entry that are planted.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000031> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000030> .
+<http://www.cropontology.org/rdf/CO_715%3A0000030> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000030> <http://www.w3.org/2000/01/rdf-schema#label> "Entry list"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000030> <http://www.w3.org/2000/01/rdf-schema#comment> "\"List of entries that are planted. This is the data collection sheet that is printed as a hard copy.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000030> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000027> .
+<http://www.cropontology.org/rdf/CO_715%3A0000029> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000029> <http://www.w3.org/2000/01/rdf-schema#label> "Entry code"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000029> <http://www.w3.org/2000/01/rdf-schema#comment> "\"The code for the entry that are planted.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000029> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000030> .
+<http://www.cropontology.org/rdf/CO_715%3A0000028> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000028> <http://www.w3.org/2000/01/rdf-schema#label> "Trial type"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000028> <http://www.w3.org/2000/01/rdf-schema#comment> "\"An experiment where germplasm is evaluated and data is collected. No new seed is generated.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000028> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000001> .
+<http://www.cropontology.org/rdf/CO_715%3A0000027> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000027> <http://www.w3.org/2000/01/rdf-schema#label> "Nursery type"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000027> <http://www.w3.org/2000/01/rdf-schema#comment> "\"An experiment where pollination are done, new seed generated and where data may be collected.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000027> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000001> .
+<http://www.cropontology.org/rdf/CO_715%3A0000026> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000026> <http://www.w3.org/2000/01/rdf-schema#label> "Seedlings per hill"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000026> <http://www.w3.org/2000/01/rdf-schema#comment> "\"The numbers of seedlings planted per hill.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000026> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000046> .
+<http://www.cropontology.org/rdf/CO_715%3A0000025> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000025> <http://www.w3.org/2000/01/rdf-schema#label> "Harvested row length"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000025> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Length of rows harvested.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000025> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000046> .
+<http://www.cropontology.org/rdf/CO_715%3A0000024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000024> <http://www.w3.org/2000/01/rdf-schema#label> "Sown row length"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000024> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Length of rows where seeds are sown.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000024> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000001> .
+<http://www.cropontology.org/rdf/CO_715%3A0000023> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000023> <http://www.w3.org/2000/01/rdf-schema#label> "Harvested row number"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000023> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Total number of rows harvested.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000023> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000046> .
+<http://www.cropontology.org/rdf/CO_715%3A0000023> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000158> .
+<http://www.cropontology.org/rdf/CO_715%3A0000022> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000022> <http://www.w3.org/2000/01/rdf-schema#label> "Space between harvested rows"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000022> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Measurement of space between rows harvested.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000022> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000001> .
+<http://www.cropontology.org/rdf/CO_715%3A0000022> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000159> .
+<http://www.cropontology.org/rdf/CO_715%3A0000021> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000021> <http://www.w3.org/2000/01/rdf-schema#label> "Space between sown rows"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000021> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Measurement of the space between rows where seeds are sown.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000021> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000001> .
+<http://www.cropontology.org/rdf/CO_715%3A0000021> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000159> .
+<http://www.cropontology.org/rdf/CO_715%3A0000020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000020> <http://www.w3.org/2000/01/rdf-schema#label> "Sown row number"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000020> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Total numbers of rows sown.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000020> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000001> .
+<http://www.cropontology.org/rdf/CO_715%3A0000020> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000158> .
+<http://www.cropontology.org/rdf/CO_715%3A0000019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000019> <http://www.w3.org/2000/01/rdf-schema#label> "Cooperator"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000019> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000001> .
+<http://www.cropontology.org/rdf/CO_715%3A0000018> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000018> <http://www.w3.org/2000/01/rdf-schema#label> "Remark"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000018> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000046> .
+<http://www.cropontology.org/rdf/CO_715%3A0000017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000017> <http://www.w3.org/2000/01/rdf-schema#label> "Project number"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000017> <http://www.w3.org/2000/01/rdf-schema#comment> "\"The project number under which the experiment was performed.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000017> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000001> .
+<http://www.cropontology.org/rdf/CO_715%3A0000016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000016> <http://www.w3.org/2000/01/rdf-schema#label> "Purpose of experiment"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000016> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Purpose of the experiment.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000016> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000001> .
+<http://www.cropontology.org/rdf/CO_715%3A0000015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000015> <http://www.w3.org/2000/01/rdf-schema#label> "Measurement date"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000015> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Date when measurements or observations are made in the format MM-DD-YYYY.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000015> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000006> .
+<http://www.cropontology.org/rdf/CO_715%3A0000014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000014> <http://www.w3.org/2000/01/rdf-schema#label> "Seeding date"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000014> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Date of seeding in the format MM-DD-YYYY.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000014> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000006> .
+<http://www.cropontology.org/rdf/CO_715%3A0000013> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000013> <http://www.w3.org/2000/01/rdf-schema#label> "Transplanting date"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000013> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Date of transplanting in the format MM-DD-YYYY.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000013> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000006> .
+<http://www.cropontology.org/rdf/CO_715%3A0000012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000012> <http://www.w3.org/2000/01/rdf-schema#label> "Emergence date"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000012> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000006> .
+<http://www.cropontology.org/rdf/CO_715%3A0000011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000011> <http://www.w3.org/2000/01/rdf-schema#label> "Fertilizer application date"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000011> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Date on which fertilizer is applied in the format MM-DD-YYYY.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000011> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000006> .
+<http://www.cropontology.org/rdf/CO_715%3A0000010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000010> <http://www.w3.org/2000/01/rdf-schema#label> "Harvest finishing date"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000010> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Date of harvest finishing.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000010> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000008> .
+<http://www.cropontology.org/rdf/CO_715%3A0000009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000009> <http://www.w3.org/2000/01/rdf-schema#label> "Harvest starting date"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000009> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Date of harvest starting.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000009> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000008> .
+<http://www.cropontology.org/rdf/CO_715%3A0000008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000008> <http://www.w3.org/2000/01/rdf-schema#label> "Harvest date"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000008> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Date of harvest in the format MM-DD-YYYY.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000008> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000006> .
+<http://www.cropontology.org/rdf/CO_715%3A0000008> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000236> .
+<http://www.cropontology.org/rdf/CO_715%3A0000007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000007> <http://www.w3.org/2000/01/rdf-schema#label> "Sowing date"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000007> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Date of sowing in the format MM-DD-YYYY.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000007> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000006> .
+<http://www.cropontology.org/rdf/CO_715%3A0000007> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000236> .
+<http://www.cropontology.org/rdf/CO_715%3A0000006> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000006> <http://www.w3.org/2000/01/rdf-schema#label> "Time factor"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000006> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Date for trail or experiment initiation or sample/data collection or evaluation in the format MM-DD-YYYY.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000006> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000001> .
+<http://www.cropontology.org/rdf/CO_715%3A0000005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000005> <http://www.w3.org/2000/01/rdf-schema#label> "Experimental condition"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000005> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Environment in which trail/experiment/characterization/evaluation is carried out.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000005> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000000> .
+<http://www.cropontology.org/rdf/CO_715%3A0000004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000004> <http://www.w3.org/2000/01/rdf-schema#label> "Environmental factor"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000004> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Description of factors such as treatment, identifier.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000004> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000000> .
+<http://www.cropontology.org/rdf/CO_715%3A0000003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000003> <http://www.w3.org/2000/01/rdf-schema#label> "Experimental design"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000003> <http://www.w3.org/2000/01/rdf-schema#comment> "\"The process of planning a study to meet specified objectives or the allocation of treatments (inputs) to the experimental units (plots). Planning an experiment properly is very important in order to ensure that the right type of data and a sufficient sample size and power are available to answer the research questions of interest as clearly and efficiently as possible.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000003> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000000> .
+<http://www.cropontology.org/rdf/CO_715%3A0000002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000002> <http://www.w3.org/2000/01/rdf-schema#label> "Experimental site information"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000002> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Description of experimental sites.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000002> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000000> .
+<http://www.cropontology.org/rdf/CO_715%3A0000001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000001> <http://www.w3.org/2000/01/rdf-schema#label> "Experiment information entity"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000001> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Description of the purpose of the experiment and period it took place.\" [CO:rs]"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000001> <http://www.w3.org/2004/02/skos/core#broader> <http://www.cropontology.org/rdf/CO_715%3A0000000> .
+<http://www.cropontology.org/rdf/CO_715%3A0000000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.cropontology.org/rdf/CO_715%3A0000000> <http://www.w3.org/2000/01/rdf-schema#label> "Crop research ontology"@en .
+<http://www.cropontology.org/rdf/CO_715%3A0000000> <http://www.w3.org/2000/01/rdf-schema#comment> "\"Describes experimental design, environmental conditions and methods associated with the crop study/experiment/trail and their evaluation.\" [CO:rs]"@en .
+

@@ -19,7 +19,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="http://purl.org/podd/ns/dataRepository">
         <rdfs:label>The PODD Ontology for Data Repositories</rdfs:label>
-        <owl:versionIRI rdf:resource="http://purl.org/podd/ns/version/dataRepository/1"/>
+        <owl:versionIRI rdf:resource="http://purl.org/podd/ns/version/dataRepository/2"/>
     </owl:Ontology>
     
 

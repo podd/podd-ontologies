@@ -21,8 +21,8 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="http://purl.org/podd/ns/foaf">
         <rdfs:label>The PODD Ontology for foaf terms</rdfs:label>
-        <owl:imports rdf:resource="http://purl.org/podd/ns/version/dcTerms/1"/>
-        <owl:versionIRI rdf:resource="http://purl.org/podd/ns/version/foaf/1"/>
+        <owl:imports rdf:resource="http://purl.org/podd/ns/version/dcTerms/2"/>
+        <owl:versionIRI rdf:resource="http://purl.org/podd/ns/version/foaf/2"/>
     </owl:Ontology>
     
 

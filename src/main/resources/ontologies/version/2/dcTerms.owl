@@ -19,7 +19,7 @@
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.org/podd/ns/dcTerms">
         <rdfs:label>The PODD Ontology for Dublin Core Terms</rdfs:label>
-        <owl:versionIRI rdf:resource="http://purl.org/podd/ns/version/dcTerms/1"/>
+        <owl:versionIRI rdf:resource="http://purl.org/podd/ns/version/dcTerms/2"/>
     </owl:Ontology>
     
 
