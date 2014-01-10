@@ -24,6 +24,9 @@
      xmlns:poddBase="http://purl.org/podd/ns/poddBase#"
      xmlns:poddScience="http://purl.org/podd/ns/poddScience#">
     <owl:Ontology rdf:about="http://purl.org/podd/ns/poddPlant">
+        <owl:imports rdf:resource="http://purl.org/podd/ns/version/dcTerms/2"/>
+        <owl:imports rdf:resource="http://purl.org/podd/ns/version/foaf/2"/>
+        <owl:imports rdf:resource="http://purl.org/podd/ns/version/poddUser/2"/>
         <owl:imports rdf:resource="http://purl.org/podd/ns/version/poddBase/2"/>
         <owl:imports rdf:resource="http://purl.org/podd/ns/version/poddScience/2"/>
         <owl:versionIRI rdf:resource="http://purl.org/podd/ns/version/poddPlant/2"/>
