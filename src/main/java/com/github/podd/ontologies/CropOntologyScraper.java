@@ -87,6 +87,7 @@ public class CropOntologyScraper
         }
         final HttpUriRequest request = new HttpGet(url.toExternalForm());
         request.addHeader("Accept", JSON_ACCEPT_HEADER);
+        request.addHeader("User-Agent", "https://github.com/podd/podd-ontologies");
         
         final HttpResponse response = getHttpClient().execute(request);
         final int status = response.getStatusLine().getStatusCode();
