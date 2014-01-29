@@ -10,6 +10,7 @@ import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
@@ -65,40 +66,16 @@ public class CropOntologyScraper
         // TODO Auto-generated constructor stub
     }
     
-    public Map<String, Set<CropOntologyID>> getAllCropOntologies() throws IOException
+    public Map<String, List<CropOntologyID>> getAllCropOntologies() throws IOException
     {
-        ConcurrentMap<String, Set<CropOntologyID>> result = new ConcurrentHashMap<>();
         URL getOntologiesUrl = new URL("http://www.cropontology.org/get-ontologies");
         try (final BufferedReader in = new BufferedReader(new InputStreamReader(openStreamFromURL(getOntologiesUrl)));
                 final JsonParser parser = JSON_FACTORY.createParser(in);)
         {
-            while(parser.nextToken() == JsonToken.START_OBJECT)
-            {
-                JsonToken categoryNameToken = parser.nextToken();
-                if(categoryNameToken != JsonToken.FIELD_NAME)
+            return parser.readValueAs(new TypeReference<Map<String, List<CropOntologyID>>>()
                 {
-                    throw new RuntimeException("Did not find category name: " + parser.getText());
-                }
-                
-                String categoryNameString = parser.getText();
-                
-                Set<CropOntologyID> nextSet = new HashSet<>();
-                Set<CropOntologyID> putIfAbsent = result.putIfAbsent(categoryNameString, nextSet);
-                if(putIfAbsent != null)
-                {
-                    nextSet = putIfAbsent;
-                }
-                while(parser.nextToken() == JsonToken.START_ARRAY)
-                {
-                    parser.nextToken();
-                    CropOntologyID ontologyID = parser.readValueAs(CropOntologyID.class);
-                    
-                    nextSet.add(ontologyID);
-                }
-            }
+                });
         }
-        
-        return result;
     }
     
     public static InputStream openStreamFromURL(java.net.URL url) throws IOException
