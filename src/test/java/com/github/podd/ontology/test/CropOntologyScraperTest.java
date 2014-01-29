@@ -6,11 +6,14 @@ package com.github.podd.ontology.test;
 import static org.junit.Assert.*;
 
 import java.io.IOException;
+import java.util.Map;
+import java.util.Set;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import com.github.podd.ontologies.CropOntologyID;
 import com.github.podd.ontologies.CropOntologyScraper;
 
 /**
@@ -43,7 +46,9 @@ public class CropOntologyScraperTest
     @Test
     public final void testGetAllOntologies() throws Exception
     {
-        testScraper.getAllCropOntologies();
+        Map<String, Set<CropOntologyID>> allCropOntologies = testScraper.getAllCropOntologies();
+        
+        assertTrue(allCropOntologies.size() > 0);
     }
     
 }

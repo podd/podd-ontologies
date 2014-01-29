@@ -9,9 +9,12 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.HashSet;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
@@ -28,6 +31,8 @@ import org.semanticweb.owlapi.model.OWLOntologyID;
 import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.core.JsonToken;
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
@@ -60,22 +65,40 @@ public class CropOntologyScraper
         // TODO Auto-generated constructor stub
     }
     
-    public Set<OWLOntologyID> getAllCropOntologies() throws IOException
+    public Map<String, Set<CropOntologyID>> getAllCropOntologies() throws IOException
     {
+        ConcurrentMap<String, Set<CropOntologyID>> result = new ConcurrentHashMap<>();
         URL getOntologiesUrl = new URL("http://www.cropontology.org/get-ontologies");
         try (final BufferedReader in = new BufferedReader(new InputStreamReader(openStreamFromURL(getOntologiesUrl)));
                 final JsonParser parser = JSON_FACTORY.createParser(in);)
         {
-            Map<String, Object> nextMap = (Map<String, Object>)parser.readValueAs(Map.class);
-            
-            for(Entry<String, Object> nextEntry : nextMap.entrySet())
+            while(parser.nextToken() == JsonToken.START_OBJECT)
             {
-                System.out.println(nextEntry.getKey());
-                System.out.println(nextEntry.getValue());
+                JsonToken categoryNameToken = parser.nextToken();
+                if(categoryNameToken != JsonToken.FIELD_NAME)
+                {
+                    throw new RuntimeException("Did not find category name: " + parser.getText());
+                }
+                
+                String categoryNameString = parser.getText();
+                
+                Set<CropOntologyID> nextSet = new HashSet<>();
+                Set<CropOntologyID> putIfAbsent = result.putIfAbsent(categoryNameString, nextSet);
+                if(putIfAbsent != null)
+                {
+                    nextSet = putIfAbsent;
+                }
+                while(parser.nextToken() == JsonToken.START_ARRAY)
+                {
+                    parser.nextToken();
+                    CropOntologyID ontologyID = parser.readValueAs(CropOntologyID.class);
+                    
+                    nextSet.add(ontologyID);
+                }
             }
         }
         
-        return null;
+        return result;
     }
     
     public static InputStream openStreamFromURL(java.net.URL url) throws IOException
