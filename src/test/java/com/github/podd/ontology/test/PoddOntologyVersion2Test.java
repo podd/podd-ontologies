@@ -34,7 +34,7 @@ public class PoddOntologyVersion2Test extends AbstractPoddOntologyVersionTest
                         { PoddOntologyVersion2Test.VERSION_2_PATH + "poddPlant.owl", "application/rdf+xml", 217 },
                         { PoddOntologyVersion2Test.VERSION_2_PATH + "poddAnimal.owl", "application/rdf+xml", 139 },
                         { PoddOntologyVersion2Test.VERSION_2_PATH + "poddDataRepository.owl", "application/rdf+xml", 47 },
-                        { "/ontologies/crop-ontology-715.owl", "application/rdf+xml", 2173 },
+                        { "/ontologies/external/co715/crop-ontology-715.owl", "application/rdf+xml", 2173 },
                 
                 // artifacts to test
                 // { "/test/artifacts/basic-1.rdf", "application/rdf+xml", 26 },

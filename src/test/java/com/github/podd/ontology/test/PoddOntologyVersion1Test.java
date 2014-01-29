@@ -19,6 +19,7 @@ import org.junit.runners.Parameterized.Parameters;
 public class PoddOntologyVersion1Test extends AbstractPoddOntologyVersionTest
 {
     public static final String VERSION_1_PATH = "/ontologies/version/1/";
+    
     @Parameters(name = "{0}")
     public static Collection<Object[]> data()
     {
@@ -33,7 +34,7 @@ public class PoddOntologyVersion1Test extends AbstractPoddOntologyVersionTest
                         { PoddOntologyVersion1Test.VERSION_1_PATH + "poddPlant.owl", "application/rdf+xml", 217 },
                         { PoddOntologyVersion1Test.VERSION_1_PATH + "poddAnimal.owl", "application/rdf+xml", 139 },
                         { PoddOntologyVersion1Test.VERSION_1_PATH + "poddDataRepository.owl", "application/rdf+xml", 47 },
-                        { "/ontologies/crop-ontology-715.owl", "application/rdf+xml", 2173 },
+                        { "/ontologies/external/co715/crop-ontology-715.owl", "application/rdf+xml", 2173 },
                 
                 // artifacts to test
                 // { "/test/artifacts/basic-1.rdf", "application/rdf+xml", 26 },
