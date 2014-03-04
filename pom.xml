@@ -95,6 +95,11 @@
 		</dependency>
 		<dependency>
 			<groupId>org.openrdf.sesame</groupId>
+			<artifactId>sesame-model</artifactId>
+			<version>${sesame.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.openrdf.sesame</groupId>
 			<artifactId>sesame-rio-api</artifactId>
 			<version>${sesame.version}</version>
 			<scope>test</scope>
@@ -180,6 +185,12 @@
 		</dependency>
 	</dependencies>
 	<build>
+		<plugins>
+			<plugin>
+				<groupId>com.github.tkurz</groupId>
+				<artifactId>sesame-vocab-builder-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
 		<pluginManagement>
 			<plugins>
 				<plugin>
@@ -190,6 +201,59 @@
 						<source>1.7</source>
 						<target>1.7</target>
 					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>com.github.tkurz</groupId>
+					<artifactId>sesame-vocab-builder-maven-plugin</artifactId>
+					<version>1.1-SNAPSHOT</version>
+					<executions>
+						<execution>
+							<id>generate-vocabularies</id>
+							<phase>generate-sources</phase>
+							<goals>
+								<goal>generate</goal>
+							</goals>
+							<configuration>
+								<output>${project.build.directory}/generated-sources/sesame-vocabs</output>
+								<packageName>com.github.podd.ontologies</packageName>
+								<mimeType>application/rdf+xml</mimeType>
+								<vocabularies>
+									<vocabulary>
+										<className>PODDDCTERMS</className>
+										<file>src/main/resources/ontologies/version/2/dcTerms.owl</file>
+									</vocabulary>
+									<vocabulary>
+										<className>PODDFOAF</className>
+										<file>src/main/resources/ontologies/version/2/foaf.owl</file>
+									</vocabulary>
+									<vocabulary>
+										<className>PODDUSER</className>
+										<file>src/main/resources/ontologies/version/2/poddUser.owl</file>
+									</vocabulary>
+									<vocabulary>
+										<className>PODDBASE</className>
+										<file>src/main/resources/ontologies/version/2/poddBase.owl</file>
+									</vocabulary>
+									<vocabulary>
+										<className>PODDDATAREPOSITORY</className>
+										<file>src/main/resources/ontologies/version/2/poddDataRepository.owl</file>
+									</vocabulary>
+									<vocabulary>
+										<className>PODDSCIENCE</className>
+										<file>src/main/resources/ontologies/version/2/poddScience.owl</file>
+									</vocabulary>
+									<vocabulary>
+										<className>PODDPLANT</className>
+										<file>src/main/resources/ontologies/version/2/poddPlant.owl</file>
+									</vocabulary>
+									<vocabulary>
+										<className>PODDANIMAL</className>
+										<file>src/main/resources/ontologies/version/2/poddAnimal.owl</file>
+									</vocabulary>
+								</vocabularies>
+							</configuration>
+						</execution>
+					</executions>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
