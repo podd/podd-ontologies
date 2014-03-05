@@ -32,7 +32,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/podd/ns/dcTerms#definition">
+    <owl:AnnotationProperty rdf:about="&dcterms;definition">
         <rdfs:range rdf:resource="&rdfs;Literal"/>
     </owl:AnnotationProperty>
     
