@@ -32,7 +32,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:AnnotationProperty rdf:about="&dcterms;definition">
+    <owl:AnnotationProperty rdf:about="&dcterms;description">
         <rdfs:range rdf:resource="&rdfs;Literal"/>
     </owl:AnnotationProperty>
     
@@ -65,7 +65,7 @@
     <owl:ObjectProperty rdf:about="&dcterms;contributor">
         <rdfs:label>Contributor</rdfs:label>
         <rdfs:comment>Examples of a Contributor include a person, an organization, or a service.</rdfs:comment>
-        <definition>An entity responsible for making contributions to the resource.</definition>
+        <dcterms:description>An entity responsible for making contributions to the resource.</dcterms:description>
         <rdfs:range rdf:resource="&dcterms;Agent"/>
     </owl:ObjectProperty>
     
@@ -75,7 +75,7 @@
 
     <owl:ObjectProperty rdf:about="&dcterms;creator">
         <rdfs:label>Creator</rdfs:label>
-        <definition>An entity primarily responsible for making the resource.</definition>
+        <dcterms:description>An entity primarily responsible for making the resource.</dcterms:description>
         <rdfs:comment>Examples of a Creator include a person, an organization, or a service.</rdfs:comment>
         <rdfs:range rdf:resource="&dcterms;Agent"/>
     </owl:ObjectProperty>
@@ -87,7 +87,7 @@
     <owl:ObjectProperty rdf:about="&dcterms;publisher">
         <rdfs:label>Publisher</rdfs:label>
         <rdfs:comment>Examples of a Publisher include a person, an organization, or a service.</rdfs:comment>
-        <definition>An entity responsible for making the resource available.</definition>
+        <dcterms:description>An entity responsible for making the resource available.</dcterms:description>
         <rdfs:range rdf:resource="&dcterms;Agent"/>
     </owl:ObjectProperty>
     
@@ -106,7 +106,7 @@
 
     <owl:DatatypeProperty rdf:about="&dcterms;created">
         <rdfs:label>Date Created</rdfs:label>
-        <definition>Date of creation of the resource.</definition>
+        <dcterms:description>Date of creation of the resource.</dcterms:description>
         <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
         <rdfs:range rdf:resource="&rdfs;Literal"/>
     </owl:DatatypeProperty>
@@ -116,7 +116,7 @@
 
     <owl:DatatypeProperty rdf:about="&dcterms;identifier">
         <rdfs:label>Identifier</rdfs:label>
-        <definition>An unambiguous reference to the resource within a given context.</definition>
+        <dcterms:description>An unambiguous reference to the resource within a given context.</dcterms:description>
         <rdfs:range rdf:resource="&rdfs;Literal"/>
     </owl:DatatypeProperty>
     
@@ -126,7 +126,7 @@
 
     <owl:DatatypeProperty rdf:about="&dcterms;date">
         <rdfs:label>Date</rdfs:label>
-        <definition>A point or period of time associated with an event in the lifecycle of the resource.</definition>
+        <dcterms:description>A point or period of time associated with an event in the lifecycle of the resource.</dcterms:description>
         <rdfs:comment>Date may be used to express temporal information at any level of granularity. Recommended best practice is to use an encoding scheme, such as the W3CDTF profile of ISO 8601 [W3CDTF].</rdfs:comment>
         <rdfs:range rdf:resource="&rdfs;Literal"/>
     </owl:DatatypeProperty>
@@ -137,7 +137,7 @@
 
     <owl:DatatypeProperty rdf:about="&dcterms;title">
         <rdfs:label>Title</rdfs:label>
-        <definition>A name given to the resource.</definition>
+        <dcterms:description>A name given to the resource.</dcterms:description>
         <rdfs:range rdf:resource="&rdfs;Literal"/>
     </owl:DatatypeProperty>
     
@@ -147,7 +147,7 @@
 
     <owl:DatatypeProperty rdf:about="&dcterms;modified">
         <rdfs:label>Date Modified</rdfs:label>
-        <definition>Date on which the resource was changed.</definition>
+        <dcterms:description>Date on which the resource was changed.</dcterms:description>
         <rdfs:subPropertyOf rdf:resource="&dcterms;date"/>
         <rdfs:range rdf:resource="&rdfs;Literal"/>
     </owl:DatatypeProperty>
@@ -169,7 +169,7 @@
 
     <owl:Class rdf:about="&dcterms;Agent">
         <rdfs:label>Agent</rdfs:label>
-        <definition>A resource that acts or has the power to act.</definition>
+        <dcterms:description>A resource that acts or has the power to act.</dcterms:description>
         <rdfs:comment>Examples of Agent include person, organization, and software agent.</rdfs:comment>
     </owl:Class>
 </rdf:RDF>
