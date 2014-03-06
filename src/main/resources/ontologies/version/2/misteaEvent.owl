@@ -1,0 +1,571 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.mistea.supagro.inra.fr/event#"
+     xml:base="http://www.mistea.supagro.inra.fr/event"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:event2="http://www.mistea.supagro.inra.fr/event#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.mistea.supagro.inra.fr/event">
+        <owl:versionIRI rdf:resource="http://www.mistea.supagro.inra.fr/event/2"/>
+        <owl:imports rdf:resource="http://www.mistea.supagro.inra.fr/object/2"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#has_for -->
+
+    <owl:ObjectProperty rdf:about="http://www.mistea.supagro.inra.fr/event#has_for">
+        <rdfs:range rdf:resource="http://www.mistea.supagro.inra.fr/event#Containing"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.mistea.supagro.inra.fr/event#has_for_containing_the"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.mistea.supagro.inra.fr/event#has_for_position_the"/>
+        <rdfs:domain rdf:resource="http://www.mistea.supagro.inra.fr/object#Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#has_for_containing_the -->
+
+    <owl:ObjectProperty rdf:about="http://www.mistea.supagro.inra.fr/event#has_for_containing_the">
+        <owl:inverseOf rdf:resource="http://www.mistea.supagro.inra.fr/event#is_containing_off"/>
+        <rdfs:domain rdf:resource="http://www.mistea.supagro.inra.fr/object#Object"/>
+        <rdfs:range rdf:resource="http://www.mistea.supagro.inra.fr/object#Object"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#has_for_position_the -->
+
+    <owl:ObjectProperty rdf:about="http://www.mistea.supagro.inra.fr/event#has_for_position_the">
+        <rdfs:range rdf:resource="http://www.mistea.supagro.inra.fr/event#Position"/>
+        <rdfs:domain rdf:resource="http://www.mistea.supagro.inra.fr/object#Movable"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#has_type -->
+
+    <owl:ObjectProperty rdf:about="http://www.mistea.supagro.inra.fr/event#has_type"/>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#is_containing_off -->
+
+    <owl:ObjectProperty rdf:about="http://www.mistea.supagro.inra.fr/event#is_containing_off"/>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#is_position_off -->
+
+    <owl:ObjectProperty rdf:about="http://www.mistea.supagro.inra.fr/event#is_position_off">
+        <owl:inverseOf rdf:resource="http://www.mistea.supagro.inra.fr/event#has_for_position_the"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#occurs_after -->
+
+    <owl:ObjectProperty rdf:about="http://www.mistea.supagro.inra.fr/event#occurs_after">
+        <rdfs:domain rdf:resource="http://www.mistea.supagro.inra.fr/event#Event"/>
+        <rdfs:range rdf:resource="http://www.mistea.supagro.inra.fr/event#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#occurs_before -->
+
+    <owl:ObjectProperty rdf:about="http://www.mistea.supagro.inra.fr/event#occurs_before">
+        <owl:inverseOf rdf:resource="http://www.mistea.supagro.inra.fr/event#occurs_after"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#occurs_on -->
+
+    <owl:ObjectProperty rdf:about="http://www.mistea.supagro.inra.fr/event#occurs_on">
+        <rdfs:domain rdf:resource="http://www.mistea.supagro.inra.fr/event#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#the -->
+
+    <owl:ObjectProperty rdf:about="http://www.mistea.supagro.inra.fr/event#the">
+        <rdfs:domain rdf:resource="http://www.mistea.supagro.inra.fr/event#Containing"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.mistea.supagro.inra.fr/event#has_for_containing_the"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.mistea.supagro.inra.fr/event#has_for_position_the"/>
+        <rdfs:range rdf:resource="http://www.mistea.supagro.inra.fr/object#Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/object#is -->
+
+    <owl:ObjectProperty rdf:about="http://www.mistea.supagro.inra.fr/object#is">
+        <rdfs:subPropertyOf rdf:resource="http://www.mistea.supagro.inra.fr/event#is_containing_off"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.mistea.supagro.inra.fr/event#is_position_off"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/object#off -->
+
+    <owl:ObjectProperty rdf:about="http://www.mistea.supagro.inra.fr/object#off">
+        <rdfs:subPropertyOf rdf:resource="http://www.mistea.supagro.inra.fr/event#is_containing_off"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.mistea.supagro.inra.fr/event#is_position_off"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#begin_date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.mistea.supagro.inra.fr/event#begin_date"/>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#duration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.mistea.supagro.inra.fr/event#duration">
+        <rdfs:domain rdf:resource="http://www.mistea.supagro.inra.fr/event#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#end_date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.mistea.supagro.inra.fr/event#end_date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#AdditiveProduct -->
+
+    <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/event#AdditiveProduct">
+        <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/event#ExperimentalConduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Cleaning -->
+
+    <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/event#Cleaning">
+        <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/event#Maintains"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Clipping -->
+
+    <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/event#Clipping">
+        <rdfs:label xml:lang="fr">taille</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/event#ExperimentalConduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Containing -->
+
+    <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/event#Containing">
+        <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/event#Displacement"/>
+        <rdfs:comment xml:lang="en">change in the hierarchy ( relation &quot;contains&quot;)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Curative -->
+
+    <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/event#Curative">
+        <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/event#Treatment"/>
+        <rdfs:comment>maybe heal ?
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Displacement -->
+
+    <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/event#Displacement">
+        <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/event#Event"/>
+        <rdfs:comment xml:lang="en">an event of displacement of an movable object</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Dysfunction -->
+
+    <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/event#Dysfunction">
+        <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/event#Trouble"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Event -->
+
+    <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/event#Event">
+        <rdfs:label xml:lang="fr">Événement lié à un objet
+</rdfs:label>
+        <rdfs:comment xml:lang="en">Event linked to an object</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#ExperimentalConduct -->
+
+    <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/event#ExperimentalConduct">
+        <rdfs:label xml:lang="fr">conduite experimentale</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/event#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Harvest -->
+
+    <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/event#Harvest">
+        <rdfs:label xml:lang="fr">récolte</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/event#ExperimentalConduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Incident -->
+
+    <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/event#Incident">
+        <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/event#Trouble"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Irrigation -->
+
+    <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/event#Irrigation">
+        <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/event#ExperimentalConduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Maintains -->
+
+    <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/event#Maintains">
+        <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/event#Managment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Managment -->
+
+    <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/event#Managment">
+        <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/event#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Panne -->
+
+    <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/event#Panne">
+        <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/event#Trouble"/>
+        <rdfs:comment>breakdown
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Position -->
+
+    <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/event#Position">
+        <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/event#Displacement"/>
+        <rdfs:comment xml:lang="en">change of position for an movable object</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Potting -->
+
+    <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/event#Potting">
+        <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/event#ExperimentalConduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Preventative -->
+
+    <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/event#Preventative">
+        <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/event#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Reparation -->
+
+    <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/event#Reparation">
+        <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/event#Maintains"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Staking -->
+
+    <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/event#Staking">
+        <rdfs:label xml:lang="fr">tuteurage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/event#ExperimentalConduct"/>
+        <rdfs:comment xml:lang="fr">tuteurage d&apos;une plante</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Start -->
+
+    <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/event#Start">
+        <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/event#Managment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Stop -->
+
+    <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/event#Stop">
+        <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/event#Managment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Treatment -->
+
+    <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/event#Treatment">
+        <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/event#ExperimentalConduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Trouble -->
+
+    <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/event#Trouble">
+        <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/event#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#ARCH20130605 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/event#ARCH20130605"/>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#ARCH20140101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/event#ARCH20140101"/>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Cell11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/event#Cell11"/>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Cell22 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/event#Cell22"/>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Cell33 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/event#Cell33"/>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#GPI -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/event#GPI"/>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#GRID_phenoarch -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/event#GRID_phenoarch"/>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#GRID_phenodyn -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/event#GRID_phenodyn"/>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#GRID_phenopsis -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/event#GRID_phenopsis"/>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#LINK-phenoarch-Support1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/event#LINK-phenoarch-Support1">
+        <rdf:type rdf:resource="http://www.mistea.supagro.inra.fr/event#Position"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#PHENOARCH -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/event#PHENOARCH"/>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#PHENODYN -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/event#PHENODYN"/>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#PHENOPSIS -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/event#PHENOPSIS"/>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Plante1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/event#Plante1"/>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Plante2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/event#Plante2"/>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Plante3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/event#Plante3"/>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Plante4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/event#Plante4"/>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Plante5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/event#Plante5"/>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Pot1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/event#Pot1"/>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Pot2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/event#Pot2"/>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Pot3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/event#Pot3"/>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Pot4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/event#Pot4"/>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Pot5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/event#Pot5"/>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#SUPAGRO -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/event#SUPAGRO"/>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Support1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/event#Support1"/>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Support2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/event#Support2"/>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Support3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/event#Support3"/>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Support4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/event#Support4"/>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#Support5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.mistea.supagro.inra.fr/event#Support5"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
