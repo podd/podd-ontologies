@@ -5,6 +5,7 @@ package com.github.podd.ontology.test;
 
 import java.util.Arrays;
 import java.util.Collection;
+
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
@@ -30,6 +31,10 @@ public class PoddOntologyVersion2Test extends AbstractPoddOntologyVersionTest
                         { PoddOntologyVersion2Test.VERSION_2_PATH + "foaf.owl", "application/rdf+xml", 38 },
                         { PoddOntologyVersion2Test.VERSION_2_PATH + "poddUser.owl", "application/rdf+xml", 188 },
                         { PoddOntologyVersion2Test.VERSION_2_PATH + "poddBase.owl", "application/rdf+xml", 331 },
+                        { MultiplePoddOntologyVersionTest.VERSION_2_PATH + "misteaObject.owl", "application/rdf+xml",
+                            1449 },
+                        { MultiplePoddOntologyVersionTest.VERSION_2_PATH + "misteaEvent.owl", "application/rdf+xml",
+                            1449 },
                         { PoddOntologyVersion2Test.VERSION_2_PATH + "poddScience.owl", "application/rdf+xml", 1449 },
                         { PoddOntologyVersion2Test.VERSION_2_PATH + "poddPlant.owl", "application/rdf+xml", 217 },
                         { PoddOntologyVersion2Test.VERSION_2_PATH + "poddAnimal.owl", "application/rdf+xml", 139 },
