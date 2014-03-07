@@ -4,9 +4,10 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:event2="http://www.mistea.supagro.inra.fr/event#"
+     xmlns:event="http://www.mistea.supagro.inra.fr/event#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="http://www.mistea.supagro.inra.fr/event">
+    	<rdfs:label>The Event ontology</rdfs:label>
         <owl:versionIRI rdf:resource="http://www.mistea.supagro.inra.fr/event/2"/>
         <owl:imports rdf:resource="http://www.mistea.supagro.inra.fr/object/2"/>
     </owl:Ontology>

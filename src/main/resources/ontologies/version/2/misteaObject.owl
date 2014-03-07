@@ -7,6 +7,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:object="http://www.mistea.supagro.inra.fr/object#">
     <owl:Ontology rdf:about="http://www.mistea.supagro.inra.fr/object">
+    <rdfs:label>The object ontology</rdfs:label>
         <owl:versionIRI rdf:resource="http://www.mistea.supagro.inra.fr/object/2"/>
     </owl:Ontology>
     
