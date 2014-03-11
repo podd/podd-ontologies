@@ -17,6 +17,7 @@
         <owl:versionIRI rdf:resource="http://purl.org/podd/ns/version/poddScience/2"/>
         <owl:imports rdf:resource="http://purl.org/podd/ns/version/poddUser/2"/>
         <owl:imports rdf:resource="http://www.mistea.supagro.inra.fr/event/2"/>
+        <owl:imports rdf:resource="http://www.mistea.supagro.inra.fr/object/2"/>
     </owl:Ontology>
     
 
