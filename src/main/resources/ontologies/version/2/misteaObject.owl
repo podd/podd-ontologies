@@ -7,7 +7,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:object="http://www.mistea.supagro.inra.fr/object#">
     <owl:Ontology rdf:about="http://www.mistea.supagro.inra.fr/object">
-    <rdfs:label>The object ontology</rdfs:label>
+        <rdfs:label>The object ontology</rdfs:label>
         <owl:versionIRI rdf:resource="http://www.mistea.supagro.inra.fr/object/2"/>
     </owl:Ontology>
     
@@ -184,6 +184,22 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/object#Balance -->
+
+    <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/object#Balance">
+        <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/object#Sensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/object#Camera -->
+
+    <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/object#Camera">
+        <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/object#Sensors"/>
+    </owl:Class>
     
 
 
