@@ -203,9 +203,9 @@
 					</configuration>
 				</plugin>
 				<plugin>
-					<groupId>com.github.tkurz</groupId>
-					<artifactId>sesame-vocab-builder-maven-plugin</artifactId>
-					<version>1.1-SNAPSHOT</version>
+					<groupId>com.github.tkurz.sesame</groupId>
+					<artifactId>vocab-builder-maven-plugin</artifactId>
+					<version>1.1</version>
 					<executions>
 						<execution>
 							<id>generate-vocabularies</id>
