@@ -116,7 +116,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.mistea.supagro.inra.fr/object#has_for_species">
         <rdfs:domain rdf:resource="http://www.mistea.supagro.inra.fr/object#Plant"/>
-        <rdfs:range rdf:resource="http://www.mistea.supagro.inra.fr/object#species"/>
+        <rdfs:range rdf:resource="http://www.mistea.supagro.inra.fr/object#Species"/>
     </owl:ObjectProperty>
     
 
@@ -355,6 +355,12 @@
     
 
 
+    <!-- http://www.mistea.supagro.inra.fr/object#Species -->
+
+    <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/object#Species"/>
+    
+
+
     <!-- http://www.mistea.supagro.inra.fr/object#Support -->
 
     <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/object#Support">
@@ -396,12 +402,6 @@ Peut définir une zone au sens physique ou théorique</rdfs:comment>
     <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/object#plant_growth_chamber">
         <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/object#ControlledEnvironment"/>
     </owl:Class>
-    
-
-
-    <!-- http://www.mistea.supagro.inra.fr/object#species -->
-
-    <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/object#species"/>
 </rdf:RDF>
 
 
