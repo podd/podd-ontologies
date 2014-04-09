@@ -8,8 +8,6 @@ The ontologies are packaged and distributed as a Java JAR file, and deployed to 
 License
 =======
 
-The event ontology and the object ontology are based on [GPL V3](http://www.gnu.org/licenses/gpl-3.0.html).
-The others PODD ontologies are under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/) .
-
-
+Most of the PODD ontologies are under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/) .
+The event ontology and the object ontology contributed by INRA are based on [GPL V3](http://www.gnu.org/licenses/gpl-3.0.html).
 
