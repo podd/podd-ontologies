@@ -2753,7 +2753,54 @@
     
 
 
+  
+
     <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#PlatformType_Hardware"/>
+            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#PlatformType_HardwareSoftware"/>
+            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#PlatformType_Software"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#WildType_No"/>
+            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#WildType_NotApplicable"/>
+            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#WildType_Unknown"/>
+            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#WildType_Yes"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#HasControl_No"/>
+            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#HasControl_NotApplicable"/>
+            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#HasControl_Unknown"/>
+            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#HasControl_Yes"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#Sex_Female"/>
+            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#Sex_Hermaphrodite"/>
+            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#Sex_Male"/>
+            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#Sex_NotApplicable"/>
+            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#Sex_Unknown"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    
+          <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotations
@@ -2812,52 +2859,8 @@
         <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
     </rdf:Description>
     
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // General axioms
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
-        <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#PlatformType_Hardware"/>
-            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#PlatformType_HardwareSoftware"/>
-            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#PlatformType_Software"/>
-        </owl:distinctMembers>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
-        <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#WildType_No"/>
-            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#WildType_NotApplicable"/>
-            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#WildType_Unknown"/>
-            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#WildType_Yes"/>
-        </owl:distinctMembers>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
-        <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#HasControl_No"/>
-            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#HasControl_NotApplicable"/>
-            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#HasControl_Unknown"/>
-            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#HasControl_Yes"/>
-        </owl:distinctMembers>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
-        <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#Sex_Female"/>
-            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#Sex_Hermaphrodite"/>
-            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#Sex_Male"/>
-            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#Sex_NotApplicable"/>
-            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#Sex_Unknown"/>
-        </owl:distinctMembers>
-    </rdf:Description>
+    
+    
 </rdf:RDF>
 
 
