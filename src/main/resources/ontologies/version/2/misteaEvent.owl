@@ -96,9 +96,11 @@
 
     <!-- http://www.mistea.supagro.inra.fr/event#occurs_on -->
 
-    <owl:ObjectProperty rdf:about="http://www.mistea.supagro.inra.fr/event#occurs_on">
-        <rdfs:domain rdf:resource="http://www.mistea.supagro.inra.fr/event#Event"/>
-    </owl:ObjectProperty>
+    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/event#occurs_on">
+        <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
+        <rdfs:range rdf:resource="http://purl.org/podd/ns/poddBase#PoddObject"/>
+        <owl:inverseOf rdf:resource="http://purl.org/podd/ns/poddScience#hasEvent"/>
+    </rdf:Description>
     
 
 

@@ -4,8 +4,10 @@
 package com.github.podd.ontology.test;
 
 import java.util.Arrays;
+import org.junit.runners.MethodSorters;
 import java.util.Collection;
 
+import org.junit.FixMethodOrder;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
@@ -16,6 +18,7 @@ import org.junit.runners.Parameterized.Parameters;
  * @author kutila
  * 
  */
+@FixMethodOrder(MethodSorters.DEFAULT)
 @RunWith(value = Parameterized.class)
 public class PoddOntologyVersion2Test extends AbstractPoddOntologyVersionTest
 {
