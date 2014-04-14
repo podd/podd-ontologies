@@ -178,6 +178,8 @@
 
     <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/event#Acquisition">
         <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/event#Imagery"/>
+        <rdfs:comment xml:lang="en">Acquisition</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Acquisition</rdfs:comment>
     </owl:Class>
     
 
@@ -195,6 +197,8 @@
     <!-- http://www.mistea.supagro.inra.fr/event#Automatic -->
 
     <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/event#Automatic">
+        <rdfs:label xml:lang="en">Automatic</rdfs:label>
+        <rdfs:label xml:lang="fr">Automatique</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/event#Calibration"/>
     </owl:Class>
     
@@ -213,6 +217,8 @@
     <!-- http://www.mistea.supagro.inra.fr/event#Calibration -->
 
     <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/event#Calibration">
+        <rdfs:label xml:lang="en">Calibration</rdfs:label>
+        <rdfs:label xml:lang="fr">Calibration</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/event#Imagery"/>
     </owl:Class>
     
@@ -221,6 +227,8 @@
     <!-- http://www.mistea.supagro.inra.fr/event#Cleaning -->
 
     <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/event#Cleaning">
+        <rdfs:label xml:lang="en">Cleaning</rdfs:label>
+        <rdfs:label xml:lang="fr">Nettoyage</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/event#Maintains"/>
     </owl:Class>
     
@@ -263,8 +271,9 @@
         <rdfs:label xml:lang="en">Displacement</rdfs:label>
         <rdfs:label xml:lang="fr">Deplacement</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/event#Event"/>
-        <rdfs:comment xml:lang="en">Event of displacement of an movable object</rdfs:comment>
         <rdfs:comment xml:lang="fr">Evénement de déplacement lié à un objet déplaçable</rdfs:comment>
+        <owl:deprecated>Not used for now, maybe deleted</owl:deprecated>
+        <rdfs:comment xml:lang="en">Event of displacement of an movable object</rdfs:comment>
     </owl:Class>
     
 
@@ -357,6 +366,8 @@
     <!-- http://www.mistea.supagro.inra.fr/event#Maintains -->
 
     <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/event#Maintains">
+        <rdfs:label xml:lang="en">Maintains</rdfs:label>
+        <rdfs:label xml:lang="en">Maintenance</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/event#Management"/>
     </owl:Class>
     
@@ -375,6 +386,8 @@
     <!-- http://www.mistea.supagro.inra.fr/event#Manual -->
 
     <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/event#Manual">
+        <rdfs:label xml:lang="en">Manual</rdfs:label>
+        <rdfs:label xml:lang="fr">Manuel</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/event#Calibration"/>
     </owl:Class>
     
@@ -412,6 +425,8 @@
     <!-- http://www.mistea.supagro.inra.fr/event#Reparation -->
 
     <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/event#Reparation">
+        <rdfs:label xml:lang="en">Reparation</rdfs:label>
+        <rdfs:label xml:lang="fr">Réparation</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/event#Maintains"/>
     </owl:Class>
     
@@ -431,6 +446,8 @@
     <!-- http://www.mistea.supagro.inra.fr/event#Start -->
 
     <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/event#Start">
+        <rdfs:label xml:lang="en">Start</rdfs:label>
+        <rdfs:label xml:lang="fr">Départ</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/event#Management"/>
     </owl:Class>
     
@@ -439,6 +456,8 @@
     <!-- http://www.mistea.supagro.inra.fr/event#Stop -->
 
     <owl:Class rdf:about="http://www.mistea.supagro.inra.fr/event#Stop">
+        <rdfs:label xml:lang="en">Stop</rdfs:label>
+        <rdfs:label xml:lang="fr">Arrêt</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/event#Management"/>
     </owl:Class>
     
@@ -461,9 +480,6 @@
         <rdfs:label xml:lang="fr">Probleme</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.mistea.supagro.inra.fr/event#Event"/>
     </owl:Class>
-    
-
-
 </rdf:RDF>
 
 
