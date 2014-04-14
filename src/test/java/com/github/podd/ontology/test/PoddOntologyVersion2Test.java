@@ -18,7 +18,7 @@ import org.junit.runners.Parameterized.Parameters;
  * @author kutila
  * 
  */
-@FixMethodOrder(MethodSorters.DEFAULT)
+
 @RunWith(value = Parameterized.class)
 public class PoddOntologyVersion2Test extends AbstractPoddOntologyVersionTest
 {
@@ -37,8 +37,8 @@ public class PoddOntologyVersion2Test extends AbstractPoddOntologyVersionTest
                         { MultiplePoddOntologyVersionTest.VERSION_2_PATH + "misteaObject.owl", "application/rdf+xml",
                                 127 },
                         { MultiplePoddOntologyVersionTest.VERSION_2_PATH + "misteaEvent.owl", "application/rdf+xml",
-                                166 },
-                        { PoddOntologyVersion2Test.VERSION_2_PATH + "poddScience.owl", "application/rdf+xml", 1482 },
+                                168 },
+                        { PoddOntologyVersion2Test.VERSION_2_PATH + "poddScience.owl", "application/rdf+xml", 1481 },
                         { PoddOntologyVersion2Test.VERSION_2_PATH + "poddPlant.owl", "application/rdf+xml", 217 },
                         { PoddOntologyVersion2Test.VERSION_2_PATH + "poddAnimal.owl", "application/rdf+xml", 139 },
                         { PoddOntologyVersion2Test.VERSION_2_PATH + "poddDataRepository.owl", "application/rdf+xml", 47 },
