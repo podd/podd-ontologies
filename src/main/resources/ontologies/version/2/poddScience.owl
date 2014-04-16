@@ -138,8 +138,19 @@
     <owl:ObjectProperty rdf:about="http://purl.org/podd/ns/poddScience#hasEvent">
         <rdfs:label>has Event</rdfs:label>
         <poddBase:weight>13</poddBase:weight>
+        <rdfs:domain rdf:resource="http://purl.org/podd/ns/poddBase#PoddObject"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/podd/ns/poddBase#contains"/>
-        <rdfs:range rdf:resource="http://purl.org/podd/ns/poddScience#Event"/>
+        <rdfs:range rdf:resource="http://www.mistea.supagro.inra.fr/event#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/podd/ns/poddScience#hasEventLog -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/podd/ns/poddScience#hasEventLog">
+        <rdfs:domain rdf:resource="http://purl.org/podd/ns/poddBase#PoddObject"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/podd/ns/poddBase#contains"/>
+        <rdfs:range rdf:resource="http://purl.org/podd/ns/poddScience#EventLog"/>
     </owl:ObjectProperty>
     
 
@@ -147,7 +158,7 @@
     <!-- http://purl.org/podd/ns/poddScience#hasExperiment -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/podd/ns/poddScience#hasExperiment">
-        <rdfs:label>has Investigation</rdfs:label>
+        <rdfs:label xml:lang="en">has Experiment</rdfs:label>
         <poddBase:weight>10</poddBase:weight>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/podd/ns/poddBase#contains"/>
         <rdfs:range rdf:resource="http://purl.org/podd/ns/poddScience#Experiment"/>
@@ -514,6 +525,28 @@
         <poddBase:hasDisplayType rdf:resource="http://purl.org/podd/ns/poddBase#DisplayType_AutoComplete"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/podd/ns/poddBase#refersTo"/>
         <rdfs:range rdf:resource="http://purl.org/podd/ns/poddScience#TreatmentMaterial"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#occurs_on -->
+
+    <owl:ObjectProperty rdf:about="http://www.mistea.supagro.inra.fr/event#occurs_on">
+        <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
+        <rdfs:range rdf:resource="http://purl.org/podd/ns/poddBase#PoddObject"/>
+        <owl:inverseOf rdf:resource="http://purl.org/podd/ns/poddScience#hasEvent"/>
+        <rdfs:domain rdf:resource="http://www.mistea.supagro.inra.fr/event#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.mistea.supagro.inra.fr/event#produce -->
+
+    <owl:ObjectProperty rdf:about="http://www.mistea.supagro.inra.fr/event#produce">
+        <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
+        <rdfs:range rdf:resource="http://www.mistea.supagro.inra.fr/event#Imagery"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.mistea.supagro.inra.fr/event#occurs_on"/>
+        <rdfs:domain rdf:resource="http://www.mistea.supagro.inra.fr/object#Camera"/>
     </owl:ObjectProperty>
     
 
@@ -1148,22 +1181,6 @@
     
 
 
-    <!-- http://www.mistea.supagro.inra.fr/event#begin_date -->
-
-    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/event#begin_date">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://www.mistea.supagro.inra.fr/event#end_date -->
-
-    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/event#end_date">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    </rdf:Description>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1203,16 +1220,16 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/podd/ns/poddBase#PoddInternalObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasAccessionSource"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddBase#hasURL"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddBase#hasURL"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasAccessionSource"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1253,8 +1270,14 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/podd/ns/poddBase#PoddInternalObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#refersToProtocol"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Protocol"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#refersToPlatform"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#refersToData"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Data"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1266,14 +1289,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#refersToData"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Data"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#refersToPlatform"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#refersToProtocol"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Protocol"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1285,6 +1302,12 @@
     <owl:Class rdf:about="http://purl.org/podd/ns/poddScience#Container">
         <rdfs:label>Container</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/podd/ns/poddBase#PoddInternalObject"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasContainer"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Container"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasMaterial"/>
@@ -1299,6 +1322,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasMeasurement"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Measurement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasBarcode"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -1306,8 +1335,9 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasMeasurement"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Measurement"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasReplicate"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1315,19 +1345,6 @@
                 <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasContainerType"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasContainer"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Container"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasReplicate"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1341,32 +1358,15 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/podd/ns/poddBase#PoddTopObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#refersToEnvironment"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Environment"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasEvent"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Event"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#refersToContainer"/>
                 <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Container"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#refersToPlatform"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#refersToMaterial"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Material"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasProtocolVariation"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1377,9 +1377,20 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasProtocolVariation"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#refersToEnvironment"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Environment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#refersToMaterial"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Material"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#refersToPlatform"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1398,12 +1409,14 @@
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasEvent"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Event"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/podd/ns/poddScience#DisplacementLog -->
+
+    <owl:Class rdf:about="http://purl.org/podd/ns/poddScience#DisplacementLog">
+        <rdfs:subClassOf rdf:resource="http://purl.org/podd/ns/poddScience#EventLog"/>
     </owl:Class>
     
 
@@ -1415,8 +1428,9 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/podd/ns/poddBase#PoddInternalObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasMeasurement"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Measurement"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddBase#hasStartDateTime"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1427,9 +1441,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddBase#hasStartDateTime"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasMeasurement"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Measurement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1439,42 +1452,14 @@
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasEvent"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Event"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/podd/ns/poddScience#Event -->
+    <!-- http://purl.org/podd/ns/poddScience#EventLog -->
 
-    <owl:Class rdf:about="http://purl.org/podd/ns/poddScience#Event">
-        <rdfs:label>Event</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/podd/ns/poddBase#PoddInternalObject"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddBase#hasTimestamp"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddBase#hasTimePoint"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddBase#hasDuration"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+    <owl:Class rdf:about="http://purl.org/podd/ns/poddScience#EventLog">
+        <rdfs:subClassOf rdf:resource="http://purl.org/podd/ns/poddBase#PoddTopObject"/>
     </owl:Class>
     
 
@@ -1483,13 +1468,7 @@
 
     <owl:Class rdf:about="http://purl.org/podd/ns/poddScience#Experiment">
         <rdfs:label>Investigation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.org/podd/ns/poddBase#PoddInternalObject"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasEnvironment"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Environment"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://purl.org/podd/ns/poddBase#PoddTopObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasProcessVariation"/>
@@ -1498,21 +1477,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasReferenceID"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddBase#hasStartDateTime"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#refersToProcess"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Process"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasTreatmentMaterial"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#TreatmentMaterial"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1523,14 +1489,20 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasData"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Data"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#refersToProcess"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Process"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasDesign"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Design"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasEnvironment"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Environment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasReferenceID"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1541,22 +1513,37 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasData"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Data"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddBase#hasStartDateTime"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasExperiment"/>
                 <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Experiment"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasEvent"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Event"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasDesign"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Design"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasTreatmentMaterial"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#TreatmentMaterial"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/podd/ns/poddScience#ExperimentalConductLog -->
+
+    <owl:Class rdf:about="http://purl.org/podd/ns/poddScience#ExperimentalConductLog">
+        <rdfs:subClassOf rdf:resource="http://purl.org/podd/ns/poddScience#EventLog"/>
     </owl:Class>
     
 
@@ -1568,8 +1555,21 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/podd/ns/poddBase#PoddInternalObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasChromosome"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasMarker"/>
                 <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Marker"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasSequence"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Sequence"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1580,20 +1580,13 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasVariationType"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasAllele"/>
                 <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Allele"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasChromosomeLocation"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasVariationType"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -1606,13 +1599,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasSequence"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Sequence"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasChromosome"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasChromosomeLocation"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -1628,9 +1615,15 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/podd/ns/poddBase#PoddInternalObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasGenus"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasLine"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasGene"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Gene"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1642,27 +1635,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasSubspecies"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasSpeciesCommonName"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasNickname"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasLineNumber"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -1671,19 +1644,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasAccession"/>
                 <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Accession"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasLine"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasGene"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Gene"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1698,6 +1658,33 @@
                 <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasSpecies"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasSubspecies"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasLineNumber"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasGenus"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasNickname"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1721,6 +1708,28 @@
     
 
 
+    <!-- http://purl.org/podd/ns/poddScience#ImageryLog -->
+
+    <owl:Class rdf:about="http://purl.org/podd/ns/poddScience#ImageryLog">
+        <rdfs:subClassOf rdf:resource="http://purl.org/podd/ns/poddScience#EventLog"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/podd/ns/poddScience#ManagementLog -->
+
+    <owl:Class rdf:about="http://purl.org/podd/ns/poddScience#ManagementLog">
+        <rdfs:subClassOf rdf:resource="http://purl.org/podd/ns/poddScience#EventLog"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasEvent"/>
+                <owl:allValuesFrom rdf:resource="http://www.mistea.supagro.inra.fr/event#Management"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/podd/ns/poddScience#Marker -->
 
     <owl:Class rdf:about="http://purl.org/podd/ns/poddScience#Marker">
@@ -1728,14 +1737,7 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasName"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasMarkerDirection"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasMarkerType"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -1749,8 +1751,15 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasMarkerType"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasMarkerDirection"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1765,53 +1774,26 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/podd/ns/poddBase#PoddInternalObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasSex"/>
-                <owl:onClass rdf:resource="http://purl.org/podd/ns/poddScience#Sex"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasMaterial"/>
                 <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Material"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#refersToGenotype"/>
-                <owl:onClass rdf:resource="http://purl.org/podd/ns/poddScience#Genotype"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasDOB"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasMeasurement"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Measurement"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasObservation"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Observation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasAnatomicalPart"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasTreatment"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Treatment"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasProtocolVariation"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasAge"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasMaterialStatus"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -1825,21 +1807,15 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasMaterialStatus"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasTreatment"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Treatment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#refersToGenotype"/>
+                <owl:onClass rdf:resource="http://purl.org/podd/ns/poddScience#Genotype"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasEvent"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Event"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasObservation"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Observation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1850,9 +1826,23 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasDOB"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasAge"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasSex"/>
+                <owl:onClass rdf:resource="http://purl.org/podd/ns/poddScience#Sex"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasAnatomicalPart"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1869,8 +1859,21 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasMeasurement"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Measurement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasPhenotype"/>
                 <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Phenotype"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasProtocolVariation"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>A material that can be observed and treated.</rdfs:comment>
@@ -1885,20 +1888,21 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/podd/ns/poddBase#PoddInternalObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasMeasurementParameter"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#MeasurementParameter"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddBase#hasTimestamp"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasUnit"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddBase#hasTimePoint"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddBase#hasTimePoint"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasUnit"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -1912,9 +1916,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddBase#hasTimestamp"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasMeasurementParameter"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#MeasurementParameter"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1951,8 +1954,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/podd/ns/poddBase#PoddInternalObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#refersToAnalysis"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Analysis"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasMeasurement"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Measurement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1964,8 +1967,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasMeasurement"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Measurement"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#refersToAnalysis"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Analysis"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1994,15 +1997,15 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasPlatformType"/>
-                <owl:onClass rdf:resource="http://purl.org/podd/ns/poddScience#PlatformType"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasPlatform"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasPlatform"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasPlatformType"/>
+                <owl:onClass rdf:resource="http://purl.org/podd/ns/poddScience#PlatformType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -2065,85 +2068,14 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/podd/ns/poddBase#PoddTopObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddBase#hasCompletionDate"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddBase#hasDuration"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddBase#hasTopObjectObserver"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddUser#User"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasPublication"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Publication"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasGenotype"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Genotype"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasProjectPlan"/>
                 <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#ProjectPlan"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddBase#hasPublicationStatus"/>
-                <owl:onClass rdf:resource="http://purl.org/podd/ns/poddBase#PublicationStatus"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddBase#hasTopObjectAdministrator"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddUser#User"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddBase#hasNotes"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasAnalysis"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Analysis"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddBase#hasTopObjectStatus"/>
-                <owl:onClass rdf:resource="http://purl.org/podd/ns/poddBase#TopObjectStatus"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddBase#hasLeadInstitution"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasPlatform"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddBase#hasURL"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2155,21 +2087,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasGenotype"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Genotype"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddBase#hasPrincipalInvestigator"/>
-                <owl:onClass rdf:resource="http://purl.org/podd/ns/poddUser#User"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasProcess"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Process"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasPublication"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Publication"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2181,9 +2100,33 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddBase#hasPublicationDate"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddBase#hasTopObjectAdministrator"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddUser#User"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasAnalysis"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Analysis"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasProcess"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Process"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddBase#hasTopObjectMember"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddUser#User"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddBase#hasPublicationStatus"/>
+                <owl:onClass rdf:resource="http://purl.org/podd/ns/poddBase#PublicationStatus"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2195,14 +2138,74 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddBase#hasTopObjectMember"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddBase#hasDuration"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddBase#hasPublicationDate"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddBase#hasURL"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddBase#hasTopObjectObserver"/>
                 <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddUser#User"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddBase#hasCompletionDate"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddBase#hasLeadInstitution"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddBase#hasNotes"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddBase#hasPrincipalInvestigator"/>
+                <owl:onClass rdf:resource="http://purl.org/podd/ns/poddUser#User"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddBase#hasTopObjectStatus"/>
+                <owl:onClass rdf:resource="http://purl.org/podd/ns/poddBase#TopObjectStatus"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasExperiment"/>
                 <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Experiment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasPlatform"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>The top level container for scientific projects.</rdfs:comment>
@@ -2236,7 +2239,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/podd/ns/poddBase#PoddInternalObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasIssue"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasPages"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -2257,13 +2260,6 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#publishedIn"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasAuthors"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -2271,14 +2267,21 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasAbstract"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#publishedIn"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasPages"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasIssue"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasAbstract"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -2373,27 +2376,15 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/podd/ns/poddBase#PoddInternalObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasEvent"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Event"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#refersToTreatmentMaterial"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#TreatmentMaterial"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasTreatmentType"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasMeasurement"/>
                 <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Measurement"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasTreatmentType"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2408,6 +2399,12 @@
                 <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Protocol"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#refersToTreatmentMaterial"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#TreatmentMaterial"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2419,21 +2416,15 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/podd/ns/poddBase#PoddInternalObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#refersToProtocol"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Protocol"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasTreatmentType"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasProtocolVariation"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasEvent"/>
-                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Event"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#refersToProtocol"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Protocol"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2451,11 +2442,19 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasProtocolVariation"/>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasTreatmentType"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/podd/ns/poddScience#TroubleLog -->
+
+    <owl:Class rdf:about="http://purl.org/podd/ns/poddScience#TroubleLog">
+        <rdfs:subClassOf rdf:resource="http://purl.org/podd/ns/poddScience#EventLog"/>
     </owl:Class>
     
 
@@ -2480,7 +2479,7 @@
     <!-- http://www.mistea.supagro.inra.fr/event#Event -->
 
     <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/event#Event">
-        <rdfs:subClassOf rdf:resource="http://purl.org/podd/ns/poddScience#Event"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/podd/ns/poddBase#PoddInternalObject"/>
     </rdf:Description>
     
 
@@ -2728,11 +2727,84 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/event#end_date">
+        <poddBase:weight>4</poddBase:weight>
+        <poddBase:hasDisplayType rdf:resource="http://purl.org/podd/ns/poddBase#DisplayType_ShortText"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/event#has_for_position_the">
+        <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/event#has_for_containing_the">
+        <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/event#occurs_after">
+        <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/event#Position">
+        <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/event#is_position_off">
+        <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/event#Containing">
+        <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/object#is">
+        <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/event#occurs_before">
+        <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/event#the">
+        <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/event#begin_date">
+        <poddBase:weight>3</poddBase:weight>
+        <poddBase:hasDisplayType rdf:resource="http://purl.org/podd/ns/poddBase#DisplayType_ShortText"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/event#duration">
+        <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/event#has_for">
+        <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/object#off">
+        <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/object#is_contained">
+        <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/event#Displacement">
+        <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/event#is_containing_off">
+        <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // General axioms
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#HasControl_No"/>
+            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#HasControl_NotApplicable"/>
+            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#HasControl_Unknown"/>
+            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#HasControl_Yes"/>
+        </owl:distinctMembers>
+    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
@@ -2746,15 +2818,6 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#WildType_No"/>
-            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#WildType_NotApplicable"/>
-            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#WildType_Unknown"/>
-            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#WildType_Yes"/>
-        </owl:distinctMembers>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
-        <owl:distinctMembers rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#PlatformType_Hardware"/>
             <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#PlatformType_HardwareSoftware"/>
             <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#PlatformType_Software"/>
@@ -2763,10 +2826,10 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#HasControl_No"/>
-            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#HasControl_NotApplicable"/>
-            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#HasControl_Unknown"/>
-            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#HasControl_Yes"/>
+            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#WildType_No"/>
+            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#WildType_NotApplicable"/>
+            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#WildType_Unknown"/>
+            <rdf:Description rdf:about="http://purl.org/podd/ns/poddScience#WildType_Yes"/>
         </owl:distinctMembers>
     </rdf:Description>
 </rdf:RDF>
