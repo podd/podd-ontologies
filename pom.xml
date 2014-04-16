@@ -261,6 +261,14 @@
 										<prefix>http://purl.org/podd/ns/poddAnimal#</prefix>
 										<file>src/main/resources/ontologies/version/2/poddAnimal.owl</file>
 									</vocabulary>
+									<vocabulary>
+										<className>MISTEAOBJECT</className>
+										<file>src/main/resources/ontologies/version/2/misteaObject.owl</file>
+									</vocabulary>
+									<vocabulary>
+										<className>MISTEAEVENT</className>
+										<file>src/main/resources/ontologies/version/2/misteaEvent.owl</file>
+									</vocabulary>
 								</vocabularies>
 							</configuration>
 						</execution>
