@@ -263,10 +263,12 @@
 									</vocabulary>
 									<vocabulary>
 										<className>MISTEAOBJECT</className>
+										<prefix>http://www.mistea.supagro.inra.fr/object#</prefix>
 										<file>src/main/resources/ontologies/version/2/misteaObject.owl</file>
 									</vocabulary>
 									<vocabulary>
 										<className>MISTEAEVENT</className>
+										<prefix>http://www.mistea.supagro.inra.fr/event#</prefix>
 										<file>src/main/resources/ontologies/version/2/misteaEvent.owl</file>
 									</vocabulary>
 								</vocabularies>
