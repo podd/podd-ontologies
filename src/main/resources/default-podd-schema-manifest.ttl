@@ -8,8 +8,9 @@
 
 <http://purl.org/podd/ns/dcTerms> a owl:Ontology ;
 	owl:versionIRI <http://purl.org/podd/ns/version/dcTerms/1> , 
-					<http://purl.org/podd/ns/version/dcTerms/2>;
-	omv:currentVersion <http://purl.org/podd/ns/version/dcTerms/2> .
+					<http://purl.org/podd/ns/version/dcTerms/2> ,
+					<http://purl.org/podd/ns/version/dcTerms/3> ;
+	omv:currentVersion <http://purl.org/podd/ns/version/dcTerms/3> .
 
 <http://purl.org/podd/ns/version/dcTerms/1> a owl:Ontology ;
     <http://purl.org/podd/ns/schema#classpath> "/ontologies/version/1/dcTerms.owl" .
@@ -17,13 +18,17 @@
 <http://purl.org/podd/ns/version/dcTerms/2> a owl:Ontology ;
     <http://purl.org/podd/ns/schema#classpath> "/ontologies/version/2/dcTerms.owl" .
 
+<http://purl.org/podd/ns/version/dcTerms/3> a owl:Ontology ;
+    <http://purl.org/podd/ns/schema#classpath> "/ontologies/version/3/dcTerms.owl" .
+
 
 
 
 <http://purl.org/podd/ns/foaf> a owl:Ontology ;
 	owl:versionIRI <http://purl.org/podd/ns/version/foaf/1> ,
-					<http://purl.org/podd/ns/version/foaf/2> ;
-	omv:currentVersion <http://purl.org/podd/ns/version/foaf/2>	.
+					<http://purl.org/podd/ns/version/foaf/2> ,
+					<http://purl.org/podd/ns/version/foaf/3> ;
+	omv:currentVersion <http://purl.org/podd/ns/version/foaf/3>	.
 
 <http://purl.org/podd/ns/version/foaf/1> a owl:Ontology ;
     <http://purl.org/podd/ns/schema#classpath> "/ontologies/version/1/foaf.owl" ;
@@ -33,28 +38,45 @@
     <http://purl.org/podd/ns/schema#classpath> "/ontologies/version/2/foaf.owl" ;
 	owl:imports <http://purl.org/podd/ns/version/dcTerms/2> .
 
+<http://purl.org/podd/ns/version/foaf/3> a owl:Ontology ;
+    <http://purl.org/podd/ns/schema#classpath> "/ontologies/version/3/foaf.owl" ;
+	owl:imports <http://purl.org/podd/ns/version/dcTerms/3> .
+
 
 
 <http://www.mistea.supagro.inra.fr/object> a owl:Ontology ;
-	owl:versionIRI <http://www.mistea.supagro.inra.fr/object/2> ;
-	omv:currentVersion <http://www.mistea.supagro.inra.fr/object/2> .
+	owl:versionIRI <http://www.mistea.supagro.inra.fr/object/2> ,
+					<http://www.mistea.supagro.inra.fr/object/3> ;
+	omv:currentVersion <http://www.mistea.supagro.inra.fr/object/3> .
 	
 <http://www.mistea.supagro.inra.fr/object/2> a owl:Ontology ;
     <http://purl.org/podd/ns/schema#classpath> "/ontologies/version/2/misteaObject.owl" .
+
+<http://www.mistea.supagro.inra.fr/object/3> a owl:Ontology ;
+    <http://purl.org/podd/ns/schema#classpath> "/ontologies/version/3/misteaObject.owl" .
+
+
     
 <http://www.mistea.supagro.inra.fr/event> a owl:Ontology ;
-	owl:versionIRI <http://www.mistea.supagro.inra.fr/event/2> ;
-	omv:currentVersion <http://www.mistea.supagro.inra.fr/event/2> .
+	owl:versionIRI <http://www.mistea.supagro.inra.fr/event/2> ,
+					<http://www.mistea.supagro.inra.fr/event/3> ;
+	omv:currentVersion <http://www.mistea.supagro.inra.fr/event/3> .
 	
 <http://www.mistea.supagro.inra.fr/event/2> a owl:Ontology ;
     <http://purl.org/podd/ns/schema#classpath> "/ontologies/version/2/misteaEvent.owl" ;
     owl:imports <http://www.mistea.supagro.inra.fr/object/2> .
 
+<http://www.mistea.supagro.inra.fr/event/3> a owl:Ontology ;
+    <http://purl.org/podd/ns/schema#classpath> "/ontologies/version/3/misteaEvent.owl" ;
+    owl:imports <http://www.mistea.supagro.inra.fr/object/3> .
+
+
 
 <http://purl.org/podd/ns/poddUser> a owl:Ontology ;
 	owl:versionIRI <http://purl.org/podd/ns/version/poddUser/1> , 
-					<http://purl.org/podd/ns/version/poddUser/2> ;
-	omv:currentVersion <http://purl.org/podd/ns/version/poddUser/2> .
+					<http://purl.org/podd/ns/version/poddUser/2> ,
+					<http://purl.org/podd/ns/version/poddUser/3> ;
+	omv:currentVersion <http://purl.org/podd/ns/version/poddUser/3> .
 
 <http://purl.org/podd/ns/version/poddUser/1> a owl:Ontology ;
     <http://purl.org/podd/ns/schema#classpath> "/ontologies/version/1/poddUser.owl" ;
@@ -66,13 +88,19 @@
 	owl:imports <http://purl.org/podd/ns/version/dcTerms/2> ,
         <http://purl.org/podd/ns/version/foaf/2> .
 
+<http://purl.org/podd/ns/version/poddUser/3> a owl:Ontology ;
+    <http://purl.org/podd/ns/schema#classpath> "/ontologies/version/3/poddUser.owl" ;
+	owl:imports <http://purl.org/podd/ns/version/dcTerms/3> ,
+        <http://purl.org/podd/ns/version/foaf/3> .
+
 
 
 
 <http://purl.org/podd/ns/poddBase> a owl:Ontology ;
 	owl:versionIRI <http://purl.org/podd/ns/version/poddBase/1> ,
-					<http://purl.org/podd/ns/version/poddBase/2> ;
-	omv:currentVersion <http://purl.org/podd/ns/version/poddBase/2> .
+					<http://purl.org/podd/ns/version/poddBase/2> ,
+					<http://purl.org/podd/ns/version/poddBase/3> ;
+	omv:currentVersion <http://purl.org/podd/ns/version/poddBase/3> .
 
 <http://purl.org/podd/ns/version/poddBase/1> a owl:Ontology ;
     <http://purl.org/podd/ns/schema#classpath> "/ontologies/version/1/poddBase.owl" ; 
@@ -86,13 +114,20 @@
         <http://purl.org/podd/ns/version/foaf/2> ,
         <http://purl.org/podd/ns/version/poddUser/2> .
 
+<http://purl.org/podd/ns/version/poddBase/3> a owl:Ontology ;
+    <http://purl.org/podd/ns/schema#classpath> "/ontologies/version/3/poddBase.owl" ; 
+    owl:imports <http://purl.org/podd/ns/version/dcTerms/3> ,
+        <http://purl.org/podd/ns/version/foaf/3> ,
+        <http://purl.org/podd/ns/version/poddUser/3> .
+
 
 
 
 <http://purl.org/podd/ns/poddScience> a owl:Ontology ;
 	owl:versionIRI <http://purl.org/podd/ns/version/poddScience/1> , 
-					<http://purl.org/podd/ns/version/poddScience/2> ;
-	omv:currentVersion <http://purl.org/podd/ns/version/poddScience/2> .
+					<http://purl.org/podd/ns/version/poddScience/2> ,
+					<http://purl.org/podd/ns/version/poddScience/3> ;
+	omv:currentVersion <http://purl.org/podd/ns/version/poddScience/3> .
 
 <http://purl.org/podd/ns/version/poddScience/1> a owl:Ontology ;
     <http://purl.org/podd/ns/schema#classpath> "/ontologies/version/1/poddScience.owl" ;
@@ -110,13 +145,23 @@
         <http://www.mistea.supagro.inra.fr/event/2>  ,
         <http://www.mistea.supagro.inra.fr/object/2> .
 
+<http://purl.org/podd/ns/version/poddScience/3> a owl:Ontology ;
+    <http://purl.org/podd/ns/schema#classpath> "/ontologies/version/3/poddScience.owl" ;
+	owl:imports <http://purl.org/podd/ns/version/dcTerms/3> ,
+	    <http://purl.org/podd/ns/version/foaf/3> ,
+	    <http://purl.org/podd/ns/version/poddUser/3> ,
+        <http://purl.org/podd/ns/version/poddBase/3> ,
+        <http://www.mistea.supagro.inra.fr/event/3>  ,
+        <http://www.mistea.supagro.inra.fr/object/3> .
+
 
 
 
 <http://purl.org/podd/ns/poddPlant> a owl:Ontology ;
 	owl:versionIRI <http://purl.org/podd/ns/version/poddPlant/1> , 
-					<http://purl.org/podd/ns/version/poddPlant/2> ;
-	omv:currentVersion <http://purl.org/podd/ns/version/poddPlant/2> .
+					<http://purl.org/podd/ns/version/poddPlant/2> ,
+					<http://purl.org/podd/ns/version/poddPlant/3> ;
+	omv:currentVersion <http://purl.org/podd/ns/version/poddPlant/3> .
 
 <http://purl.org/podd/ns/version/poddPlant/1> a owl:Ontology ;
     <http://purl.org/podd/ns/schema#classpath> "/ontologies/version/1/poddPlant.owl" ;
@@ -133,6 +178,16 @@
 	    <http://purl.org/podd/ns/version/poddUser/2> ,
 	    <http://purl.org/podd/ns/version/poddBase/2> ,
         <http://purl.org/podd/ns/version/poddScience/2> .
+
+<http://purl.org/podd/ns/version/poddPlant/3> a owl:Ontology ;
+    <http://purl.org/podd/ns/schema#classpath> "/ontologies/version/3/poddPlant.owl" ;
+	owl:imports <http://purl.org/podd/ns/version/dcTerms/3> ,
+	    <http://purl.org/podd/ns/version/foaf/3> ,
+	    <http://purl.org/podd/ns/version/poddUser/3> ,
+	    <http://purl.org/podd/ns/version/poddBase/3> ,
+        <http://purl.org/podd/ns/version/poddScience/3> ,
+        <http://www.mistea.supagro.inra.fr/event/3>  ,
+        <http://www.mistea.supagro.inra.fr/object/3> .
 
 
 

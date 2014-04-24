@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dataRepository "http://purl.org/podd/ns/dataRepository#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://purl.org/podd/ns/dataRepository#"
+     xml:base="http://purl.org/podd/ns/dataRepository#"
+     xmlns:dataRepository="http://purl.org/podd/ns/dataRepository#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://purl.org/podd/ns/dataRepository">
+        <rdfs:label>The PODD Ontology for Data Repositories</rdfs:label>
+        <owl:versionIRI rdf:resource="http://purl.org/podd/ns/version/dataRepository/3"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <!-- http://purl.org/podd/ns/dataRepository#hasRepositoryConfiguration -->
+
+    <owl:ObjectProperty rdf:about="&dataRepository;hasRepositoryConfiguration">
+        <rdfs:label>has Data Repository Configuration</rdfs:label>
+    </owl:ObjectProperty>
+    
+    
+
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+    <!-- http://purl.org/podd/ns/dataRepository#hasDataRepositoryAlias -->
+
+    <owl:DatatypeProperty rdf:about="&dataRepository;hasDataRepositoryAlias">
+        <rdfs:label>has Data Repository Alias</rdfs:label>
+        <rdfs:domain rdf:resource="&dataRepository;DataRepository"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+
+
+
+
+    <!-- http://purl.org/podd/ns/dataRepository#hasDataRepositoryProtocol -->
+
+    <owl:DatatypeProperty rdf:about="&dataRepository;hasDataRepositoryProtocol">
+        <rdfs:label>has Data Repository Protocol</rdfs:label>
+        <rdfs:domain rdf:resource="&dataRepository;DataRepository"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://purl.org/podd/ns/dataRepository#hasDataRepositoryHost -->
+
+    <owl:DatatypeProperty rdf:about="&dataRepository;hasDataRepositoryHost">
+        <rdfs:label>has Data Repository Host</rdfs:label>
+        <rdfs:domain rdf:resource="&dataRepository;DataRepository"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+
+    
+    <!-- http://purl.org/podd/ns/dataRepository#hasDataRepositoryPort -->
+
+    <owl:DatatypeProperty rdf:about="&dataRepository;hasDataRepositoryPort">
+        <rdfs:label>has Data Repository Port</rdfs:label>
+        <rdfs:domain rdf:resource="&dataRepository;DataRepository"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+
+
+    <!-- http://purl.org/podd/ns/dataRepository#hasDataRepositoryPath -->
+
+    <owl:DatatypeProperty rdf:about="&dataRepository;hasDataRepositoryPath">
+        <rdfs:label>has Data Repository Path</rdfs:label>
+        <rdfs:domain rdf:resource="&dataRepository;DataRepository"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://purl.org/podd/ns/dataRepository#hasDataRepositoryFingerprint -->
+
+    <owl:DatatypeProperty rdf:about="&dataRepository;hasDataRepositoryFingerprint">
+        <rdfs:label>has Data Repository Fingerprint</rdfs:label>
+        <rdfs:domain rdf:resource="&dataRepository;DataRepository"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+
+
+    <!-- http://purl.org/podd/ns/dataRepository#hasDataRepositoryUsername -->
+
+    <owl:DatatypeProperty rdf:about="&dataRepository;hasDataRepositoryUsername">
+        <rdfs:label>has Data Repository Username</rdfs:label>
+        <rdfs:domain rdf:resource="&dataRepository;DataRepository"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://purl.org/podd/ns/dataRepository#hasDataRepositorySecret -->
+
+    <owl:DatatypeProperty rdf:about="&dataRepository;hasDataRepositorySecret">
+        <rdfs:label>has Data Repository Secret</rdfs:label>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+    <!-- http://purl.org/podd/ns/dataRepository#FileRepository -->
+
+    <owl:Class rdf:about="&dataRepository;DataRepository">
+        <rdfs:label>Podd File Repository</rdfs:label>
+        <rdfs:comment>A PODD File Repository.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/podd/ns/dataRepository#SSHFileRepository -->
+
+    <owl:Class rdf:about="&dataRepository;SSHFileRepository">
+        <rdfs:subClassOf rdf:resource="&dataRepository;DataRepository"/>
+        <rdfs:label>SSH File Repository</rdfs:label>
+        <rdfs:comment>An SSH File Repository.</rdfs:comment>
+    </owl:Class>
+
+    <!-- http://purl.org/podd/ns/dataRepository#SPARQLDataRepository -->
+
+    <owl:Class rdf:about="&dataRepository;SPARQLDataRepository">
+        <rdfs:subClassOf rdf:resource="&dataRepository;DataRepository"/>
+        <rdfs:label>SPARQL Data Repository</rdfs:label>
+        <rdfs:comment>A SPARQL Data Repository.</rdfs:comment>
+    </owl:Class>
+
+</rdf:RDF>
+

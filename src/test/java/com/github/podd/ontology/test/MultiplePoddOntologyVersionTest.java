@@ -21,6 +21,7 @@ public class MultiplePoddOntologyVersionTest extends AbstractPoddOntologyVersion
 {
     public static final String VERSION_1_PATH = "/ontologies/version/1/";
     public static final String VERSION_2_PATH = "/ontologies/version/2/";
+    public static final String VERSION_3_PATH = "/ontologies/version/3/";
     
     @Parameters(name = "{0}")
     public static Collection<Object[]> data()
@@ -55,28 +56,21 @@ public class MultiplePoddOntologyVersionTest extends AbstractPoddOntologyVersion
                         { MultiplePoddOntologyVersionTest.VERSION_2_PATH + "poddDataRepository.owl",
                                 "application/rdf+xml", 47 },
                         { "/ontologies/external/co715/crop-ontology-715.owl", "application/rdf+xml", 2173 },
-                
-                // artifacts to test
-                // { "/test/artifacts/basic-1.rdf", "application/rdf+xml", 26 },
-                // { "/test/artifacts/basic-2.rdf", "application/rdf+xml", 97 },
-                // { "/test/artifacts/basic-2-internal-objects.rdf", "application/rdf+xml", 29 },
-                // { "/test/artifacts/basicProject-1-internal-object.rdf", "application/rdf+xml", 26
-                // },
-                
-                // { "/test/artifacts/basic-1.ttl", "text/turtle", 32 },
-                // { "/test/artifacts/basic-2.ttl", "text/turtle", 97 },
-                // { "/test/artifacts/3-topobjects.ttl", "text/turtle", 34 },
-                
-                // { "/ontologies/dcTermsInferred.rdf", "application/rdf+xml", 16 },
-                // { "/ontologies/foafInferred.rdf", "application/rdf+xml", 37 },
-                // { "/ontologies/poddUserInferred.rdf", "application/rdf+xml", 87 },
-                // { "/ontologies/poddBaseInferred.rdf", "application/rdf+xml", 183 },
-                // { "/ontologies/poddScienceInferred.rdf", "application/rdf+xml", 472 },
-                // { "/ontologies/poddPlantInferred.rdf", "application/rdf+xml", 495 },
-                
-                // Inconsistent Ontology
-                // { "/test/artifacts/bad-twoLeadInstitutions.rdf", "application/rdf+xml", 22 },
-                };
+                        // version 3
+                        { MultiplePoddOntologyVersionTest.VERSION_3_PATH + "dcTerms.owl", "application/rdf+xml", 47 },
+                        { MultiplePoddOntologyVersionTest.VERSION_3_PATH + "foaf.owl", "application/rdf+xml", 38 },
+                        { MultiplePoddOntologyVersionTest.VERSION_3_PATH + "poddUser.owl", "application/rdf+xml", 188 },
+                        { MultiplePoddOntologyVersionTest.VERSION_3_PATH + "poddBase.owl", "application/rdf+xml", 330 },
+                        { MultiplePoddOntologyVersionTest.VERSION_3_PATH + "misteaObject.owl", "application/rdf+xml",
+                                164 },
+                        { MultiplePoddOntologyVersionTest.VERSION_3_PATH + "misteaEvent.owl", "application/rdf+xml",
+                                179 },
+                        { MultiplePoddOntologyVersionTest.VERSION_3_PATH + "poddScience.owl", "application/rdf+xml",
+                                1462 },
+                        { MultiplePoddOntologyVersionTest.VERSION_3_PATH + "poddPlant.owl", "application/rdf+xml", 219 },
+                        { MultiplePoddOntologyVersionTest.VERSION_3_PATH + "poddAnimal.owl", "application/rdf+xml", 141 },
+                        { MultiplePoddOntologyVersionTest.VERSION_3_PATH + "poddDataRepository.owl",
+                                "application/rdf+xml", 47 }, };
         return Arrays.asList(data);
     }
     
