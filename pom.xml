@@ -233,52 +233,52 @@
 							<vocabulary>
 								<className>PODDDCTERMS</className>
 								<prefix>http://purl.org/dc/terms/</prefix>
-								<file>src/main/resources/ontologies/version/2/dcTerms.owl</file>
+								<file>src/main/resources/ontologies/version/3/dcTerms.owl</file>
 							</vocabulary>
 							<vocabulary>
 								<className>PODDFOAF</className>
 								<prefix>http://xmlns.com/foaf/0.1/</prefix>
-								<file>src/main/resources/ontologies/version/2/foaf.owl</file>
+								<file>src/main/resources/ontologies/version/3/foaf.owl</file>
 							</vocabulary>
 							<vocabulary>
 								<className>PODDUSER</className>
 								<prefix>http://purl.org/podd/ns/poddUser#</prefix>
-								<file>src/main/resources/ontologies/version/2/poddUser.owl</file>
+								<file>src/main/resources/ontologies/version/3/poddUser.owl</file>
 							</vocabulary>
 							<vocabulary>
 								<className>PODDBASE</className>
 								<prefix>http://purl.org/podd/ns/poddBase#</prefix>
-								<file>src/main/resources/ontologies/version/2/poddBase.owl</file>
+								<file>src/main/resources/ontologies/version/3/poddBase.owl</file>
 							</vocabulary>
 							<vocabulary>
 								<className>PODDDATAREPOSITORY</className>
 								<prefix>http://purl.org/podd/ns/dataRepository#</prefix>
-								<file>src/main/resources/ontologies/version/2/poddDataRepository.owl</file>
+								<file>src/main/resources/ontologies/version/3/poddDataRepository.owl</file>
 							</vocabulary>
 							<vocabulary>
 								<className>PODDSCIENCE</className>
 								<prefix>http://purl.org/podd/ns/poddScience#</prefix>
-								<file>src/main/resources/ontologies/version/2/poddScience.owl</file>
+								<file>src/main/resources/ontologies/version/3/poddScience.owl</file>
 							</vocabulary>
 							<vocabulary>
 								<className>PODDPLANT</className>
 								<prefix>http://purl.org/podd/ns/poddPlant#</prefix>
-								<file>src/main/resources/ontologies/version/2/poddPlant.owl</file>
+								<file>src/main/resources/ontologies/version/3/poddPlant.owl</file>
 							</vocabulary>
 							<vocabulary>
 								<className>PODDANIMAL</className>
 								<prefix>http://purl.org/podd/ns/poddAnimal#</prefix>
-								<file>src/main/resources/ontologies/version/2/poddAnimal.owl</file>
+								<file>src/main/resources/ontologies/version/3/poddAnimal.owl</file>
 							</vocabulary>
 							<vocabulary>
 								<className>MISTEAOBJECT</className>
 								<prefix>http://www.mistea.supagro.inra.fr/object#</prefix>
-								<file>src/main/resources/ontologies/version/2/misteaObject.owl</file>
+								<file>src/main/resources/ontologies/version/3/misteaObject.owl</file>
 							</vocabulary>
 							<vocabulary>
 								<className>MISTEAEVENT</className>
 								<prefix>http://www.mistea.supagro.inra.fr/event#</prefix>
-								<file>src/main/resources/ontologies/version/2/misteaEvent.owl</file>
+								<file>src/main/resources/ontologies/version/3/misteaEvent.owl</file>
 							</vocabulary>
 						</vocabularies>
 					</configuration>
