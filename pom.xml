@@ -214,13 +214,13 @@
 								<goal>generate</goal>
 							</goals>
 						</execution>
-						<execution>
+						<!-- execution>
 							<id>generate-vocabulary-resource-bundles</id>
 							<phase>generate-resources</phase>
 							<goals>
 								<goal>generate-bundles</goal>
 							</goals>
-						</execution>
+						</execution -->
 					</executions>
 					<configuration>
 						<output>${project.build.directory}/generated-sources/sesame-vocabs</output>
