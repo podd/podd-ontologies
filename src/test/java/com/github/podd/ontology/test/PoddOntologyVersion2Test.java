@@ -4,10 +4,8 @@
 package com.github.podd.ontology.test;
 
 import java.util.Arrays;
-import org.junit.runners.MethodSorters;
 import java.util.Collection;
 
-import org.junit.FixMethodOrder;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;

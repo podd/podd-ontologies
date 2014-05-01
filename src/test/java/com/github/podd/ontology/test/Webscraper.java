@@ -204,7 +204,7 @@ public class Webscraper
         final String source = "/home/user/Documents/PODD/platform-list.csv";
         // "file:///home/user/path/ktemp/page2.html";
         final String tableId = "table1";
-        
+        tableId.length();
         final String destinationFile = "/home/user/Documents/PODD/out.rdf";
         final RDFFormat format = RDFFormat.RDFXML;
         
