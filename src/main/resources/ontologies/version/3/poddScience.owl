@@ -529,9 +529,9 @@
     
 
 
-    <!-- http://www.mistea.supagro.inra.fr/event#occurs_on -->
+    <!-- http://purl.org/podd/ns/poddScience#occuredOn -->
 
-    <owl:ObjectProperty rdf:about="http://www.mistea.supagro.inra.fr/event#occurs_on">
+    <owl:ObjectProperty rdf:about="http://purl.org/podd/ns/poddScience#occuredOn">
         <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
         <rdfs:range rdf:resource="http://purl.org/podd/ns/poddBase#PoddObject"/>
         <owl:inverseOf rdf:resource="http://purl.org/podd/ns/poddScience#hasEvent"/>
@@ -540,12 +540,12 @@
     
 
 
-    <!-- http://www.mistea.supagro.inra.fr/event#produce -->
+    <!-- http://purl.org/podd/ns/poddScience#producedImage -->
 
-    <owl:ObjectProperty rdf:about="http://www.mistea.supagro.inra.fr/event#produce">
+    <owl:ObjectProperty rdf:about="http://purl.org/podd/ns/poddScience#producedImage">
         <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
         <rdfs:range rdf:resource="http://www.mistea.supagro.inra.fr/event#Imagery"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.mistea.supagro.inra.fr/event#occurs_on"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/podd/ns/poddScience#occuredOn"/>
         <rdfs:domain rdf:resource="http://www.mistea.supagro.inra.fr/object#Camera"/>
     </owl:ObjectProperty>
     
