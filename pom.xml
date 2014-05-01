@@ -205,7 +205,7 @@
 				<plugin>
 					<groupId>com.github.tkurz.sesame</groupId>
 					<artifactId>vocab-builder-maven-plugin</artifactId>
-					<version>1.3-SNAPSHOT</version>
+					<version>1.2-SNAPSHOT</version>
 					<executions>
 						<execution>
 							<id>generate-vocabularies</id>
@@ -213,75 +213,70 @@
 							<goals>
 								<goal>generate</goal>
 							</goals>
+							<configuration>
+								<!-- output>${project.build.directory}/generated-sources/sesame-vocabs</output -->
+								<packageName>com.github.podd.ontologies</packageName>
+								<mimeType>application/rdf+xml</mimeType>
+								<preferredLanguage>en</preferredLanguage>
+								<constantCase>UPPER_UNDERSCORE</constantCase>
+								<createResourceBundles>true</createResourceBundles>
+								<vocabularies>
+									<vocabulary>
+										<className>PODDDCTERMS</className>
+										<!-- prefix>http://purl.org/dc/terms/</prefix -->
+										<file>src/main/resources/ontologies/version/3/dcTerms.owl</file>
+									</vocabulary>
+									<vocabulary>
+										<className>PODDFOAF</className>
+										<!-- prefix>http://xmlns.com/foaf/0.1/</prefix -->
+										<file>src/main/resources/ontologies/version/3/foaf.owl</file>
+									</vocabulary>
+									<vocabulary>
+										<className>PODDUSER</className>
+										<!-- prefix>http://purl.org/podd/ns/poddUser#</prefix -->
+										<file>src/main/resources/ontologies/version/3/poddUser.owl</file>
+									</vocabulary>
+									<vocabulary>
+										<className>PODDBASE</className>
+										<!-- prefix>http://purl.org/podd/ns/poddBase#</prefix -->
+										<file>src/main/resources/ontologies/version/3/poddBase.owl</file>
+									</vocabulary>
+									<vocabulary>
+										<className>PODDDATAREPOSITORY</className>
+										<!-- prefix>http://purl.org/podd/ns/dataRepository#</prefix -->
+										<file>src/main/resources/ontologies/version/3/poddDataRepository.owl</file>
+									</vocabulary>
+									<vocabulary>
+										<className>PODDSCIENCE</className>
+										<!-- prefix>http://purl.org/podd/ns/poddScience#</prefix -->
+										<file>src/main/resources/ontologies/version/3/poddScience.owl</file>
+									</vocabulary>
+									<vocabulary>
+										<className>PODDPLANT</className>
+										<!-- prefix>http://purl.org/podd/ns/poddPlant#</prefix -->
+										<file>src/main/resources/ontologies/version/3/poddPlant.owl</file>
+									</vocabulary>
+									<vocabulary>
+										<className>PODDANIMAL</className>
+										<!-- prefix>http://purl.org/podd/ns/poddAnimal#</prefix -->
+										<file>src/main/resources/ontologies/version/3/poddAnimal.owl</file>
+									</vocabulary>
+									<vocabulary>
+										<className>MISTEAOBJECT</className>
+										<!-- prefix>http://www.mistea.supagro.inra.fr/object#</prefix -->
+										<file>src/main/resources/ontologies/version/3/misteaObject.owl</file>
+									</vocabulary>
+									<vocabulary>
+										<className>MISTEAEVENT</className>
+										<!-- prefix>http://www.mistea.supagro.inra.fr/event#</prefix -->
+										<file>src/main/resources/ontologies/version/3/misteaEvent.owl</file>
+									</vocabulary>
+								</vocabularies>
+							</configuration>
 						</execution>
-						<!--  execution>
-							<id>generate-vocabulary-resource-bundles</id>
-							<phase>generate-resources</phase>
-							<goals>
-								<goal>generate-bundles</goal>
-							</goals>
-						</execution -->
+						<!-- execution> <id>generate-vocabulary-resource-bundles</id> <phase>generate-resources</phase> 
+							<goals> <goal>generate-bundles</goal> </goals> </execution -->
 					</executions>
-					<configuration>
-						<!-- output>${project.build.directory}/generated-sources/sesame-vocabs</output -->
-						<packageName>com.github.podd.ontologies</packageName>
-						<mimeType>application/rdf+xml</mimeType>
-						<preferredLanguage>en</preferredLanguage>
-						<constantCase>UPPER_UNDERSCORE</constantCase>
-						<createResourceBundles>true</createResourceBundles>
-						<vocabularies>
-							<vocabulary>
-								<className>PODDDCTERMS</className>
-								<prefix>http://purl.org/dc/terms/</prefix>
-								<file>src/main/resources/ontologies/version/3/dcTerms.owl</file>
-							</vocabulary>
-							<vocabulary>
-								<className>PODDFOAF</className>
-								<prefix>http://xmlns.com/foaf/0.1/</prefix>
-								<file>src/main/resources/ontologies/version/3/foaf.owl</file>
-							</vocabulary>
-							<vocabulary>
-								<className>PODDUSER</className>
-								<prefix>http://purl.org/podd/ns/poddUser#</prefix>
-								<file>src/main/resources/ontologies/version/3/poddUser.owl</file>
-							</vocabulary>
-							<vocabulary>
-								<className>PODDBASE</className>
-								<prefix>http://purl.org/podd/ns/poddBase#</prefix>
-								<file>src/main/resources/ontologies/version/3/poddBase.owl</file>
-							</vocabulary>
-							<vocabulary>
-								<className>PODDDATAREPOSITORY</className>
-								<prefix>http://purl.org/podd/ns/dataRepository#</prefix>
-								<file>src/main/resources/ontologies/version/3/poddDataRepository.owl</file>
-							</vocabulary>
-							<vocabulary>
-								<className>PODDSCIENCE</className>
-								<prefix>http://purl.org/podd/ns/poddScience#</prefix>
-								<file>src/main/resources/ontologies/version/3/poddScience.owl</file>
-							</vocabulary>
-							<vocabulary>
-								<className>PODDPLANT</className>
-								<prefix>http://purl.org/podd/ns/poddPlant#</prefix>
-								<file>src/main/resources/ontologies/version/3/poddPlant.owl</file>
-							</vocabulary>
-							<vocabulary>
-								<className>PODDANIMAL</className>
-								<prefix>http://purl.org/podd/ns/poddAnimal#</prefix>
-								<file>src/main/resources/ontologies/version/3/poddAnimal.owl</file>
-							</vocabulary>
-							<vocabulary>
-								<className>MISTEAOBJECT</className>
-								<prefix>http://www.mistea.supagro.inra.fr/object#</prefix>
-								<file>src/main/resources/ontologies/version/3/misteaObject.owl</file>
-							</vocabulary>
-							<vocabulary>
-								<className>MISTEAEVENT</className>
-								<prefix>http://www.mistea.supagro.inra.fr/event#</prefix>
-								<file>src/main/resources/ontologies/version/3/misteaEvent.owl</file>
-							</vocabulary>
-						</vocabularies>
-					</configuration>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
