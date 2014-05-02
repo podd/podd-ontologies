@@ -219,7 +219,7 @@
 								<mimeType>application/rdf+xml</mimeType>
 								<preferredLanguage>en</preferredLanguage>
 								<constantCase>UPPER_UNDERSCORE</constantCase>
-								<createResourceBundles>true</createResourceBundles>
+								<createResourceBundles>false</createResourceBundles>
 								<vocabularies>
 									<vocabulary>
 										<className>PODDDCTERMS</className>
