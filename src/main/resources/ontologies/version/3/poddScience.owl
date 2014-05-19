@@ -531,22 +531,24 @@
 
     <!-- http://purl.org/podd/ns/poddScience#occuredOn -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/podd/ns/poddScience#occuredOn">
+    <owl:ObjectProperty rdf:about="http://purl.org/podd/ns/poddScience#occurredOn">
+    	<rdfs:label>Event occurred on object</rdfs:label>
+    	<rdfs:comment>The event occurred on the given object, such as a tray or plant.</rdfs:comment>
         <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
         <rdfs:domain rdf:resource="http://www.mistea.supagro.inra.fr/event#Event"/>
         <rdfs:range rdf:resource="http://purl.org/podd/ns/poddBase#PoddObject"/>
-        <owl:inverseOf rdf:resource="http://purl.org/podd/ns/poddScience#hasEvent"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/podd/ns/poddScience#producedImage -->
+    <!-- http://purl.org/podd/ns/poddScience#producedBy -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/podd/ns/poddScience#producedImage">
+    <owl:ObjectProperty rdf:about="http://purl.org/podd/ns/poddScience#producedBy">
+    	<rdfs:label>Event produced by platform</rdfs:label>
+    	<rdfs:comment>The event was produced by the given platform, such as a camera or thermometer.</rdfs:comment>
         <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
-        <rdfs:range rdf:resource="http://www.mistea.supagro.inra.fr/event#Imagery"/>
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/podd/ns/poddScience#occuredOn"/>
-        <rdfs:domain rdf:resource="http://www.mistea.supagro.inra.fr/object#Camera"/>
+        <rdfs:domain rdf:resource="http://www.mistea.supagro.inra.fr/event#Event"/>
+        <rdfs:range rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
     </owl:ObjectProperty>
     
 
