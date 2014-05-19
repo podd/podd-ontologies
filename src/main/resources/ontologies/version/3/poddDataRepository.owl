@@ -152,8 +152,8 @@
 
     <!-- http://purl.org/podd/ns/dataRepository#hasDataRepositoryPrivateKey -->
 
-    <owl:DatatypeProperty rdf:about="&dataRepository;hasDataRepositoryPrivateKey">
-        <rdfs:label>has Data Repository Private Key</rdfs:label>
+    <owl:DatatypeProperty rdf:about="&dataRepository;hasDataRepositoryPrivateKeyPath">
+        <rdfs:label>has Data Repository Private Key Path</rdfs:label>
         <rdfs:domain rdf:resource="&dataRepository;DataRepository"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
