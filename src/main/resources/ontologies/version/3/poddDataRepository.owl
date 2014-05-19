@@ -145,6 +145,7 @@
 
     <owl:DatatypeProperty rdf:about="&dataRepository;hasDataRepositorySecret">
         <rdfs:label>has Data Repository Secret</rdfs:label>
+        <rdfs:domain rdf:resource="&dataRepository;DataRepository"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
 
@@ -153,6 +154,7 @@
 
     <owl:DatatypeProperty rdf:about="&dataRepository;hasDataRepositoryPrivateKey">
         <rdfs:label>has Data Repository Private Key</rdfs:label>
+        <rdfs:domain rdf:resource="&dataRepository;DataRepository"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
 
