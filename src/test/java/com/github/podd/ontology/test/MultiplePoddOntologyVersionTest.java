@@ -67,7 +67,7 @@ public class MultiplePoddOntologyVersionTest extends AbstractPoddOntologyVersion
                                 179 },
                         { MultiplePoddOntologyVersionTest.VERSION_3_PATH + "poddScience.owl", "application/rdf+xml",
                                 1479 },
-                        { MultiplePoddOntologyVersionTest.VERSION_3_PATH + "poddPlant.owl", "application/rdf+xml", 219 },
+                        { MultiplePoddOntologyVersionTest.VERSION_3_PATH + "poddPlant.owl", "application/rdf+xml", 249 },
                         { MultiplePoddOntologyVersionTest.VERSION_3_PATH + "poddAnimal.owl", "application/rdf+xml", 141 },
                         { MultiplePoddOntologyVersionTest.VERSION_3_PATH + "poddDataRepository.owl",
                                 "application/rdf+xml", 52 }, };

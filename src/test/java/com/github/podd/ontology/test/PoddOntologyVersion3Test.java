@@ -37,7 +37,7 @@ public class PoddOntologyVersion3Test extends AbstractPoddOntologyVersionTest
                         { PoddOntologyVersion3Test.VERSION_3_PATH + "misteaEvent.owl", "application/rdf+xml",
                                 179 },
                         { PoddOntologyVersion3Test.VERSION_3_PATH + "poddScience.owl", "application/rdf+xml", 1479 },
-                        { PoddOntologyVersion3Test.VERSION_3_PATH + "poddPlant.owl", "application/rdf+xml", 219 },
+                        { PoddOntologyVersion3Test.VERSION_3_PATH + "poddPlant.owl", "application/rdf+xml", 249 },
                         { PoddOntologyVersion3Test.VERSION_3_PATH + "poddAnimal.owl", "application/rdf+xml", 141 },
                         { PoddOntologyVersion3Test.VERSION_3_PATH + "poddDataRepository.owl", "application/rdf+xml", 52 },
                         { "/ontologies/external/co715/crop-ontology-715.owl", "application/rdf+xml", 2173 }, };
