@@ -428,6 +428,51 @@
 		<rdfs:comment>Integrated system for screening model plants in high throughput </rdfs:comment>
 	</rdf:Description>
 	
+	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#Trayscan_RGB1">
+		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+		<poddScience:hasPlatformType rdf:resource="http://purl.org/podd/ns/poddScience#PlatformType_Hardware"/>
+		<rdfs:label>Trayscan RGB1 camera, side-on view</rdfs:label>
+		<rdfs:comment>Side-on RGB camera included in TrayScan</rdfs:comment>
+	</rdf:Description>
+	
+	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#Trayscan_RGB2">
+		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+		<poddScience:hasPlatformType rdf:resource="http://purl.org/podd/ns/poddScience#PlatformType_Hardware"/>
+		<rdfs:label>Trayscan RGB2 camera, top view</rdfs:label>
+		<rdfs:comment>A top RGB camera included in TrayScan</rdfs:comment>
+	</rdf:Description>
+	
+	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#Trayscan_RGB3">
+		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+		<poddScience:hasPlatformType rdf:resource="http://purl.org/podd/ns/poddScience#PlatformType_Hardware"/>
+		<rdfs:label>Trayscan RGB3 camera, top view</rdfs:label>
+		<rdfs:comment>A top RGB camera included in TrayScan</rdfs:comment>
+	</rdf:Description>
+	
+	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#Trayscan_IR">
+		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+		<poddScience:hasPlatformType rdf:resource="http://purl.org/podd/ns/poddScience#PlatformType_Hardware"/>
+		<rdfs:label>Trayscan IR camera, top view</rdfs:label>
+		<rdfs:comment>The IR (Infrared) camera included in TrayScan</rdfs:comment>
+	</rdf:Description>
+	
+	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#Trayscan_FC">
+		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+		<poddScience:hasPlatformType rdf:resource="http://purl.org/podd/ns/poddScience#PlatformType_Hardware"/>
+		<rdfs:label>Trayscan FC camera, top view</rdfs:label>
+		<rdfs:comment>The FC (Fluorescence) camera included in TrayScan</rdfs:comment>
+	</rdf:Description>
+	
 	<rdf:Description rdf:about="http://purl.org/podd/ns/poddPlant#PlantScan">
 		<rdf:type rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
 		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
