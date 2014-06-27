@@ -62,16 +62,16 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<jackson.version>2.3.1</jackson.version>
+		<jackson.version>2.3.3</jackson.version>
 		<junit.version>4.11</junit.version>
-		<slf4j.version>1.7.5</slf4j.version>
-		<sesame.version>2.7.11</sesame.version>
+		<slf4j.version>1.7.7</slf4j.version>
+		<sesame.version>2.8.0-beta2-SNAPSHOT</sesame.version>
 		<owlapi.version>3.4.9.2-ansell</owlapi.version>
 		<pellet.version>2.3.6-ansell</pellet.version>
 	</properties>
 
 	<prerequisites>
-		<maven>2.2.1</maven>
+		<maven>3.0.4</maven>
 	</prerequisites>
 
 	<dependencies>
@@ -350,13 +350,12 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-surefire-plugin</artifactId>
-					<version>2.16</version>
-					<!-- <configuration> <argLine>-Xmx4096m</argLine> </configuration> -->
+					<version>2.17</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-failsafe-plugin</artifactId>
-					<version>2.16</version>
+					<version>2.17</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
