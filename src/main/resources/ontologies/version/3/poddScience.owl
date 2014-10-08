@@ -840,6 +840,17 @@
     
 
 
+    <!-- http://purl.org/podd/ns/poddScience#hasPlantingDate -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/podd/ns/poddScience#hasPlantingDate">
+        <rdfs:label>Planting Date</rdfs:label>
+        <poddBase:weight>10</poddBase:weight>
+        <poddBase:hasDisplayType rdf:resource="http://purl.org/podd/ns/poddBase#DisplayType_ShortText"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://purl.org/podd/ns/poddScience#hasPotColumnLetterTray -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/podd/ns/poddScience#hasPotColumnLetterTray">
