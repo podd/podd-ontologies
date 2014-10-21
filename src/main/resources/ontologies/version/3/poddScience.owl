@@ -15,8 +15,6 @@
         <owl:imports rdf:resource="http://purl.org/podd/ns/version/foaf/3"/>
         <owl:imports rdf:resource="http://purl.org/podd/ns/version/poddBase/3"/>
         <owl:imports rdf:resource="http://purl.org/podd/ns/version/poddUser/3"/>
-        <owl:imports rdf:resource="http://www.mistea.supagro.inra.fr/event/3"/>
-        <owl:imports rdf:resource="http://www.mistea.supagro.inra.fr/object/3"/>
         <owl:versionIRI rdf:resource="http://purl.org/podd/ns/version/poddScience/3"/>
     </owl:Ontology>
     
@@ -140,7 +138,7 @@
         <poddBase:weight>13</poddBase:weight>
         <rdfs:domain rdf:resource="http://purl.org/podd/ns/poddBase#PoddObject"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/podd/ns/poddBase#contains"/>
-        <rdfs:range rdf:resource="http://www.mistea.supagro.inra.fr/event#Event"/>
+        <rdfs:range rdf:resource="http://purl.org/podd/ns/poddScience#Event"/>
     </owl:ObjectProperty>
     
 
@@ -327,6 +325,30 @@
         <poddBase:weight>10</poddBase:weight>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/podd/ns/poddBase#contains"/>
         <rdfs:range rdf:resource="http://purl.org/podd/ns/poddScience#Publication"/>
+    </owl:ObjectProperty>
+    
+    
+    
+    <!-- http://purl.org/podd/ns/poddScience#hasResults -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/podd/ns/poddScience#hasResults">
+        <rdfs:label>has Results</rdfs:label>
+        <poddBase:weight>10</poddBase:weight>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/podd/ns/poddBase#contains"/>
+        <rdfs:domain rdf:resource="http://purl.org/podd/ns/poddScience#Experiment"/>
+        <rdfs:range rdf:resource="http://purl.org/podd/ns/poddScience#Results"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/podd/ns/poddScience#hasResults -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/podd/ns/poddScience#hasResult">
+        <rdfs:label>has Result</rdfs:label>
+        <poddBase:weight>10</poddBase:weight>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/podd/ns/poddBase#contains"/>
+        <rdfs:domain rdf:resource="http://purl.org/podd/ns/poddScience#Results"/>
+        <rdfs:range rdf:resource="http://purl.org/podd/ns/poddScience#Result"/>
     </owl:ObjectProperty>
     
 
@@ -535,7 +557,7 @@
     	<rdfs:label>Event occurred on object</rdfs:label>
     	<rdfs:comment>The event occurred on the given object, such as a tray or plant.</rdfs:comment>
         <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
-        <rdfs:domain rdf:resource="http://www.mistea.supagro.inra.fr/event#Event"/>
+        <rdfs:domain rdf:resource="http://purl.org/podd/ns/poddScience#Event"/>
         <rdfs:range rdf:resource="http://purl.org/podd/ns/poddBase#PoddObject"/>
     </owl:ObjectProperty>
     
@@ -547,7 +569,7 @@
     	<rdfs:label>Event produced by platform</rdfs:label>
     	<rdfs:comment>The event was produced by the given platform, such as a camera or thermometer.</rdfs:comment>
         <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
-        <rdfs:domain rdf:resource="http://www.mistea.supagro.inra.fr/event#Event"/>
+        <rdfs:domain rdf:resource="http://purl.org/podd/ns/poddScience#Event"/>
         <rdfs:range rdf:resource="http://purl.org/podd/ns/poddScience#Platform"/>
     </owl:ObjectProperty>
     
@@ -713,6 +735,7 @@
         <rdfs:label>Description of the Event</rdfs:label>
         <poddBase:weight>4</poddBase:weight>
         <poddBase:hasDisplayType rdf:resource="http://purl.org/podd/ns/poddBase#DisplayType_LongText"/>
+        <rdfs:domain rdf:resource="http://purl.org/podd/ns/poddScience#Event"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -1729,16 +1752,10 @@
     
 
 
-    <!-- http://purl.org/podd/ns/poddScience#ManagementLog -->
+    <!-- http://purl.org/podd/ns/poddScience#Event -->
 
-    <owl:Class rdf:about="http://purl.org/podd/ns/poddScience#ManagementLog">
-        <rdfs:subClassOf rdf:resource="http://purl.org/podd/ns/poddScience#EventLog"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasEvent"/>
-                <owl:allValuesFrom rdf:resource="http://www.mistea.supagro.inra.fr/event#Management"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+    <owl:Class rdf:about="http://purl.org/podd/ns/poddScience#Event">
+        <rdfs:subClassOf rdf:resource="http://purl.org/podd/ns/poddBase#PoddInternalObject"/>
     </owl:Class>
     
 
@@ -2315,7 +2332,19 @@
         </rdfs:subClassOf>
     </owl:Class>
     
+    <!-- http://purl.org/podd/ns/poddScience#Results -->
 
+    <owl:Class rdf:about="http://purl.org/podd/ns/poddScience#Results">
+        <rdfs:label>Results</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/podd/ns/poddBase#PoddInternalObject"/>
+    </owl:Class>
+
+    <!-- http://purl.org/podd/ns/poddScience#Result -->
+
+    <owl:Class rdf:about="http://purl.org/podd/ns/poddScience#Result">
+        <rdfs:label>Result</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/podd/ns/poddBase#PoddInternalObject"/>
+    </owl:Class>
 
     <!-- http://purl.org/podd/ns/poddScience#Sequence -->
 
@@ -2507,22 +2536,6 @@
             </owl:Class>
         </owl:equivalentClass>
     </owl:Class>
-    
-
-
-    <!-- http://www.mistea.supagro.inra.fr/event#Event -->
-
-    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/event#Event">
-        <rdfs:subClassOf rdf:resource="http://purl.org/podd/ns/poddBase#PoddInternalObject"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://www.mistea.supagro.inra.fr/object#Object -->
-
-    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/object#Object">
-        <rdfs:subClassOf rdf:resource="http://purl.org/podd/ns/poddBase#PoddInternalObject"/>
-    </rdf:Description>
     
 
 
@@ -2765,62 +2778,6 @@
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
-
-    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/event#end_date">
-        <poddBase:weight>4</poddBase:weight>
-        <poddBase:hasDisplayType rdf:resource="http://purl.org/podd/ns/poddBase#DisplayType_ShortText"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/event#has_for_position_the">
-        <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/event#has_for_containing_the">
-        <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/event#occurs_after">
-        <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/event#Position">
-        <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/event#is_position_off">
-        <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/event#Containing">
-        <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/object#is">
-        <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/event#occurs_before">
-        <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/event#the">
-        <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/event#begin_date">
-        <poddBase:weight>3</poddBase:weight>
-        <poddBase:hasDisplayType rdf:resource="http://purl.org/podd/ns/poddBase#DisplayType_ShortText"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/event#duration">
-        <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/event#has_for">
-        <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/object#off">
-        <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/object#is_contained">
-        <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/event#Displacement">
-        <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.mistea.supagro.inra.fr/event#is_containing_off">
-        <poddBase:doNotDisplay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</poddBase:doNotDisplay>
-    </rdf:Description>
-    
-
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////

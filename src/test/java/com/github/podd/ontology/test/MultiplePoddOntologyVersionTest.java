@@ -66,8 +66,8 @@ public class MultiplePoddOntologyVersionTest extends AbstractPoddOntologyVersion
                         { MultiplePoddOntologyVersionTest.VERSION_3_PATH + "misteaEvent.owl", "application/rdf+xml",
                                 179 },
                         { MultiplePoddOntologyVersionTest.VERSION_3_PATH + "poddScience.owl", "application/rdf+xml",
-                                1484 },
-                        { MultiplePoddOntologyVersionTest.VERSION_3_PATH + "poddPlant.owl", "application/rdf+xml", 249 },
+                                1476 },
+                        { MultiplePoddOntologyVersionTest.VERSION_3_PATH + "poddPlant.owl", "application/rdf+xml", 247 },
                         { MultiplePoddOntologyVersionTest.VERSION_3_PATH + "poddAnimal.owl", "application/rdf+xml", 141 },
                         { MultiplePoddOntologyVersionTest.VERSION_3_PATH + "poddDataRepository.owl",
                                 "application/rdf+xml", 52 }, };

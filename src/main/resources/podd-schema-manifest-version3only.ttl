@@ -76,9 +76,7 @@
 	owl:imports <http://purl.org/podd/ns/version/dcTerms/3> ,
 	    <http://purl.org/podd/ns/version/foaf/3> ,
 	    <http://purl.org/podd/ns/version/poddUser/3> ,
-        <http://purl.org/podd/ns/version/poddBase/3> ,
-        <http://www.mistea.supagro.inra.fr/event/3>  ,
-        <http://www.mistea.supagro.inra.fr/object/3> .
+        <http://purl.org/podd/ns/version/poddBase/3> .
 
 
 
@@ -93,9 +91,7 @@
 	    <http://purl.org/podd/ns/version/foaf/3> ,
 	    <http://purl.org/podd/ns/version/poddUser/3> ,
 	    <http://purl.org/podd/ns/version/poddBase/3> ,
-        <http://purl.org/podd/ns/version/poddScience/3> ,
-        <http://www.mistea.supagro.inra.fr/event/3>  ,
-        <http://www.mistea.supagro.inra.fr/object/3> .
+        <http://purl.org/podd/ns/version/poddScience/3> .
 
 
 
