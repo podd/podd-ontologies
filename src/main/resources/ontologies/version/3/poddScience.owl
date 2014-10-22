@@ -1504,7 +1504,7 @@
     <!-- http://purl.org/podd/ns/poddScience#Experiment -->
 
     <owl:Class rdf:about="http://purl.org/podd/ns/poddScience#Experiment">
-        <rdfs:label>Investigation</rdfs:label>
+        <rdfs:label>Experiment</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.org/podd/ns/poddBase#PoddTopObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2112,7 +2112,7 @@
                 <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Protocol"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Describes a scientific process that is to be followed by an investigation, including references to formal protocols where applicable.</rdfs:comment>
+        <rdfs:comment>Describes a scientific process that is to be followed by an experiment, including references to formal protocols where applicable.</rdfs:comment>
     </owl:Class>
     
 
