@@ -184,6 +184,14 @@
         <rdfs:range rdf:resource="http://purl.org/podd/ns/poddScience#Genotype"/>
     </owl:ObjectProperty>
     
+    <!-- http://purl.org/podd/ns/poddScience#hasGenotypes -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/podd/ns/poddScience#hasGenotypes">
+        <rdfs:label>has Genotypes</rdfs:label>
+        <poddBase:weight>10</poddBase:weight>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/podd/ns/poddBase#contains"/>
+        <rdfs:range rdf:resource="http://purl.org/podd/ns/poddScience#Genotypes"/>
+    </owl:ObjectProperty>
 
 
     <!-- http://purl.org/podd/ns/poddScience#hasMarker -->
@@ -1642,7 +1650,18 @@
         </rdfs:subClassOf>
     </owl:Class>
     
+    <!-- http://purl.org/podd/ns/poddScience#Genotypes -->
 
+    <owl:Class rdf:about="http://purl.org/podd/ns/poddScience#Genotypes">
+        <rdfs:label>Genotypes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/podd/ns/poddBase#PoddInternalObject"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/podd/ns/poddScience#hasGenotype"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/podd/ns/poddScience#Genotype"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+	</owl:Class>
 
     <!-- http://purl.org/podd/ns/poddScience#Genotype -->
 
