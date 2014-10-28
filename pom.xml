@@ -63,9 +63,9 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<jackson.version>2.3.3</jackson.version>
-		<junit.version>4.12-beta-1</junit.version>
+		<junit.version>4.12-beta-3</junit.version>
 		<slf4j.version>1.7.7</slf4j.version>
-		<sesame.version>2.7.12</sesame.version>
+		<sesame.version>2.7.13</sesame.version>
 		<owlapi.version>3.4.9.2-ansell</owlapi.version>
 		<pellet.version>2.3.6-ansell</pellet.version>
 	</properties>
